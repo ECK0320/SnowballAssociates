@@ -17,7 +17,7 @@ HUGO_VERSION = "0.147.6"
   ShowCodeCopyButtons = true
   ShowWordCount = true
   ShowToc = true
-  ShowFullTextinRSS = true
+  ShowFullTextInRSS = true
   ShowPageViews = true
   comments = false
   DateFormat = "2006-01-02"
@@ -28,8 +28,8 @@ HUGO_VERSION = "0.147.6"
   mainSections = ["posts"]
 
   homeInfoParams = { 
-  Title = "Theory in Practice", 
-  Content = """읽고, 생각하고, 씁니다.
+    Title = "Theory in Practice", 
+    Content = """읽고, 생각하고, 씁니다.
 I read, think, and write.
 
 **[Category]**
@@ -40,7 +40,7 @@ I read, think, and write.
 - Output - 작업물 예시
 - Archive - 연도별 정렬 기록
 """
-}
+  }
 
   socialIcons = [
     { name = "github", url = "https://github.com/ECK0320" }
