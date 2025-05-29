@@ -1,9 +1,12 @@
-baseURL = "https://eck0320.github.io/"
+baseURL = "https://www.snowballassociates.com/"
 languageCode = "ko"
 title = "Snowball Associates"
 theme = "PaperMod"
 defaultContentLanguage = "ko"
 paginate = 10
+
+[build.environment]
+HUGO_VERSION = "0.147.6"
 
 [params]
   author = "ECK"
