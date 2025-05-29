@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <main id="main">
+    <div class="archive-year">
+      <h1 class="page-title">
+        {{ .Title }}
+      </h1>
+      {{ if .Content }}
+        <div class="content">{{ .Content }}</div>
+      {{ end }}
+      <ul class="terms-tags">
+        {{ range .Pages }}
+          <li>
+            <a href="{{ .RelPermalink }}">
+              {{ .Title }} <sup>{{ .Params.count | default (len .Pages) }}</sup>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </main>
+{{ end }}
