@@ -39,7 +39,8 @@ I read, think, and write.
 - Cognitive Core – 생각하는 방식
 - Output – 작업물 예시
 - Archive – 연도별 정렬 기록
-"""}
+"""
+}
 
   socialIcons = [
     { name = "github", url = "https://github.com/ECK0320" }
