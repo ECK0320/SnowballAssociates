@@ -1,0 +1,5 @@
+<ul>
+  {{ range $key, $value := site.Taxonomies.categories }}
+    <li><a href="/categories/{{ $key | urlize }}">{{ $key }} ({{ len $value }})</a></li>
+  {{ end }}
+</ul>
