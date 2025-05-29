@@ -1,9 +1,7 @@
 ---
-title: "hi"
-date: 2024-05-29
-tags: ["intro", "test"]
-categories: ["Thoughts"]
-
+title: "First Post"
+date: 2025-05-29T08:00:00Z
 draft: false
 ---
-test test
+
+This is your first post.
