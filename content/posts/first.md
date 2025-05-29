@@ -1,7 +1,7 @@
 +++
 title = "First Post"
 date = 2025-05-29
-categories = ["Thoughts"]
+category = ["Thoughts"]
 +++
 
 This is your first post.
