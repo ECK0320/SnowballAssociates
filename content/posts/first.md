@@ -1,7 +1,7 @@
 ---
 title: "First Post"
 date: 2025-05-29T08:00:00Z
-draft: false
+categories = ["Thoughts"]
 ---
 
 This is your first post.
