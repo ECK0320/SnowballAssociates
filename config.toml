@@ -69,13 +69,7 @@ I read, think, and write.
 identifier = "categories"
 name = "Categories"
 url = "/categories/"
-weight = 10
-
-[[menu.main]]
-identifier = "subcategories"
-name = "Subategories"
-url = "/categories/"
-weight = 5
+weight = 7
 
 [[menu.main]]
   identifier = "identity"
