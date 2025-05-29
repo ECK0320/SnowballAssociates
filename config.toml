@@ -1,3 +1,92 @@
-theme = "dolt"
-theme = "dolt"
-theme = "dolt"
+baseURL = "https://eck0320.github.io/"
+languageCode = "ko"
+title = "Snowball Associates"
+theme = "PaperMod"
+defaultContentLanguage = "ko"
+paginate = 10
+
+[params]
+  author = "ECK"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowToc = true
+  ShowFullTextinRSS = true
+  ShowPageViews = true
+  comments = false
+  DateFormat = "2006-01-02"
+  hideSummary = false
+  disableSpecial1stPost = false
+  math = true
+  disableScrollToTop = false
+
+  homeInfoParams = { 
+    Title = "Theory in Practice", 
+    Content = """
+읽고, 생각하고, 씁니다.
+I read, think, and write.  
+
+**[Category]**
+- Thoughts – 짧은 생각
+- Market Decision Log – 시장 판단 기록
+- Structural Commentary – 거시적 관점
+- Cognitive Core – 생각하는 방식
+- Output – 작업물 예시
+- Archive – 연도별 정렬 기록
+""" }
+
+  socialIcons = [
+    { name = "github", url = "https://github.com/ECK0320" }
+  ]
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.parser]
+    attribute = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[[menu.main]]
+  identifier = "identity"
+  name = "I. Thoughts"
+  url = "/identity/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "market"
+  name = "II. Market Decision Log"
+  url = "/market/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "commentary"
+  name = "III. Structural Commentary"
+  url = "/commentary/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "cognitive"
+  name = "IV. Cognitive Core"
+  url = "/cognitive/"
+  weight = 4
+
+[[menu.main]]
+  identifier = "output"
+  name = "V. Output"
+  url = "/output/"
+  weight = 5
+
+[[menu.main]]
+  identifier = "archive"
+  name = "VI. Archive Index & Timeline"
+  url = "/archive/"
+  weight = 6
+
+

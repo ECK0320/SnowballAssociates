@@ -1,0 +1,5 @@
+---
+title: "Welcome"
+type: "home"
+---
+
