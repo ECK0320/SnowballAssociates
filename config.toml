@@ -62,6 +62,8 @@ I read, think, and write.
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML", "RSS"]
 
 [[menu.main]]
 identifier = "categories"
