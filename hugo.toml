@@ -1,3 +1,4 @@
 baseURL = 'https://www.snowballassociates.com/'
 languageCode = 'ko'
 title = 'Snowball Associates'
+theme = 'PaperMod'
