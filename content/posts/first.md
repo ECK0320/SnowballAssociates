@@ -1,6 +1,6 @@
 +++
-title: "First Post"
-date: 2025-05-29T08:00:00Z
+title = "First Post"
+date = 2025-05-29
 categories = ["Thoughts"]
 +++
 
