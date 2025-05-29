@@ -30,15 +30,15 @@ HUGO_VERSION = "0.147.6"
   homeInfoParams = { 
     Title = "Theory in Practice", 
     Content = """읽고, 생각하고, 씁니다.
-    I read, think, and write.
+I read, think, and write.
 
 **[Category]**
-- Thoughts – 짧은 생각
-- Market Decision Log – 시장 판단 기록
-- Structural Commentary – 거시적 관점
-- Cognitive Core – 생각하는 방식
-- Output – 작업물 예시
-- Archive – 연도별 정렬 기록
+- Thoughts - 짧은 생각
+- Market Decision Log - 시장 판단 기록
+- Structural Commentary - 거시적 관점
+- Cognitive Core - 생각하는 방식
+- Output - 작업물 예시
+- Archive - 연도별 정렬 기록
 """
 }
 
