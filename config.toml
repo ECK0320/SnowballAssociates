@@ -27,6 +27,7 @@ HUGO_VERSION = "0.147.6"
   disableScrollToTop = false
   mainSections = ["posts"]
 
+
   homeInfoParams = { 
     Title = "Theory in Practice", 
     Content = """읽고, 생각하고, 씁니다.
