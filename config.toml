@@ -19,6 +19,8 @@ HUGO_VERSION = "0.147.6"
   ShowToc = true
   ShowFullTextInRSS = true
   ShowPageViews = true
+  showTaxonomies = true
+  
   comments = false
   DateFormat = "2006-01-02"
   hideSummary = false
