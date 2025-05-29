@@ -29,8 +29,7 @@ HUGO_VERSION = "0.147.6"
 
   homeInfoParams = { 
     Title = "Theory in Practice", 
-    Content = """
-읽고, 생각하고, 씁니다.
+    Content = """읽고, 생각하고, 씁니다.
 I read, think, and write.  
 
 **[Category]**
