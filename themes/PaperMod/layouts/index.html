@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<main id="main">
+  <section>
+    <h1 class="page-title">카테고리 목록</h1>
+    <ul class="terms-tags">
+      {{ range $key, $value := site.Taxonomies.categories }}
+        <li>
+          <a href="{{ "/categories/" | relLangURL }}{{ $key | urlize }}">
+            {{ $key }} <sup>{{ len $value }}</sup>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+</main>
+
+{{ end }}
