@@ -1,8 +1,8 @@
 :root {
     --gap: 24px;
-    --content-gap: 20px;
-    --nav-width: 1024px;
-    --main-width: 720px;
+    --content-gap: 24px;
+    --nav-width: 100%;
+    --main-width: 62.5%;
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 8px;
@@ -15,6 +15,12 @@
     --code-block-bg: rgb(28, 29, 33);
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
+}
+
+.footer {
+  max-width: var(--footer-width, 100%);
+  width: var(--footer-width, 100%);
+  margin: 0 auto;
 }
 
 .dark {

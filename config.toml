@@ -3,7 +3,9 @@ languageCode = "ko"
 title = "Snowball Associates"
 theme = "PaperMod"
 defaultContentLanguage = "ko"
-paginate = 10
+
+[pagination]
+ pagerSize = 10
 
 [build.environment]
 HUGO_VERSION = "0.147.6"
@@ -25,23 +27,25 @@ HUGO_VERSION = "0.147.6"
   disableSpecial1stPost = false
   math = true
   disableScrollToTop = false
-  mainSections = ["posts"]
+  mainSections = ["categories"]
 
 
-  homeInfoParams = { 
-    Title = "Theory in Practice", 
-    Content = """읽고, 생각하고, 씁니다.
-I read, think, and write.
+[params.homeInfoParams]
+ Content = """
+ <h3>PROFILE</h3>
 
-**[Category]**
-- Thoughts - 짧은 생각
-- Market Decision Log - 시장 판단 기록
-- Structural Commentary - 거시적 관점
-- Cognitive Core - 생각하는 방식
-- Output - 작업물 예시
-- Archive - 연도별 정렬 기록
-"""
-  }
+ -- Born & Raised in Korea 🇰🇷 and Educated in the US 🇺🇸
+ -- Studied: Political & Legal Theory, Economics, and Mathematics
+ -- Self-Taught: Business, Investing, and Data Science
+ -- Worked in: Politics, Education, Data Analytics, Consulting, Finance, and Construction
+ """
+
+
+[taxonomies]
+  category = "categories"
+  subcategory = "subcategories"
+  tag = "tags"
+  year = "year"
 
   socialIcons = [
     { name = "github", url = "https://github.com/ECK0320" }
@@ -50,23 +54,27 @@ I read, think, and write.
 [markup]
   [markup.goldmark.renderer]
     unsafe = true
+    hardWraps = true
+
   [markup.highlight]
     noClasses = false
+
   [markup.goldmark.parser]
     attribute = true
+
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
 [[menu.main]]
   identifier = "identity"
-  name = "I. Thoughts"
+  name = "I. Brief Thoughts"
   url = "/identity/"
   weight = 1
 
 [[menu.main]]
   identifier = "market"
-  name = "II. Market Decision Log"
+  name = "II. Market Decisions"
   url = "/market/"
   weight = 2
 
@@ -77,21 +85,19 @@ I read, think, and write.
   weight = 3
 
 [[menu.main]]
-  identifier = "cognitive"
-  name = "IV. Cognitive Core"
-  url = "/cognitive/"
+  identifier = "framework"
+  name = "IV. Cognitive Frameworks"
+  url = "/framework/"
   weight = 4
 
 [[menu.main]]
   identifier = "output"
-  name = "V. Output"
+  name = "V. Work Samples"
   url = "/output/"
   weight = 5
 
 [[menu.main]]
   identifier = "archive"
-  name = "VI. Archive Index & Timeline"
+  name = "VI. Archive Index"
   url = "/archive/"
   weight = 6
-
-
