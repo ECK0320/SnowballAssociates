@@ -4,8 +4,18 @@
     <title>Posts on Snowball Associates</title>
     <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Snowball Associates</description>
-    <generator>Hugo -- 0.147.9</generator>
-    <language>ko</language>
+    <generator>Hugo -- 0.148.0</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 May 2025 08:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Post</title>
+      <link>http://localhost:1313/posts/first/</link>
+      <pubDate>Thu, 29 May 2025 08:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/first/</guid>
+      <description>&lt;p&gt;This is your first post.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>This is your first post.</p>
+]]></content:encoded>
+    </item>
   </channel>
 </rss>

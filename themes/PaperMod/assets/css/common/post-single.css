@@ -347,9 +347,6 @@
     display: inline-flex;
 }
 
-.share-buttons a:not(:last-of-type) {
-    margin-inline-end: 12px;
-}
 
 h1:hover .anchor,
 h2:hover .anchor,

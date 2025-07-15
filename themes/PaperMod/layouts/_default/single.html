@@ -42,6 +42,33 @@
   </div>
   {{- end }}
 
+  <script>
+    function shareViaWebShare(url, title, description) {
+        if (navigator.share) {
+            // Web Share API 지원 브라우저
+            navigator.share({
+                title: title,
+                text: description, // 또는 title + '\n' + url 등으로 조합
+                url: url,
+            })
+            .then(() => console.log('콘텐츠 공유 성공!'))
+            .catch((error) => console.error('콘텐츠 공유 실패:', error));
+        } else {
+            // Web Share API 미지원 브라우저를 위한 대체 기능 (예: 클립보드 복사)
+            // 사용자에게 URL을 클립보드에 복사했다고 알림
+            navigator.clipboard.writeText(url)
+                .then(() => {
+                    alert('링크가 클립보드에 복사되었습니다: ' + url);
+                    console.log('링크 클립보드 복사 성공!');
+                })
+                .catch((err) => {
+                    console.error('클립보드 복사 실패:', err);
+                    alert('링크 복사에 실패했습니다. 직접 복사해주세요: ' + url);
+                });
+        }
+    }
+</script>
+
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">
@@ -61,5 +88,6 @@
   {{- partial "comments.html" . }}
   {{- end }}
 </article>
+
 
 {{- end }}{{/* end main */}}

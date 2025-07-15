@@ -1,4 +1,17 @@
 {{- /* Head custom content area start */ -}}
 {{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
 {{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
+
+
+{{ if or .Params.math .Site.Params.math }}
+{{ partial "math.html" . }}
+{{ end }}
+
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+
+<script>
+    // SDK를 초기화합니다. 사용할 앱의 JavaScript 키를 여기에 넣어주세요.
+    // 이 키는 카카오 개발자센터에서 발급받으실 수 있습니다.
+    Kakao.init('559b42a38d4094e8283e2d9b12b0e522'); // <-- 이 부분에 발급받은 JavaScript 키를 넣어주세요.
+</script>
 {{- /* Head custom content area end */ -}}

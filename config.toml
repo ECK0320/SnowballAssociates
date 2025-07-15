@@ -1,81 +1,106 @@
 baseURL = "https://www.snowballassociates.com/"
-languageCode = "ko"
+languageCode = "en"
 title = "Snowball Associates"
 theme = "PaperMod"
-defaultContentLanguage = "ko"
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+  [languages.ko]
+    languageName = "Korean"
+    weight = 2
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
 
 [pagination]
  pagerSize = 10
 
 [build.environment]
-HUGO_VERSION = "0.147.6"
+HUGO_VERSION = "0.148.0"
+
+[minify]
+disableXML = true
+minifyOutput = true
 
 [params]
+  env = "production"
+  title = "Snowball Associates"
+  description = "Snowball Associates - Personal & Professional Profile"
+  keywords = [ "Blog", "Portfolio", "PaperMod", "Business", "Data", "Finance" ]
   author = "ECK"
-  ShowReadingTime = true
+  DateFormat = "2006-01-02"
+  defaultTheme = "auto"
+  disableThemeToggle = false
   ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
-  ShowWordCount = true
-  ShowToc = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  showtoc = true
+  tocopen = false
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
   ShowFullTextInRSS = true
   ShowPageViews = true
-  comments = false
-  DateFormat = "2006-01-02"
-  hideSummary = false
-  disableSpecial1stPost = false
-  math = true
-  disableScrollToTop = false
   mainSections = ["categories"]
+  math = true
 
+
+[params.assets]
+favicon = "<link or abs url>"
+favicon16x16 = "<link or abs url>"
+favicon32x32 = "<link or abs url>"
+apple_touch_icon = "<link or abs url>"
+safari_pinned_tab = "<link or abs url>"
+
+[params.label]
+text = "Practice in Theory"
+icon = "/apple-touch-icon.png"
+iconHeight = 35
 
 [params.homeInfoParams]
- Content = """
- <h3>PROFILE</h3>
+Content = """
+"""
 
- -- Born & Raised in Korea 🇰🇷 and Educated in the US 🇺🇸
- -- Studied: Political & Legal Theory, Economics, and Mathematics
- -- Self-Taught: Business, Investing, and Data Science
- -- Worked in: Politics, Education, Data Analytics, Consulting, Finance, and Construction
- """
-
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/ECK0320"
 
 [taxonomies]
-  category = "categories"
-  subcategory = "subcategories"
-  tag = "tags"
-  year = "year"
-
-  socialIcons = [
-    { name = "github", url = "https://github.com/ECK0320" }
-  ]
+category = "categories"
+subcategory = "subcategories"
+tag = "tags"
+year = "year"
 
 [markup]
   [markup.goldmark.renderer]
     unsafe = true
     hardWraps = true
-
   [markup.highlight]
     noClasses = false
-
   [markup.goldmark.parser]
     attribute = true
-
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+# 메뉴 구성
 [[menu.main]]
   identifier = "identity"
-  name = "I. Brief Thoughts"
+  name = "I. Judgment Philosophy"
   url = "/identity/"
   weight = 1
 
 [[menu.main]]
   identifier = "market"
-  name = "II. Market Decisions"
-  url = "/market/"
+  name = "II. Market Decision"
+  url = "/decisionlog/"
   weight = 2
 
 [[menu.main]]
@@ -86,18 +111,18 @@ HUGO_VERSION = "0.147.6"
 
 [[menu.main]]
   identifier = "framework"
-  name = "IV. Cognitive Frameworks"
+  name = "IV. Cognitive Framework"
   url = "/framework/"
   weight = 4
 
 [[menu.main]]
   identifier = "output"
-  name = "V. Work Samples"
+  name = "V. Work"
   url = "/output/"
   weight = 5
 
 [[menu.main]]
   identifier = "archive"
-  name = "VI. Archive Index"
+  name = "Archive"
   url = "/archive/"
   weight = 6
