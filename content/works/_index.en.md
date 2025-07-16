@@ -14,16 +14,16 @@ Unlike conventional portfolios, this collection emphasizes the unfiltered execut
 
 - **By Work Type:**
     - *Essay*: Streamlined thoughts on a specific theme out of my various interests
-    - *Report*: Data-driven research documents (*e.g.*, investment reports, industry outlooks, policy impacts)
+    - *Report*: Data-driven research documents
     - *Paper*: In-depth analytical works with academic rigor
     - *Thesis*: Extended argumentation or integrative research projects
 
 ### Format Classification
 - **[A. Light-format][ref1]:**
-Curated selections of shorter, agile deliverables such as concise investment rationales and analytical snippets from broader engagements. These often originate as 'daily snacks'—brief, event-driven commentaries produced on a regular cadence—which are sometimes later compiled into 'thematic reports' that synthesize these shorter pieces on a particular subject. The “light-format” is designed for rapid insight extraction and effective, timely communication even when brevity or informality is required by context.
+Curated selections of shorter, agile deliverables such as concise investment rationales and analytical snippets from broader engagements. These often originate as 'daily snacks'—brief, event-driven commentaries produced on a regular cadence—which are sometimes later compiled into 'thematic essays' that synthesize these shorter pieces on a particular subject. The “light-format” is designed for rapid insight extraction and effective, timely communication even when brevity or informality is required by context.
 
 - **[B. Full-format][ref2]**:
-Comprehensive documents such as detailed equity research reports, industry analyses, and policy papers, demonstrating capacity for end-to-end analysis, valuation, and strategic presentation. These “full-format” works typically take the form of investment reports, academic papers, or theses—pieces that synthesize multiple strands of research and argumentation into a complete, standalone output, often stemming from deeper dives into subjects previously explored in the 'I. Identity' or 'III. Structural Commentary' sections, or concise 'Light-format' pieces.
+Comprehensive documents such as detailed equity research, industry outlooks, and policy impacts, demonstrating capacity for end-to-end analysis, assessment, and insight-oriented synthesis. These “full-format” works synthesize multiple strands of research and argumentation into a complete, standalone output, which typically take the form of comprehensive reports, academic papers, or theses, often stemming from deeper dives into subjects previously explored in the 'I. Identity' or 'III. Structural Commentary' sections, or concise 'Light-format' pieces.
 
 Each work serves as a demonstration of how thought is transformed into concrete deliverable—whether in the form of a deep-dive full-format report or a nimble light-format commentary. Each artifact is a reflection of my cognitive approach, bridging theory and practice to address real-world problems and strategic objectives.
 
