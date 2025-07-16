@@ -17,6 +17,10 @@
   overflow: visible !important;
 }
 
+#menu > li > a {
+  padding: 0.2em 0.5em !important;
+}
+
 #menu li.has-children {
   position: relative !important;
 }
@@ -75,6 +79,7 @@
   border: 0 !important;
 }
 
+#menu > li > a:hover,
 #menu ul.submenu li a:hover {
   background: var(--border) !important;
 }
@@ -88,9 +93,12 @@
   }
   #menu li.has-children > ul.submenu {
     position: static !important;
-    box-shadow: none !important;
-    background: inherit !important;
-    display: inline-block !important;
+    background: var(--theme) !important;
+    box-shadow: var(--dropdown-shadow) !important;
+  }
+
+  #menu li.has-children:hover > ul.submenu {
+  display: block !important;
   }
 }
 
