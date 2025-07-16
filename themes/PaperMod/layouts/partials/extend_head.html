@@ -79,6 +79,21 @@
   background: var(--border) !important;
 }
 
+@media (max-width: 768px) {
+  #menu {
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    white-space: nowrap !important;
+    position: static !important;
+  }
+  #menu li.has-children > ul.submenu {
+    position: static !important;
+    box-shadow: none !important;
+    background: inherit !important;
+    display: inline-block !important;
+  }
+}
+
 </style>
 
 
