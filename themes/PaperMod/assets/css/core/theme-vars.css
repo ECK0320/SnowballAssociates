@@ -1,8 +1,11 @@
 :root {
     --gap: 24px;
     --content-gap: 24px;
-    --nav-width: 100%;
-    --main-width: 62.5%;
+    --nav-width: 100%; /* 가용 너비 전부 사용 */
+    --max-width: 100%; /* 필요시 가용 너비 전부 사용 */
+    --main-width: 800px; /* 스크린 가독성 최적 (780~820px) */
+    --margin: 0 auto;      /* 좌우 중앙 정렬 */
+    --padding: 0 20px;     /* 좌우에 20px의 여백 추가 (모바일에서 중요) */
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 8px;

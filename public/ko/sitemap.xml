@@ -14,6 +14,30 @@
                 href="http://localhost:1313/ko/"
                 />
   </url><url>
+    <loc>http://localhost:1313/ko/actions/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/actions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://localhost:1313/ko/actions/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ko/asset_classes/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/asset_classes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://localhost:1313/ko/asset_classes/"
+                />
+  </url><url>
     <loc>http://localhost:1313/ko/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -26,16 +50,100 @@
                 href="http://localhost:1313/ko/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ko/identity/</loc>
+    <loc>http://localhost:1313/ko/cores/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/identity/"
+                href="http://localhost:1313/cores/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://localhost:1313/ko/identity/"
+                href="http://localhost:1313/ko/cores/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ko/event_types/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/event_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://localhost:1313/ko/event_types/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ko/judgment-philosophy/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/judgment-philosophy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://localhost:1313/ko/judgment-philosophy/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ko/judgments/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/judgments/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://localhost:1313/ko/judgments/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ko/project_types/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/project_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://localhost:1313/ko/project_types/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ko/recommendations/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/recommendations/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://localhost:1313/ko/recommendations/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ko/regions/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/regions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://localhost:1313/ko/regions/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ko/structures/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/structures/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://localhost:1313/ko/structures/"
                 />
   </url><url>
     <loc>http://localhost:1313/ko/subcategories/</loc>
@@ -62,28 +170,76 @@
                 href="http://localhost:1313/ko/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ko/identity/test/</loc>
+    <loc>http://localhost:1313/ko/thought_facets/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/identity/test/"
+                href="http://localhost:1313/thought_facets/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://localhost:1313/ko/identity/test/"
+                href="http://localhost:1313/ko/thought_facets/"
                 />
   </url><url>
-    <loc>http://localhost:1313/ko/year/</loc>
+    <loc>http://localhost:1313/ko/thoughts/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/year/"
+                href="http://localhost:1313/thoughts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="http://localhost:1313/ko/year/"
+                href="http://localhost:1313/ko/thoughts/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ko/trading_tools/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/trading_tools/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://localhost:1313/ko/trading_tools/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ko/judgment-philosophy/test/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/judgment-philosophy/test/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://localhost:1313/ko/judgment-philosophy/test/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ko/work_types/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/work_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://localhost:1313/ko/work_types/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/ko/years/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/years/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://localhost:1313/ko/years/"
                 />
   </url>
 </urlset>

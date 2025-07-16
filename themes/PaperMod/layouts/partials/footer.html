@@ -4,12 +4,10 @@
         {{- if site.Copyright }}
         <span>{{ site.Copyright | markdownify }}</span>
         {{- else }}
-        <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ "Snowball Associates" }}</a></span>
-        {{- print " | All content on this website is original independent work for informational purposes only."}}
+        <span>&copy; {{ now.Year }} <a href="mailto:snowballassociates@gmail.com">{{ "Snowball Associates" }}</a></span> | All content on this website is original independent work for informational purposes only.
         {{- end }}
         <br>
-        {{- print "DISCLAIMER: The author assumes no responsibility or liability for any errors, omissions, or any outcomes resulting from its use."}}
-        
+        <b>DISCLAIMER</b>: The author assumes no liability for any errors, omissions, or outcomes resulting from its use.
     {{- end }}
 
     {{- with site.Params.footer.text }}

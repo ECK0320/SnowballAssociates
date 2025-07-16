@@ -1,0 +1,1 @@
+**LIGHT-FORMAT**: Essay, Daily Snack, Thematic Report

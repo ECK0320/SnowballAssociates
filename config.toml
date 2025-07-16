@@ -48,35 +48,18 @@ minifyOutput = true
   hideSummary = false
   ShowFullTextInRSS = true
   ShowPageViews = true
-  mainSections = ["categories"]
+  mainSections = ["categories", "subcategories",
+  "framework",
+  "judgment-philosophy",
+  "market-decision-log",
+  "structural-commentary",
+  "works"
+  ]
   math = true
-
-
-[params.assets]
-favicon = "<link or abs url>"
-favicon16x16 = "<link or abs url>"
-favicon32x32 = "<link or abs url>"
-apple_touch_icon = "<link or abs url>"
-safari_pinned_tab = "<link or abs url>"
 
 [params.label]
 text = "Practice in Theory"
-icon = "/apple-touch-icon.png"
 iconHeight = 35
-
-[params.homeInfoParams]
-Content = """
-"""
-
-[[params.socialIcons]]
-name = "github"
-url = "https://github.com/ECK0320"
-
-[taxonomies]
-category = "categories"
-subcategory = "subcategories"
-tag = "tags"
-year = "year"
 
 [markup]
   [markup.goldmark.renderer]
@@ -87,42 +70,97 @@ year = "year"
   [markup.goldmark.parser]
     attribute = true
 
+# 대문자는 카테고리 별로 archetype에 고정 태그로 삽입, '...' 는 해당 글과 직접적 관련있을 때 추가
+[taxonomies]
+  category = "categories"
+  subcategory = "subcategories"
+  tag = "tags"
+  year = "years"
+
+  # 자세한 수치 데이터 없는 'INTUITION' or 제대로 리서치까지 한 'ANALYSIS'
+  thought_facet = "thought_facets"
+  
+  # 카테고리 특화 태그
+  # I. Identity: VALUE JUDGMENT philosophy ('right'/'wrong') in form of 'essay' and 'diary' (내가 가치판단 내리는 기준 또는 가치판단을 내린 사건)
+  thought = "thoughts"
+  judgment = "judgments"
+
+  # II. Market Decision: TRADING log on 'equity,' 'fixed income,' 'derivatives,' and 'crypto' (매매 일지)
+  asset_class = "asset_classes"
+  trading_tool = "trading_tools" # 정량 분석, 정성 분석, 기술적 분석
+  event_type = "event_types" # 사건명
+  action = "actions" # 'buy,' 'hold,' 'sell'
+  recommendation = "recommendations" # 특정 종목/섹터 'buy'/'hold'/'sell' 추천시
+
+  # III. Structural Commentary: TREND commentary on 'politics,' 'society,' 'culture,' and 'economy.' (직관 위주의 거시적 흐름 판단; 데이터 분석까지 할 경우 V. Works 로)
+  structure = "structures"
+  region = "regions"
+
+  # IV. Cognitive Core: COGNITIVIE FRAMEWORK based on 'humanities,' 'STEM,' and 'business.' (공부 일지)
+  core = "cores"
+
+  # V. Works: REPORT on 'stock analysis,' 'industry analysis,' and 'policy analysis' in 'light-format' or 'full-format'
+  project_type = "project_types" # 기업분석, 산업분석, 정책분석
+  work_type = "work_types" # 리포트, 페이퍼, 논문
+
+  # V-i. Light-Format: 'daily snack,' (짧은 주기로 작성하는 사건 별 간단한 코멘트) 주기적으로 daily snack 모은 'thematic report' (한 사건에 대한 해당 코멘트들을 한데 엮어서 작성하는 짧은 리포트)
+  # V-ii. Full-Format: 'report,' 'paper,' 'thesis' (I. Identity, III. Structural Commentary, V-i. Light-Format 에서 다룬 주제 중 제대로 연구해서 쓸 가치가 있는 글은 academic paper/thesis, 금융시장과 관련된 기업/산업/정책분석은 report)
+  
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
 # 메뉴 구성
 [[menu.main]]
   identifier = "identity"
-  name = "I. Judgment Philosophy"
-  url = "/identity/"
+  name = "I. Identity"
+  url = "/judgment-philosophy/"
   weight = 1
 
 [[menu.main]]
   identifier = "market"
   name = "II. Market Decision"
-  url = "/decisionlog/"
+  url = "/market-decision-log/"
   weight = 2
 
 [[menu.main]]
   identifier = "commentary"
   name = "III. Structural Commentary"
-  url = "/commentary/"
+  url = "/structural-commentary/"
   weight = 3
 
 [[menu.main]]
   identifier = "framework"
-  name = "IV. Cognitive Framework"
+  name = "IV. Cognitive Core"
   url = "/framework/"
   weight = 4
 
 [[menu.main]]
   identifier = "output"
-  name = "V. Work"
-  url = "/output/"
+  name = "V. Works"
+  url = "/works/"
   weight = 5
+
+[[menu.main]]
+  parent = "output"
+  name = "Light-Format"
+  url = "/works/light-format/"
+  weight = 5.1
+
+[[menu.main]]
+  parent = "output"
+  name = "Full-Format"
+  url = "/works/full-format/"
+  weight = 5.2
 
 [[menu.main]]
   identifier = "archive"
   name = "Archive"
   url = "/archive/"
-  weight = 6
+  weight = 10
+
+[[menu.main]]
+ identifier = "search"
+ name = "Search"
+ url = "/search/"
+ weight = 20

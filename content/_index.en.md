@@ -9,6 +9,7 @@
         - Honors Thesis: *The Republic of Citizens* (Political-Legal Theory, *Magna Cum Laude*)
 - **Experience**
     - Politics, Education, Data Analytics, Consulting, Finance, and Construction
+        - Published an [introductory investing guidebook][ref1] for retail investors who started investing during the post-pandemic retail trading frenzy 🇰🇷
         - Construction: Manual labor in cleaning, civil engineering, and welding 🇰🇷
         - Cleantech Fund PE: Deal sourcing, closing, and post-merger integration due diligence 🇰🇷
         - Real Estate AM: Closing of residential and commercial real estate deals, and strategic planning for the Korea office at the enterprise level 🇰🇷
@@ -19,3 +20,5 @@
         - The National Assembly: Parliamentary audit work for the Environment & Labor, Education & Culture, and Construction & Transportation Standing Committees 🇰🇷
 - **Interests**
     - natural law, positive law, normative philosophy, monetary theory, behavioral economics, marketing, valuation, data science, classical piano, Taekwondo, Kendo, Boxing, Muay Thai, Iaido (Hokushin Ittoryu), Aikido (Aikikai)
+
+[ref1]: https://www.google.com/books/edition/%EC%A3%BC%EC%8B%9D%ED%88%AC%EC%9E%90_%EC%A7%84%EC%A7%9C_%EA%B3%B5%EB%B6%80/R_HczgEACAAJ

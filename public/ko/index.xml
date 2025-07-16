@@ -9,9 +9,9 @@
     <atom:link href="http://localhost:1313/ko/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome</title>
-      <link>http://localhost:1313/ko/identity/test/</link>
+      <link>http://localhost:1313/ko/judgment-philosophy/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ko/identity/test/</guid>
+      <guid>http://localhost:1313/ko/judgment-philosophy/test/</guid>
       <description>&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 읽고, 생각하고, 씁니다.&lt;br&gt;
 I read, think, and write.&lt;/p&gt;
