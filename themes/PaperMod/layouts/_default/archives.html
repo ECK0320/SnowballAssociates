@@ -43,19 +43,21 @@
     </a>
     <sup class="archive-count">&nbsp;{{ len .Pages }}</sup>
   </h2>
+  
   {{- range .Pages.GroupByDate "January" }}
-  <div class="archive-month">
-    <h3 class="archive-month-header" id="{{ $year }}-{{ .Key }}">
-      <a class="archive-header-link" href="#{{ $year }}-{{ .Key }}">
-        {{- .Key -}}
-      </a>
-      <sup class="archive-count">&nbsp;{{ len .Pages }}</sup>
-    </h3>
-    <div class="archive-posts">
-      {{- range .Pages }}
+    <div class="archive-month" style="display:flex; align-items:center;">
+      <h3 class="archive-month-header" style="min-width:80px; margin:0 1em 0 0;">
+        <a class="archive-header-link" href="#{{ $year }}-{{ .Key }}">
+          {{- .Key -}}
+        </a>
+        <sup class="archive-count">&nbsp;{{ len .Pages }}</sup>
+      </h3>
+    <div class="archive-posts" style="display:flex; flex-direction:column;">
+
+    {{- range .Pages }}
       {{- if eq .Kind "page" }}
-      <div class="archive-entry">
-        <h3 class="archive-entry-title entry-hint-parent">
+      <div class="archive-entry" style="display:flex; align-items:center; gap:1.5em; margin-bottom:0.6em;">
+        <h3 class="archive-entry-title entry-hint-parent" style="margin:0 1em 0 0; font-size:1.1em;">
           {{- .Title | markdownify }}
           {{- if .Draft }}
           <span class="entry-hint" title="Draft">
@@ -66,12 +68,36 @@
           </span>
           {{- end }}
         </h3>
-        <div class="archive-meta">
-          {{- partial "post_meta.html" . -}}
-        </div>
+        
+        {{ with .Params.categories }}
+        <span class="archive-category">
+          [{{ delimit . ", " }}]
+        </span>
+        {{ end }}
+
+        {{ with .Params.subcategories }}
+        <span class="archive-subcategory">
+          &gt; {{ delimit . ", " }}
+        </span>
+        {{ end }}
+
+        <div class="archive-meta" style="margin:0; color:#888; font-size:0.98em;">
+          {{/* '제목 - [카테고리] > 서브카테고리' 순으로 출력 */}}
+            {{ .Date.Format "2006-01-02" }}
+            
+          {{/* actions 또는 recommendations 중 값 있는 것만 출력 (우선순위: actions → recommendations) */}}
+            {{ with .Params.actions }}
+            · [Action: {{ delimit . ", " }}]
+            {{ else }}
+            {{ with .Params.recommendations }}
+            · [Recommendation: {{ delimit . ", " }}]
+            {{ end }}
+            {{ end }}
+            </div>
         <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
       </div>
       {{- end }}
+
       {{- end }}
     </div>
   </div>

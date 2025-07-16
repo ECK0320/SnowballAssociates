@@ -71,16 +71,16 @@ text = "Practice in Theory"
   tag = "tags"
   year = "years"
 
-  # 자세한 수치 데이터 없는 'INTUITION' or 제대로 리서치까지 한 'ANALYSIS'
+  # 자세한 수치 데이터 없는 'INTUITION' or 제대로 리서치까지 한 'ANALYSIS' (Full-Format + thematic report)
   thought_facet = "thought_facets"
   
   # 카테고리 특화 태그
   # I. Identity: VALUE JUDGMENT philosophy ('right'/'wrong') in form of 'essay' and 'diary' (내가 가치판단 내리는 기준 또는 가치판단을 내린 사건)
-  thought = "thoughts"
-  judgment = "judgments"
+  thought = "thoughts" # 일기장(Diary) 서브카테고리에 적는 생각들; 옳고그름 있을 수도 없을 수도 있음
+  judgment = "judgments" # 에세이(Passing Thoughts) 서브카테고리에 적는 小考
 
   # II. Market Decision: TRADING log on 'equity,' 'fixed income,' 'derivatives,' and 'crypto' (매매 일지)
-  asset_class = "asset_classes"
+  asset_class = "asset_classes" # 매매 자산 종류
   trading_tool = "trading_tools" # 정량 분석, 정성 분석, 기술적 분석
   event_type = "event_types" # 사건명
   action = "actions" # 'buy,' 'hold,' 'sell'
@@ -105,23 +105,45 @@ text = "Practice in Theory"
   home = ["HTML", "RSS", "JSON"]
 
 # 메뉴 구성
+# identifier: config.toml 내부에서만 사용
+# name은 웹사이트에 전시되는 섹션명
+# url은 도메인 뒤에 붙는 주소 겸 포스팅 프론트매터 내부 categories: []에 일치
+# 서브카테고리는 identifier 필요 없음
+# md 파일은 로컬드라이브의 /content/ 아무 곳에나 넣어놔도 무관 (포스팅 시 프론트매터의 카테고리대로 분류되어 업로드됨)
+# 기록 관리 용도로 /content/ 내부에 카테고리별로 디렉토리 생성: /content/DB/카테고리
+
 [[menu.main]]
-  identifier = "identity"
+  identifier = "judgment-philosophy"
   name = "I. Identity"
   url = "/judgment-philosophy/"
   weight = 1
 
 [[menu.main]]
-  identifier = "market"
+  parent = "judgment-philosophy"
+  name = "Passing Thoughts"
+  url = "/passing-thoughts/"
+  weight = 1.1
+
+# .ko.md 파일로 생성하면 자동으로 ~/ko/diary/로 넘어가므로, 폴더명은 /diary/만 설정해도 충분
+[[menu.main]]
+  parent = "judgment-philosophy"
+  name = "Diary (KR)"
+  url = "/diary/"
+  weight = 1.2
+
+[[menu.main]]
+  identifier = "market-decision-log"
   name = "II. Market Decision"
   url = "/market-decision-log/"
   weight = 2
 
+
 [[menu.main]]
-  identifier = "commentary"
+  identifier = "structural-commentary"
   name = "III. Structural Commentary"
   url = "/structural-commentary/"
   weight = 3
+
 
 [[menu.main]]
   identifier = "framework"
@@ -129,30 +151,33 @@ text = "Practice in Theory"
   url = "/framework/"
   weight = 4
 
+
 [[menu.main]]
-  identifier = "output"
+  identifier = "works"
   name = "V. Works"
   url = "/works/"
   weight = 5
   hasChildren = true
 
 [[menu.main]]
-  parent = "output"
+  parent = "works"
   name = "Light-Format"
   url = "/works/light-format/"
   weight = 5.1
 
 [[menu.main]]
-  parent = "output"
+  parent = "works"
   name = "Full-Format"
   url = "/works/full-format/"
   weight = 5.2
+
 
 [[menu.main]]
   identifier = "archive"
   name = "Archive"
   url = "/archive/"
   weight = 10
+
 
 [[menu.main]]
  identifier = "search"

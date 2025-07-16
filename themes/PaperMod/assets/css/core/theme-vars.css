@@ -3,7 +3,7 @@
     --content-gap: 24px;
     --nav-width: 100%; /* 가용 너비 전부 사용 */
     --max-width: 100%; /* 필요시 가용 너비 전부 사용 */
-    --main-width: 800px; /* 스크린 가독성 최적 (780~820px) */
+    --main-width: 1024px; /* 스크린 가독성 최적 (780~820px) */
     --margin: 0 auto;      /* 좌우 중앙 정렬 */
     --padding: 0 20px;     /* 좌우에 20px의 여백 추가 (모바일에서 중요) */
     --header-height: 60px;
@@ -21,19 +21,28 @@
     --dropdown-shadow: 0 2px 8px rgba(0,0,0,0.08);    
 }
 
-.page-header h1, .post-title { /* 제목 크기 줄이기; 기본은 2.5~3rem 근처, 2rem은 적당히 줄어듦 */
+/* 제목 크기 줄이기; 기본은 2.5~3rem 근처, 2rem은 적당히 줄어듦 */
+.page-header h1, .post-title {
   font-size: 2rem !important; /* 2rem 유지 */
   font-weight: 700 !important; /* 굵기 유지 */
   line-height: 1.3 !important; /* 줄 간격을 1.2 ~ 1.5 사이로 조정하여 응집력 있게 */
   /* !important는 불필요할 경우 제거 */
 }
 
-/* 부제목 스타일 (예: .post-description) */
+/* 부제목 스타일 */
 .post-description {
   font-size: 1.5rem !important; /* 1.5rem 유지 */
   font-weight: 500 !important; /* 450 대신 500 (medium) 또는 400 (normal) 사용 권장 */
   line-height: 1.6 !important; /* 줄 간격을 1.4 ~ 1.6 사이로 조정하여 가독성 높임 */
   /* !important는 불필요할 경우 제거 */
+}
+
+
+/* 본문 정렬 및 줄바꿈 */
+.post-content {
+    text-align: justify;
+    overflow-wrap: break-word;    /* 영어/긴단어 줄바꿈 */
+    text-align-last: left; /* 마지막 줄은 왼쪽으로만 정렬 */
 }
 
 .footer {
