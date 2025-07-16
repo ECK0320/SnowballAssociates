@@ -1,3 +1,6 @@
+---
+title: "What I've Done"
+---
 This section offers a direct demonstration of judgment translated into tangible output. Moving beyond theoretical frameworks and strategic commentaries, here you will find the actual documents and artifacts born from my analytical process—real-world expressions of thought, designed for actionable impact.
 
 Unlike conventional portfolios, this collection emphasizes the unfiltered execution of ideas, showcasing how insights are distilled into concrete deliverables. It embraces a spectrum of formats, from comprehensive full-length reports to concise, high-impact commentaries, reflecting adaptability in communicating complex analyses.

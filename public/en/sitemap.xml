@@ -15,9 +15,6 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/market-decision-log/</loc>
-    <lastmod>2025-07-15T09:00:00+09:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/nasdaq-100/</loc>
     <lastmod>2025-07-15T09:00:00+09:00</lastmod>
   </url><url>
@@ -40,18 +37,8 @@
     <loc>http://localhost:1313/market-decision-log/decision1/</loc>
     <lastmod>2025-07-15T09:00:00+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/judgment-philosophy/</loc>
-    <lastmod>2025-07-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="http://localhost:1313/ko/judgment-philosophy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/judgment-philosophy/"
-                />
+    <loc>http://localhost:1313/market-decision-log/</loc>
+    <lastmod>2025-07-15T09:00:00+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/judgment-philosophy/test/</loc>
     <lastmod>2025-07-10T00:00:00+00:00</lastmod>
@@ -66,13 +53,26 @@
                 href="http://localhost:1313/judgment-philosophy/test/"
                 />
   </url><url>
-    <loc>http://localhost:1313/works/</loc>
-    <lastmod>2025-03-10T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/judgment-philosophy/</loc>
+    <lastmod>2025-07-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="http://localhost:1313/ko/judgment-philosophy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/judgment-philosophy/"
+                />
   </url><url>
     <loc>http://localhost:1313/works/light-format/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/works/light-format/lftest1/</loc>
+    <lastmod>2025-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/works/</loc>
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/works/full-format/</loc>
@@ -254,6 +254,8 @@
                 hreflang="en"
                 href="http://localhost:1313/trading_tools/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/structural-commentary/</loc>
   </url><url>
     <loc>http://localhost:1313/work_types/</loc>
     <xhtml:link
