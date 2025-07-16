@@ -48,18 +48,15 @@ minifyOutput = true
   hideSummary = false
   ShowFullTextInRSS = true
   ShowPageViews = true
-  mainSections = ["categories", "subcategories",
-  "framework",
-  "judgment-philosophy",
-  "market-decision-log",
-  "structural-commentary",
-  "works"
-  ]
+  mainSections = [] # 랜딩페이지만 노출되게끔
+  ShowAllPagesInArchive = true # 아카이브에는 모든 포스팅 다 뜨게끔
   math = true
+
+[params.menu]
+  mainMenuDepth = 2
 
 [params.label]
 text = "Practice in Theory"
-iconHeight = 35
 
 [markup]
   [markup.goldmark.renderer]
@@ -140,6 +137,7 @@ iconHeight = 35
   name = "V. Works"
   url = "/works/"
   weight = 5
+  hasChildren = true
 
 [[menu.main]]
   parent = "output"

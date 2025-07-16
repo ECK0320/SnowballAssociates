@@ -3,15 +3,84 @@
 {{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
 
 
+{{- /* 수학 수식 MathJax 렌더링 */ -}}
 {{ if or .Params.math .Site.Params.math }}
 {{ partial "math.html" . }}
 {{ end }}
 
-<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 
-<script>
-    // SDK를 초기화합니다. 사용할 앱의 JavaScript 키를 여기에 넣어주세요.
-    // 이 키는 카카오 개발자센터에서 발급받으실 수 있습니다.
-    Kakao.init('559b42a38d4094e8283e2d9b12b0e522'); // <-- 이 부분에 발급받은 JavaScript 키를 넣어주세요.
-</script>
+{{- /* themes/PaperMod/layouts/partials/header.html 의 <ul id="menu"> </ul> 에서 수정한 서브카테고리 메뉴 드롭다운 활성화 및 UX 적용 */ -}}
+
+<style>
+#menu {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+#menu li.has-children {
+  position: relative !important;
+}
+
+#menu li.has-children > ul.submenu {
+  display: none !important;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  min-width: 0 !important;
+  width: auto !important;
+  background: var(--theme) !important;
+  z-index: 99999 !important;
+  box-shadow: var(--dropdown-shadow) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  border: 0 !important;
+  line-height: 1 !important;
+}
+
+#menu li.has-children:hover > ul.submenu {
+  display: block !important;
+}
+
+#menu ul.submenu {
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none !important;
+}
+
+#menu ul.submenu li {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+  line-height: 1 !important;
+}
+
+#menu ul.submenu li a {
+  display: block !important;
+  padding: 0.5em 1em !important;
+  margin: 0 !important;
+  color: var(--primary) !important;
+  text-decoration: none !important;
+  border: 0 !important;
+  line-height: 1 !important;
+  font-size: 0.9em !important;
+}
+
+#menu ul.submenu li a span {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+}
+
+#menu ul.submenu li a:hover {
+  background: var(--border) !important;
+}
+
+</style>
+
+
+
 {{- /* Head custom content area end */ -}}
