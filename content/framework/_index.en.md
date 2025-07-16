@@ -1,6 +1,8 @@
 ---
-title: "How I Think"
+title: "Cognitive Framework"
 ---
+
+*<h3> How I Think </h3>*
 
 My cognitive framework, which underpins my judgment philosophy, has been profoundly shaped by an unconventional academic trajectory and extensive real-world adversities. This journey has not merely presented challenges but has served as a crucible, forging a distinct methodology for approaching complex problems.
 

@@ -21,6 +21,21 @@
     --dropdown-shadow: 0 2px 8px rgba(0,0,0,0.08);    
 }
 
+.page-header h1, .post-title { /* 제목 크기 줄이기; 기본은 2.5~3rem 근처, 2rem은 적당히 줄어듦 */
+  font-size: 2rem !important; /* 2rem 유지 */
+  font-weight: 700 !important; /* 굵기 유지 */
+  line-height: 1.3 !important; /* 줄 간격을 1.2 ~ 1.5 사이로 조정하여 응집력 있게 */
+  /* !important는 불필요할 경우 제거 */
+}
+
+/* 부제목 스타일 (예: .post-description) */
+.post-description {
+  font-size: 1.5rem !important; /* 1.5rem 유지 */
+  font-weight: 500 !important; /* 450 대신 500 (medium) 또는 400 (normal) 사용 권장 */
+  line-height: 1.6 !important; /* 줄 간격을 1.4 ~ 1.6 사이로 조정하여 가독성 높임 */
+  /* !important는 불필요할 경우 제거 */
+}
+
 .footer {
   max-width: var(--footer-width, 100%);
   width: var(--footer-width, 100%);

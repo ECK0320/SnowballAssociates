@@ -52,9 +52,6 @@ minifyOutput = true
   ShowAllPagesInArchive = true # 아카이브에는 모든 포스팅 다 뜨게끔
   math = true
 
-[params.menu]
-  mainMenuDepth = 2
-
 [params.label]
 text = "Practice in Theory"
 
