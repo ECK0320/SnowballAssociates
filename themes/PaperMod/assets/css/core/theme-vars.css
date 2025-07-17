@@ -3,7 +3,7 @@
     --content-gap: 24px;
     --nav-width: 100%; /* 가용 너비 전부 사용 */
     --max-width: 100%; /* 필요시 가용 너비 전부 사용 */
-    --main-width: 1024px; /* 스크린 가독성 최적 (780~820px) */
+    --main-width: 800px; /* 스크린 가독성 최적 (780~820px) */
     --margin: 0 auto;      /* 좌우 중앙 정렬 */
     --padding: 0 20px;     /* 좌우에 20px의 여백 추가 (모바일에서 중요) */
     --header-height: 60px;
@@ -41,8 +41,15 @@
 /* 본문 정렬 및 줄바꿈 */
 .post-content {
     text-align: justify;
-    overflow-wrap: break-word;    /* 영어/긴단어 줄바꿈 */
     text-align-last: left; /* 마지막 줄은 왼쪽으로만 정렬 */
+}
+
+/* 모바일 화면 (예: 너비 768px 이하)에서만 적용 */
+@media (max-width: 768px) {
+    .post-content {
+        text-align: left;        /* 모바일에서는 왼쪽 정렬 */
+        text-align-last: unset;  /* 필요시 초기화 */
+    }
 }
 
 .footer {

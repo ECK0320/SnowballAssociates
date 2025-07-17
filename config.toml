@@ -2,13 +2,17 @@ baseURL = "https://www.snowballassociates.com/"
 languageCode = "en"
 title = "Snowball Associates"
 theme = "PaperMod"
+defaultContentLanguage = "en"
+
 [languages]
   [languages.en]
     languageName = "English"
     weight = 1
+
   [languages.ko]
     languageName = "Korean"
     weight = 2
+
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
@@ -48,7 +52,7 @@ minifyOutput = true
   hideSummary = false
   ShowFullTextInRSS = true
   ShowPageViews = true
-  mainSections = [] # 랜딩페이지만 노출되게끔
+  mainSections = [""] # 랜딩페이지만 노출되게끔
   ShowAllPagesInArchive = true # 아카이브에는 모든 포스팅 다 뜨게끔
   math = true
 
@@ -75,9 +79,9 @@ text = "Practice in Theory"
   thought_facet = "thought_facets"
   
   # 카테고리 특화 태그
-  # I. Identity: VALUE JUDGMENT philosophy ('right'/'wrong') in form of 'essay' and 'diary' (내가 가치판단 내리는 기준 또는 가치판단을 내린 사건)
+  # I. Identity: VALUE JUDGMENT philosophy ('right'/'wrong') in form of 'diary' and 'essay' (내가 가치판단 내리는 기준 또는 가치판단을 내린 사건)
   thought = "thoughts" # 일기장(Diary) 서브카테고리에 적는 생각들; 옳고그름 있을 수도 없을 수도 있음
-  judgment = "judgments" # 에세이(Passing Thoughts) 서브카테고리에 적는 小考
+  judgment = "judgments" # 에세이(Passing Thoughts) 서브카테고리에 적는 小考; 옳고그름 있음
 
   # II. Market Decision: TRADING log on 'equity,' 'fixed income,' 'derivatives,' and 'crypto' (매매 일지)
   asset_class = "asset_classes" # 매매 자산 종류
@@ -111,76 +115,133 @@ text = "Practice in Theory"
 # 서브카테고리는 identifier 필요 없음
 # md 파일은 로컬드라이브의 /content/ 아무 곳에나 넣어놔도 무관 (포스팅 시 프론트매터의 카테고리대로 분류되어 업로드됨)
 # 기록 관리 용도로 /content/ 내부에 카테고리별로 디렉토리 생성: /content/DB/카테고리
+# .ko.md 파일로 생성하면 자동으로 /ko/category 로 인덱싱되므로, 폴더명은 /url/만 설정해도 충분
 
+
+# 가치 판단 (철학 에세이)
 [[menu.main]]
   identifier = "judgment-philosophy"
   name = "I. Identity"
   url = "/judgment-philosophy/"
-  weight = 1
+  weight = 10
 
 [[menu.main]]
   parent = "judgment-philosophy"
-  name = "Passing Thoughts"
-  url = "/passing-thoughts/"
-  weight = 1.1
+  name = "Passing Thoughts" # 小考
+  url = "/judgment-philosophy/passing-thoughts/"
+  weight = 11
 
-# .ko.md 파일로 생성하면 자동으로 ~/ko/diary/로 넘어가므로, 폴더명은 /diary/만 설정해도 충분
 [[menu.main]]
   parent = "judgment-philosophy"
-  name = "Diary (KR)"
-  url = "/diary/"
-  weight = 1.2
+  name = "Diary (KO)" # 일기
+  url = "/judgment-philosophy/diary/"
+  weight = 12
 
+
+# 시장 판단
 [[menu.main]]
   identifier = "market-decision-log"
   name = "II. Market Decision"
   url = "/market-decision-log/"
-  weight = 2
+  weight = 20
+
+[[menu.main]]
+  parent = "market-decision-log"
+  name = "Transactions" # 매매 일지
+  url = "/market-decision-log/transactions/"
+  weight = 21
+
+[[menu.main]]
+  parent = "market-decision-log"
+  name = "Market Calls" # 종목/산업 추천
+  url = "/market-decision-log/marketcalls/"
+  weight = 22
 
 
+# 구조 판단 (직관 위주; 데이터 분석까지 더하면 V. Works 로)
 [[menu.main]]
   identifier = "structural-commentary"
   name = "III. Structural Commentary"
   url = "/structural-commentary/"
-  weight = 3
+  weight = 30
+
+[[menu.main]]
+  parent = "structural-commentary" # Macro-level Trends: Politics & Economy (거시적 흐름: 정치 및 경제)
+  name = "Macro Trends" # 국가 정책이나 거시 경제 상황이 특정 산업, 거시적 시장, 또는 사회 전체의 구조에 미치는 영향. 국가, 국제 사회, 정부 정책, 거시 경제, 산업 구조 등 '집단'이나 '시스템' 차원의 큰 흐름과 구조적 변화 관찰.
+  url = "/structural-commentary/politics-economy"
+  weight = 31
+
+[[menu.main]]
+  parent = "structural-commentary" # Micro-level Trends: Society & Culture (미시적 흐름: 사회 및 문화) 
+  name = "Micro Trends" # 정치/경제가 '개인의 삶과 심리, 일상생활, 소비 행태'에 미치는 영향. 개인, 소규모 집단, 공동체, 그리고 이들의 행동 양식, 가치관, 라이프스타일, 심리, 문화적 트렌드 등. 개인의 경험과 사회/문화적 현상 관찰.
+  url = "/structural-commentary/society-culture"
+  weight = 32
 
 
+# 사고 구조 (인문학, 이공학, 경영학, 금융학 위주 학습 일지 + 시험공부 일지)
 [[menu.main]]
   identifier = "framework"
   name = "IV. Cognitive Core"
   url = "/framework/"
-  weight = 4
+  weight = 40
+
+[[menu.main]]
+  parent = "framework"
+  name = "Humanities"
+  url = "/framework/humanities/"
+  weight = 41
+
+[[menu.main]]
+  parent = "framework"
+  name = "STEM"
+  url = "/framework/STEM/"
+  weight = 42
+
+[[menu.main]]
+  parent = "framework"
+  name = "Business"
+  url = "/framework/business/"
+  weight = 43
+
+[[menu.main]]
+  parent = "framework"
+  name = "exams"
+  url = "/framework/exams/"
+  weight = 44
 
 
+# 작업물
 [[menu.main]]
   identifier = "works"
   name = "V. Works"
   url = "/works/"
-  weight = 5
+  weight = 50
   hasChildren = true
 
 [[menu.main]]
   parent = "works"
-  name = "Light-Format"
+  name = "Light-Format" # 뉴스클리핑 & 브리프코멘트 + 데일리스낵 모은 thematic report
   url = "/works/light-format/"
-  weight = 5.1
+  weight = 51
 
 [[menu.main]]
   parent = "works"
-  name = "Full-Format"
+  name = "Full-Format" # 종목 보고서, 산업 보고서, 페이퍼, 논문
   url = "/works/full-format/"
-  weight = 5.2
+  weight = 52
 
 
+# 전체 보기
 [[menu.main]]
   identifier = "archive"
   name = "Archive"
   url = "/archive/"
-  weight = 10
+  weight = 100
 
 
+# 검색
 [[menu.main]]
  identifier = "search"
  name = "Search"
  url = "/search/"
- weight = 20
+ weight = 200

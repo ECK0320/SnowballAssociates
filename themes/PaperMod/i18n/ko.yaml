@@ -21,7 +21,7 @@
   translation: "번역"
 
 - id: home
-  translation: "홈"
+  translation: "메인"
 
 - id: edit_post
   translation: "편집"

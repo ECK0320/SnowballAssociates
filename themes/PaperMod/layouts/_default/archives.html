@@ -28,7 +28,6 @@
 </header>
 
 {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-
 {{- if site.Params.ShowAllPagesInArchive }}
 {{- $pages = site.RegularPages }}
 {{- end }}
@@ -85,12 +84,12 @@
           {{/* '제목 - [카테고리] > 서브카테고리' 순으로 출력 */}}
             {{ .Date.Format "2006-01-02" }}
             
-          {{/* actions 또는 recommendations 중 값 있는 것만 출력 (우선순위: actions → recommendations) */}}
+          {{/* actions 또는 calls 중 값 있는 것만 출력 (우선순위: actions → recommendations) */}}
             {{ with .Params.actions }}
-            · [Action: {{ delimit . ", " }}]
+            · [{{ delimit . ", " }}]
             {{ else }}
-            {{ with .Params.recommendations }}
-            · [Recommendation: {{ delimit . ", " }}]
+            {{ with .Params.calls }}
+            · [{{ delimit . ", " }}]
             {{ end }}
             {{ end }}
             </div>
