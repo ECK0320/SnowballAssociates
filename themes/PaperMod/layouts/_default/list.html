@@ -104,7 +104,7 @@
   </h2>
   
   <!-- Month 설정 -->
-  {{- range $monthGroup := $yearGroup.Pages.GroupByDate "Jan" }}
+  {{- range $monthGroup := $yearGroup.Pages.GroupByDate "January" }}
   <h3 style="margin-top:0.3m; margin-bottom:0.2em; color:#bbb;">
     {{ $monthGroup.Key }}
     <sup style="color:#ccc;">{{ len $monthGroup.Pages }}</sup>
@@ -115,29 +115,22 @@
 <div style="margin-bottom:0.2em;">
 
   <!-- 제목 -->
-  <a href="{{ $page.Permalink }}"><i>{{ $page.Title }}</i></a>
-
-  <!-- 카테고리 -->
-  {{- with $page.Params.categories }}
-  <span style="color:#888; margin-left:80px;">[{{ delimit . ", " }}]</span>
-  {{- end }}
-
-  <!-- 서브카테고리 -->
-  {{- with $page.Params.subcategories }}
-  <span style="color:#888;"> &gt; {{ delimit . ", " }}</span>
-  {{- end }}
+  <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>
 
   <!-- transactions, 없으면 recommendations -->
   {{- with $page.Params.transactions }}
-  <span style="color:#777;"> : [{{ delimit . ", " }}]</span>
+  <span style="color:#777; margin-left: 10px;"> [Position: {{ delimit . ", " }}]</span>
   {{- else }}
   {{- with $page.Params.recommendations }}
-  <span style="color:#777;"> : [{{ delimit . ", " }}]</span>
+  <span style="color:#777; margin-left: 10px;"> [Market Call: {{ delimit . ", " }}]</span>
+  {{- with $page.Params.work_types }}
+  <span style="color:#777; margin-left:20px;">Type: [{{ delimit . ", " }}]</span>
+  {{- end }}
   {{- end }}
   {{- end }}
 
   <!-- 날짜 -->
-  <span style="color: var(--primary); margin-left:20px;">{{ $page.Date.Format "2006-01-02" }}</span>
+  <time datetime="{{ $page.Date.Format " 2006-01-02T15:04:05Z07:00" }}" style="color: #aaa; margin-left:20px;">{{$page.Date.Format "2006-01-02" }}</time>
 </div>
 {{- end }}
 {{- end }}

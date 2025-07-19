@@ -18,9 +18,9 @@ The purpose of this section is to make records so that I can later track what I 
 
 - **[Diary][ref2]**: What I did & Whom I met; written 100% in Korean as it is solely personal usage. You can try AI translation if interested, but it will most likely to fail to convey the original meaning due to the innate intricacy of the Korean language (*e.g.*, countless metaphors aligned with four dialects and internet memes; the grammar structure seemingly very flexible yet requiring extreme rigor, such that subject and object are very frequently omitted in a sentence while even a single letter or punctuation mark can completely invert the original meaning). <br><br>
 
-- **[Passing Thoughts][ref3]**: Brief judgment calls; written mostly in Korean, due to the intrinsic linguistic constraints of the English language in fully capturing subtle implications, nuances, or connotations inherent in abstract concepts such as philosophical ideas and emotions. For example:
-    - justice *vs.* righteousness ~ 정의(正義), díkē, aequitas *vs.* 공의(公義), dikaiosynē, iustitia
-    - the people *vs.* nationals *vs.* citizens ~ 인민(人民), anthrōpoi[^1] *vs.* 국민(國民), dēmos *vs.* 시민(市民), politēs
+- **[Passing Thoughts][ref3]**: Brief judgment calls; written mostly in Korean, due to the intrinsic linguistic constraints of the English language in fully capturing subtle implications, nuances, or connotations inherent in abstract concepts. For example:
+    - justice *vs.* righteousness ~ 정의(正義); *díkē*; *aequitas* *vs.* 공의(公義); *dikaiosynē*; *iustitia*
+    - the people *vs.* nationals *vs.* citizens ~ 인민(人民); *anthrōpoi*[^1] *vs.* 국민(國民); *dēmos* *vs.* 시민(市民); *politēs*
 
 Noteworthy thoughts will be developed into rather formal writings in academic English and posted in other sections, so no worries!
 
