@@ -1,7 +1,6 @@
 ---
 author: "ECK" # 필요하다면 추가
-date: {{ .Date }}
-lastmod: {{ .Date }}  # 이 줄을 추가합니다
+#date: {{ .Date }}
 categories: ["framework"]
 subcategories: ["letters"]
 title: ""

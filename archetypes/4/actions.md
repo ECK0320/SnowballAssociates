@@ -1,10 +1,9 @@
 ---
 author: "ECK" # 필요하다면 추가
-date: {{ .Date }}
-lastmod: {{ .Date }}  # 이 줄을 추가합니다
+#date: {{ .Date }}
 categories: ["market_decision_log"]
 subcategories: ["actions"]
-title: "{{ replace .Name "-" " " | title }}"
+title: ""
 # description: "" 필요하다면 추가
 transactions: [""] # 매매 내역: LONG, SHORT, CLOSE
 asset_classes: [""] # 매매 자산 종류: stock, fixed income, currency, commodities, cypto, futures, options, ETF

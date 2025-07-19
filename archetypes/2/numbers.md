@@ -1,10 +1,9 @@
 ---
 author: "ECK" # 필요하다면 추가
-date: {{ .Date }}
-lastmod: {{ .Date }}  # 이 줄을 추가합니다
+#date: {{ .Date }}
 categories: ["framework"]
 subcategories: ["numbers"]
-title: "{{ replace .Name "-" " " | title }}"
+title: ""
 # description: "" 필요하다면 추가
 studies: ["STEM"] # 해당 분야 선택 (이공학)
 tools: ["Python", "R", "SQL"] # 사용된 프로그래밍 언어 & 패키지

@@ -38,77 +38,113 @@
 </div>
 {{- end }}
 
-{{- $pages := union .RegularPages .Sections }}
-{{- $pages = where $pages "Permalink" "ne" .Permalink }}
-
+{{- /* $pages 변수 할당 로직 시작: 하드코딩된 특정 서브카테고리 처리 */}}
+{{- $pagesToShow := .RegularPages }} {{- /* 기본값: 현재 섹션의 직접 하위 페이지만 설정 (오류 방지) */}}
 
 {{- if .IsHome }}
-{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
-{{- end }}
+    {{- /* 홈 페이지일 경우: site.Params.mainSections에 정의된 타입의 모든 글을 가져옴 */}}
+    {{- $pagesToShow = where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{- $pagesToShow = where $pagesToShow "Params.hiddenInHomeList" "!=" "true" }}
+{{- else if eq .Kind "term" }}
+    {{- /* Taxonomy Term 페이지일 경우 (예: /categories/works/, /subcategories/light_format/) */}}
+    {{- /* 해당 Term에 할당된 모든 글을 가져옴 */}}
+    {{- $pagesToShow = .Data.Pages }}
+{{- else if eq .Kind "section" }}
+    {{- /* 일반 섹션 페이지일 경우 (특정 서브카테고리 섹션 처리) */}}
 
-{{- $paginator := .Paginate $pages }}
+    {{- /* 현재 섹션의 상대 경로를 기준으로 $targetTerm을 찾음 */}}
+    {{- $targetTerm := "" }}
+    {{- if eq .RelPermalink "/framework/applications/" }}{{ $targetTerm = "applications" }}
+    {{- else if eq .RelPermalink "/framework/letters/" }}{{ $targetTerm = "letters" }}
+    {{- else if eq .RelPermalink "/framework/numbers/" }}{{ $targetTerm = "numbers" }}
+    {{- else if eq .RelPermalink "/framework/qualifications/" }}{{ $targetTerm = "qualifications" }}
+    {{- else if eq .RelPermalink "/judgment_philosophy/diary/" }}{{ $targetTerm = "diary" }}
+    {{- else if eq .RelPermalink "/judgment_philosophy/passing_thoughts/" }}{{ $targetTerm = "passing_thoughts" }}
+    {{- else if eq .RelPermalink "/market_decision_log/actions/" }}{{ $targetTerm = "actions" }}
+    {{- else if eq .RelPermalink "/market_decision_log/calls/" }}{{ $targetTerm = "calls" }}
+    {{- else if eq .RelPermalink "/structural_commentary/macro_trends/" }}{{ $targetTerm = "macro_trends" }}
+    {{- else if eq .RelPermalink "/structural_commentary/micro_trends/" }}{{ $targetTerm = "micro_trends" }}
+    {{- else if eq .RelPermalink "/works/full_format/" }}{{ $targetTerm = "full_format" }}
+    {{- else if eq .RelPermalink "/works/light_format/" }}{{ $targetTerm = "light_format" }}
+    {{- end }}
+
+    {{- if $targetTerm }}
+        {{- /* $targetTerm이 정의되면 해당 subcategories Taxonomy Term의 페이지를 가져옴 */}}
+        {{- $taxonomyTermPages := (index site.Taxonomies.subcategories $targetTerm) }}
+        {{- if $taxonomyTermPages }}
+            {{- $pagesToShow = $taxonomyTermPages.Pages }}
+        {{- else }}
+            {{- $pagesToShow = site.RegularPages.Limit 0 }} {{- /* 빈 Page Collection을 생성하는 올바른 방법 */}}
+        {{- end }}
+    {{- else }}
+        {{- /* $targetTerm이 정의되지 않은 상위 섹션 등은 기존처럼 물리적 하위 글을 불러옴 */}}
+        {{- $pagesToShow = union .RegularPages .Sections }}
+        {{- $pagesToShow = where $pagesToShow "Permalink" "ne" .Permalink }}
+    {{- end }}
+{{- end }}
+{{- /* $pages 변수 할당 로직 끝 */}}
+
+
+{{- $paginator := .Paginate $pagesToShow }} {{- /* $pages 대신 $pagesToShow 사용 */}}
 
 {{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
 {{- partial "home_info.html" . }}
 {{- end }}
 
-<!-- 홈, 최상위 카테고리(루트)에서는 글 목록 숨기고, 서브카테고리 등에서는 보여줌 -->
 {{- $topSections := slice "/judgment_philosophy/" "/market_decision_log/" "/structural_commentary/" "/framework/" "/works/" }}
 {{- $isTopSection := in $topSections .RelPermalink }}
 
 {{- if not (or .IsHome $isTopSection) }}
 
-{{- $term := .Data.Term }}
+{{- range $yearGroup := ($pagesToShow.GroupByDate "2006") }}
+  {{- if and (ne $yearGroup.Key "0001") (ne $yearGroup.Key "") }}
+  <h2 style="margin-top:2em; margin-bottom:0.4em;">
+    {{ $yearGroup.Key }}
+    <sup style="color:#ccc; margin:0.2em;">{{ len $yearGroup.Pages }}</sup>
+  </h2>
+  
+  <!-- Month 설정 -->
+  {{- range $monthGroup := $yearGroup.Pages.GroupByDate "Jan" }}
+  <h3 style="margin-top:0.3m; margin-bottom:0.2em; color:#bbb;">
+    {{ $monthGroup.Key }}
+    <sup style="color:#ccc;">{{ len $monthGroup.Pages }}</sup>
+  </h3>
 
-<!-- 택소노미 목록 연도별 & 월별 카테고라이즈: 제목, 카테고리, 서브카테고리, 택소노미, 날짜 출력 -->
-{{- range $yearGroup := ($pages.GroupByDate "2006") }}
-<h2 style="margin-top:2em; margin-bottom:0.4em;">
-{{ $yearGroup.Key }}
-<sup style="color:#ccc; margin:0.2em;">{{ len $yearGroup.Pages }}</sup>
-</h2>
-
-{{- range $monthGroup := $yearGroup.Pages.GroupByDate "January" }}
-<h3 style="margin-top:0.3em; margin-bottom:0.2em; color:#888;">
-{{ $monthGroup.Key }}
-<sup style="color:#ccc;">{{ len $monthGroup.Pages }}</sup>
-</h3>
+<!-- 글 출력 시작 -->
 {{- range $page := $monthGroup.Pages }}
 <div style="margin-bottom:0.2em;">
 
-<!-- 제목 -->
-<a href="{{ $page.Permalink }}"><b>{{ $page.Title }}</b></a>
+  <!-- 제목 -->
+  <a href="{{ $page.Permalink }}"><i>{{ $page.Title }}</i></a>
 
-<!-- 카테고리 -->
-{{- with $page.Params.categories }}
-<span style="color:#888; margin-left:30px;">[{{ delimit . ", " }}]</span>
-{{- end }}
+  <!-- 카테고리 -->
+  {{- with $page.Params.categories }}
+  <span style="color:#888; margin-left:80px;">[{{ delimit . ", " }}]</span>
+  {{- end }}
 
-<!-- 서브카테고리 -->
-{{- with $page.Params.subcategories }}
-<span style="color:#888;"> &gt; {{ delimit . ", " }}</span>
-{{- end }}
+  <!-- 서브카테고리 -->
+  {{- with $page.Params.subcategories }}
+  <span style="color:#888;"> &gt; {{ delimit . ", " }}</span>
+  {{- end }}
 
-<!-- transactions, 없으면 recommendations -->
-{{- with $page.Params.transactions }}
-<span style="color:#777;"> : [{{ delimit . ", " }}]</span>
-{{- else }}
-{{- with $page.Params.recommendations }}
-<span style="color:#777;"> : [{{ delimit . ", " }}]</span>
-{{- end }}
-{{- end }}
+  <!-- transactions, 없으면 recommendations -->
+  {{- with $page.Params.transactions }}
+  <span style="color:#777;"> : [{{ delimit . ", " }}]</span>
+  {{- else }}
+  {{- with $page.Params.recommendations }}
+  <span style="color:#777;"> : [{{ delimit . ", " }}]</span>
+  {{- end }}
+  {{- end }}
 
-<!-- 날짜 -->
-<span style="color: var(--primary); margin-left:20px;">{{ $page.Date.Format "2006-01-02" }}</span>
+  <!-- 날짜 -->
+  <span style="color: var(--primary); margin-left:20px;">{{ $page.Date.Format "2006-01-02" }}</span>
 </div>
 {{- end }}
 {{- end }}
 {{- end }}
 
 {{- end }}
-
-<!-- 끝 -->
-
+{{- end }}
 
 {{- end }}{{/* end profileMode */}}
 

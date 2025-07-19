@@ -1,7 +1,6 @@
 ---
 author: "ECK" # 필요하다면 추가
-date: {{ .Date }}
-lastmod: {{ .Date }}  # 이 줄을 추가합니다
+#date: {{ .Date }}
 categories: ["works"]
 subcategories: ["light_format"]
 title: ""
@@ -12,5 +11,4 @@ thought_facets: ["Intuition", "Analysis"] # 직관 or 분석
 tools: ["Python", "R", "SQL"] # 사용된 프로그래밍 언어 & 패키지
 skills: [""] # 발행 전 AI 돌려서 quantitative/qualitative/technical/academic skillset 추출하기
 tags: [""] # 작성 동기/시발점: Identity, Cognitive Core, Structural Commentary, Market Decision, Light Format, YouTube, books, dramas, movies, news, periodicals, scholarly journals
-draft: true
 ---

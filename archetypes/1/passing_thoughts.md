@@ -1,7 +1,6 @@
 ---
 author: "ECK" # 필요하다면 추가
-date: {{ .Date }}
-lastmod: {{ .Date }}  # 이 줄을 추가합니다
+#date: {{ .Date }}
 categories: ["judgment_philosophy"]
 subcategories: ["passing_thoughts"]
 title: ""
@@ -13,5 +12,4 @@ hierarchy_types: ["Spirit", "Soul", "Flesh"] # 격률의 영혼육 분류도 참
 class_types: "" # 격률의 격 분류도 참조 (C1~C9)
 skills: [""] # 발행 전 AI 돌려서 quantitative/qualitative/technical/academic skillset 추출하기
 tags: ["value judgment"] # 가치 판단, reflection essay
-draft: true
 ---

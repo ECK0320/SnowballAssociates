@@ -52,6 +52,7 @@ minifyOutput = true
   hideSummary = false
   ShowFullTextInRSS = true
   ShowPageViews = true
+  mainSections = ["works", "judgment_philosophy", "market_decision_log", "structural_commentary", "framework", "DB"] # <--- 여기에 'DB' 추가
   ShowAllPagesInArchive = true # 아카이브에는 모든 포스팅 다 뜨게끔
   math = true
 
@@ -102,7 +103,7 @@ text = "Rationalist ∫ {Romanticism ∪ Kapitalismus}: Theory in Practice"
   asset_class = "asset_classes" # 매매 자산 종류
   trading_tool = "trading_tools" # 정량 분석, 정성 분석, 기술적 분석
   event_type = "event_types" # 사건명
-  transaction = "transactions" # 'buy,' 'hold,' 'sell'
+  action = "actions" # 'buy,' 'hold,' 'sell'
   recommendation = "recommendations" # 특정 종목/섹터 'buy'/'hold'/'sell' 추천시
 
   # V. Works: REPORT on 'stock analysis,' 'industry analysis,' and 'policy analysis' in 'light_format' or 'full_format'
