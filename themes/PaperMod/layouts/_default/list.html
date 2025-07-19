@@ -39,6 +39,8 @@
 {{- end }}
 
 {{- $pages := union .RegularPages .Sections }}
+{{- $pages = where $pages "Permalink" "ne" .Permalink }}
+
 
 {{- if .IsHome }}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
@@ -51,77 +53,62 @@
 {{- partial "home_info.html" . }}
 {{- end }}
 
-{{- /* 카테고리 랜딩페이지에 글 목록 뜨지 않게끔 처리. 'term ... end' 구문과 'class ... end' 구문을 wrap. */ -}}
-{{- if not (eq .Kind "section") }}
+<!-- 홈, 최상위 카테고리(루트)에서는 글 목록 숨기고, 서브카테고리 등에서는 보여줌 -->
+{{- $topSections := slice "/judgment_philosophy/" "/market_decision_log/" "/structural_commentary/" "/framework/" "/works/" }}
+{{- $isTopSection := in $topSections .RelPermalink }}
 
-  {{- $term := .Data.Term }}
-  {{- range $index, $page := $paginator.Pages }}
-  
-  {{- $class := "post-entry" }}
-  
-  {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
-  {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
-  {{- $class = "first-entry" }}
-  {{- else if $term }}
-  {{- $class = "post-entry tag-entry" }}
-  {{- end }}
-  
-  <article class="{{ $class }}">
-    {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
-    {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">
-        {{- .Title }}
-        {{- if .Draft }}
-        <span class="entry-hint" title="Draft">
-          <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-            <path
-              d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-          </svg>
-        </span>
-        {{- end }}
-      </h2>
-    </header>
-    {{- if (ne (.Param "hideSummary") true) }}
-    <div class="entry-content">
-      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-    </div>
-    {{- end }}
-    {{- if not (.Param "hideMeta") }}
-    <footer class="entry-footer">
-      {{- partial "post_meta.html" . -}}
-    </footer>
-    {{- end }}
-    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-  </article>
-  {{- end }}
+{{- if not (or .IsHome $isTopSection) }}
+
+{{- $term := .Data.Term }}
+
+<!-- 택소노미 목록 연도별 & 월별 카테고라이즈: 제목, 카테고리, 서브카테고리, 택소노미, 날짜 출력 -->
+{{- range $yearGroup := ($pages.GroupByDate "2006") }}
+<h2 style="margin-top:2em; margin-bottom:0.4em;">
+{{ $yearGroup.Key }}
+<sup style="color:#ccc; margin:0.2em;">{{ len $yearGroup.Pages }}</sup>
+</h2>
+
+{{- range $monthGroup := $yearGroup.Pages.GroupByDate "January" }}
+<h3 style="margin-top:0.3em; margin-bottom:0.2em; color:#888;">
+{{ $monthGroup.Key }}
+<sup style="color:#ccc;">{{ len $monthGroup.Pages }}</sup>
+</h3>
+{{- range $page := $monthGroup.Pages }}
+<div style="margin-bottom:0.2em;">
+
+<!-- 제목 -->
+<a href="{{ $page.Permalink }}"><b>{{ $page.Title }}</b></a>
+
+<!-- 카테고리 -->
+{{- with $page.Params.categories }}
+<span style="color:#888; margin-left:30px;">[{{ delimit . ", " }}]</span>
+{{- end }}
+
+<!-- 서브카테고리 -->
+{{- with $page.Params.subcategories }}
+<span style="color:#888;"> &gt; {{ delimit . ", " }}</span>
+{{- end }}
+
+<!-- transactions, 없으면 recommendations -->
+{{- with $page.Params.transactions }}
+<span style="color:#777;"> : [{{ delimit . ", " }}]</span>
+{{- else }}
+{{- with $page.Params.recommendations }}
+<span style="color:#777;"> : [{{ delimit . ", " }}]</span>
+{{- end }}
+{{- end }}
+
+<!-- 날짜 -->
+<span style="color: var(--primary); margin-left:20px;">{{ $page.Date.Format "2006-01-02" }}</span>
+</div>
+{{- end }}
+{{- end }}
+{{- end }}
 
 {{- end }}
 
+<!-- 끝 -->
 
-
-{{- if gt $paginator.TotalPages 1 }}
-<footer class="page-footer">
-  <nav class="pagination">
-    {{- if $paginator.HasPrev }}
-    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
-      «&nbsp;{{ i18n "prev_page" }}&nbsp;
-      {{- if (.Param "ShowPageNums") }}
-      {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages }}
-      {{- end }}
-    </a>
-    {{- end }}
-    {{- if $paginator.HasNext }}
-    <a class="next" href="{{ $paginator.Next.URL | absURL }}">
-      {{- i18n "next_page" }}&nbsp;
-      {{- if (.Param "ShowPageNums") }}
-      {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages }}
-      {{- end }}&nbsp;»
-    </a>
-    {{- end }}
-  </nav>
-</footer>
-{{- end }}
 
 {{- end }}{{/* end profileMode */}}
 

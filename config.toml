@@ -52,12 +52,14 @@ minifyOutput = true
   hideSummary = false
   ShowFullTextInRSS = true
   ShowPageViews = true
-  mainSections = [""] # 랜딩페이지만 노출되게끔
   ShowAllPagesInArchive = true # 아카이브에는 모든 포스팅 다 뜨게끔
   math = true
 
 [params.label]
-text = "Practice in Theory"
+text = "Rationalist ∫ {Romanticism ∪ Kapitalismus}: Theory in Practice"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 [markup]
   [markup.goldmark.renderer]
@@ -74,8 +76,13 @@ text = "Practice in Theory"
   subcategory = "subcategories"
   tag = "tags"
   year = "years"
+  tool = "tools" # 사용한 프로그래밍 언어
+  skill = "skills" # 사용된 기술 (업로드 전 AI 돌려서 태그 뽑아내기)
+  class = "class_types" # 존재귀속론 분류상 C1~C9
+  hierarchy = "hierarchy_types" # 영, 혼, 육
+  rating = "ratings" # 책, 드라마, 영화, 음식료 평점
 
-  # 자세한 수치 데이터 없는 'INTUITION' or 제대로 리서치까지 한 'ANALYSIS' (Full-Format + thematic report)
+  # 자세한 수치 데이터 없는 'INTUITION' or 제대로 리서치까지 한 'ANALYSIS' (thematic essay or Full_Format)
   thought_facet = "thought_facets"
   
   # 카테고리 특화 태그
@@ -83,30 +90,29 @@ text = "Practice in Theory"
   thought = "thoughts" # 일기장(Diary) 서브카테고리에 적는 생각들; 옳고그름 있을 수도 없을 수도 있음
   judgment = "judgments" # 에세이(Passing Thoughts) 서브카테고리에 적는 小考; 옳고그름 있음
 
-  # II. Market Decision: TRADING log on 'equity,' 'fixed income,' 'derivatives,' and 'crypto' (매매 일지)
-  asset_class = "asset_classes" # 매매 자산 종류
-  trading_tool = "trading_tools" # 정량 분석, 정성 분석, 기술적 분석
-  event_type = "event_types" # 사건명
-  action = "actions" # 'buy,' 'hold,' 'sell'
-  recommendation = "recommendations" # 특정 종목/섹터 'buy'/'hold'/'sell' 추천시
+  # II. Cognitive Core: COGNITIVIE FRAMEWORK based on 'humanities,' 'STEM,' and 'business.' (공부 일지)
+  study = "studies"
+  qualification = "qualifications" # 공부한 자격증 또는 시험 종류
 
   # III. Structural Commentary: TREND commentary on 'politics,' 'society,' 'culture,' and 'economy.' (직관 위주의 거시적 흐름 판단; 데이터 분석까지 할 경우 V. Works 로)
   structure = "structures"
   region = "regions"
+  
+  # IV. Market Decision: TRADING log on 'equity,' 'fixed income,' 'futures,' 'options,' and 'crypto' (매매 일지)
+  asset_class = "asset_classes" # 매매 자산 종류
+  trading_tool = "trading_tools" # 정량 분석, 정성 분석, 기술적 분석
+  event_type = "event_types" # 사건명
+  transaction = "transactions" # 'buy,' 'hold,' 'sell'
+  recommendation = "recommendations" # 특정 종목/섹터 'buy'/'hold'/'sell' 추천시
 
-  # IV. Cognitive Core: COGNITIVIE FRAMEWORK based on 'humanities,' 'STEM,' and 'business.' (공부 일지)
-  core = "cores"
-
-  # V. Works: REPORT on 'stock analysis,' 'industry analysis,' and 'policy analysis' in 'light-format' or 'full-format'
-  project_type = "project_types" # 기업분석, 산업분석, 정책분석
+  # V. Works: REPORT on 'stock analysis,' 'industry analysis,' and 'policy analysis' in 'light_format' or 'full_format'
+  theme = "themes" # 글감 주제
   work_type = "work_types" # 리포트, 페이퍼, 논문
 
-  # V-i. Light-Format: 'daily snack,' (짧은 주기로 작성하는 사건 별 간단한 코멘트) 주기적으로 daily snack 모은 'thematic report' (한 사건에 대한 해당 코멘트들을 한데 엮어서 작성하는 짧은 리포트)
-  # V-ii. Full-Format: 'report,' 'paper,' 'thesis' (I. Identity, III. Structural Commentary, V-i. Light-Format 에서 다룬 주제 중 제대로 연구해서 쓸 가치가 있는 글은 academic paper/thesis, 금융시장과 관련된 기업/산업/정책분석은 report)
+  # V_i. Light_Format: 'daily snack,' (짧은 주기로 작성하는 사건 별 간단한 코멘트) 주기적으로 daily snack 모은 'thematic report' (한 사건에 대한 해당 코멘트들을 한데 엮어서 작성하는 짧은 리포트)
+  # V_ii. Full_Format: 'report,' 'paper,' 'thesis' (I. Identity, III. Structural Commentary, V_i. Light_Format 에서 다룬 주제 중 제대로 연구해서 쓸 가치가 있는 글은 academic paper/thesis, 금융시장과 관련된 기업/산업/정책분석은 report)
   
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
 
 # 메뉴 구성
 # identifier: config.toml 내부에서만 사용
@@ -120,94 +126,94 @@ text = "Practice in Theory"
 
 # 가치 판단 (철학 에세이)
 [[menu.main]]
-  identifier = "judgment-philosophy"
+  identifier = "judgment_philosophy"
   name = "I. Identity"
-  url = "/judgment-philosophy/"
+  url = "/judgment_philosophy/"
   weight = 10
 
 [[menu.main]]
-  parent = "judgment-philosophy"
+  parent = "judgment_philosophy"
   name = "Passing Thoughts" # 小考
-  url = "/judgment-philosophy/passing-thoughts/"
+  url = "/judgment_philosophy/passing_thoughts/"
   weight = 11
 
 [[menu.main]]
-  parent = "judgment-philosophy"
-  name = "Diary (KO)" # 일기
-  url = "/judgment-philosophy/diary/"
+  parent = "judgment_philosophy"
+  name = "Diary 🇰🇷" # 일기
+  url = "/judgment_philosophy/diary/"
   weight = 12
-
-
-# 시장 판단
-[[menu.main]]
-  identifier = "market-decision-log"
-  name = "II. Market Decision"
-  url = "/market-decision-log/"
-  weight = 20
-
-[[menu.main]]
-  parent = "market-decision-log"
-  name = "Transactions" # 매매 일지
-  url = "/market-decision-log/transactions/"
-  weight = 21
-
-[[menu.main]]
-  parent = "market-decision-log"
-  name = "Market Calls" # 종목/산업 추천
-  url = "/market-decision-log/marketcalls/"
-  weight = 22
-
-
-# 구조 판단 (직관 위주; 데이터 분석까지 더하면 V. Works 로)
-[[menu.main]]
-  identifier = "structural-commentary"
-  name = "III. Structural Commentary"
-  url = "/structural-commentary/"
-  weight = 30
-
-[[menu.main]]
-  parent = "structural-commentary" # Macro-level Trends: Politics & Economy (거시적 흐름: 정치 및 경제)
-  name = "Macro Trends" # 국가 정책이나 거시 경제 상황이 특정 산업, 거시적 시장, 또는 사회 전체의 구조에 미치는 영향. 국가, 국제 사회, 정부 정책, 거시 경제, 산업 구조 등 '집단'이나 '시스템' 차원의 큰 흐름과 구조적 변화 관찰.
-  url = "/structural-commentary/politics-economy"
-  weight = 31
-
-[[menu.main]]
-  parent = "structural-commentary" # Micro-level Trends: Society & Culture (미시적 흐름: 사회 및 문화) 
-  name = "Micro Trends" # 정치/경제가 '개인의 삶과 심리, 일상생활, 소비 행태'에 미치는 영향. 개인, 소규모 집단, 공동체, 그리고 이들의 행동 양식, 가치관, 라이프스타일, 심리, 문화적 트렌드 등. 개인의 경험과 사회/문화적 현상 관찰.
-  url = "/structural-commentary/society-culture"
-  weight = 32
 
 
 # 사고 구조 (인문학, 이공학, 경영학, 금융학 위주 학습 일지 + 시험공부 일지)
 [[menu.main]]
   identifier = "framework"
-  name = "IV. Cognitive Core"
+  name = "II. Cognitive Core"
   url = "/framework/"
+  weight = 20
+
+[[menu.main]]
+  parent = "framework"
+  name = "Letters"
+  url = "/framework/letters/"
+  weight = 21
+
+[[menu.main]]
+  parent = "framework"
+  name = "Numbers"
+  url = "/framework/numbers/"
+  weight = 22
+
+[[menu.main]]
+  parent = "framework"
+  name = "Applications"
+  url = "/framework/applications/"
+  weight = 23
+
+[[menu.main]]
+  parent = "framework"
+  name = "Qualifications"
+  url = "/framework/qualifications/"
+  weight = 24
+
+
+# 구조 판단 (직관 위주; 데이터 분석까지 더하면 V. Works 로)
+[[menu.main]]
+  identifier = "structural_commentary"
+  name = "III. Structural Commentary"
+  url = "/structural_commentary/"
+  weight = 30
+
+[[menu.main]]
+  parent = "structural_commentary" # Macro_level Trends: Politics & Economy (거시적 흐름: 정치 및 경제)
+  name = "Macro Trends" # 국가 정책이나 거시 경제 상황이 특정 산업, 거시적 시장, 또는 사회 전체의 구조에 미치는 영향. 국가, 국제 사회, 정부 정책, 거시 경제, 산업 구조 등 '집단'이나 '시스템' 차원의 큰 흐름과 구조적 변화 관찰.
+  url = "/structural_commentary/macro_trends/"
+  weight = 31
+
+[[menu.main]]
+  parent = "structural_commentary" # Micro_level Trends: Society & Culture (미시적 흐름: 사회 및 문화) 
+  name = "Micro Trends" # 정치/경제가 '개인의 삶과 심리, 일상생활, 소비 행태'에 미치는 영향. 개인, 소규모 집단, 공동체, 그리고 이들의 행동 양식, 가치관, 라이프스타일, 심리, 문화적 트렌드 등. 개인의 경험과 사회/문화적 현상 관찰.
+  url = "/structural_commentary/micro_trends/"
+  weight = 32
+
+
+# 시장 판단
+[[menu.main]]
+  identifier = "market_decision_log"
+  name = "IV. Market Decision"
+  url = "/market_decision_log/"
   weight = 40
 
 [[menu.main]]
-  parent = "framework"
-  name = "Humanities"
-  url = "/framework/humanities/"
+  parent = "market_decision_log"
+  name = "Transactions" # 매매 일지
+  url = "/market_decision_log/actions/"
   weight = 41
 
 [[menu.main]]
-  parent = "framework"
-  name = "STEM"
-  url = "/framework/STEM/"
+  parent = "market_decision_log"
+  name = "Market Calls" # 종목/산업 추천
+  url = "/market_decision_log/calls/"
   weight = 42
-
-[[menu.main]]
-  parent = "framework"
-  name = "Business"
-  url = "/framework/business/"
-  weight = 43
-
-[[menu.main]]
-  parent = "framework"
-  name = "exams"
-  url = "/framework/exams/"
-  weight = 44
 
 
 # 작업물
@@ -220,14 +226,14 @@ text = "Practice in Theory"
 
 [[menu.main]]
   parent = "works"
-  name = "Light-Format" # 뉴스클리핑 & 브리프코멘트 + 데일리스낵 모은 thematic report
-  url = "/works/light-format/"
+  name = "Light Format" # 뉴스클리핑 & 브리프코멘트 + 데일리스낵 모은 thematic report
+  url = "/works/light_format/"
   weight = 51
 
 [[menu.main]]
   parent = "works"
-  name = "Full-Format" # 종목 보고서, 산업 보고서, 페이퍼, 논문
-  url = "/works/full-format/"
+  name = "Full Format" # 종목 보고서, 산업 보고서, 페이퍼, 논문
+  url = "/works/full_format/"
   weight = 52
 
 

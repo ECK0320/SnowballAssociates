@@ -22,32 +22,47 @@
   {{ with .Params.author }} ... {{ end }}
 {{ end }}
 
+<!--
+  config.toml의 설명과 매칭하여 taxonomy 라벨/값을 자동 출력
+  (글의 front matter에서 값이 있으면 출력)
+-->
+  
 {{- with ($scratch.Get "meta") }}
 {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+  <span style="margin-left:0.5em;">&nbsp;</span>
 {{- end -}}
 
-{{/* 
-  config.toml의 설명과 매칭하여 taxonomy 라벨/값을 자동 출력
-  (글의 front matter에서 값이 있으면만 출력)
-*/}}
 {{ $taxonomies := dict
-    "actions"         "Action"
+    "thought_facets"  "Thought Facet"
+    "ratings"         "Rating"
     "asset_classes"   "Asset Class"
+    "transactions"    "Transaction"
+    "recommendations" "Recommendation"
     "event_types"     "Event Type"
     "trading_tools"   "Trading Tool"
-    "calls"           "Market Call"
     "regions"         "Region"
     "thought_facets"  "Thought Facet"
     "thoughts"        "Thought"
     "judgments"       "Judgment"
     "structures"      "Structure"
-    "cores"           "Core"
-    "project_types"   "Project Type"
+    "studies"         "Study"
+    "qualifications"  "Qualification"
+    "themes"          "Theme"
     "work_types"      "Work Type"
+    "tools"           "Tool"
+    "skills"          "Skills"
+    "class_types"     "Class"
+    "hierarchy_types" "Hierarhcy"
 }}
 {{ range $k, $v := $taxonomies }}
   {{ $val := index $.Params $k }}
   {{ with $val }}
     [{{ $v }}: {{ delimit $val ", " }}]
   {{ end }}
+
+<!-- 끝 -->
+
+
+
+
 {{ end }}

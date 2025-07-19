@@ -20,11 +20,21 @@
 
 .logo {
     flex-wrap: inherit;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'EB Garamond', Times, serif;
+}
+
+@media (max-width: 768px) {
+  .logo { 
+    font-size: 1.5rem; line-height: 1.25;
+ }
 }
 
 .logo a {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: inherit;    /* 상속(안 겹치면 생략 가능) */
+    color: inherit;
+    text-decoration: none;
 }
 
 .logo a img, .logo a svg {
