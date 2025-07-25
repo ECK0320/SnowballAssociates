@@ -15,4 +15,4 @@ title: "시장 판단"
 [ref1]: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=285116786
 [ref2]: https://snowballassociates.com/ko/works/
 [ref3]: https://snowballassociates.com/ko/market-decision-log/transactions/
-[ref4]: https://snowballassociates.com/ko/market-decision-log/market-calls/
+[ref4]: https://snowballassociates.com/ko/market-decision-log/calls/
