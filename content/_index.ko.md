@@ -1,10 +1,12 @@
-![Main Intro](/images/main.png)
-
---- 서산대사(西山大師), 「답설야중거(穿雪野中去)」 
-
 <br><br>
 
 <span style="font-size: 1.2em;">읽고多讀, 생각하고多想, 씁니다多作.</span>
+
+<br><br>
+
+![Main Intro](/images/main.png)
+
+--- 서산대사(西山大師), 「답설야중거(穿雪野中去)」 
 
 ***
 
