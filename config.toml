@@ -55,6 +55,7 @@ minifyOutput = true
   mainSections = ["works", "judgment_philosophy", "market_decision_log", "structural_commentary", "framework", "DB"] # <--- 여기에 'DB' 추가
   ShowAllPagesInArchive = true # 아카이브에는 모든 포스팅 다 뜨게끔
   math = true
+  enableGitInfo = true
 
 [params.label]
 text = "Rationalist ∫ {Romanticism ∪ Kapitalismus}: Theory in Practice"
@@ -118,7 +119,7 @@ text = "Rationalist ∫ {Romanticism ∪ Kapitalismus}: Theory in Practice"
 # 메뉴 구성
 # identifier: config.toml 내부에서만 사용
 # name은 웹사이트에 전시되는 섹션명
-# url은 도메인 뒤에 붙는 주소 겸 포스팅 프론트매터 내부 categories: []에 일치
+# url은 도메인 뒤에 붙는 주소. /content/ 의 카테고리 이름과 일치해야 하며, 포스팅 프론트매터 내부 (sub)categories: []에 일치
 # 서브카테고리는 identifier 필요 없음
 # md 파일은 로컬드라이브의 /content/ 아무 곳에나 넣어놔도 무관 (포스팅 시 프론트매터의 카테고리대로 분류되어 업로드됨)
 # 기록 관리 용도로 /content/ 내부에 카테고리별로 디렉토리 생성: /content/DB/카테고리
@@ -166,8 +167,8 @@ text = "Rationalist ∫ {Romanticism ∪ Kapitalismus}: Theory in Practice"
 
 [[menu.main]]
   parent = "framework"
-  name = "Applications"
-  url = "/framework/applications/"
+  name = "Technicals"
+  url = "/framework/technicals/"
   weight = 23
 
 [[menu.main]]
@@ -207,7 +208,7 @@ text = "Rationalist ∫ {Romanticism ∪ Kapitalismus}: Theory in Practice"
 [[menu.main]]
   parent = "market_decision_log"
   name = "Transactions" # 매매 일지
-  url = "/market_decision_log/actions/"
+  url = "/market_decision_log/transactions/"
   weight = 41
 
 [[menu.main]]

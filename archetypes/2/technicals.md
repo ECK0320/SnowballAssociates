@@ -2,7 +2,7 @@
 author: "ECK" # 필요하다면 추가
 #date: {{ .Date }}
 categories: ["framework"]
-subcategories: ["applications"]
+subcategories: ["technicals"]
 title: ""
 # description: "" 부제목: 필요하다면 추가
 studies: ["Finance", "Business"] # 해당 분야 선택 (상경)

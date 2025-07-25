@@ -118,7 +118,7 @@
   <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>
 
   <!-- transactions, 없으면 recommendations -->
-  {{- with $page.Params.transactions }}
+  {{- with $page.Params.actions }}
   <span style="color:#777; margin-left: 10px;"> [Position: {{ delimit . ", " }}]</span>
   {{- else }}
   {{- with $page.Params.recommendations }}

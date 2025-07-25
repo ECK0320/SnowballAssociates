@@ -1,6 +1,7 @@
 ---
 author: "ECK" # 필요하다면 추가
 #date: {{ .Date }}
+#lastmod: {{ .Lastmod.Format "2006-01-02" }}
 categories: ["judgment_philosophy"]
 subcategories: ["diary"]
 title: ""

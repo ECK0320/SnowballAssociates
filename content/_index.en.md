@@ -1,15 +1,15 @@
-<br><br><br><br>
+<br><br><br>
 <span style="font-size: 1.4em;">I read, think, and write.</span>
 
-\* This blog is currently under construction 🚧 to rebuild the webpage in a new platform and to shortlist transferrable writings among 2500+ postings written since 2013. (*last updated: 2025-07-19*)
+**\*** This blog is currently under construction 🚧 to rebuild the webpage in a new platform and to shortlist transferrable writings among 2,500+ postings. (*last updated: 2025-07-20*)
 
 <br><br>
 <span style="font-size: 1.4em;">**Profile**</span>
 - <span style="font-size: 1.2em;">**Education**</span>
     - Early & Honors graduation from both high school and college 🇺🇸
-    - Studied **political-legal theory**, **economics**, and **mathematics** at a liberal arts college, with full merit scholarships & grants for international students
-        - Senior Thesis: *Inflation’s Uneven Burden* (ECON 699, A-)
-        - Honors Thesis: *The Republic of Citizens* (Political-Legal Theory, *Magna Cum Laude*)
+    - Studied **political-legal theory**, **economics**, and **mathematics** at a liberal arts college, with full merit scholarships & grants
+        - **Mathematics-Economics Senior Thesis** (ECON 699 track): *Inflation’s Uneven Burden*
+        - **Political-Legal Theory Honors Thesis**: *The Republic of Citizens*
 - <span style="font-size: 1.2em;">**Experience**</span>
     - **Politics**, **Education**, **Data Analytics**, **Consulting**, **Finance**, and **Construction**
         - Published an [introductory investing guidebook (ISBN : 9788955336269)][ref1] for retail investors who started investing during the post-pandemic retail trading frenzy 🇰🇷
