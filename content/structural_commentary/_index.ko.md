@@ -12,7 +12,7 @@ title: "구조 분석"
 
 
 
-[ref1]: https://snowballassociates.com/ko/structural-commentary/macro-trends/
-[ref2]: https://snowballassociates.com/ko/structural-commentary/micro-trends/
-[ref3]: https://snowballassociates.com/ko/judgment-philosophy/
+[ref1]: https://snowballassociates.com/ko/structural_commentary/macro_trends/
+[ref2]: https://snowballassociates.com/ko/structural_commentary/micro_trends/
+[ref3]: https://snowballassociates.com/ko/judgment_philosophy/
 [ref4]: https://snowballassociates.com/ko/works/

@@ -21,7 +21,7 @@ When these initial hypotheses that distill the essential dynamics at play are ri
   Interpretations of society and culture in motion, based on personal experience and cultural phenomena: how macro changes shape cultural norms, social values, consumption patterns, psychological landscapes, and the rhythms of daily existence that filter down into the lived realities of individuals and communities.
 
 [ref1]: https://snowballassociates.com/works/
-[ref2]: https://snowballassociates.com/judgment-philosophy/
+[ref2]: https://snowballassociates.com/judgment_philosophy/
 
-[ref3]: https://snowballassociates.com/structural-commentary/macro-trends/
-[ref4]: https://snowballassociates.com/structural-commentary/micro-trends/
+[ref3]: https://snowballassociates.com/structural_commentary/macro_trends/
+[ref4]: https://snowballassociates.com/structural_commentary/micro_trends/

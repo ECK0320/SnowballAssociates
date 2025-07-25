@@ -12,5 +12,5 @@ title: "작업물"
 
 
 
-[ref1]: https://snowballassociates.com/ko/works/light-format/
-[ref2]: https://snowballassociates.com/ko/works/full-format/
+[ref1]: https://snowballassociates.com/ko/works/light_format/
+[ref2]: https://snowballassociates.com/ko/works/full_format/

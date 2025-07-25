@@ -22,7 +22,7 @@ In a spectrum of formats from a single-sentence brief comment to a comprehensive
     - **Academic Papers/Theses:** In-depth analytical works with full academic rigor, solely focused on humanities and economics themes.
 
 
-[ref1]: https://snowballassociates.com/judgment-philosophy/
-[ref2]: https://snowballassociates.com/structural-commentary/
-[ref3]: https://snowballassociates.com/works/light-format/
-[ref4]: https://snowballassociates.com/works/full-format/
+[ref1]: https://snowballassociates.com/judgment_philosophy/
+[ref2]: https://snowballassociates.com/structural_commentary/
+[ref3]: https://snowballassociates.com/works/light_format/
+[ref4]: https://snowballassociates.com/works/full_format/
