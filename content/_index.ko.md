@@ -4,10 +4,11 @@
 
 <br><br>
 
-![Main Intro](/images/main.png)
-
---- 서산대사(西山大師), 「답설야중거(穿雪野中去)」 
+<figure>
+  <img src="/images/main.png" alt="Main Intro">
+  <figcaption> 서산대사(西山大師), 「답설야중거(穿雪野中去)」 </figcaption>
+</figure>
 
 ***
 
-**\*** 웹사이트 구조 개편 및 이전 중입니다 🚧 (*최신 업데이트: 2025-07-20*)
+**\*** 웹사이트 구조 개편 및 이전 중입니다 🚧 (*최신 업데이트: 2025-07-25*)

@@ -1,4 +1,4 @@
-<span style="font-size: 1.4em;">**Brief Profile**</span>
+<span style="font-size: 1.4em;">**Profile**</span>
 - <span style="font-size: 1.2em;">**Education**</span>
     - Early & Honors graduation (***Cum Laude***) from both high school and college 🇺🇸
     - Studied **political-legal theory**, **economics**, and **mathematics** at a liberal arts college, with full merit scholarships & grants

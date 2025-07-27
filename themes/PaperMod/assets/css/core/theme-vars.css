@@ -39,18 +39,22 @@
 }
 
 
+/* 들여쓰기 */
+.indent-text {
+    margin-left: 2em; /* 원하는 들여쓰기 값 */
+    overflow-wrap: break-word; /* 화면 안 뚫고 나가게 */
+}
+
+
 /* 본문 정렬 및 줄바꿈 */
 .post-content {
     text-align: justify;
-    text-align-last: left; /* 마지막 줄은 왼쪽으로만 정렬 */
 }
 
 /* 모바일 화면 (예: 너비 768px 이하)에서만 적용 */
 @media (max-width: 768px) {
     .post-content {
         font-size: 1.1rem;
-        text-align: left;        /* 모바일에서는 왼쪽 정렬 */
-        text-align-last: unset;  /* 필요시 초기화 */
     }
 }
 

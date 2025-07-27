@@ -191,15 +191,16 @@
 }
 
 .post-content code {
+    font-family: "Fira Code", "D2Coding", monospace; /* Fira Code, D2Coding 같은 폰트 추천 */;
     margin: auto 4px;
     padding: 4px 6px;
-    font-size: 0.78em;
     line-height: 1.5;
     background: var(--code-bg);
     border-radius: 2px;
 }
 
 .post-content pre code {
+    font-family: "Fira Code", "D2Coding", monospace; /* Fira Code, D2Coding 같은 폰트 추천 */;
     display: grid;
     margin: auto 0;
     padding: 10px;
@@ -228,6 +229,7 @@
 }
 
 .post-content img {
+    width: 100%;
     border-radius: 4px;
     margin: 1rem 0;
 }
@@ -241,13 +243,15 @@
 }
 
 .post-content figure>figcaption {
+    text-align: center !important;
     color: var(--primary);
     font-size: 16px;
-    font-weight: bold;
+    font-weight: normal;
     margin: 8px 0 16px;
 }
 
 .post-content figure>figcaption>p {
+    text-align: center !important;
     color: var(--secondary);
     font-size: 14px;
     font-weight: normal;

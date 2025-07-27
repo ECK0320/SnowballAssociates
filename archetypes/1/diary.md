@@ -1,6 +1,6 @@
 ---
 author: "ECK" # 필요하다면 추가
-#date: {{ .Date }}
+date: 2006-01-02 15:04:05+09:00 # 초 단위까지 붙여줘야 함; +09:00 KST
 #lastmod: {{ .Lastmod.Format "2006-01-02" }}
 categories: ["judgment_philosophy"]
 subcategories: ["diary"]

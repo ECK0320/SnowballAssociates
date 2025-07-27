@@ -1,8 +1,16 @@
 {{- $scratch := newScratch }}
 
-{{- if not .Date.IsZero -}}
-{{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
+<!-- 프론트매터에 기입한 작성 시각 > Git 커밋 시각 > Netlify 배포 시각 순으로 적용; 프론트매터에 "Date" 부분 기입 안 하면 자동으로 Git 커밋 시각이 올라감; 프론트매터에 YYYY-MM-DD hh:mm:ss+NN:00  -->
+{{- if not .Date.IsZero }}
+  {{- $scratch.Add "meta" (slice (printf "<span class='meta-date' title='%s'>Posted: %s</span>" (.Date) (.Date | time.Format (default "2006-01-02 15:04 MST" site.Params.DateFormat)))) }}
+{{- else if .GitInfo }}
+  {{- $scratch.Add "meta" (slice (printf "<span class='meta-date' title='%s'>Last Revised: %s</span>" (.GitInfo.AuthorDate) (.GitInfo.AuthorDate.Format "2006-01-02 15:04 MST"))) }}
+{{- else }}
+  {{- $now := now }}
+  {{- $scratch.Add "meta" (slice (printf "<span class='meta-date' title='%s'>Posted: %s</span>" ($now) ($now.Format "2006-01-02 15:04 MST"))) }}
 {{- end }}
+
+
 
 {{- if (.Param "ShowReadingTime") -}}
 {{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime))) }}

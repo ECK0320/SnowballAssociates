@@ -22,3 +22,39 @@
 .chroma .lntd:last-of-type {
     width: 100%;
 }
+
+/* 코드블록 상단에 언어명 표시 */
+.chroma code[class^="language-"]::before {
+    content: attr(class);
+    /* 또는 content: "python"; 처럼 수동 지정도 가능 */
+    position: relative;
+    bottom: 0.25em;
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #c792ea;
+    background: #212121cc;
+    padding: 0.3em 0.7em 0.3em 0.7em;
+    border-radius: 6px;
+}
+    /* "language-" 제거 */
+    .chroma code.language-bash::before { content: "bash"; } /* 리눅스 터미널 */
+    .chroma code.language-powershell::before { content: "powershell"; } /* 윈도우 파워쉘 */
+    .chroma code.language-cmd::before { content: "cmd"; } /* 윈도우 터미널 (bat) */
+    .chroma code.language-zsh::before { content: "zsh"; } /* 맥 터미널 */
+    .chroma code.language-python::before { content: "python"; }
+    .chroma code.language-r::before { content: "R"; }
+    .chroma code.language-latex::before { content: "latex"; }
+    .chroma code.language-c::before { content: "c"; }
+    .chroma code.language-cpp::before { content: "cpp"; }
+    .chroma code.language-go::before { content: "go"; }
+    .chroma code.language-html::before { content: "html"; }
+    .chroma code.language-css::before { content: "css"; }
+    .chroma code.language-javascript::before { content: "js"; }
+    .chroma code.language-typescript::before { content: "ts"; }
+    .chroma code.language-json::before { content: "json"; }
+    .chroma code.language-yaml::before { content: "yaml"; }
+    .chroma code.language-toml::before { content: "toml"; }
+    .chroma code.language-makefile::before { content: "makefile"; }
+    .chroma code.language-markdown::before { content: "md"; }
+    .chroma code.language-sql::before { content: "sql"; }
+    .chroma code.language-matlab::before { content: "matlab"; }

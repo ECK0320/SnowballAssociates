@@ -1,6 +1,6 @@
 ---
 author: "ECK" # 필요하다면 추가
-#date: {{ .Date }}
+date: {{ .Date }}
 categories: ["framework"]
 subcategories: ["technicals"]
 title: ""

@@ -22,7 +22,7 @@ buildExpired = false
  pagerSize = 10
 
 [build.environment]
-HUGO_VERSION = "0.148.0"
+HUGO_VERSION = "0.148.1"
 
 [minify]
 disableXML = true
@@ -34,7 +34,7 @@ minifyOutput = true
   description = "Snowball Associates - Personal & Professional Profile"
   keywords = [ "Blog", "Portfolio", "PaperMod", "Business", "Data", "Finance" ]
   author = "ECK"
-  DateFormat = "2006-01-02"
+  DateFormat = "2006-01-02 15:04 MST"
   defaultTheme = "auto"
   disableThemeToggle = false
   ShowShareButtons = true
@@ -44,7 +44,7 @@ minifyOutput = true
   ShowRssButtonInSectionTermList = true
   UseHugoToc = true
   showtoc = true
-  tocopen = false
+  tocopen = true
   disableSpecial1stPost = false
   disableScrollToTop = false
   comments = false

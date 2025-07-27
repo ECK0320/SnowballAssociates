@@ -1,6 +1,6 @@
 ---
 author: "ECK" # 필요하다면 추가
-#date: {{ .Date }}
+date: {{ .Date }}
 categories: ["judgment_philosophy"]
 subcategories: ["passing_thoughts"]
 title: ""

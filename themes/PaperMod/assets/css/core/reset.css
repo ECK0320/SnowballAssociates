@@ -37,14 +37,9 @@ body {
     background: var(--theme);
 }
 
-/* 코드 블록 폰트 (선택 사항: 코드를 많이 작성한다면 코드 전용 폰트도 고려) */
-code, pre {
-    font-family: "Fira Code", "D2Coding", monospace; /* Fira Code, D2Coding 같은 폰트 추천 */;
-    font-size: 16pt;
-}
-
+/* 하이퍼링크 색깔 */
 .post-content a, .post-content a:visited {
-  color: #0070f3;
+    color: #1A73E8; /* 구글 파란색 */
 }
 
 
