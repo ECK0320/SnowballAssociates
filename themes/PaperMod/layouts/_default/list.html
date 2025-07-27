@@ -84,6 +84,11 @@
 {{- end }}
 {{- /* $pages 변수 할당 로직 끝 */}}
 
+{{- $topSections := slice "/judgment_philosophy/" "/market_decision_log/" "/structural_commentary/" "/framework/" "/works/" "/ko/judgment_philosophy/" "/ko/market_decision_log/" "/ko/structural_commentary/" "/ko/framework/" "/ko/works/" }}
+{{- $isTopSection := in $topSections .RelPermalink }}
+{{- if $isTopSection }}
+  {{- $pagesToShow = site.RegularPages.Limit 0 }}   {{/* 빈 페이지 컬렉션으로 대체 */}}
+{{- end }}
 
 {{- $paginator := .Paginate $pagesToShow }} {{- /* $pages 대신 $pagesToShow 사용 */}}
 
