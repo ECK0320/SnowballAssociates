@@ -1,5 +1,5 @@
 ---
-date: "2025-07-27 22:53" #초 :00까지 붙여줘야 함
+date: "2025-07-27" #초 :00까지 붙여줘야 함
 categories: ["framework"]
 subcategories: ["numbers"]
 title: "Ubuntu LTS 24.04에 texlive-full 설치 시 오류 해결"
