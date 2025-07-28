@@ -1,7 +1,7 @@
 ---
 categories: ["framework"]
 subcategories: ["numbers"]
-title: "Ubuntu LTS 24.04에 texlive-full 설치 시 오류 해결"
+title: "Ubuntu LTS 24.04에 texlive-full 설치 시 오류 해결 2"
 description: "feat. luahbtex 호환성 버그" #필요하다면 추가
 studies: ["STEM"] # 해당 분야 선택 (이공학)
 tools: ["LaTeX", "Hugo"] # 사용된 프로그래밍 언어 & 패키지
