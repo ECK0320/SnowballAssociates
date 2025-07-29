@@ -1,2 +1,2 @@
-/works/* /login/   302!
 /works/* 200!  Role=subscriber
+/works/* /login/   302!
