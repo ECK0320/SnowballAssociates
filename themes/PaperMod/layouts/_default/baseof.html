@@ -22,9 +22,10 @@
     <main class="main">
         {{- block "main" . }}
         {{ end }}
-        <div data-netlify-identity-button></div>
-        <div data-netlify-identity-menu></div>
+        <div data-netlify-identity-button style="text-align: center; padding: 10px 20px 0;"></div>
+        <div data-netlify-identity-menu style="text-align: center; padding: 10px 20px 0;"></div>
     </main>
+
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
 </body>
 
