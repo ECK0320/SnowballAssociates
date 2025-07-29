@@ -1,4 +1,20 @@
 {{- /* Footer custom content area start */ -}}
 {{- /*     Insert any custom code web-analytics, resources, etc. here */ -}}
 
+<!-- 우클릭 방지 -->
+<script>
+  document.addEventListener('contextmenu', event => {
+    // 우클릭이 발생한 지점이 Netlify 로그인 위젯의 일부인지 확인합니다.
+    // .closest('.netlify-identity-modal')는 클릭된 지점부터 상위로 올라가며
+    // 해당 클래스를 가진 부모가 있는지 찾습니다.
+    if (event.target.closest('.netlify-identity-modal')) {
+      // 위젯 내부에서 발생한 우클릭이면, 기본 동작을 허용하고 아무것도 하지 않습니다.
+      return;
+    }
+
+    // 위젯이 아닌 다른 모든 영역에서는 우클릭을 방지합니다.
+    event.preventDefault();
+  });
+</script>
+
 {{- /* Footer custom content area end */ -}}
