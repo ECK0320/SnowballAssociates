@@ -18,7 +18,7 @@ _build:
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("login", function(user) {
-      window.location.href = "/works/";
+      window.location.href = "/ko/judgment_philosophy/diary/";
     });
   }
 </script>
