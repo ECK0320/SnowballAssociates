@@ -20,9 +20,10 @@
   
     {{- partialCached "header.html" . .Page -}}
     <main class="main">
-        <div data-netlify-identity-button></div>
+        {{- block "main" . }}
+                <div data-netlify-identity-button></div>
   <div data-netlify-identity-menu></div>
-        {{- block "main" . }}{{ end }}
+        {{ end }}
     </main>
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
 </body>
