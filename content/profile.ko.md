@@ -1,5 +1,6 @@
 ---
 hidemeta: true
+searchHidden: true
 ---
 <span style="font-size: 1.2em;">**약력**</span>
 - **학력**
