@@ -1,3 +1,6 @@
+---
+hidemeta: true
+---
 <span style="font-size: 1.2em;">**약력**</span>
 - **학력**
     - 고등학교 & 대학교 조기 졸업 및 우등 졸업 🇺🇸

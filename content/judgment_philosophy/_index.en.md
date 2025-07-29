@@ -16,7 +16,7 @@ The purpose of this section is to make records so that I can later track what I 
 
 ---
 
-- **[Diary][ref2]**: What I did & Whom I met; personal records written in Korean without professional translation. You can try AI translation if interested, but it will most likely to fail to convey the original meaning due to the innate intricacy of the Korean language (*e.g.*, countless metaphors aligned with four dialects and internet memes; the grammar structure seemingly very flexible yet requiring extreme rigor, such that subject and object are very frequently omitted in a sentence while even a single letter or punctuation mark can completely invert the original meaning). <br><br>
+- **[Diary][ref2]**: An archive of personal journals in Korean, maintained for a small group of long-time subscribers. Access is restricted. <br><br>
 
 - **[Passing Thoughts][ref3]**: Brief judgment calls; written mostly in Korean, due to the intrinsic linguistic constraints of the English language in fully capturing subtle implications, nuances, or connotations inherent in abstract concepts. For example:
     - justice *vs.* righteousness ~ 정의(正義); *díkē*; *aequitas* *vs.* 공의(公義); *dikaiosynē*; *iustitia*
