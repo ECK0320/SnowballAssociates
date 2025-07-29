@@ -1,149 +1,177 @@
 {{- define "main" }}
 
 {{- if (and site.Params.profileMode.enabled .IsHome) }}
-{{- partial "index_profile.html" . }}
-{{- else }} {{/* if not profileMode */}}
+  {{- partial "index_profile.html" . }}
+{{- else }}
 
-{{- if not .IsHome | and .Title }}
-<header class="page-header">
-  {{- partial "breadcrumbs.html" . }}
-  <h1>
-    {{ .Title }}
-    {{- if and (or (eq .Kind `term`) (eq .Kind `section`)) (.Param "ShowRssButtonInSectionTermList") }}
-    {{- with .OutputFormats.Get "rss" }}
-    <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" height="23">
-        <path d="M4 11a9 9 0 0 1 9 9" />
-        <path d="M4 4a16 16 0 0 1 16 16" />
-        <circle cx="5" cy="19" r="1" />
-      </svg>
-    </a>
+  {{- if not .IsHome | and .Title }}
+  <header class="page-header">
+    {{- partial "breadcrumbs.html" . }}
+    <h1>
+      {{ .Title }}
+      {{- if and (or (eq .Kind `term`) (eq .Kind `section`)) (.Param "ShowRssButtonInSectionTermList") }}
+        {{- with .OutputFormats.Get "rss" }}
+        <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" height="23">
+            <path d="M4 11a9 9 0 0 1 9 9" />
+            <path d="M4 4a16 16 0 0 1 16 16" />
+            <circle cx="5" cy="19" r="1" />
+          </svg>
+        </a>
+        {{- end }}
+      {{- end }}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description | markdownify }}
+    </div>
     {{- end }}
+  </header>
+  {{- end }}
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+      {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}
+      {{ .Content }}
     {{- end }}
-  </h1>
-  {{- if .Description }}
-  <div class="post-description">
-    {{ .Description | markdownify }}
   </div>
   {{- end }}
-</header>
-{{- end }}
 
-{{- if .Content }}
-<div class="post-content">
-  {{- if not (.Param "disableAnchoredHeadings") }}
-  {{- partial "anchored_headings.html" .Content -}}
-  {{- else }}{{ .Content }}{{ end }}
-</div>
-{{- end }}
+  {{- /* ========= 대상 페이지 수집 ========= */}}
+  {{- $pagesToShow := .RegularPages }}
 
-{{- /* $pages 변수 할당 로직 시작: 하드코딩된 특정 서브카테고리 처리 */}}
-{{- $pagesToShow := .RegularPages }} {{- /* 기본값: 현재 섹션의 직접 하위 페이지만 설정 (오류 방지) */}}
+  {{- if .IsHome }}
+      {{- $pagesToShow = where site.RegularPages "Type" "in" site.Params.mainSections }}
+      {{- $pagesToShow = where $pagesToShow "Params.hiddenInHomeList" "!=" "true" }}
+  {{- else if eq .Kind "term" }}
+      {{- /* taxonomy term 페이지 */}}
+      {{- $pagesToShow = .Pages }}
+  {{- else if eq .Kind "section" }}
+      {{- /* 특정 섹션 → subcategories term 매핑 */}}
+      {{- $targetTerm := "" }}
+      {{- if eq .RelPermalink "/framework/applications/" }}{{ $targetTerm = "applications" }}
+      {{- else if eq .RelPermalink "/framework/letters/" }}{{ $targetTerm = "letters" }}
+      {{- else if eq .RelPermalink "/framework/numbers/" }}{{ $targetTerm = "numbers" }}
+      {{- else if eq .RelPermalink "/framework/qualifications/" }}{{ $targetTerm = "qualifications" }}
+      {{- else if eq .RelPermalink "/judgment_philosophy/diary/" }}{{ $targetTerm = "diary" }}
+      {{- else if eq .RelPermalink "/judgment_philosophy/passing_thoughts/" }}{{ $targetTerm = "passing_thoughts" }}
+      {{- else if eq .RelPermalink "/market_decision_log/actions/" }}{{ $targetTerm = "actions" }}
+      {{- else if eq .RelPermalink "/market_decision_log/calls/" }}{{ $targetTerm = "calls" }}
+      {{- else if eq .RelPermalink "/structural_commentary/macro_trends/" }}{{ $targetTerm = "macro_trends" }}
+      {{- else if eq .RelPermalink "/structural_commentary/micro_trends/" }}{{ $targetTerm = "micro_trends" }}
+      {{- else if eq .RelPermalink "/works/full_format/" }}{{ $targetTerm = "full_format" }}
+      {{- else if eq .RelPermalink "/works/light_format/" }}{{ $targetTerm = "light_format" }}
+      {{- end }}
 
-{{- if .IsHome }}
-    {{- /* 홈 페이지일 경우: site.Params.mainSections에 정의된 타입의 모든 글을 가져옴 */}}
-    {{- $pagesToShow = where site.RegularPages "Type" "in" site.Params.mainSections }}
-    {{- $pagesToShow = where $pagesToShow "Params.hiddenInHomeList" "!=" "true" }}
-{{- else if eq .Kind "term" }}
-    {{- /* Taxonomy Term 페이지일 경우 (예: /categories/works/, /subcategories/light_format/) */}}
-    {{- /* 해당 Term에 할당된 모든 글을 가져옴 */}}
-    {{- $pagesToShow = .Data.Pages }}
-{{- else if eq .Kind "section" }}
-    {{- /* 일반 섹션 페이지일 경우 (특정 서브카테고리 섹션 처리) */}}
+      {{- if $targetTerm }}
+          {{- $term := (index site.Taxonomies.subcategories $targetTerm) }}
+          {{- if $term }}
+              {{- /* WeightedPages → Pages */}}
+              {{- $real := slice }}
+              {{- range $term.Pages }}{{- $real = $real | append .Page }}{{- end }}
+              {{- $pagesToShow = $real }}
+          {{- else }}
+              {{- $pagesToShow = site.RegularPages.Limit 0 }}
+          {{- end }}
+      {{- else }}
+          {{- $pagesToShow = .RegularPages }}
+      {{- end }}
+  {{- end }}
 
-    {{- /* 현재 섹션의 상대 경로를 기준으로 $targetTerm을 찾음 */}}
-    {{- $targetTerm := "" }}
-    {{- if eq .RelPermalink "/framework/applications/" }}{{ $targetTerm = "applications" }}
-    {{- else if eq .RelPermalink "/framework/letters/" }}{{ $targetTerm = "letters" }}
-    {{- else if eq .RelPermalink "/framework/numbers/" }}{{ $targetTerm = "numbers" }}
-    {{- else if eq .RelPermalink "/framework/qualifications/" }}{{ $targetTerm = "qualifications" }}
-    {{- else if eq .RelPermalink "/judgment_philosophy/diary/" }}{{ $targetTerm = "diary" }}
-    {{- else if eq .RelPermalink "/judgment_philosophy/passing_thoughts/" }}{{ $targetTerm = "passing_thoughts" }}
-    {{- else if eq .RelPermalink "/market_decision_log/actions/" }}{{ $targetTerm = "actions" }}
-    {{- else if eq .RelPermalink "/market_decision_log/calls/" }}{{ $targetTerm = "calls" }}
-    {{- else if eq .RelPermalink "/structural_commentary/macro_trends/" }}{{ $targetTerm = "macro_trends" }}
-    {{- else if eq .RelPermalink "/structural_commentary/micro_trends/" }}{{ $targetTerm = "micro_trends" }}
-    {{- else if eq .RelPermalink "/works/full_format/" }}{{ $targetTerm = "full_format" }}
-    {{- else if eq .RelPermalink "/works/light_format/" }}{{ $targetTerm = "light_format" }}
+  {{- /* 상위 섹션(영/국문)에서는 리스트 비움 */}}
+  {{- $topSections := slice "/judgment_philosophy/" "/market_decision_log/" "/structural_commentary/" "/framework/" "/works/" "/ko/judgment_philosophy/" "/ko/market_decision_log/" "/ko/structural_commentary/" "/ko/framework/" "/ko/works/" }}
+  {{- $isTopSection := in $topSections .RelPermalink }}
+  {{- if $isTopSection }}
+    {{- $pagesToShow = site.RegularPages.Limit 0 }}
+  {{- end }}
+
+  {{- /* ========= 정렬 키(d) 계산 후, d 기준 내림차순으로 Page 컬렉션 구성 ========= */}}
+  {{- $items := slice }}
+  {{- range $pagesToShow }}
+    {{- $d := or .PublishDate (or .Date (or .Lastmod now)) -}}
+    {{- $items = $items | append (dict "p" . "d" $d) -}}
+  {{- end }}
+  {{- $items = sort $items "d" "desc" }}
+
+  {{- /* dict → Pages로 되돌려서 paginate 가능한 컬렉션 만들기 */}}
+  {{- $sortedPages := site.RegularPages.Limit 0 }}
+  {{- range $it := $items }}
+    {{- $sortedPages = $sortedPages | append $it.p }}
+  {{- end }}
+
+  {{- /* ========= 페이지네이션 ========= */}}
+  {{- $paginator := .Paginate $sortedPages }}
+  {{- $pageItems := $paginator.Pages }}
+
+  {{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
+    {{- partial "home_info.html" . }}
+  {{- end }}
+
+  {{- if not (or .IsHome $isTopSection) }}
+
+    {{- /* 현재 페이지네이션 범위 내 연/월 카운트 선계산 */}}
+    {{- range $p := $pageItems }}
+      {{- $d := or $p.PublishDate (or $p.Date (or $p.Lastmod now)) -}}
+      {{- $y := dateFormat "2006" $d -}}
+      {{- $m := dateFormat "January" $d -}}
+      {{- $.Scratch.Add (print "Y:"  $y) 1 -}}
+      {{- $.Scratch.Add (print "YM:" $y "|" $m) 1 -}}
     {{- end }}
 
-    {{- if $targetTerm }}
-        {{- /* $targetTerm이 정의되면 해당 subcategories Taxonomy Term의 페이지를 가져옴 */}}
-        {{- $taxonomyTermPages := (index site.Taxonomies.subcategories $targetTerm) }}
-        {{- if $taxonomyTermPages }}
-            {{- $pagesToShow = $taxonomyTermPages.Pages }}
+    {{- $lastY := "" -}}
+    {{- $lastM := "" -}}
+
+    {{- range $p := $pageItems }}
+      {{- $d := or $p.PublishDate (or $p.Date (or $p.Lastmod now)) -}}
+      {{- $y := dateFormat "2006"   $d -}}
+      {{- $m := dateFormat "January" $d -}}
+
+      {{- if ne $y $lastY }}
+        <h2 style="margin-top:2em; margin-bottom:0.4em;">
+          {{ $y }}
+          <sup style="color:#ccc; margin:0.2em;">{{ $.Scratch.Get (print "Y:" $y) }}</sup>
+        </h2>
+        {{- $lastY = $y -}}
+        {{- $lastM = "" -}}
+      {{- end }}
+
+      {{- if ne $m $lastM }}
+        <h3 style="margin-top:0.3em; margin-bottom:0.2em; color:#bbb;">
+          {{ $m }}
+          <sup style="color:#ccc;">{{ $.Scratch.Get (print "YM:" $y "|" $m) }}</sup>
+        </h3>
+        {{- $lastM = $m -}}
+      {{- end }}
+      
+      <!-- 글 출력 시작 -->  
+      <div style="margin-bottom:0.2em;">
+        <a href="{{ $p.Permalink }}">{{ $p.Title }}</a>
+
+        {{- with $p.Params.actions }}
+          <span style="color:#777; margin-left: 10px;"> [Position: {{ delimit . ", " }}]</span>
         {{- else }}
-            {{- $pagesToShow = site.RegularPages.Limit 0 }} {{- /* 빈 Page Collection을 생성하는 올바른 방법 */}}
+          {{- with $p.Params.recommendations }}
+            <span style="color:#777; margin-left: 10px;"> [Market Call: {{ delimit . ", " }}]</span>
+          {{- end }}
+          {{- with $p.Params.work_types }}
+            <span style="color:#777; margin-left:20px;">Type: [{{ delimit . ", " }}]</span>
+          {{- end }}
         {{- end }}
-    {{- else }}
-        {{- /* $targetTerm이 정의되지 않은 상위 섹션 등은 기존처럼 물리적 하위 글을 불러옴 */}}
-        {{- $pagesToShow = union .RegularPages .Sections }}
-        {{- $pagesToShow = where $pagesToShow "Permalink" "ne" .Permalink }}
+
+        <span class="meta-date" style="color: #aaa; margin-left:20px;">
+          <time datetime="{{ $d.Format "2006-01-02T15:04:05Z07:00" }}">{{ $d.Format "2006-01-02 15:04 MST" }}</time>
+        </span>
+      </div>
+
     {{- end }}
-{{- end }}
-{{- /* $pages 변수 할당 로직 끝 */}}
 
-{{- $topSections := slice "/judgment_philosophy/" "/market_decision_log/" "/structural_commentary/" "/framework/" "/works/" "/ko/judgment_philosophy/" "/ko/market_decision_log/" "/ko/structural_commentary/" "/ko/framework/" "/ko/works/" }}
-{{- $isTopSection := in $topSections .RelPermalink }}
-{{- if $isTopSection }}
-  {{- $pagesToShow = site.RegularPages.Limit 0 }}   {{/* 빈 페이지 컬렉션으로 대체 */}}
-{{- end }}
+    {{- partial "pagination.html" . -}}
 
-{{- $paginator := .Paginate $pagesToShow }} {{- /* $pages 대신 $pagesToShow 사용 */}}
-
-{{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
-{{- partial "home_info.html" . }}
-{{- end }}
-
-{{- $topSections := slice "/judgment_philosophy/" "/market_decision_log/" "/structural_commentary/" "/framework/" "/works/" }}
-{{- $isTopSection := in $topSections .RelPermalink }}
-
-{{- if not (or .IsHome $isTopSection) }}
-
-{{- range $yearGroup := ($pagesToShow.GroupByDate "2006") }}
-  {{- if and (ne $yearGroup.Key "0001") (ne $yearGroup.Key "") }}
-  <h2 style="margin-top:2em; margin-bottom:0.4em;">
-    {{ $yearGroup.Key }}
-    <sup style="color:#ccc; margin:0.2em;">{{ len $yearGroup.Pages }}</sup>
-  </h2>
-  
-  <!-- Month 설정 -->
-  {{- range $monthGroup := $yearGroup.Pages.GroupByDate "January" }}
-  <h3 style="margin-top:0.3m; margin-bottom:0.2em; color:#bbb;">
-    {{ $monthGroup.Key }}
-    <sup style="color:#ccc;">{{ len $monthGroup.Pages }}</sup>
-  </h3>
-
-<!-- 글 출력 시작 -->
-{{- range $page := $monthGroup.Pages }}
-<div style="margin-bottom:0.2em;">
-
-  <!-- 제목 -->
-  <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>
-
-  <!-- transactions, 없으면 recommendations -->
-  {{- with $page.Params.actions }}
-  <span style="color:#777; margin-left: 10px;"> [Position: {{ delimit . ", " }}]</span>
-  {{- else }}
-  {{- with $page.Params.recommendations }}
-  <span style="color:#777; margin-left: 10px;"> [Market Call: {{ delimit . ", " }}]</span>
-  {{- with $page.Params.work_types }}
-  <span style="color:#777; margin-left:20px;">Type: [{{ delimit . ", " }}]</span>
-  {{- end }}
-  {{- end }}
   {{- end }}
 
-  <!-- 날짜 -->
-  <time datetime="{{ $page.Date.Format " 2006-01-02T15:04 MST" }}" style="color: #aaa; margin-left:20px;">{{$page.Date.Format "2006-01-02 15:04 MST" }}</time>
-</div>
-{{- end }}
-{{- end }}
-{{- end }}
+{{- end }}{{/* profileMode else */}}
 
-{{- end }}
-{{- end }}
-
-{{- end }}{{/* end profileMode */}}
-
-{{- end }}{{- /* end main */ -}}
+{{- end }}{{/* define main */}}

@@ -4,20 +4,20 @@
   <h1>
     {{ .Title }}
     {{- if (.Param "ShowRssButtonInSectionTermList") }}
-    {{- $rss := (.OutputFormats.Get "rss") }}
-    {{- if (eq .Kind `page`) }}
-    {{- $rss = (.Parent.OutputFormats.Get "rss") }}
-    {{- end }}
-    {{- with $rss }}
-    <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" height="23">
-        <path d="M4 11a9 9 0 0 1 9 9" />
-        <path d="M4 4a16 16 0 0 1 16 16" />
-        <circle cx="5" cy="19" r="1" />
-      </svg>
-    </a>
-    {{- end }}
+      {{- $rss := (.OutputFormats.Get "rss") }}
+      {{- if (eq .Kind `page`) }}
+        {{- $rss = (.Parent.OutputFormats.Get "rss") }}
+      {{- end }}
+      {{- with $rss }}
+      <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" height="23">
+          <path d="M4 11a9 9 0 0 1 9 9" />
+          <path d="M4 4a16 16 0 0 1 16 16" />
+          <circle cx="5" cy="19" r="1" />
+        </svg>
+      </a>
+      {{- end }}
     {{- end }}
   </h1>
   {{- if .Description }}
@@ -27,53 +27,97 @@
   {{- end }}
 </header>
 
-{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- if site.Params.ShowAllPagesInArchive }}
-{{- $pages = site.RegularPages }}
+{{- /* 1. 기본 대상 */}}
+{{- $regular := site.RegularPages }}
+{{- $drafts  := where site.AllPages "Draft" true }}
+{{- $pages   := union $regular $drafts }}
+
+{{- /* 2. mainSections 필터: 상위 3개 디렉토리 체크 */}}
+{{- if site.Params.mainSections }}
+  {{- $pagesFiltered := slice }}
+  {{- range $p := $pages }}
+    {{- $parts := split $p.File.Path "/" }}
+    {{- $part1 := index $parts 0 }}
+    {{- $part2 := cond (ge (len $parts) 2) (index $parts 1) "" }}
+    {{- $part3 := cond (ge (len $parts) 3) (index $parts 2) "" }}
+    {{- $hit := false }}
+    {{- range site.Params.mainSections }}
+      {{- if or (eq . $part1) (eq . $part2) (eq . $part3) }}
+        {{- $hit = true }}
+      {{- end }}
+    {{- end }}
+    {{- if $hit }}
+      {{- $pagesFiltered = $pagesFiltered | append $p }}
+    {{- end }}
+  {{- end }}
+  {{- $pages = $pagesFiltered }}
 {{- end }}
 
-{{- range $yearGroup := ($pages.GroupByDate "2006") }}
-  {{- if and (ne $yearGroup.Key "0001") (ne $yearGroup.Key "") }}
-  <h2 style="margin-top:2em; margin-bottom:0.4em;">
-    {{ $yearGroup.Key }}
-    <sup style="color:#ccc; margin:0.2em;">{{ len $yearGroup.Pages }}</sup>
-  </h2>
-  
-  <!-- Month 설정 -->
-  {{- range $monthGroup := $yearGroup.Pages.GroupByDate "Jan" }}
-  <h3 style="margin-top:0.3m; margin-bottom:0.2em; color:#bbb;">
-    {{ $monthGroup.Key }}
-    <sup style="color:#ccc;">{{ len $monthGroup.Pages }}</sup>
-  </h3>
-  
-  <!-- 글 출력 시작 -->
-  {{- range $page := $monthGroup.Pages }}
+{{- /* 추가: 명시적 숨김 플래그 존중 */}}
+{{- $pages = where $pages "Params.hiddenInArchive" "!=" true }}
+{{- $pages = where $pages "Params.hiddenInHomeList" "!=" true }}
+
+{{- /* 날짜 폴백 + 내림차순 정렬 */}}
+{{- $items := slice }}
+{{- range $pages }}
+  {{- $d := or .PublishDate (or .Date (or .Lastmod now)) -}}
+  {{- $items = $items | append (dict "p" . "d" $d) -}}
+{{- end }}
+{{- $items = sort $items "d" "desc" }}
+
+{{- /* dict → Pages로 되돌려 paginate 용 */}}
+{{- $sortedPages := site.RegularPages.Limit 0 }}
+{{- range $it := $items }}
+  {{- $sortedPages = $sortedPages | append $it.p }}
+{{- end }}
+
+{{- /* 페이지네이션 */}}
+{{- $paginator := .Paginate $sortedPages }}
+{{- $pageItems := $paginator.Pages }}
+
+{{- /* === 반드시 아래 모든 그룹핑/카운트/출력에 $pageItems만 사용 === */}}
+
+{{- /* 카운트(연/월) */}}
+{{- range $p := $pageItems }}
+  {{- $d := or $p.PublishDate (or $p.Date (or $p.Lastmod now)) -}}
+  {{- $y := dateFormat "2006" $d -}}
+  {{- $m := dateFormat "January" $d -}}
+  {{- $.Scratch.Add (print "Y:"  $y) 1 -}}
+  {{- $.Scratch.Add (print "YM:" $y "|" $m) 1 -}}
+{{- end }}
+
+{{- /* 출력(연/월 헤더 + 포스트 목록) */}}
+{{- $lastY := "" -}}
+{{- $lastM := "" -}}
+
+{{- range $p := $pageItems }}
+  {{- $d := or $p.PublishDate (or $p.Date (or $p.Lastmod now)) -}}
+  {{- $y := dateFormat "2006" $d -}}
+  {{- $m := dateFormat "January" $d -}}
+
+  {{- if ne $y $lastY }}
+    <h2 style="margin-top:2em; margin-bottom:0.4em;">
+      {{ $y }}
+      <sup style="color:#ccc; margin:0.2em;">{{ $.Scratch.Get (print "Y:" $y) }}</sup>
+    </h2>
+    {{- $lastY = $y -}}
+    {{- $lastM = "" -}}
+  {{- end }}
+
+  {{- if ne $m $lastM }}
+    <h3 style="margin-top:0.3em; margin-bottom:0.2em; color:#bbb;">
+      {{ $m }}
+      <sup style="color:#ccc;">{{ $.Scratch.Get (print "YM:" $y "|" $m) }}</sup>
+    </h3>
+    {{- $lastM = $m -}}
+  {{- end }}
+
   <div style="margin-bottom:0.2em;">
-    
-    <!-- 제목 -->
-    <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>
-        
-    <!-- transactions, 없으면 recommendations -->
-    {{- with $page.Params.transactions }}
-    <span style="color:#777; margin-left: 10px;"> [Position: {{ delimit . ", " }}]</span>
-    {{- else }}
-    {{- with $page.Params.recommendations }}
-    <span style="color:#777; margin-left: 10px;"> [Market Call: {{ delimit . ", " }}]</span>
-    {{- with $page.Params.work_types }}
-    <span style="color:#777; margin-left:20px;">Type: [{{ delimit . ", " }}]</span>
-    {{- end }}
-    {{- end }}
-    {{- end }}
-    
-    <!-- 날짜 -->
-    <time datetime="{{ $page.Date.Format "2006-01-02T15:04:05Z07:00" }}" style="color: #aaa; margin-left:20px;">{{ $page.Date.Format "2006-01-02" }}</time>
-    
-    
+    <a href="{{ $p.Permalink }}">{{ $p.Title }}</a>
+    <!-- 기타 메타 출력 생략 -->
+    <time datetime="{{ $d.Format "2006-01-02T15:04:05Z07:00" }}" style="color:#aaa; margin-left:20px;">
+      {{ $d.Format "2006-01-02" }}
+    </time>
   </div>
-  {{- end }}
-  {{- end }}
-  {{- end }}
 {{- end }}
-
-
 {{- end }}{{/* end main */}}

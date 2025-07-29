@@ -52,10 +52,15 @@ minifyOutput = true
   hideSummary = false
   ShowFullTextInRSS = true
   ShowPageViews = true
-  mainSections = ["works", "judgment_philosophy", "market_decision_log", "structural_commentary", "framework", "_DB"] # <--- 여기에 'DB' 추가
+  mainSections = ["works", "judgment_philosophy", "market_decision_log", "structural_commentary", "framework"]
   ShowAllPagesInArchive = true # 아카이브에는 모든 포스팅 다 뜨게끔
   math = true
   enableGitInfo = true
+
+[frontmatter]
+publishDate = ["publishDate", "date", "lastmod", ":filename", ":git", "modTime"] # .PublishDate가 없으면 date → lastmod → 파일명 → Git → 파일 mtime 순으로 폴백
+date        = ["date", "publishDate", "lastmod", ":filename", ":git", "modTime"] # .Date도 같은 원리로 채우고 싶으면(선택)
+lastmod     = ["lastmod", ":git", "date", "publishDate", "modTime"] # .Lastmod는 통상 Git→front matter→mtime 순 권장
 
 [params.label]
 text = "Rationalist ∫ {Romanticism ∪ Kapitalismus}: Theory in Practice"
