@@ -147,7 +147,7 @@ text = "Rationalist ∫ {Romanticism ∪ Kapitalismus}: Theory in Practice"
 [[menu.main]]
   parent = "judgment_philosophy"
   name = "Diary 🇰🇷" # 일기
-  url = "/judgment_philosophy/diary/"
+  url = "/ko/judgment_philosophy/diary/"
   weight = 12
 
 
