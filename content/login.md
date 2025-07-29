@@ -1,10 +1,10 @@
 ---
-title: "로그인 필요"
 url: "/login/"
 layout: "single"
 _build:
   render: always
   list: never
+hidemeta: true
 ---
 
 <div style="text-align: center;">
