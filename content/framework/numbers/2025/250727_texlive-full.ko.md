@@ -75,7 +75,7 @@ luahbtex뿐 아니라, texlive 엔진 자체가 segmentation fault/stack smashin
 
 ## <mark>3. sudo apt install 대신 공식 리포지토리에서 클린 설치</mark> {#3}
 
-### 3-1. 시스템 라이브러리/패키지 전체 검사·복구 (*특히 <u>segmentation 오류</u> 발생할 경우*) {#3-1}
+### 3-1. 시스템 라이브러리/패키지 복구 (*특히 <u>segmentation 오류</u> 발생할 경우*) {#3-1}
 ```bash
 sudo apt update
 sudo apt upgrade
@@ -136,4 +136,4 @@ tlmgr --version
 확인
 <br>
 
-![LTS 24.04.2 TeXLive xelatex luatex pdflatex tlmgr](https://i.imgur.com/fg2ZRap.png) 환경변수에 잘 등록됐고, 처음에 `apt install texlive-full`로 설치했을 때는 계속 호환성 문제가 생기던 xetex, luatex, luahbtex (luatex의 확장판; 스크린샷에는 없음), tlmgr 전부 잘 설치된 것을 확인할 수 있다.
+![LTS 24.04.2 TeXLive xelatex luatex pdflatex tlmgr](https://i.imgur.com/fg2ZRap.png) 환경변수에 잘 등록됐고, 처음에 `apt install texlive-full`로 설치했을 때는 계속 호환성 문제가 생기던 `xetex`, `luatex`, `luahbtex` (`luatex`의 확장판; 스크린샷에는 없음), `tlmgr` 전부 잘 설치된 것을 확인할 수 있다.

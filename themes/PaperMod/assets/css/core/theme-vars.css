@@ -21,6 +21,29 @@
     --dropdown-shadow: 0 2px 8px rgba(0,0,0,0.08);    
 }
 
+/* 조선일보 신명조체; 인라인 인용 폰트 */
+@font-face {
+    font-family: 'ChosunSm';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.1/ChosunSm.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.quote {
+  font-family: 'ChosunSm', serif; /* serif는 폰트 로딩 실패 시 대체 폰트 */
+}
+
+@font-face {
+    font-family: 'HancomSans-Light';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/HancomSans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.append {
+  font-family: 'HancomSans-Light', serif; /* serif는 폰트 로딩 실패 시 대체 폰트 */
+}
+
 /* 제목 크기 줄이기; 기본은 2.5~3rem 근처, 2rem은 적당히 줄어듦 */
 .page-header h1, .post-title {
   font-family: 'EB Garamond', Times, serif;
@@ -40,7 +63,7 @@
 
 
 /* 들여쓰기 */
-.indent-text {
+.indent {
     margin-left: 2em; /* 원하는 들여쓰기 값 */
     overflow-wrap: break-word; /* 화면 안 뚫고 나가게 */
 }

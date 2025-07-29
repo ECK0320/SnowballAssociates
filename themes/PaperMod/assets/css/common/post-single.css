@@ -1,3 +1,29 @@
+/* TOC 오른쪽 사이드바에 위치 */
+.toc {
+  position: fixed;
+  top: 120px; /* 헤더 높이에 맞춰 조절 */
+  align-self: flex-start;
+  width: 300px; /* 원하는 너비 */
+  max-height: 80vh;
+  left: 50%;
+  transform: translateX(470px); 
+  margin-bottom: 2rem;
+  background: var(--code-bg);
+  border-radius: 10px;
+  font-size: 0.98em;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  z-index: 10;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .toc {
+    display: none;
+  }
+}
+
+
+
 .page-header,
 .post-header {
     margin: 24px auto var(--content-gap) auto;

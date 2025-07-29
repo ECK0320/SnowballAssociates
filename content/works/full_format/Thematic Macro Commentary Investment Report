@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{enumitem}
+
+\title{Macro/Structural Commentary: \\ \textbf{[리포트 제목/주제]}}
+\author{ECK}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+\textit{This report diagnoses macro and structural regime shifts through narrative-driven, cross-asset analysis—integrating policy cycles, market structure, and behavioral sentiment into a forward-looking strategy frame.}
+\end{abstract}
+
+\section*{1. Executive Summary / Big Picture Framing}
+\begin{itemize}[leftmargin=1.5em]
+    \item What is the macro/structural inflection at stake? (문제의식, Big Picture framing, Why now?)
+    \item 핵심 시사점 요약 (3~5줄 narrative)
+\end{itemize}
+
+\section*{2. Policy/Regime & Market Structure}
+\begin{itemize}[leftmargin=1.5em]
+    \item Policy cycle/regime change analysis (정책·금융·규제·정치·제도 변화)
+    \item Market structure: 자산군/섹터별 value chain, participation, 구조 변화
+    \item 과거 사례·레짐 변화의 선행 신호(차트, 사례 요약 포함)
+\end{itemize}
+
+\section*{3. Macro Drivers \& Narrative Flow}
+\begin{itemize}[leftmargin=1.5em]
+    \item 핵심 동인(Macro driver, flow of capital, sentiment, risk appetite)
+    \item 현재 내러티브 구조: 뉴스/정책/시장/심리/담론 변곡점
+    \item 이 논쟁/내러티브가 시장/경제/정치에 미치는 파급효과
+    \item 크로스애셋(금리, FX, 크레딧, 에쿼티, 원자재 등) 연계 분석
+\end{itemize}
+
+\section*{4. Scenario Framework \& Strategic Implications}
+\begin{itemize}[leftmargin=1.5em]
+    \item 주요 시나리오 (Bull/Base/Bear, regime shift, 정책반전 등)
+    \item 시나리오별 핵심 변수/트리거/타임라인 정리 (테이블·도식)
+    \item 자산군별/섹터별 전략적 포지셔닝·임플리케이션
+    \item 투자/포지셔닝 아이디어 요약(Trade, risk management, portfolio allocation)
+\end{itemize}
+
+\section*{5. Charts \& Evidence}
+\begin{itemize}[leftmargin=1.5em]
+    \item 핵심 차트/테이블/시계열 데이터
+    \item 과거 정책 변화/시장 반응/내러티브 전환 사례
+    \item (필요시) 주요 수치/지표/센티먼트 요약표
+\end{itemize}
+
+\section*{6. Appendix \& References}
+\begin{itemize}[leftmargin=1.5em]
+    \item 추가 시나리오, 민감도 분석, 정책·역사적 비교
+    \item 데이터 출처, 참고문헌, 추가 그래프/표
+    \item 키워드, 요약, 도표 설명 등 보조자료
+\end{itemize}
+
+\vspace{1em}
+\noindent\textit{Disclaimer: For informational purposes only. Not investment advice.}
+\end{document}

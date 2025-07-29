@@ -50,21 +50,8 @@
       {{- /* taxonomy term 페이지 */}}
       {{- $pagesToShow = .Pages }}
   {{- else if eq .Kind "section" }}
-      {{- /* 특정 섹션 → subcategories term 매핑 */}}
-      {{- $targetTerm := "" }}
-      {{- if eq .RelPermalink "/framework/applications/" }}{{ $targetTerm = "applications" }}
-      {{- else if eq .RelPermalink "/framework/letters/" }}{{ $targetTerm = "letters" }}
-      {{- else if eq .RelPermalink "/framework/numbers/" }}{{ $targetTerm = "numbers" }}
-      {{- else if eq .RelPermalink "/framework/qualifications/" }}{{ $targetTerm = "qualifications" }}
-      {{- else if eq .RelPermalink "/judgment_philosophy/diary/" }}{{ $targetTerm = "diary" }}
-      {{- else if eq .RelPermalink "/judgment_philosophy/passing_thoughts/" }}{{ $targetTerm = "passing_thoughts" }}
-      {{- else if eq .RelPermalink "/market_decision_log/actions/" }}{{ $targetTerm = "actions" }}
-      {{- else if eq .RelPermalink "/market_decision_log/calls/" }}{{ $targetTerm = "calls" }}
-      {{- else if eq .RelPermalink "/structural_commentary/macro_trends/" }}{{ $targetTerm = "macro_trends" }}
-      {{- else if eq .RelPermalink "/structural_commentary/micro_trends/" }}{{ $targetTerm = "micro_trends" }}
-      {{- else if eq .RelPermalink "/works/full_format/" }}{{ $targetTerm = "full_format" }}
-      {{- else if eq .RelPermalink "/works/light_format/" }}{{ $targetTerm = "light_format" }}
-      {{- end }}
+      {{- /* URL 경로상 _index.html 이 있는 마지막 디렉토리를 '게시판'으로 인식, subcategory 텀으로 동적 사용 */}}
+      {{- $targetTerm := path.Base .RelPermalink }}
 
       {{- if $targetTerm }}
           {{- $term := (index site.Taxonomies.subcategories $targetTerm) }}
