@@ -14,3 +14,11 @@ _build:
 이 콘텐츠는 승인된 사용자에게만 공개됩니다.
 
 </div>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("login", function(user) {
+      window.location.href = "/works/";
+    });
+  }
+</script>
