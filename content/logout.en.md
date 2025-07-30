@@ -9,7 +9,7 @@ hidemeta: true
 
 <div style="text-align: center;">
 
-<button class="custom-button" id="logout-button">로그아웃</button>
+<button class="custom-button" id="logout-button">Log Out</button>
 
 </div>
 
