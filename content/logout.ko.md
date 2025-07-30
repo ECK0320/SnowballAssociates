@@ -1,5 +1,5 @@
 ---
-url: "/login/"
+url: "/ko/logout/"
 layout: "single"
 build:
  render: always
@@ -9,7 +9,8 @@ hidemeta: true
 
 <div style="text-align: center;">
 
-<button class="custom-button" onclick="netlifyIdentity.open('signup')">로그아웃</button>
+<button class="custom-button" onclick="netlifyIdentity.open('signup')">회원가입</button>
+<button class="custom-button" onclick="netlifyIdentity.open('login')">로그인</button>
 <button class="custom-button" onclick="netlifyIdentity.open('logout')">로그아웃</button>
 
 </div>
