@@ -9,7 +9,8 @@ hidemeta: true
 
 <div style="text-align: center;">
 
-<button class="custom-button" onclick="netlifyIdentity.open('login')">로그아웃</button>
+<button class="custom-button" onclick="netlifyIdentity.open('signup')">로그아웃</button>
+<button class="custom-button" onclick="netlifyIdentity.open('logout')">로그아웃</button>
 
 </div>
 
