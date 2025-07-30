@@ -1,5 +1,5 @@
 ---
-url: "/ko/logout/"
+url: "/logout/"
 layout: "single"
 build:
  render: always
@@ -9,14 +9,16 @@ hidemeta: true
 
 <div style="text-align: center;">
 
-<button class="custom-button" onclick="netlifyIdentity.open('login')">로그아웃</button>
+<div style="text-align: center;">
+
+<button class="custom-button" onclick="netlifyIdentity.open('login')">Log Out</button>
 
 </div>
 
 <script>
   if not (window.netlifyIdentity) {
     window.netlifyIdentity.on("login", function(user) {
-      window.location.href = "/ko/login/";
+      window.location.href = "/login/";
     });
   }
 </script>

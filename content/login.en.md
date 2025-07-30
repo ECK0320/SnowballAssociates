@@ -13,7 +13,7 @@ hidemeta: true
 
 This content is restricted to authorized users only.
 
-If you believe you should have access, please contact <a href="mailto:snowballassociates@gmail.com">the administrator</a> through your email address used for sign-up.
+Should you had access, please contact <a href="mailto:snowballassociates@gmail.com">the administrator</a> through your email address used for sign-up.
 
 
 </div>
