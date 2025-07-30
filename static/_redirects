@@ -1,6 +1,8 @@
 /ko/judgment_philosophy/diary/* 200!  Role=subscriber
 /ko/judgment_philosophy/diary/* /ko/login/   302!
 
-
 /ko/logout/* 200!  Role=subscriber
 /ko/logout/* /ko/login/   302!
+
+/logout/* 200!  Role=subscriber
+/logout/* /login/   302!

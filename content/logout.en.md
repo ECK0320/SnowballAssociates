@@ -9,24 +9,26 @@ hidemeta: true
 
 <div style="text-align: center;">
 
-<div style="text-align: center;">
-
-<button class="custom-button" onclick="netlifyIdentity.open('login')">Log Out</button>
+<button class="custom-button" id="logout-button">로그아웃</button>
 
 </div>
 
 <script>
-  // Netlify Identity 위젯이 로드된 후에 실행될 코드를 보장합니다.
+  // Netlify Identity 위젯이 로드되었는지 확인합니다.
   if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", function(user) {
-      // Netlify Identity가 초기화되었을 때 user 객체가 null이면 로그인되지 않은 상태입니다.
-      if (!user) {
-        // 현재 경로가 이미 /ko/login/이 아니라면 리디렉션합니다.
-        // 무한 리디렉션 루프를 방지합니다.
-        if (window.location.pathname !== "/login/") {
-          window.location.href = "/login/";
-        }
-      }
+    // 로그아웃 이벤트 리스너: 로그아웃이 성공적으로 완료되면 자동으로 호출됩니다.
+    window.netlifyIdentity.on("logout", function() {
+      // 로그아웃 완료 시 즉시 /login/ 페이지로 리디렉션
+      window.location.href = "/login/";
     });
+
+    // HTML 버튼 클릭 시 Netlify Identity의 로그아웃 함수를 호출하도록 연결합니다.
+    const logoutButton = document.getElementById('logout-button');
+    if (logoutButton) {
+      logoutButton.addEventListener('click', function() {
+        // 실제 로그아웃을 실행하는 함수 호출
+        window.netlifyIdentity.logout();
+      });
+    }
   }
 </script>
