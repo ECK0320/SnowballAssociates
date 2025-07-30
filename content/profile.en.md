@@ -1,3 +1,7 @@
+---
+hidemeta: true
+searchHidden: true
+---
 <span style="font-size: 1.4em;">**Profile**</span>
 - <span style="font-size: 1.2em;">**Education**</span>
     - Early & Honors graduation (***Cum Laude***) from both high school and college 🇺🇸

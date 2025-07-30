@@ -4,14 +4,270 @@ title = "Snowball Associates"
 theme = "PaperMod"
 defaultContentLanguage = "en"
 
+
+# 메뉴 구성
+# identifier: config.toml 내부에서만 사용
+# name은 웹사이트에 전시되는 섹션명
+# url은 도메인 뒤에 붙는 주소. /content/ 의 카테고리 이름과 일치해야 하며, 포스팅 프론트매터 내부 (sub)categories: []에 일치
+# 서브카테고리는 identifier 필요 없음
+# md 파일은 로컬드라이브의 /content/ 아무 곳에나 넣어놔도 무관 (포스팅 시 프론트매터의 카테고리대로 분류되어 업로드됨)
+# 기록 관리 용도로 /content/ 내부에 카테고리별로 디렉토리 생성: /content/DB/카테고리
+# .ko.md 파일로 생성하면 자동으로 /ko/category 로 인덱싱되므로, 폴더명은 /url/만 설정해도 충분
+
 [languages]
   [languages.en]
     languageName = "English"
     weight = 1
 
+    # I. Identity & Judgment Philosophy
+    [[languages.en.menu.main]]
+      identifier = "judgment_philosophy"
+      name = "I. Identity"
+      url = "/judgment_philosophy/"
+      weight = 10
+
+    [[languages.en.menu.main]]
+      parent = "judgment_philosophy"
+      name = "Passing Thoughts"
+      url = "/judgment_philosophy/passing_thoughts/"
+      weight = 11
+
+    [[languages.en.menu.main]]
+      parent = "judgment_philosophy"
+      name = "Diary 🇰🇷"
+      url = "/judgment_philosophy/diary/"
+      weight = 12
+
+    # II. Cognitive Core
+    [[languages.en.menu.main]]
+      identifier = "framework"
+      name = "II. Cognitive Core"
+      url = "/framework/"
+      weight = 20
+
+    [[languages.en.menu.main]]
+      parent = "framework"
+      name = "Letters"
+      url = "/framework/letters/"
+      weight = 21
+
+    [[languages.en.menu.main]]
+      parent = "framework"
+      name = "Numbers"
+      url = "/framework/numbers/"
+      weight = 22
+
+    [[languages.en.menu.main]]
+      parent = "framework"
+      name = "Technicals"
+      url = "/framework/technicals/"
+      weight = 23
+
+    [[languages.en.menu.main]]
+      parent = "framework"
+      name = "Qualifications"
+      url = "/framework/qualifications/"
+      weight = 24
+
+    # III. Structural Commentary
+    [[languages.en.menu.main]]
+      identifier = "structural_commentary"
+      name = "III. Structural Commentary"
+      url = "/structural_commentary/"
+      weight = 30
+
+    [[languages.en.menu.main]]
+      parent = "structural_commentary"
+      name = "Macro Trends"
+      url = "/structural_commentary/macro_trends/"
+      weight = 31
+
+    [[languages.en.menu.main]]
+      parent = "structural_commentary"
+      name = "Micro Trends"
+      url = "/structural_commentary/micro_trends/"
+      weight = 32
+
+    # IV. Market Decision Log
+    [[languages.en.menu.main]]
+      identifier = "market_decision_log"
+      name = "IV. Market Decision"
+      url = "/market_decision_log/"
+      weight = 40
+
+    [[languages.en.menu.main]]
+      parent = "market_decision_log"
+      name = "Transactions"
+      url = "/market_decision_log/transactions/"
+      weight = 41
+
+    [[languages.en.menu.main]]
+      parent = "market_decision_log"
+      name = "Market Calls"
+      url = "/market_decision_log/calls/"
+      weight = 42
+
+    # V. Works
+    [[languages.en.menu.main]]
+      identifier = "works"
+      name = "V. Works"
+      url = "/works/"
+      weight = 50
+      hasChildren = true
+
+    [[languages.en.menu.main]]
+      parent = "works"
+      name = "Light Format"
+      url = "/works/light_format/"
+      weight = 51
+
+    [[languages.en.menu.main]]
+      parent = "works"
+      name = "Full Format"
+      url = "/works/full_format/"
+      weight = 52
+
+    # Archive
+    [[languages.en.menu.main]]
+      identifier = "archive"
+      name = "Archive"
+      url = "/archive/"
+      weight = 100
+
+    # Search
+    [[languages.en.menu.main]]
+      identifier = "search"
+      name = "Search"
+      url = "/search/"
+      weight = 200
+
+
   [languages.ko]
     languageName = "Korean"
     weight = 2
+
+    # I. 가치 판단
+    [[languages.ko.menu.main]]
+      identifier = "judgment_philosophy"
+      name = "I. 가치 판단"
+      url = "/ko/judgment_philosophy/"
+      weight = 10
+
+    [[languages.ko.menu.main]]
+      parent = "judgment_philosophy"
+      name = "단상"
+      url = "/ko/judgment_philosophy/passing_thoughts/"
+      weight = 11
+
+    [[languages.ko.menu.main]]
+      parent = "judgment_philosophy"
+      name = "일기"
+      url = "/ko/judgment_philosophy/diary/"
+      weight = 12
+
+    # II. 사고 구조 (인문학, 이공학, 경영학, 금융학 위주 학습 일지 + 시험공부 일지)
+    [[languages.ko.menu.main]]
+      identifier = "framework"
+      name = "II. 사고 토대"
+      url = "/ko/framework/"
+      weight = 20
+
+    [[languages.ko.menu.main]]
+      parent = "framework"
+      name = "인문사회과학"
+      url = "/ko/framework/letters/"
+      weight = 21
+
+    [[languages.ko.menu.main]]
+      parent = "framework"
+      name = "이공학"
+      url = "/ko/framework/numbers/"
+      weight = 22
+
+    [[languages.ko.menu.main]]
+      parent = "framework"
+      name = "경영·금융"
+      url = "/ko/framework/technicals/"
+      weight = 23
+
+    [[languages.ko.menu.main]]
+      parent = "framework"
+      name = "시험 공부"
+      url = "/ko/framework/qualifications/"
+      weight = 24
+
+    # III. 구조 판단 (직관 위주; 데이터 분석까지 더하면 V. Works 로)
+    [[languages.ko.menu.main]]
+      identifier = "structural_commentary"
+      name = "III. 구조 판단"
+      url = "/ko/structural_commentary/"
+      weight = 30
+
+    [[languages.ko.menu.main]]
+      parent = "structural_commentary" # Macro_level Trends: Politics & Economy (거시적 흐름: 정치 및 경제)
+      name = "거시 동향: 정치·경제" # 국가 정책이나 거시 경제 상황이 특정 산업, 거시적 시장, 또는 사회 전체의 구조에 미치는 영향. 국가, 국제 사회, 정부 정책, 거시 경제, 산업 구조 등 '집단'이나 '시스템' 차원의 큰 흐름과 구조적 변화 관찰.
+      url = "/ko/structural_commentary/macro_trends/"
+      weight = 31
+
+    [[languages.ko.menu.main]]
+      parent = "structural_commentary" # Micro_level Trends: Society & Culture (미시적 흐름: 사회 및 문화) 
+      name = "미시 동향: 사회·문화" # 정치/경제가 '개인의 삶과 심리, 일상생활, 소비 행태'에 미치는 영향. 개인, 소규모 집단, 공동체, 그리고 이들의 행동 양식, 가치관, 라이프스타일, 심리, 문화적 트렌드 등. 개인의 경험과 사회/문화적 현상 관찰.
+      url = "/ko/structural_commentary/micro_trends/"
+      weight = 32
+
+    # IV. 시장 판단
+    [[languages.ko.menu.main]]
+      identifier = "market_decision_log"
+      name = "IV. 시장 판단"
+      url = "/ko/market_decision_log/"
+      weight = 40
+
+    [[languages.ko.menu.main]]
+      parent = "market_decision_log"
+      name = "거래 내역" # 매매 일지
+      url = "/ko/market_decision_log/transactions/"
+      weight = 41
+
+    [[languages.ko.menu.main]]
+      parent = "market_decision_log"
+      name = "투자 의견" # 종목/산업 추천
+      url = "/ko/market_decision_log/calls/"
+      weight = 42
+
+    # V. 작업물
+    [[languages.ko.menu.main]]
+      identifier = "works"
+      name = "V. 작업물"
+      url = "/ko/works/"
+      weight = 50
+      hasChildren = true
+
+    [[languages.ko.menu.main]]
+      parent = "works"
+      name = "브리핑 & 에세이" # 뉴스클리핑 & 브리프코멘트 + 데일리스낵 모은 thematic report
+      url = "/ko/works/light_format/"
+      weight = 51
+
+    [[languages.ko.menu.main]]
+      parent = "works"
+      name = "리포트 & 페이퍼" # 종목 보고서, 산업 보고서, 페이퍼, 논문
+      url = "/ko/works/full_format/"
+      weight = 52
+
+    # 전체 보기
+    [[languages.ko.menu.main]]
+      identifier = "archive"
+      name = "전체 보기"
+      url = "/ko/archive/"
+      weight = 100
+
+    # 검색
+    [[languages.ko.menu.main]]
+      identifier = "search"
+      name = "검색"
+      url = "/ko/search/"
+      weight = 200
+
 
 enableRobotsTXT = true
 buildDrafts = false
@@ -118,143 +374,3 @@ text = "Rationalist ∫ {Romanticism ∪ Kapitalismus}: Theory in Practice"
 
   # V_i. Light_Format: 'daily snack,' (짧은 주기로 작성하는 사건 별 간단한 코멘트) 주기적으로 daily snack 모은 'thematic report' (한 사건에 대한 해당 코멘트들을 한데 엮어서 작성하는 짧은 리포트)
   # V_ii. Full_Format: 'report,' 'paper,' 'thesis' (I. Identity, III. Structural Commentary, V_i. Light_Format 에서 다룬 주제 중 제대로 연구해서 쓸 가치가 있는 글은 academic paper/thesis, 금융시장과 관련된 기업/산업/정책분석은 report)
-  
-
-
-# 메뉴 구성
-# identifier: config.toml 내부에서만 사용
-# name은 웹사이트에 전시되는 섹션명
-# url은 도메인 뒤에 붙는 주소. /content/ 의 카테고리 이름과 일치해야 하며, 포스팅 프론트매터 내부 (sub)categories: []에 일치
-# 서브카테고리는 identifier 필요 없음
-# md 파일은 로컬드라이브의 /content/ 아무 곳에나 넣어놔도 무관 (포스팅 시 프론트매터의 카테고리대로 분류되어 업로드됨)
-# 기록 관리 용도로 /content/ 내부에 카테고리별로 디렉토리 생성: /content/DB/카테고리
-# .ko.md 파일로 생성하면 자동으로 /ko/category 로 인덱싱되므로, 폴더명은 /url/만 설정해도 충분
-
-
-# 가치 판단 (철학 에세이)
-[[menu.main]]
-  identifier = "judgment_philosophy"
-  name = "I. Identity"
-  url = "/judgment_philosophy/"
-  weight = 10
-
-[[menu.main]]
-  parent = "judgment_philosophy"
-  name = "Passing Thoughts" # 小考
-  url = "/judgment_philosophy/passing_thoughts/"
-  weight = 11
-
-[[menu.main]]
-  parent = "judgment_philosophy"
-  name = "Diary 🇰🇷" # 일기
-  url = "/ko/judgment_philosophy/diary/"
-  weight = 12
-
-
-# 사고 구조 (인문학, 이공학, 경영학, 금융학 위주 학습 일지 + 시험공부 일지)
-[[menu.main]]
-  identifier = "framework"
-  name = "II. Cognitive Core"
-  url = "/framework/"
-  weight = 20
-
-[[menu.main]]
-  parent = "framework"
-  name = "Letters"
-  url = "/framework/letters/"
-  weight = 21
-
-[[menu.main]]
-  parent = "framework"
-  name = "Numbers"
-  url = "/framework/numbers/"
-  weight = 22
-
-[[menu.main]]
-  parent = "framework"
-  name = "Technicals"
-  url = "/framework/technicals/"
-  weight = 23
-
-[[menu.main]]
-  parent = "framework"
-  name = "Qualifications"
-  url = "/framework/qualifications/"
-  weight = 24
-
-
-# 구조 판단 (직관 위주; 데이터 분석까지 더하면 V. Works 로)
-[[menu.main]]
-  identifier = "structural_commentary"
-  name = "III. Structural Commentary"
-  url = "/structural_commentary/"
-  weight = 30
-
-[[menu.main]]
-  parent = "structural_commentary" # Macro_level Trends: Politics & Economy (거시적 흐름: 정치 및 경제)
-  name = "Macro Trends" # 국가 정책이나 거시 경제 상황이 특정 산업, 거시적 시장, 또는 사회 전체의 구조에 미치는 영향. 국가, 국제 사회, 정부 정책, 거시 경제, 산업 구조 등 '집단'이나 '시스템' 차원의 큰 흐름과 구조적 변화 관찰.
-  url = "/structural_commentary/macro_trends/"
-  weight = 31
-
-[[menu.main]]
-  parent = "structural_commentary" # Micro_level Trends: Society & Culture (미시적 흐름: 사회 및 문화) 
-  name = "Micro Trends" # 정치/경제가 '개인의 삶과 심리, 일상생활, 소비 행태'에 미치는 영향. 개인, 소규모 집단, 공동체, 그리고 이들의 행동 양식, 가치관, 라이프스타일, 심리, 문화적 트렌드 등. 개인의 경험과 사회/문화적 현상 관찰.
-  url = "/structural_commentary/micro_trends/"
-  weight = 32
-
-
-# 시장 판단
-[[menu.main]]
-  identifier = "market_decision_log"
-  name = "IV. Market Decision"
-  url = "/market_decision_log/"
-  weight = 40
-
-[[menu.main]]
-  parent = "market_decision_log"
-  name = "Transactions" # 매매 일지
-  url = "/market_decision_log/transactions/"
-  weight = 41
-
-[[menu.main]]
-  parent = "market_decision_log"
-  name = "Market Calls" # 종목/산업 추천
-  url = "/market_decision_log/calls/"
-  weight = 42
-
-
-# 작업물
-[[menu.main]]
-  identifier = "works"
-  name = "V. Works"
-  url = "/works/"
-  weight = 50
-  hasChildren = true
-
-[[menu.main]]
-  parent = "works"
-  name = "Light Format" # 뉴스클리핑 & 브리프코멘트 + 데일리스낵 모은 thematic report
-  url = "/works/light_format/"
-  weight = 51
-
-[[menu.main]]
-  parent = "works"
-  name = "Full Format" # 종목 보고서, 산업 보고서, 페이퍼, 논문
-  url = "/works/full_format/"
-  weight = 52
-
-
-# 전체 보기
-[[menu.main]]
-  identifier = "archive"
-  name = "Archive"
-  url = "/archive/"
-  weight = 100
-
-
-# 검색
-[[menu.main]]
- identifier = "search"
- name = "Search"
- url = "/search/"
- weight = 200

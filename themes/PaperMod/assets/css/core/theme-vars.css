@@ -21,6 +21,21 @@
     --dropdown-shadow: 0 2px 8px rgba(0,0,0,0.08);    
 }
 
+
+.dark {
+    --theme: rgb(29, 30, 32);
+    --entry: rgb(46, 46, 51);
+    --primary: rgb(218, 218, 219);
+    --secondary: rgb(155, 156, 157);
+    --tertiary: rgb(65, 66, 68);
+    --content: rgb(196, 196, 197);
+    --code-block-bg: rgb(46, 46, 51);
+    --code-bg: rgb(55, 56, 62);
+    --border: rgb(51, 51, 51);
+    --dropdown-shadow: 0 4px 12px rgba(0,0,0,0.30);
+}
+
+
 /* 조선일보 신명조체; 인라인 인용 폰트 */
 @font-face {
     font-family: 'ChosunSm';
@@ -87,19 +102,6 @@
   margin: 0 auto;
 }
 
-.dark {
-    --theme: rgb(29, 30, 32);
-    --entry: rgb(46, 46, 51);
-    --primary: rgb(218, 218, 219);
-    --secondary: rgb(155, 156, 157);
-    --tertiary: rgb(65, 66, 68);
-    --content: rgb(196, 196, 197);
-    --code-block-bg: rgb(46, 46, 51);
-    --code-bg: rgb(55, 56, 62);
-    --border: rgb(51, 51, 51);
-    --dropdown-shadow: 0 4px 12px rgba(0,0,0,0.30);
-}
-
 .list {
     background: var(--code-bg);
 }
@@ -107,3 +109,29 @@
 .dark.list {
     background: var(--theme);
 }
+
+
+/* 버튼 기본 스타일 */
+  .custom-button {
+    /* 배경색: --primary(라이트 테마에서 어둡고, 다크 테마에서 밝은 색상) 사용 */
+    background-color: var(--primary);
+    /* 글자색: --theme(라이트 테마에서 흰색, 다크 테마에서 어두운 회색) 또는 --content 색상 반전 사용 */
+    color: var(--theme); /* --primary가 배경이므로 글자는 배경색과 대비되는 --theme 사용 */
+    padding: 5px 10px; /* 안쪽 여백 */
+    border: none; /* 테두리 없애기 */
+    border-radius: var(--radius); /* 정의된 radius 변수 사용 (8px) */
+    cursor: pointer; /* 마우스 오버 시 커서 모양 변경 */
+    font-size: 16px; /* 글자 크기 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    text-decoration: none; /* 밑줄 없애기 */
+    display: inline-block; /* 인라인 블록 요소로 표시 */
+    margin: 4px 2px; /* 바깥 여백 */
+    transition-duration: 0.3s; /* 전환 효과 시간 */
+    box-shadow: var(--dropdown-shadow); /* 드롭다운 쉐도우 변수 활용 */
+  }
+
+  /* 호버(마우스 올렸을 때) 효과 */
+  .custom-button:hover {
+    /* 호버 시 배경색을 약간 어둡게 (라이트) 또는 밝게 (다크) 조정 */
+    filter: brightness(85%); /* 원본 색상의 밝기를 85%로 조절하여 미묘한 변화 */
+  }
