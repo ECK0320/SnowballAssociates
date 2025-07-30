@@ -16,7 +16,7 @@ hidemeta: true
 </div>
 
 <script>
-  if not (window.netlifyIdentity) {
+  if (!window.netlifyIdentity) {
     window.netlifyIdentity.on("login", function(user) {
       window.location.href = "/login/";
     });
