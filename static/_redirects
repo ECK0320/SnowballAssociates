@@ -4,8 +4,11 @@
 /ko/judgment_philosophy/diary/*    /ko/login/   302!
 
 ## 국내 비평 게시판: 회원 전체
-/ko/structural_commentary/* 200!    Role=*
-/ko/structural_commentary/*    /ko/login/  302!
+/ko/structural_commentary/macro_trends/* 200!    Role=*
+/ko/structural_commentary/macro_trends/*    /ko/login/  302!
+
+/ko/structural_commentary/micro_trends/* 200!    Role=*
+/ko/structural_commentary/micro_trends/*    /ko/login/  302!
 
 
 # 로그아웃 페이지
