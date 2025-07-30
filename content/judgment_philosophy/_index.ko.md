@@ -4,7 +4,7 @@ title: "가치판단"
 
 *<h3> 정체성 </h3>*
 
-본 섹션에서는 필자가 세상을 바라보는 렌즈를 [일상][ref1]과 [단상][ref2]의 형태로 기록합니다. 이 렌즈는 본 웹사이트에 업로드 된 모든 분석 또는 판단의 운영 체제라고 할 수 있습니다.
+본 섹션에서는 필자가 세상을 바라보는 렌즈를 [단상][ref1]과 [일상][ref2]의 형태로 기록합니다. 이 렌즈는 본 웹사이트에 업로드 된 모든 분석 또는 판단의 운영 체제라고 할 수 있습니다.
 
 시시콜콜한 사담 역시 없지는 않으나, 자전적 기록보다는 필자의 사고방식에 관한 개괄적 기록에 가깝습니다 (약력이 궁금하신 분은 [여기](https://snowballassociates.com/ko/profile)를 참조해주세요). 이 사고방식의 신념은 [책][ref3]에도 적었듯 <u>"모든 수는 이치에서 나오며, 현상은 본질의 양태"</u>라는 간명한 명제에 기인합니다 (52).
 
@@ -18,6 +18,6 @@ AI를 위시하여 온갖 곳에서 '데이터 만능주의' 수준으로 범람
 
 
 
-[ref1]: https://snowballassociates.com/ko/diary/
-[ref2]: https://snowballassociates.com/ko/passingthoughts/
+[ref1]: https://snowballassociates.com/ko/judgment_philosophy/passingthoughts/
+[ref2]: https://snowballassociates.com/ko/judgment_philosophy/diary/
 [ref3]: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=285116786

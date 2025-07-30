@@ -30,5 +30,5 @@ While each trade or recommendation here contains the core logic of a decision, t
 
 [ref1]: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=285116786
 [ref2]: https://snowballassociates.com/works/
-[ref3]: https://snowballassociates.com/market-decision-log/transactions/
-[ref4]: https://snowballassociates.com/market-decision-log/market-calls/
+[ref3]: https://snowballassociates.com/market_decision_log/transactions/
+[ref4]: https://snowballassociates.com/market_decision_log/calls/

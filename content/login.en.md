@@ -9,12 +9,11 @@ hidemeta: true
 
 <div style="text-align: center;">
 
-<button class="custom-button" onclick="netlifyIdentity.open('login')">Log In</button>
+<button class="custom-button" onclick="netlifyIdentity.open('login')">Log In</button> <button class="custom-button" onclick="netlifyIdentity.open('signup')">Sign Up</button> 
 
-This content is restricted to authorized users only.
+This content is restricted to members only.
 
-Should you had access, please contact <a href="mailto:snowballassociates@gmail.com">the administrator</a> through your email address used for sign-up.
-
+Please log in or sign up for free to read the full article!
 
 </div>
 

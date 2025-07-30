@@ -32,12 +32,6 @@ defaultContentLanguage = "en"
       url = "/judgment_philosophy/passing_thoughts/"
       weight = 11
 
-    [[languages.en.menu.main]]
-      parent = "judgment_philosophy"
-      name = "Diary 🇰🇷"
-      url = "/judgment_philosophy/diary/"
-      weight = 12
-
     # II. Cognitive Core
     [[languages.en.menu.main]]
       identifier = "framework"
@@ -161,7 +155,7 @@ defaultContentLanguage = "en"
 
     [[languages.ko.menu.main]]
       parent = "judgment_philosophy"
-      name = "일기"
+      name = "일상"
       url = "/ko/judgment_philosophy/diary/"
       weight = 12
 

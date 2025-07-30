@@ -1,8 +1,18 @@
-/ko/judgment_philosophy/diary/* 200!  Role=subscriber
-/ko/judgment_philosophy/diary/* /ko/login/   302!
+# 등급 제한은 높은 순서대로 내림차순 작성: 이웃 (모든 접근 허용), 최우수회원 ('일기' 접근 불가), 우수회원 ('일기', '長考' 접근 불가); 회원 ('일기', '長考', '小考' 접근 불가)
+## 단상·일상 게시판: 이웃, 최우수회원
+/ko/judgment_philosophy/diary/* 200!    Role=이웃
+/ko/judgment_philosophy/diary/*    /ko/login/   302!
 
-/ko/logout/* 200!  Role=subscriber
+## 국내 비평 게시판: 회원 전체
+/ko/structural_commentary/* 200!    Role=*
+/ko/structural_commentary/* 200!    /ko/login/  302!
+
+
+# 로그아웃 페이지
+## 국문 로그아웃
+/ko/logout/* 200!  Role=*
 /ko/logout/* /ko/login/   302!
 
-/logout/* 200!  Role=subscriber
+## 영문 로그아웃
+/logout/* 200!  Role=*
 /logout/* /login/   302!

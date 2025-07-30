@@ -18,7 +18,7 @@ The purpose of this section is to make records so that I can later track what I 
 
 - **[Diary][ref2]**: An archive of personal journals in Korean, maintained for a small group of long-time subscribers. Access is restricted. <br><br>
 
-- **[Passing Thoughts][ref3]**: Brief judgment calls; written mostly in Korean, due to the intrinsic linguistic constraints of the English language in fully capturing subtle implications, nuances, or connotations inherent in abstract concepts. For example:
+- **[Passing Thoughts][ref3]**: Brief judgment calls; written mostly in Korean to fully capture subtle implications, nuances, or connotations inherent in abstract concepts. For example:
     - justice *vs.* righteousness ~ 정의(正義); *díkē*; *aequitas* *vs.* 공의(公義); *dikaiosynē*; *iustitia*
     - the people *vs.* nationals *vs.* citizens ~ 인민(人民); *anthrōpoi*[^1] *vs.* 국민(國民); *dēmos* *vs.* 시민(市民); *politēs*
 
@@ -26,6 +26,6 @@ Noteworthy thoughts, given that my curiosity is piqued enough, will be developed
 
 [^1]: There is no direct ancient Greek equivalent capturing full nuance/context of 인민(人民); *anthrōpoi* is closer to a general *people* (*i.e.*, human beings) than *the people* (*i.e.*, a populace or collective body, mostly suitable in political/legal philosophy context), while it is very tricky in daily usage to differentiate 'people' from 'the people' in English.
 
-[ref2]: https://snowballassociates.com/ko/diary/
-[ref3]: https://snowballassociates.com/passingthoughts/
+[ref2]: https://snowballassociates.com/ko/judgment_philosophy/diary/
+[ref3]: https://snowballassociates.com/judgment_philosophy/passingthoughts/
 [ref4]: https://snowballassociates.com/works/
