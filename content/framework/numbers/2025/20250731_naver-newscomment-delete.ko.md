@@ -1,10 +1,11 @@
 ---
+date: 2025-07-31 16:31:00+09:00
 categories: ["framework"]
 subcategories: ["numbers"]
 title: "네이버 뉴스 기사 댓글 삭제 스크립트"
 studies: ["STEM"] # 해당 분야 선택 (이공학)
 tools: ["JavaScript"] # 사용된 프로그래밍 언어 & 패키지
-skills: [""] # 발행 전 AI 돌려서 quantitative/qualitative/technical/academic skillset 추출하기
+skills: ["Web Automation", "Scripting", "Web Scraping", "Browser Developer Tools", "DOM Manipulation", "Automation Scripting", "Problem Solving", "Data Cleaning"] # 발행 전 AI 돌려서 링크드인 공식 카테고리 및 skill taxonomy 기준으로 핵심 quantitative/qualitative/technical/academic skill set 만 ["skill1", "skill2", ...] 1열 형태로 추출
 tags: ["Cognitive Framework"] # 세부 분야: book report, lecture, class, data science, data analytics, mathematics, statistics, Python, R, SQL, Linux, Ubuntu, DB, algorithm, ML, AI, LaTeX, Hugo
 ---
 
