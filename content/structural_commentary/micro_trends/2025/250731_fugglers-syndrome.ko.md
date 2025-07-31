@@ -4,15 +4,15 @@ categories: ["structural_commentary"]
 subcategories: ["micro_trends"]
 title: "'괴물 인형' 라부부·퍼글러가 유행하는 이유"
 # description: "" 부제목: 필요하다면 추가
-structures: ["society", "culture"] # 구조 선택: politics, society, culture, and economy
+structures: ["Society", "Culture"] # 구조 선택: Politics, Society, Culture, and Economy
 regions: ["Northeast Asia", "Korea"] # 지역 + 국가명: 동북아시아, 동남아시아, 서남아시아, 중앙아시아, 중동아시아, 유라시아, 동아시아, 북유럽, 남유럽, 서유럽, 북미, 중미, 남미, 아프리카
 thought_facets: ["Intuition"] # 직관 or 분석
 skills: ["Qualitative Analysis", "Critical Thinking", "Trend Analysis", "Social Commentary", "Cross-Cultural Analysis", "Logic and Reasoning", "Pattern Recognition", "Framing (Social Sciences)", "Cognitive Psychology", "Behavioral Analysis", "Deductive Reasoning", "Inductive Reasoning", "Causal Analysis"] # 발행 전 AI 돌려서 링크드인 공식 카테고리 및 skill taxonomy 기준으로 핵심 quantitative/qualitative/technical/academic skill set 만 ["skill1", "skill2", ...] 1열 형태로 추출
-tags: ["Trend", "Paradigm", "cultural norms", "social values", "consumption patterns"] # 추세: cultural norms, social values, consumption patterns, psychological landscapes
+tags: ["Trend", "Paradigm", "Cultural Norms", "Social Values", "Consumption Patterns"] # 추세: cultural norms, social values, consumption patterns, psychological landscapes
 showTOC: false
 ---
 
-#### [“또 품절 대란 시작?”…애니 덕분에 난리난 ‘괴물 인형’, 정체는"](https://n.news.naver.com/mnews/article/011/0004515066) (서울경제, 2025.07.30.)
+#### [“또 품절 대란 시작?” … 애니 덕분에 난리난 ‘괴물 인형’, 정체는"](https://n.news.naver.com/mnews/article/011/0004515066) (서울경제, 2025.07.30.)
 
 <div class = "quote">
 
@@ -28,6 +28,8 @@ showTOC: false
 
 이런 <span class="quote">"괴상한"</span> 주장이 범람하는 이유를 생각해봤다.
 
+<br>
+
 1. 잘나지는데 필요한 수고를 들이는 것보다 그냥 못난 채로 사는 게 더 쉽고 편한다.
 \> *기회비용, 합리적 기대*
 <br>
@@ -36,11 +38,11 @@ showTOC: false
 <br>
 
 3. 해당 괴리를 <span class = "quote">"못난 것이 더 아름답다"</span>라는 거지발싸개 같은 명제로 합리화한다.
-\> *인지부조화: 신 포도 오류, 가치 전도 오류, 정서적 호소*
+\> *인지부조화: 신포도 오류, 가치 전도 오류, 정서적 호소*
 <br>
 
 4. 객관적으로 못난 자신이 이런 말 하면 조롱을 당하는데, 객관적으로 잘난 것처럼 보이는 인간이 비슷한 소리를 하니 <span class = "quote">"얼씨구나"</span> 하고 마음 놓고 정신승리를 시전한다.
-\> 일종의 *권위에 호소하는 오류*이긴 한데, 왜 '유명세'가 '권위'가 되는 건지 나는 아직도 이해를 못 하겠다. 다만, 본문의 경우 존재론적으로 주 기능이 '주류 트렌드의 입간판'인 아이돌이 행위의 주체이므로 어느 정도의 권위가 있다고 해석할 수 있다.
+\> 일종의 *권위에 호소하는 오류*이긴 한데, 왜 '유명세'가 '권위'가 되는 건지 나는 아직도 이해를 못 하겠다. 다만, 본문의 경우 정체성 차원의 주 기능이 '주류 트렌드의 입간판'인 아이돌이 행위의 주체이므로 어느 정도의 권위가 있다고 해석할 수 있다.
 <br>
 
 5. 명제의 증명 책임을 자신이 권위를 빌려온 타자에게 이관시켰으므로 본인은 책임 없는 쾌락만 누릴 수 있다.
