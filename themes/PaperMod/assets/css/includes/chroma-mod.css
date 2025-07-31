@@ -37,24 +37,26 @@
     border-radius: 6px;
 }
     /* "language-" 제거 */
-    .chroma code.language-bash::before { content: "bash"; } /* 리눅스 터미널 */
-    .chroma code.language-powershell::before { content: "powershell"; } /* 윈도우 파워쉘 */
-    .chroma code.language-cmd::before { content: "cmd"; } /* 윈도우 터미널 (bat) */
-    .chroma code.language-zsh::before { content: "zsh"; } /* 맥 터미널 */
-    .chroma code.language-python::before { content: "python"; }
+    .chroma code.language-bash::before { content: "Linux Bash"; } /* 리눅스 터미널 */
+    .chroma code.language-powershell::before { content: "Windows Powershell"; } /* 윈도우 파워쉘 */
+    .chroma code.language-cmd::before { content: "Windows CMD"; } /* 윈도우 터미널 (bat) */
+    .chroma code.language-zsh::before { content: "Mac ZSH"; } /* 맥 터미널 */
+    .chroma code.language-python::before { content: "Python"; }
     .chroma code.language-r::before { content: "R"; }
-    .chroma code.language-latex::before { content: "latex"; }
-    .chroma code.language-c::before { content: "c"; }
-    .chroma code.language-cpp::before { content: "cpp"; }
-    .chroma code.language-go::before { content: "go"; }
-    .chroma code.language-html::before { content: "html"; }
-    .chroma code.language-css::before { content: "css"; }
-    .chroma code.language-javascript::before { content: "js"; }
-    .chroma code.language-typescript::before { content: "ts"; }
-    .chroma code.language-json::before { content: "json"; }
-    .chroma code.language-yaml::before { content: "yaml"; }
-    .chroma code.language-toml::before { content: "toml"; }
+    .chroma code.language-latex::before { content: "LaTeX"; }
+    .chroma code.language-c::before { content: "C"; }
+    .chroma code.language-cpp::before { content: "C++"; }
+    .chroma code.language-go::before { content: "Go"; }
+    .chroma code.language-html::before { content: "HTML"; }
+    .chroma code.language-css::before { content: "CSS"; }
+    .chroma code.language-java::before { content: "Java"; }
+    .chroma code.language-javascript::before { content: "JavaScript"; }
+    .chroma code.language-js::before { content: "JavaScript"; }
+    .chroma code.language-typescript::before { content: "TS"; }
+    .chroma code.language-json::before { content: "Json"; }
+    .chroma code.language-yaml::before { content: "YAML"; }
+    .chroma code.language-toml::before { content: "TOML"; }
     .chroma code.language-makefile::before { content: "makefile"; }
-    .chroma code.language-markdown::before { content: "md"; }
-    .chroma code.language-sql::before { content: "sql"; }
-    .chroma code.language-matlab::before { content: "matlab"; }
+    .chroma code.language-markdown::before { content: "MD"; }
+    .chroma code.language-sql::before { content: "SQL"; }
+    .chroma code.language-matlab::before { content: "MatLab"; }
