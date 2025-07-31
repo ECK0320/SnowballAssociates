@@ -6,7 +6,7 @@ title: "Ubuntu LTS 24.04에 texlive-full 설치 시 오류 해결"
 description: "feat. luahbtex 호환성 버그" #필요하다면 추가
 studies: ["STEM"] # 해당 분야 선택 (이공학)
 tools: ["LaTeX", "Hugo"] # 사용된 프로그래밍 언어 & 패키지
-skills: [""] # 발행 전 AI 돌려서 quantitative/qualitative/technical/academic skillset 추출하기
+skills: ["Linux System Administration", "Package Management", "Dependency Resolution", "Shell Scripting", "Debugging", "Error Troubleshooting", "LaTeX Installation", "System Compatibility Analysis", "Command-Line Interface (CLI)", "Software Environment Configuration", "Technical Problem Solving"]  # 발행 전 AI 돌려서 quantitative/qualitative/technical/academic skillset 추출하기
 tags: ["Cognitive Framework", "Linux", "Ubuntu LTS 24.04"] # 세부 분야: book report, lecture, class, data science, data analytics, mathematics, statistics, Python, R, SQL, Linux, Ubuntu, DB, algorithm, ML, AI, LaTeX, Hugo
 ---
 
