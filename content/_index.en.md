@@ -16,4 +16,4 @@
 
 ***
 
-**\*** This blog is currently under construction 🚧 to rebuild the webpage in a new platform and to shortlist transferrable writings among 2,500+ postings. (*last updated: 2025-07-25*)
+**\*** This blog is currently under construction 🚧 to build the webpage in the current new platform Hugo and to shortlist transferrable writings among 2,500+ postings. (*Built on 2025-07-20; last updated on 2025-07-30*)
