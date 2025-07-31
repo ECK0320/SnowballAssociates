@@ -23,12 +23,12 @@ GPT 4.1의 도움을 받아 간단한 자바스크립트 코드를 만들어봤�
 
 <br>
 
-1. 네이버 로그인 후 아무 뉴스 기사나 들어가서 댓글을 하나 작성한다.
+1. 네이버 로그인 후 아무 뉴스 기사나 들어가서 댓글을 하나 작성한다. <br><br>
 
-![](https://i.imgur.com/RPHktGb.png)
+2. 본인의 '뉴스 댓글모음' 창을 <u>띄워놓은 상태에서</u> `F12`로 개발자 모드를 켜고 `Console`로 진입
+![](https://i.imgur.com/RPHktGb.png) <br>
 
-2. 본인의 '뉴스 댓글모음' 창을 띄워놓은 후 `F12`로 개발자 모드를 켜서 `Console`로 진입해 아래 코드를 복붙한 후 `ENTER`
-
+3. 아래 코드를 위 스크린샷처럼 복붙한 후 `ENTER`
 ```js
 window.confirm = () => true;
 let commentList = [];
@@ -49,5 +49,6 @@ const intervalId = setInterval(() => {
     }
 }, 500);
 ```
+<br>
 
-3. 작성 댓글의 목록 끝까지 다 지우고 나면 <span class="quote">"해당되는 댓글이 없습니다"</span>라는 알림이 두 번---<span class="append">현재 리스트 한 번, 전체 리스트 한 번</span>---연달아 뜬다. `OK` 두 번 눌러주고 새로고침하면 다 삭제돼있는 걸 확인할 수 있다.
+4. 작성 댓글의 목록 끝까지 다 지우고 나면 <span class="quote">"해당되는 댓글이 없습니다"</span>라는 알림이 두 번---<span class="append">현재 리스트 한 번, 전체 리스트 한 번</span>---연달아 뜬다. `OK` 두 번 눌러주고 새로고침하면 다 삭제돼있는 걸 확인할 수 있다.
