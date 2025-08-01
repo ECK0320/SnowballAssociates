@@ -1,5 +1,5 @@
 ---
-date: {{ .Date }}
+#date: {{ .Date }}
 categories: ["framework"]
 subcategories: ["numbers"]
 title: ""
@@ -10,7 +10,7 @@ skills: [""] # 발행 전 AI 돌려서 링크드인 공식 카테고리 및 skil
 tags: ["Cognitive Framework", "Programming"]
 # 세부 분야 1: STEM ― Programming (Data Science, Data Analytics, DB, Algorithm, ML, AI) / Mathematics / Statistics;
 # 세부 분야 2: Letters ― Humanities / Social Science ― Political Theory, Legal Theory, Economics (Macroeconomics, Microeconomics);
-# 세부 분야 3: Technicals ― Business (Sales Strategy, Case Study) / Finance (Portfolio Management, Asset Allocation, M&A, Valuation, Equity Research, Equity Analysis, Fixed Income Analysis, Accounting) / Marketing (Branding, Positioning, Consumer Behavior, Marketing Analytics, Marketing Research);
+# 세부 분야 3: Technicals ― Business (Sales Strategy, Case Study) / Finance (Equity Analysis, Fixed Income Analysis, Accounting) / Marketing (Branding, Positioning, Consumer Behavior, Marketing Analytics, Marketing Research);
 # 공부 방법: Book, Lecture, Class
 draft: true
 ---

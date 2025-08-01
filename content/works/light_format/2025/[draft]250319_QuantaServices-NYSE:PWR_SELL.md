@@ -1,9 +1,10 @@
 ---
-date: 2006-01-02 15:45
+date: "2025-03-19 08:39:00-06:00"
 categories: ["market_decision_log"]
 subcategories: ["calls", "light_format"]
-title: "[Company Name]: [Headline thesis statement]"
+title: "Quanta Services (NYSE: PWR): Short-Term Overprice"
 # description: "" 필요하다면 추가
+
 themes: ["Stock Market", "Investment Rationale"] # 대주제: 국제 정치, 국제 경제, 외환 시장, 채권 시장, 원자재 시장, 증권 시장, 가상화폐/암호통화 시장, 부동산 시장, 금리, 환율, 정치이론, 법이론, 정치이론, 인식론, 존재론, 조직신학, 구원론, 성화론, 유교, 불교, 도교, 주식투자, 채권투자, 원자재투자, 크립토투자, modeling, investment rationale, industry outlooks, policy impacts
 
 work_types: ["Investment Thesis"] # 작업물 성격 (출처 명기와 템플릿 준수 등 핵심 뼈대만 지키고 그 외에는 자유 형식): Snack, Policy Brief, Thematic Essay, Philosophical Essay, Investment Thesis
@@ -34,6 +35,15 @@ trading_tools: ["Financial Analysis", "Narrative Analysis", "WACC Calculation", 
     # 분석 기법 각론 2-2: Quantitative Analysis - Trailing&&12F Multiples Analysis (P/E, P/B, P/S, CPS, PEG, Dividend Yield, ROE, ROA, ROIC, EV/EBIT(DA), EV/Sales, EV/FCFF), Peer Multiples (Comps) Analysis
     # 분석 기법 각론 2-2-1 (SaaS (고성장 기술주)): EV/ARR (Enterprise Value / Annual Recurring Revenue): '기업가치 / 연간 반복 매출'. 구독 기반 비즈니스의 안정적인 매출을 기반으로 가치를 평가하는 핵심 지표. Rule of 40: '매출 성장률 (%) + 이익률 (%) > 40%'일 때 성장성과 수익성이 모두 양호한 기업으로 평가하는 경험적 법칙(heuristic).
     # 분석 기법 각론 2-2-2 (에너지 (석유/가스)): EV/EBITDAX (EBITDA before Exploration Expenses): '기업가치 / EBITDAX.' 탐사비용을 비용으로 처리하지 않고 가치에 반영하는 에너지 산업의 특성을 고려한 지표. EV/Proven Reserves: '기업가치 / 확인 매장량.' 기업이 보유한 핵심 자산인 매장량 대비 가치를 평가.
+
+event_types: ["US Politics", "Global Economy", "US Economy", "Industry", "Company"] # 사건 진원지: monetary policy, fiscal policy, international relations, US Economy, Global Economy, US Politics, International Relations, Korean Economy, industry, company
+
+tools: ["Excel"] # 사용된 프로그래밍 언어 & 패키지: Linux, C, C++, Python, R, SQL, LaTeX, JavaScript, HTML, Hugo, VSC
+
+tags: [""] # forecast (예상), verification (검정), post-mortem analysis (사후 분석; 복기)
+
+draft: true
+---
 
 > My investment research integrates macro, political, and structural signals into narrative-driven judgments aligned with asset-level valuation—prioritizing long-term trends over short-term pricing fluctuations. Each thesis contains numbers but primarily comprises structural analysis of institutional logic & public policy inertia.
 
