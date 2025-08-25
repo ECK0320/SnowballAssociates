@@ -382,7 +382,7 @@ where\ \alpha \approx 0.1534\ and\ \beta \approx 4.3612\ (R^2 \approx 0.5642)
 $$$
 </p>
 
-- The model is based on 2015A--2025E data for U.S. Electricity Consumption annual growth and PWR's financial statements (Source: [EIA](https://www.eia.gov/electricity/annual/table.php?t=epa_01_03.html), FactSet). 
+- The model is based on 2015A--2025E data for U.S. Electricity Consumption annual growth and FY15A--FY24A data for PWR's financial statements (Source: [EIA](https://www.eia.gov/electricity/annual/table.php?t=epa_01_03.html), FactSet). 
 > _The Base Case of 2.17\% for the FY25E growth is directly derived from the EIA's 2025E U.S. electricity consumption._
 
 #### FY25E diluted EPS for PWR
