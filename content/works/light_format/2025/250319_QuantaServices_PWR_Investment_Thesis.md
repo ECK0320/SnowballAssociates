@@ -85,7 +85,7 @@ While sector leaders typically command a 20--30% premium, PWR trades at a 63% EV
 ### Valuation Summary
 My price target for Quanta Services is **$237.73**, representing an **11.7% downside** from the current price. This target is the Base Case estimate from my comparable company analysis, derived by applying a **14.96x forward EV/EBITDA multiple** to the projected FY2025E EBITDA (implying a **+24.8% YoY growth** and a Diluted EPS of $6.55).
 
-This EBITDA projection is the anchor of four distinct scenarios developed for this analysis. Each scenario translates a projected growth in U.S. electricity consumption into a corresponding EBITDA figure for PWR, with projection coefficients derived from proprietary OLS regression models that quantify historical correlations (FY15-FY24) between U.S. electricity consumption, PWR's EBITDA, and its Diluted EPS.
+This EBITDA projection is the anchor of four distinct scenarios developed for this analysis. Each scenario translates a projected growth in U.S. electricity consumption into a corresponding EBITDA figure for PWR, with projection coefficients derived from proprietary [OLS regression models](#ols-models) that quantify historical correlations (FY15-FY24) between U.S. electricity consumption, PWR's EBITDA, and its Diluted EPS.
 
 The football-field chart below visualizes the valuation ranges from my primary analysis (Comps), a fundamentals-based DCF, and the proprietary IVE model used for a sanity check. The gaps highlight the exuberance embedded in the current stock price.
 
