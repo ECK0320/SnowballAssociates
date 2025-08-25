@@ -3,11 +3,15 @@ hidemeta: true
 searchHidden: true
 ---
 <span style="font-size: 1.4em;">**Profile**</span>
+
 - <span style="font-size: 1.2em;">**Education**</span>
     - Early & Honors graduation (***Cum Laude***) from both high school and college 🇺🇸
     - Studied **political-legal theory**, **economics**, and **mathematics** at a liberal arts college, with full merit scholarships & grants
         - **Mathematics-Economics Senior Thesis**: ECON 699 track; **A-**
+        The thesis investigates inflation's disproportionate impact across different income households, with a proprietary DSGE model utilized for simulation.
         - **Political-Legal Theory Honors Thesis**: defended; ***Magna Cum Laude***
+        The thesis discusses justice by thoroughly examining modern democracy, suffrage, natural right, civil right, and legal positivism.
+
 - <span style="font-size: 1.2em;">**Experience**</span>
     - **Politics**, **Education**, **Data Analytics**, **Consulting**, **Finance**, and **Construction**
         - Published an [introductory investing guidebook][ref1] for retail investors who started investing during the post-pandemic retail trading frenzy 🇰🇷
@@ -19,6 +23,7 @@ searchHidden: true
         - **Private Education**: Tutoring and admissions consulting for Korean & US prep schools and colleges 🇰🇷
         - **Central Headquarters of the Ruling Party**, **Two Presidential Transition Committees**: Council member in two winning presidential campaigns for two different parties, each of which subsequently became the ruling party, contributing to high school education and youth employment policy development 🇰🇷
         - **The National Assembly**: Parliamentary audit work for the Environment & Labor, Education & Culture, and Construction & Transportation Standing Committees 🇰🇷
+
 - <span style="font-size: 1.2em;">**Interests**</span>
     - Political·Legal Theory/Philosophy, Normative Philosophy, Theology, Religious Studies, Monetary Theory, Behavioral Economics, International Economics, Econometrics, Finance, Business, Data Science, Classical Piano, Taekwondo, Kendo, Boxing, Muay Thai, Iaido (北辰一刀流 Hokushin Ittoryu), Aikido (合気会 Aikikai)
 

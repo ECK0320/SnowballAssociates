@@ -23,7 +23,6 @@ trading_tools: ["Financial Analysis", "Narrative Analysis", "WACC Calculation", 
 
 # 분석 기법 각론 1: Equity||Fixed Income Valuation&&Research&&Analysis - Narrative Analysis, Financial Analysis (총론 목록에 포함)
     # 분석 기법 각론 1-1: Narrative Analysis - Event Driven, Market Sentiment, Technical Analysis
-
     # 분석 기법 각론 1-2: Financial Analysis - EV Valuation, DCF Valuation, Peer Multiples (Comps) Valuation
 
 # 분석 기법 각론 2: Equity||Fixed Income Valuation&&Research&&Analysis - Fundamental Analysis, Quantitative Analysis (총론 목록에 포함)
@@ -35,9 +34,8 @@ trading_tools: ["Financial Analysis", "Narrative Analysis", "WACC Calculation", 
     # 분석 기법 각론 2-2-1 (SaaS (고성장 기술주)): EV/ARR (Enterprise Value / Annual Recurring Revenue): '기업가치 / 연간 반복 매출'. 구독 기반 비즈니스의 안정적인 매출을 기반으로 가치를 평가하는 핵심 지표. Rule of 40: '매출 성장률 (%) + 이익률 (%) > 40%'일 때 성장성과 수익성이 모두 양호한 기업으로 평가하는 경험적 법칙(heuristic).
     # 분석 기법 각론 2-2-2 (에너지 (석유/가스)): EV/EBITDAX (EBITDA before Exploration Expenses): '기업가치 / EBITDAX.' 탐사비용을 비용으로 처리하지 않고 가치에 반영하는 에너지 산업의 특성을 고려한 지표. EV/Proven Reserves: '기업가치 / 확인 매장량.' 기업이 보유한 핵심 자산인 매장량 대비 가치를 평가.
 
-> My investment research integrates macro, political, and structural signals into narrative-driven judgments aligned with asset-level valuation—prioritizing long-term trends over short-term pricing fluctuations. Each thesis contains numbers but primarily comprises structural analysis of institutional logic & public policy inertia.
-
 ---
+> My investment research integrates macro, political, and structural signals into narrative-driven judgments aligned with asset-level valuation—prioritizing long-term trends over short-term pricing fluctuations. Each thesis contains numbers but primarily comprises structural analysis of institutional logic & public policy inertia.
 
 ## 1. Investment Thesis
 

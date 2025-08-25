@@ -63,13 +63,6 @@
     color: var(--content);
 }
 
-.post-content h3,
-.post-content h4,
-.post-content h5,
-.post-content h6 {
-    margin: 24px 0 16px;
-}
-
 .post-content h1 {
     margin: 40px auto 32px;
     font-size: 40px;
@@ -81,11 +74,13 @@
 }
 
 .post-content h3 {
+    margin-top: 3rem;
     font-size: 24px;
 }
 
 .post-content h4 {
-    font-size: 16px;
+    margin-top: 1rem;
+    font-size: 18px;
 }
 
 .post-content h5 {

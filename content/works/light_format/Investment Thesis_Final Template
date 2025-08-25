@@ -1,0 +1,207 @@
+---
+date: 2006-01-02 15:45
+categories: ["market_decision_log"]
+subcategories: ["calls", "light_format"]
+title: "[Company Name]: [Headline thesis statement]"
+# description: "" 필요하다면 추가
+themes: ["Stock Market", "Investment Rationale"] # 대주제: 국제 정치, 국제 경제, 외환 시장, 채권 시장, 원자재 시장, 증권 시장, 가상화폐/암호통화 시장, 부동산 시장, 금리, 환율, 정치이론, 법이론, 정치이론, 인식론, 존재론, 조직신학, 구원론, 성화론, 유교, 불교, 도교, 주식투자, 채권투자, 원자재투자, 크립토투자, modeling, investment rationale, industry outlooks, policy impacts
+
+work_types: ["Investment Thesis"] # 작업물 성격 (출처 명기와 템플릿 준수 등 핵심 뼈대만 지키고 그 외에는 자유 형식): Snack, Policy Brief, Thematic Essay, Philosophical Essay, Investment Thesis
+
+recommendations: ["SELL"] # 예상 내역: BUY, SELL, HOLD
+
+asset_classes: ["Stock"] # 매매 자산 종류: stock, fixed income, currency, commodities, cypto, futures, options, ETF
+
+thought_facets: ["Intuition", "Analysis"] # 직관 or 분석
+
+skills: ["Investment Research", "Equity Valuation", "Equity Research", "Fundamental Analysis", "Quantitative Analysis", "Critical Thinking"]
+# 분석 기법 총론 (How 1): 발행 전 AI 돌려서 링크드인 공식 카테고리 및 skill taxonomy 기준으로 핵심 quantitative/qualitative/technical/academic skill set 만 ["skill1", "skill2", ...] 1열 형태로 추출
+# 분석 기법 총론 예시: "Investment Research", "Top-Down Analysis", "Bottom-Up Analysis", "Equity||Fixed Income Valuation&&Research&&Analysis"(각론 대주제), "Narrative Analysis"(각론 대주제), "Financial Analysis"(각론 대주제), "Fundamental Analysis"(각론 대주제), "Quantitative Analysis"(각론 대주제), "Critical Thinking"
+
+trading_tools: ["Financial Analysis", "Narrative Analysis", "WACC Calculation", "DCF Valuation", "Peer Multiples (Comps) Analysis", "Scenario Analysis"]
+# 분석 기법 각론 (How 2): 크게 Narrative Analysis (Top-Down), Finaical Analysis (Bottom-Up)으로 나눈 후 Bottom-Up Analysis를 정성분석Fundamental Analysis과 정량분석Quantitative Analysis로 세분화.
+
+# 분석 기법 각론 1: Equity||Fixed Income Valuation&&Research&&Analysis - Narrative Analysis, Financial Analysis (총론 목록에 포함)
+    # 분석 기법 각론 1-1: Narrative Analysis - Event Driven, Market Sentiment, Technical Analysis
+    # 분석 기법 각론 1-2: Financial Analysis - EV Valuation, DCF Valuation, Peer Multiples (Comps) Valuation
+
+# 분석 기법 각론 2: Equity||Fixed Income Valuation&&Research&&Analysis - Fundamental Analysis, Quantitative Analysis (총론 목록에 포함)
+    # 분석 기법 각론 2-1: Fundamental Analysis - Scenario Analysis, Financial Modeling&&Forecasting
+    # 분석 기법 각론 2-1-1: Scenario Analysis - Policy Analysis, Interest Rate Analysis, Industry Outlook Analysis
+    # 분석 기법 각론 2-1-2: Financial Modeling&&Forecasting - DCF Analysis, WACC Calculation
+
+    # 분석 기법 각론 2-2: Quantitative Analysis - Trailing&&12F Multiples Analysis (P/E, P/B, P/S, CPS, PEG, Dividend Yield, ROE, ROA, ROIC, EV/EBIT(DA), EV/Sales, EV/FCFF), Peer Multiples (Comps) Analysis
+    # 분석 기법 각론 2-2-1 (SaaS (고성장 기술주)): EV/ARR (Enterprise Value / Annual Recurring Revenue): '기업가치 / 연간 반복 매출'. 구독 기반 비즈니스의 안정적인 매출을 기반으로 가치를 평가하는 핵심 지표. Rule of 40: '매출 성장률 (%) + 이익률 (%) > 40%'일 때 성장성과 수익성이 모두 양호한 기업으로 평가하는 경험적 법칙(heuristic).
+    # 분석 기법 각론 2-2-2 (에너지 (석유/가스)): EV/EBITDAX (EBITDA before Exploration Expenses): '기업가치 / EBITDAX.' 탐사비용을 비용으로 처리하지 않고 가치에 반영하는 에너지 산업의 특성을 고려한 지표. EV/Proven Reserves: '기업가치 / 확인 매장량.' 기업이 보유한 핵심 자산인 매장량 대비 가치를 평가.
+
+*My investment research integrates macro, political, and structural signals into narrative-driven judgments aligned with asset-level valuation. Each thesis contains numbers but primarily comprises structural analysis of institutional logic and public policy inertia.*
+
+---
+
+
+
+### I. Recommendation & Summary Dashboard
+
+**목적:** 보고서의 가장 중요한 결론을 3초 안에 전달. 시간이 없는 의사결정자(PM/MD)를 위한 JPM, Goldman Sachs 스타일의 핵심 요약.
+
+**템플릿:**
+
+<div align = "center"> **RECOMMENDATION: [BUY/SELL/HOLD] | TACTICAL / STRUCTURAL** </div>
+
+| Key Metrics | | | Valuation Multiples |
+| :--- | :--- | --- | :--- | :--- |
+| **Price (2025-02-21):** | $269.36 | | **P/E (TTM)** | 43.74x |
+| **52W High (2025-01-22):** | $358.03 | | **P/E (FY25E)** | 2.5x |
+| **Price Target:** | $207.10 | | **PEG** | 2.5x |
+| **Downside:** | 15.34% | | **EV/EBITDA (TTM)** | 40.5x |
+| **Market Cap:** | $39.58 billions | | **EV/EBITDA (FY25E)** | 35.2x |
+ > _Source: FactSet_
+
+- **Rationale (WHY):**
+    * **정보 습득 효율성 극대화:** **JPM과 Goldman Sachs 리포트는 거의 예외 없이 가장 중요한 결론(투자의견, 목표주가, 핵심 지표)을 보고서 최상단에 요약 박스(summary box) 형태로 제시합니다.** 이는 시간이 절대적으로 부족한 PM이나 MD가 3초 안에 핵심을 파악할 수 있게 하는 장치입니다. 선생님의 압축 요약 단락도 훌륭하지만, 그보다 더 빠르게 핵심 숫자를 전달하는 이 방식을 추가하여 템플릿의 실용성을 최고 수준으로 끌어올렸습니다.
+
+Tactical (전술적):
+
+시간: 단기 (보통 3~6개월)
+
+근거: 일시적인 이벤트나 시장의 과민반응에 기반한 투자의견입니다. 회사의 근본적인 가치는 변하지 않았지만, 단기적인 수급 불균형, 예상보다 저조한/양호한 분기 실적, 특정 뉴스에 대한 과도한 비관/낙관 등으로 인해 주가가 일시적으로 고평가/저평가되었다고 판단할 때 사용합니다. 선생님 말씀대로, 단기적인 헷지나 포트폴리오 리밸런싱 목적의 콜에 적합합니다.
+
+Structural (구조적):
+
+시간: 중장기 (보통 12개월 이상)
+
+근거: 회사의 경쟁력, 산업의 구조, 비즈니스 모델 등 근본적인(Fundamental) 가치의 영속적인 변화에 기반한 투자의견입니다. 신기술로 인한 시장 지배력 상실/강화, 강력한 경쟁자의 등장, 영구적인 규제 환경의 변화 등, 회사의 장기적인 이익 창출 능력 자체가 변했다고 판단할 때 사용합니다. 선생님 말씀대로, 본격적인 이익 실현이나 포지션 청산을 목표로 하는 핵심적인 콜에 사용됩니다.
+
+-----
+
+### II. Investment Thesis
+
+* **목적:** 보고서의 심장부. 투자 논리의 핵심 뼈대를 제시하고, 독자의 뇌리에 각인시키는 Bernstein, Autonomous 스타일의 '세 개의 기둥(Three Pillars)' 구조.
+
+* **템플릿:**
+> [선생님의 기존 압축 요약 단락. 이 단락은 전체 논지를 한눈에 보여주는 최고의 Executive Summary 역할을 합니다.]
+> We recommend a SELL on Quanta Services (PWR), as the current share price ($270) reflects an 18% premium to our DCF-based fair value ($221), with grid infrastructure optimism now fully priced in. While management continues to guide for high-single-digit growth, we see material risk of project delays as state-level IRA implementation slows. Our sector model indicates 2025 EBITDA growth will decelerate to 7.4% (vs. 12% consensus), and relative peer multiples (EV/EBITDA 10.7x vs. peer 9.6x) support our downside case if regulatory tailwinds fade.
+
+**Our thesis is based on three pillars:**
+
+1. **[Pillar 1: 명확하고 주장적인 소제목, e.g., Structural Mispricing of Core Assets]**
+    * *핵심 주장과 이를 뒷받침하는 정량/정성적 근거를 2-3 문장으로 서술.*
+
+2. **[Pillar 2: e.g., Imminent Inflection in Free Cash Flow]**
+    * *핵심 주장과 근거 서술.*
+
+3. **[Pillar 3: e.g., Unrecognized Regulatory Catalyst]**
+    * *핵심 주장과 근거 서술.*
+
+#### 요약 단락의 핵심 주장들("project delays", "EBITDA growth will decelerate", "relative peer multiples")이 세 개의 기둥(Pillar) 제목과 완벽하게 1:1로 연결되면 논리의 칼날이 더욱 날카로워집니다. 예를 들어, Pillar 1의 제목을 "Growth Story at Risk: IRA Implementation Headwinds" 와 같이 요약 단락의 키워드를 직접 반영하여 명명하는 식입니다.
+
+
+- **Rationale (WHY):**
+
+  * **논리의 구조화 및 방탄화:** `Key drivers`, `Market Risk` 등을 분리하는 대신, **Bernstein과 Autonomous Research가 즐겨 사용하는 '세 개의 기둥(Three Pillars)' 구조를 도입했습니다.** 이는 투자 논리를 가장 강력하고 명료한 3개의 주장으로 재구성하여, 독자가 논리의 뼈대를 명확하게 이해하고 기억하게 만듭니다. 각 주장이 독립적으로도 완결성을 갖추게 되어 논리적 공격에 대한 방어력을 극대화합니다.
+
+-----
+
+### III. Valuation
+
+* **목적:** 가치평가 결과와 그 과정(핵심 가정)을 투명하게 공개하여 분석의 신뢰도와 방어 논리를 확보. 선생님의 철학에 맞춰 Fundamental과 Quantitative를 명확히 구분.
+
+* **템플릿:**
+
+- **Valuation Summary:** Our target price $207.10 (23.11% Downside) is derived from a blended [DCF/Comps] methodology.
+
+- **Fundamental Analysis (DCF Valuation):** Fair Value $XX.XX
+    - *Key Assumptions: WACC (X.X%), Perpetual Growth (Y.Y%), FY25E-30E FCFF Growth (Z.Z%)*
+        - WACC (X.X%): Rationale
+        - Perpetual Growth (Y.Y%): Rationale
+        - FY25E-30E FCFF Growth: Bear Case (Z1%), Base Case (Z2%), Bull Case (Z3%) (Rationale below; scenario anlaysis)
+    
+- **Scenario Analysis:**
+    - **Bull Case ($PT):** Assumes [Key upside driver, e.g., faster-than-expected IRA implementation]. Quantifies the primary **risks to our SELL thesis** outlined in Section V (Key Risks & Mitigants), assuming key positive developments for the company.
+    
+    - **Base Case ($PT):** Our core view as outlined above.
+    
+    - **Bear Case ($PT):** Assumes [Key downside driver, e.g., significant project delays and cost overruns]. Quantifies our core SELL thesis, assuming the **downside catalysts** outlined in Section IV (Catalysts & Signposts) materialize. 
+
+- **Quantitative Analysis (Peer Multiples):** Implied Fair Value $YY.YY
+    - *Peer Group:* [Peer A, Peer B, Peer C]
+    - *Rationale:* [왜 이들을 Peer로 선정했는지 1줄 요약]
+
+- *Peer Group & Rationale:* The peer group for this analysis was sourced from the FactSet-provided list. For analytical precision, **FirstEnergy (FE) was excluded from the final calculation**, as its regulated asset-ownership model makes it a client, not a competitor. The peer group is now composed of companies across the infrastructure services value chain, including:
+    - **Direct Competitors** in specialty contracting (e.g., EMCOR, MasTec).
+    - **Larger, Diversified E&C Firms** against which Quanta competes for major projects (e.g., Jacobs, AECOM).   
+
+<br>
+
+| Company | Mkt Cap (Bn) | Rev Growth (TTM) | EBITDA Margin (TTM) | P/E (TTM) | P/E (FY25E) | EV/EBITDA (TTM) | EV/EBITDA (FY25E) | P/CF (TTM) | PEG Ratio |
+|:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| **[Target]** | **$39.7** | **13.4%** | **8.8%** | **43.88x** | **36.95x** | **20.58x** | **15.81x** | **19.42x** | **1.97x** |
+| Peer A | $15.2 | 32.7% | 9.4% | 25.25x | 24.40x | 12.38x | 16.92x | 14.62x | 1.27x |
+| Peer B | $12.8 | 12.0% | 6.9% | 25.30x | 22.80x | 12.48x | 14.52x | 15.73x | 1.45x |
+| Peer C | $17.7 | 15.8% | 10.2% | 17.55x | 24.70x | 11.05x | 16.24x | 12.85x | 1.44x |
+| Peer D | $3.5 | 11.4% | 6.5% | 21.36x | 23.70x | 9.03x | 14.27x | 6.83x | 1.03x |
+| Peer E | $9.6 | 2.6% | 7.7% | 48.33x | 29.20x | 12.21x | 14.75x | 8.55x | 0.49x |
+| Peer F | $2.0 | -7.7% | 3.3% | 66.88x | 26.70x | 18.60x | 13.08x | 23.59x | 0.10x |
+| ***Peer Average*** | ***$10.1*** | ***11.1%*** | ***7.3%*** | ***34.11x*** | ***25.25x*** | ***12.63x*** | ***14.96x*** | ***13.70x*** | ***0.96x*** |
+> _Source: FactSet_
+
+  - **Rationale (WHY):**
+      * **정보의 통합:** 가치평가 관련 내용을 하나의 섹션으로 통합하여 독자의 집중력을 높였습니다.
+      * **투명성 및 신뢰도 강화:** 단순히 결과 값만 제시하는 것을 넘어, **그 값이 도출된 '핵심 가정(Key Assumptions)'을 명시적으로 밝혔습니다.** 이는 Associate/VP 레벨의 분석에서 가장 중요한 부분으로, 독자가 분석가의 논리 과정을 직접 검증하고 신뢰할 수 있게 만듭니다. 선생님의 철학에 맞춰 `Fundamental`과 `Quantitative` 분석을 명확히 분리하여 제시했습니다.
+
+-----
+
+### IV. Catalysts & Signposts
+
+* **목적:** "왜 지금인가?"와 "무엇을 추적해야 하는가?"에 대한 답을 제시. 투자의 시의성과 실행 가능성을 강조하는 JPM, KBW 스타일의 Actionable intelligence.
+* **템플릿:**
+- **Catalysts (Next 6-12 months):**
+    - [Event 1, e.g., Q4 2025 Earnings (Jan 2026)]: Potential for guidance reset.
+    - [Event 2, e.g., Investor Day (Mar 2026)]: Expected capital return policy update.
+
+- **Signposts to Monitor:**
+    - [Metric 1, e.g., Monthly project award data from industry sources]: Monthly pricing data from [Source A].
+    - [Metric 2, e.g., Key input cost trends]: Competitor [B]'s market share data.
+
+* **Rationale (WHY):**
+    - **투자의 실행 가능성 강조:** **JPM과 KBW의 메모는 '그래서 언제, 무엇을 봐야 하는가'에 대한 답을 명확히 제시합니다.** 'Catalysts'에 구체적인 시점을 명기하여 투자의 시의성을 강조했습니다.
+    
+    - **지속적인 검증 수단 제공:** 'Signposts'라는 개념을 추가했습니다. 이는 리포트가 발표된 이후에도 **나의 투자 논리가 맞게 흘러가고 있는지 지속적으로 확인할 수 있는 핵심 지표**를 의미합니다. 이는 일회성 분석을 넘어, 지속적으로 투자를 관리하는 buy-side의 관점을 반영한 것입니다.
+
+-----
+
+## V. Key Risks & Mitigants
+
+* **목적:** 투자 논리의 약점을 미리 제시하고 그에 대한 방어 논리를 구축. 분석의 균형감과 깊이를 더해 논리를 '방탄(bulletproof)' 상태로 만드는 Autonomous 스타일의 비판적 분석.
+
+* **템플릿:**
+- **Risk 1:** [핵심 리스크 요약]
+    - *Potential Impact:* XX% downside to EPS if risk materializes.
+    - *Mitigants:* [e.g., Long-term contracts, strong balance sheet, already priced-in].
+    
+- **Risk 2:** [핵심 리스크 요약]
+    - *Potential Impact & Mitigants.*
+
+* **Rationale (WHY):**
+    - **균형 잡힌 시각 제시:** **최상위 리포트는 리스크를 단순히 나열하지 않고, 그에 대한 '완화 요인(Mitigants)'을 함께 제시하여 분석의 객관성과 깊이를 더합니다.** 이는 투자 논리가 최악의 상황까지 고려한, 잘 짜인 분석이라는 신뢰를 줍니다. 'Potential Impact'를 정량화하려는 시도는 분석의 엄밀함을 보여주는 핵심적인 요소입니다.
+
+-----
+
+### VI. Industry & Business Overview (Optional Snapshot for Memo)
+
+* **목적:** 투자 논리의 배경 설명. Light-format에서는 생략하거나 1~2줄로 압축 가능.
+
+* **템플릿:**
+- **Industry:** TAM ($XXbn), Key Players & Market Share, Structural Trends (1-2 lines).
+- **Business Model:** Core revenue drivers, competitive advantage vs. peers (1-2 lines).
+
+* **Rationale (WHY):**
+    - **핵심 논리 우선 원칙:** Investment Memo의 주 독자인 PM/CIO는 이미 산업과 기업에 대한 기본 지식이 있습니다. 따라서 **가장 중요한 '투자 논리'를 앞에 제시하고, 배경 설명은 뒤로 배치하여 정보 전달의 효율을 극대화**했습니다. Light-format에서는 이 부분을 2-3줄의 간결한 요약으로 처리하여 군더더기를 없앴습니다.
+
+
+-----
+-----
+
+*For model details and scenario analysis, see a PDF report.*
+
+_* NOTICE: The content of this report is for informational and educational purposes only and should not be construed as investment advice. The author is not a registered investment advisor, and this report is not a solicitation to buy or sell any securities. All investments involve risk and may result in loss of capital. Past performance is not indicative of future results. The author may hold positions in assets mentioned. Readers should consult with a qualified financial professional before making any investment decisions._

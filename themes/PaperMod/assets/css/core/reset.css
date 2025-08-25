@@ -52,8 +52,7 @@ header,
 hgroup,
 main,
 nav,
-section,
-table {
+section {
     display: block;
 }
 
@@ -87,9 +86,28 @@ ul {
 table {
     width: 100%;
     border-collapse: collapse;
-    border-spacing: 0;
     overflow-x: auto;
     word-break: keep-all;
+    table-layout: auto;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid rgba(0,0,0,.12);
+}
+
+/* 표 헤더(첫 번째 행) 중앙 정렬 */
+.post-content table thead th,
+.content table thead th,
+.markdown table thead th {
+  text-align: center !important;
+}
+
+/* 작은 화면에서 가로 스크롤 허용(선택) */
+@media (max-width: 768px) {
+  .post-content table,
+  .content table,
+  .markdown table {
+    display: block;
+    overflow-x: auto;
+  }
 }
 
 button,

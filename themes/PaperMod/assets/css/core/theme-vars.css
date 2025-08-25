@@ -44,6 +44,7 @@
     font-style: normal;
 }
 
+
 .quote {
   font-family: 'ChosunSm', serif; /* serif는 폰트 로딩 실패 시 대체 폰트 */
 }
@@ -76,10 +77,10 @@
   /* !important는 불필요할 경우 제거 */
 }
 
-
 /* 들여쓰기 */
 .indent {
-    margin-left: 2em; /* 원하는 들여쓰기 값 */
+    margin-left: 1rem; /* 원하는 들여쓰기 값 */
+    margin-bottom: 2rem;
     overflow-wrap: break-word; /* 화면 안 뚫고 나가게 */
 }
 

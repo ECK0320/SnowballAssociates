@@ -10,8 +10,6 @@
   {{- $scratch.Add "meta" (slice (printf "<span class='meta-date' title='%s'>Posted: %s</span>" ($now) ($now.Format "2006-01-02 15:04 MST"))) }}
 {{- end }}
 
-
-
 {{- if (.Param "ShowReadingTime") -}}
 {{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime))) }}
 {{- end }}
@@ -36,9 +34,9 @@
 -->
   
 {{- with ($scratch.Get "meta") }}
-{{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+  {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
   <span style="margin-left:0.5em;">&nbsp;</span>
-{{- end -}}
+  {{- end -}}
 
 {{ $taxonomies := dict
     "thought_facets"  "Thought Facet"
@@ -47,9 +45,8 @@
     "actions"         "Action"
     "recommendations" "Recommendation"
     "event_types"     "Event Type"
-    "trading_tools"   "Trading Tool"
+    "valuation_tools" "Valuation Tool"
     "regions"         "Region"
-    "thought_facets"  "Thought Facet"
     "thoughts"        "Thought"
     "judgments"       "Judgment"
     "structures"      "Structure"
@@ -57,16 +54,25 @@
     "qualifications"  "Qualification"
     "themes"          "Theme"
     "work_types"      "Work Type"
-    "tools"           "Tool"
+    "programming_languages"           "Programming Language"
     "skills"          "Skills"
     "class_types"     "Class"
     "hierarchy_types" "Hierarchy"
 }}
+
 {{ range $k, $v := $taxonomies }}
   {{ $val := index $.Params $k }}
   {{ with $val }}
-    [{{ $v }}: {{ delimit $val ", " }}]
+  <p style = "font-size: 10pt; color: var(--secondary);"> <!--메타태그명 회색-->
+    <strong>{{ $v }}: </strong> <!-- 메타태그 값에는 하이퍼링크 기능 추가 -->
+      {{- range $i, $meta := $val -}}
+        {{- if $i }}, {{ end -}}
+        <a href="/{{ $k }}/{{ $meta | urlize }}/" style="color: var(--secondary);">{{ $meta }}</a>
+      {{- end -}}
+  </p>
   {{ end }}
+
+</div> <!-- 이것만 있으면 자동 정렬되고 이거 없이는 다른 곳 아무리 수정해도 정렬이 안 되는데, 이게 왜 작동 중인지 모르겠음 -->
 
 <!-- 끝 -->
 

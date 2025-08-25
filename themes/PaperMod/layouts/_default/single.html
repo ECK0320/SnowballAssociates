@@ -53,19 +53,19 @@
                 text: description, // 또는 title + '\n' + url 등으로 조합
                 url: url,
             })
-            .then(() => console.log('콘텐츠 공유 성공!'))
-            .catch((error) => console.error('콘텐츠 공유 실패:', error));
+            .then(() => console.log('Shared!'))
+            .catch((error) => console.error('Failed to share:', error));
         } else {
             // Web Share API 미지원 브라우저를 위한 대체 기능 (예: 클립보드 복사)
             // 사용자에게 URL을 클립보드에 복사했다고 알림
             navigator.clipboard.writeText(url)
                 .then(() => {
-                    alert('링크가 클립보드에 복사되었습니다: ' + url);
-                    console.log('링크 클립보드 복사 성공!');
+                    alert('Copied: ' + url);
+                    console.log('The URL has been copied to your clipboard!');
                 })
                 .catch((err) => {
-                    console.error('클립보드 복사 실패:', err);
-                    alert('링크 복사에 실패했습니다. 직접 복사해주세요: ' + url);
+                    console.error('Failed to copy:', err);
+                    alert('The URL has not been copied. Please directly copy the link: ' + url);
                 });
         }
     }
