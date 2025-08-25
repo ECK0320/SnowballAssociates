@@ -83,9 +83,9 @@ While sector leaders typically command a 20--30% premium, PWR trades at a 63% EV
 ## III. Valuation
 
 ### Valuation Summary
-My price target for Quanta Services is **$237.73**, representing an **11.7% downside** from the current price. This target is the Base Case estimate from my comparable company analysis, derived by applying a **14.96x forward EV/EBITDA multiple** to the projected FY2025E EBITDA (implying a **+24.8% YoY growth** and a Diluted EPS of $6.55).
+My price target for Quanta Services is **$237.73**, representing an **11.7% downside** from the current price. This target is the Base Case estimate from my comparable company analysis, derived by applying a **14.96x forward EV/EBITDA multiple** to the projected FY25E EBITDA (implying a **+24.8% YoY growth** and a Diluted EPS of $6.55).
 
-This EBITDA projection is the anchor of four distinct scenarios developed for this analysis. Each scenario translates a projected growth in U.S. electricity consumption into a corresponding EBITDA figure for PWR, with projection coefficients derived from proprietary [OLS regression models](#ols-models) that quantify historical correlations (FY15-FY24) between U.S. electricity consumption, PWR's EBITDA, and its Diluted EPS.
+This EBITDA projection is the anchor of four distinct scenarios developed for this analysis. Each scenario translates a projected growth in U.S. electricity consumption into a corresponding EBITDA figure for PWR, with projection coefficients derived from proprietary [OLS regression models](#ols-models) that quantify historical correlations (2014--2025) between U.S. electricity consumption, PWR's EBITDA, and its Diluted EPS.
 
 The football-field chart below visualizes the valuation ranges from my primary analysis (Comps), a fundamentals-based DCF, and the proprietary IVE model used for a sanity check. The gaps highlight the exuberance embedded in the current stock price.
 
@@ -101,39 +101,39 @@ My DCF analysis yields a fair value of **$138.35 per share**. This is materially
 > _This target reflects an end-of-period valuation. Discounting it to present value would imply a still lower price target, further strengthening the UNDERWEIGHT thesis._
 
 - **Key Assumptions**
-    - **_FY24A-30E U.S. Electricity Consumption Growth (FY24A-30E)_:** Bear Case (10.4%), Base Case (13.8%), Bull Case (25.0%), Strong Bull Case (29.7%); rationale for each case is elaborated in [Scenario Analysis](#scenario-analysis).
+    - **_2014A-30E U.S. Electricity Consumption Growth_:** Bear Case (10.4%), Base Case (13.8%), Bull Case (25.0%), Strong Bull Case (29.7%); rationale for each case is elaborated in [Scenario Analysis](#scenario-analysis).
 
     - **_PWR's Fundamentals_**: PWR is assumed to maintain its current market share and operational leverage, allowing its revenue and EBITDA to grow proportionally with the overall expansion of the U.S. electric grid infrastructure industry.
 
     - **_WACC (9.99%)_:** Cost of Equity of 10.73% and After-Tax Cost of Debt of 3.46%.
 
     - **_Perpetual Growth (3.0%)_:** U.S. electricity demand is expected to grow by 2% in 2025 and 3% in 2026 according to the U.S. Energy Information Administration, and YoY increase in utility-scale power generation observed in September 2024 was 3% (Source: [EIA](https://www.eia.gov/pressroom/releases/press564.php), [Deloitte](https://www.deloitte.com/us/en/insights/industry/power-and-utilities/power-and-utilities-industry-outlook.html)).
-> _Net Debt is assumed constant across all scenarios at FY2024A level of $3,734.31Mn, reflecting a stabilized capital structure following five years of elevated CAPEX (Source: FactSet); reliable forward-looking balance sheet consensus data is also unavailable. The comprehensive valuation table and assumption details are provided in [Appendix](#dcf--comps-valuations)._
+> _Net Debt is assumed constant across all scenarios at 2024A level of $3,734.31Mn, reflecting a stabilized capital structure following five years of elevated CAPEX (Source: FactSet); reliable forward-looking balance sheet consensus data is also unavailable. The comprehensive valuation table and assumption details are provided in [Appendix](#dcf--comps-valuations)._
 
 
 ### Scenario Analysis
 The comps-based scenarios are designed to test sensitivity across consensus exuberance and conservative downside assumptions. Each scenario translates the projected annual growth in U.S. electricity consumption into a corresponding EBITDA growth for PWR, reflecting the company's operational leverage and market share assumptions.
 
-#### 1. _Strong Bull Case ($258.47/share; 2025E diluted EPS of $7.09)_
-Stress-tests my thesis against the most aggressive market expectations, using FactSet consensus 2025E EBITDA of $2,800.5Mn (YoY +34.7%). Holding every other factor constant, this is equivalent to supposing **4.43%** annual increase in U.S. electricity consumption. **This assumption exceeds my Bull Case assumptions** (YoY +3.79%; [ICF](https://www.icf.com/insights/energy/impact-rapid-demand-growth-us)) **by ~17% even though my Bull Case *already* assumes a growth rate 74% higher than the Base Case** (YoY +2.17%). Applying the peer forward EV/EBITDA multiple of 14.96x to this consensus figure yields an implied equity value of $38,170.50Mn, or **$258.47** per share. This means that the valuation still remains **4.0% lower** than the current share price of $269.36 even under these market's most optimistic inputs, reinforcing my **UNDERWEIGHT** view.
+#### 1. _Strong Bull Case ($258.47/share; FY25E diluted EPS of $7.09)_
+Stress-tests my thesis against the most aggressive market expectations, using FactSet consensus FY25E EBITDA of $2,800.5Mn (YoY +34.7%). Holding every other factor constant, this is equivalent to supposing **4.43%** annual increase in U.S. electricity consumption. **This assumption exceeds my Bull Case assumptions** (YoY +3.79%; [ICF](https://www.icf.com/insights/energy/impact-rapid-demand-growth-us)) **by ~17% even though my Bull Case *already* assumes a growth rate 74% higher than the Base Case** (YoY +2.17%). Applying the peer forward EV/EBITDA multiple of 14.96x to this consensus figure yields an implied equity value of $38,170.50Mn, or **$258.47** per share. This means that the valuation still remains **4.0% lower** than the current share price of $269.36 even under these market's most optimistic inputs, reinforcing my **UNDERWEIGHT** view.
 
-#### 2. _Bull Case ($252.59/share; 2025E diluted EPS of $6.94)_
-Assumes 25.0% cumulative increase (*i.e.*, **3.79%** annual increase) in U.S. electricity consumption by 2030. Applying the same peer forward multiple to the projected 2025E EBITDA (YoY +31.9%) yields an implied equity value of $37,301.76Mn, or **$252.59** per share (**6.2% downside**).
+#### 2. _Bull Case ($252.59/share; FY25E diluted EPS of $6.94)_
+Assumes 25.0% cumulative increase (*i.e.*, **3.79%** annual increase) in U.S. electricity consumption by 2030. Applying the same peer forward multiple to the projected FY25E EBITDA (YoY +31.9%) yields an implied equity value of $37,301.76Mn, or **$252.59** per share (**6.2% downside**).
     
-#### 3. <mark>_Base Case ($237.73/share; 2025E diluted EPS of $6.55)_</mark>
-Assumes 13.8% cumulative increase (*i.e.*, **2.17%** annual increase) in U.S. electricity consumption by 2030. The Base Case aligns most closely with long-term electricity demand forecasts from EIA and Deloitte, providing a balanced view between consensus exuberance and conservative downside. Applying the same peer forward multiple to the projected 2025E EBITDA (YoY +24.8%) yields an implied equity value of $35,107.52Mn, or **$237.73** per share (**11.7% downside**).
+#### 3. <mark>_Base Case ($237.73/share; FY25E diluted EPS of $6.55)_</mark>
+Assumes 13.8% cumulative increase (*i.e.*, **2.17%** annual increase) in U.S. electricity consumption by 2030. The Base Case aligns most closely with long-term electricity demand forecasts from EIA and Deloitte, providing a balanced view between consensus exuberance and conservative downside. Applying the same peer forward multiple to the projected FY25E EBITDA (YoY +24.8%) yields an implied equity value of $35,107.52Mn, or **$237.73** per share (**11.7% downside**).
     
-#### 4. _Bear Case ($233.06/share; 2025E diluted EPS of $6.43)_
-Assumes 10.4% cumulative increase (*i.e.*, **1.66%** annual increase) in U.S. electricity consumption by 2030. Applying the same peer forward multiple to the projected 2025E EBITDA (YoY +22.6%) yields an implied equity value of $34,417.51Mn, or **$233.06** per share (**13.5% downside**).
+#### 4. _Bear Case ($233.06/share; FY25E diluted EPS of $6.43)_
+Assumes 10.4% cumulative increase (*i.e.*, **1.66%** annual increase) in U.S. electricity consumption by 2030. Applying the same peer forward multiple to the projected FY25E EBITDA (YoY +22.6%) yields an implied equity value of $34,417.51Mn, or **$233.06** per share (**13.5% downside**).
 
 #### Equity Value Table
-| *Scenario*               | Cumulative U.S. Electricity Consumption Growth (~2030E)| EBITDA Growth (YoY, 2025E)| Multiples Applied (EV/EBITDA) | Implied Equity ($Mn)| Share Price ($) | Downside vs Current |
+| *Scenario*               | Cumulative U.S. Electricity Consumption Growth (~2030E)| EBITDA Growth (YoY, FY25E)| Multiples Applied (EV/EBITDA) | Implied Equity ($Mn)| Share Price ($) | Downside vs Current |
 |:-------------------------|-------------------------------------------------------:|--------------------------:|------------------------------:|--------------------:|----------------:|--------------------:|
 |*Strong Bull Case*        | 29.7%                                                  | +34.7%                    | 14.96x                        | 38,170.50           | 258.47          | 4.0%                |
 |*Bull Case*               | 25.0%                                                  | +31.9%                    | 14.96x                        | 37,301.76           | 252.59          | 6.2%                |
 |<mark>*Base Case*</mark>  | 13.8%                                                  | +24.8%                    | 14.96x                        | 35,107.52           | 237.73          | 11.7%               |
 |*Bear Case*               | 10.4%                                                  | +22.6%                    | 14.96x                        | 34,417.51           | 233.06          | 13.5%               |
-> **2025E diluted EPS Forecast**: Bear $6.43 | Base $6.55 | Bull $6.94 | Strong Bull $7.09
+> **FY25E diluted EPS Forecast**: Bear $6.43 | Base $6.55 | Bull $6.94 | Strong Bull $7.09
 
 
 #### Peer Group & Rationale
@@ -374,7 +374,7 @@ Hence, my tactical underweight call *in the short-run* notwithstanding, I am sim
 
 ### OLS Models
 
-#### 2025E EBITDA growth
+#### FY25E EBITDA growth
 <p>
 $$$
 EBITDA\ Annual\ Growth\ (\%) = \alpha \ + \ U.S.\ Electricity\ Annual\ Growth\ (\%)\ \times \beta \ + \ \epsilon, \\
@@ -383,9 +383,9 @@ $$$
 </p>
 
 - The model is based on 2015A--2025E data for U.S. Electricity Consumption annual growth and PWR's financial statements (Source: [EIA](https://www.eia.gov/electricity/annual/table.php?t=epa_01_03.html), FactSet). 
-> _The Base Case of 2.17\% for the 2025E growth is directly derived from the EIA data._
+> _The Base Case of 2.17\% for the FY25E growth is directly derived from the EIA's 2025E U.S. electricity consumption._
 
-#### 2025E diluted EPS for PWR
+#### FY25E diluted EPS for PWR
 <p>
 $$$
 Diluted\ EPS\ (\$) = \alpha \ + \ EBITDA\ (\$ Mn)\ \times \beta \ + \ \epsilon, \\
@@ -394,12 +394,12 @@ $$$
 </p>
 
 - The model forecasts Diluted EPS as a function of projected EBITDA, based on the historical relationship observed in FY15A--FY24A data (Source: FactSet).
-> _**2025E diluted EPS estimates**: Bear $6.43 | Base $6.55 | Bull $6.94 | Strong Bull $7.09_
+> _**FY25E diluted EPS**: Bear $6.43 | Base $6.55 | Bull $6.94 | Strong Bull $7.09_
 
 
 ### DCF & Comps Valuations
 
-| *Implied Equity Value (2025E, per share)*              |  Bear Case  |  <mark>Base Case</mark>  |  Bull Case  |  Strong Bull Case  |
+| *Implied Equity Value (FY25E, per share)*              |  Bear Case  |  <mark>Base Case</mark>  |  Bull Case  |  Strong Bull Case  |
 |:-------------------------------------------------------|------------:|-------------------------:|------------:|-------------------:|
 | *DCF: Perpetuity Growth Method*                        |    $134.24  |                  $138.35 |     $152.06 |            $155.24 |
 | *DCF: IV&E Model*                                      |    $218.45  |                  $221.88 |     $232.79 |            $237.11 |
@@ -418,8 +418,8 @@ $$$
 | Market Risk Premium ($$R_p$$)    |   6.07%   | $$R_p = R_m - R_f$$                                                      |
 | Levered Beta ($$\beta_{L}$$)     |   1.12    | 3-Year Adjusted Beta (Source: FactSet)                                   |
 | **Cost of Equity ($$R_e$$)**     | **10.73%**| **CAPM: $$R_e = R_f + \beta \times R_p$$**                               |
-| Pre-Tax Cost of Debt ($$R_d$$)   |   4.53%   | FY2024 Interest Expense / Total Debt                                     |
-| Effective Tax Rate               |  23.49%   | FY2024 Income Taxes / Pretax Income                                      |
+| Pre-Tax Cost of Debt ($$R_d$$)   |   4.53%   | 2024A Interest Expense / Total Debt                                      |
+| Effective Tax Rate               |  23.49%   | 2024A Income Taxes / Pretax Income                                       |
 | **After-Tax Cost of Debt**       | **3.46%** | **$$R_d \times (1 - \text{Tax Rate})$$**                                 |
 
 | Capital Structure      |   Value   |                                        Notes                                       |
