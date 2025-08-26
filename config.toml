@@ -333,7 +333,7 @@ text = "Rationalist ∫ {Romanticism ∪ Kapitalismus}: Theory in Practice"
   subcategory = "subcategories"
   tag = "tags"
   year = "years"
-  tool = "tools" # 사용한 프로그래밍 언어
+  programming_language = "programming_languages" # 사용한 프로그래밍 언어
   skill = "skills" # 사용된 기술 (업로드 전 AI 돌려서 태그 뽑아내기)
   class = "class_types" # 존재귀속론 분류상 C1~C9
   hierarchy = "hierarchy_types" # 영, 혼, 육
@@ -357,7 +357,7 @@ text = "Rationalist ∫ {Romanticism ∪ Kapitalismus}: Theory in Practice"
   
   # IV. Market Decision: TRADING log on 'equity,' 'fixed income,' 'futures,' 'options,' and 'crypto' (매매 일지)
   asset_class = "asset_classes" # 매매 자산 종류
-  trading_tool = "trading_tools" # 정량 분석, 정성 분석, 기술적 분석
+  valuation_tool = "valuation_tools" # 정량 분석, 정성 분석, 기술적 분석
   event_type = "event_types" # 사건명
   action = "actions" # 'buy,' 'hold,' 'sell'
   recommendation = "recommendations" # 특정 종목/섹터 'buy'/'hold'/'sell' 추천시

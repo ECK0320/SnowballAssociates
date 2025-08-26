@@ -4,7 +4,7 @@ categories: ["works", "market_decision_log"]
 subcategories: ["light_format", "calls"]
 title: "Quanta Services (PWR): Overcharged Electric Grid"
 # description: "" 필요하다면 추가
-themes: ["Investment Rationale", "International Relations", "International Politics", "International Economy", "US Politics", "US Economy", "Stock Market", "Interest Rates"] # 대주제: 국제 정치, 국제 경제, 외환 시장, 채권 시장, 원자재 시장, 증권 시장, 가상화폐/암호통화 시장, 부동산 시장, 금리, 환율, 정치이론, 법이론, 정치이론, 인식론, 존재론, 조직신학, 구원론, 성화론, 유교, 불교, 도교, 주식투자, 채권투자, 원자재투자, 크립토투자, modeling, investment rationale, industry outlooks, policy impacts
+themes: ["Investment Rationale", "International Relations", "International Politics", "Global Economy", "US Politics", "US Economy", "Stock Market", "Interest Rates", "Stock Investment", "Industry Outlooks", "Policy Impacts"] # 대주제: International Relations, International Politics, Global Economy, FX Market, Fixed Income Market, Commodities Market, Stock Market, Crypto Market, Real Estate Market, Interest Rates, Exchange Rates, Political Theory, Legal Theory, 인식론, 존재론, 조직신학, 구원론, 성화론, 유교, 불교, 도교, Stock Investment, Fixed Income Investment, Commodities Investment, Crypto Investment, Modeling, Investment Rationale, Industry Outlooks, Policy Impacts
 
 work_types: ["Investment Memo"] # 작업물 성격 (출처 명기와 템플릿 준수 등 핵심 뼈대만 지키고 그 외에는 자유 형식): Snack, Policy Brief, Thematic Essay, Philosophical Essay, Investment Memo
 
@@ -14,27 +14,27 @@ asset_classes: ["Stock"] # 매매 자산 종류: stock, fixed income, currency, 
 
 thought_facets: ["Intuition", "Analysis"] # 직관 or 분석
 
-skills: ["Investment Research", "Equity Valuation", "Equity Research", "Fundamental Analysis", "Quantitative Analysis", "Technical Analysis", "Critical Thinking"]
+skills: ["Investment Research", "Top-Down Analysis", "Bottom-Up Analysis", "Critical Thinking", "Equity Valuation", "Equity Research", "Equity Analysis", "Stock Analysis", "Narrative Analysis", "Financial Analysis", "Fundamental Analysis", "Quantitative Analysis", "Technical Analysis"]
 # 분석 기법 총론 (How 1): 발행 전 AI 돌려서 링크드인 공식 카테고리 및 skill taxonomy 기준으로 핵심 quantitative/qualitative/technical/academic skill set 만 ["skill1", "skill2", ...] 1열 형태로 추출
 # 분석 기법 총론 예시: "Investment Research", "Top-Down Analysis", "Bottom-Up Analysis", "Equity||Fixed Income Valuation&&Research&&Analysis"(각론 대주제), "Narrative Analysis"(각론 대주제), "Financial Analysis"(각론 대주제), "Fundamental Analysis"(각론 대주제), "Quantitative Analysis"(각론 대주제), "Critical Thinking"
 
-valuation_tools: ["Financial Analysis", "Narrative Analysis", "WACC Calculation", "DCF Valuation", "Peer Multiples (Comps) Analysis", "Scenario Analysis", "Elliot Wave Theory"]
+valuation_tools: ["Event Driven", "Market Sentiment", "Elliot Wave Theory", "Financial Modeling", "Financial Forecasting", "WACC Calculation", "DCF Valuation", "Peer Multiples Valuation", "Comps Analysis", "Scenario Analysis", "Policy Analysis", "Industry Outlook Analysis"]
 # 분석 기법 각론 (How 2): 크게 Narrative Analysis (Top-Down), Finaical Analysis (Bottom-Up)으로 나눈 후 Bottom-Up Analysis를 정성분석Fundamental Analysis과 정량분석Quantitative Analysis로 세분화.
 
 # 분석 기법 각론 1: Equity||Fixed Income Valuation&&Research&&Analysis - Narrative Analysis, Financial Analysis (총론 목록에 포함)
     # 분석 기법 각론 1-1: Narrative Analysis - Event Driven, Market Sentiment, Technical Analysis
-    # 분석 기법 각론 1-2: Financial Analysis - EV Valuation, DCF Valuation, Peer Multiples (Comps) Valuation
+    # 분석 기법 각론 1-2: Financial Analysis - EV Valuation, DCF Valuation, Peer Multiples Valuation
 
 # 분석 기법 각론 2: Equity||Fixed Income Valuation&&Research&&Analysis - Fundamental Analysis, Quantitative Analysis (총론 목록에 포함)
     # 분석 기법 각론 2-1: Fundamental Analysis - Scenario Analysis, Financial Modeling&&Forecasting
     # 분석 기법 각론 2-1-1: Scenario Analysis - Policy Analysis, Interest Rate Analysis, Industry Outlook Analysis
-    # 분석 기법 각론 2-1-2: Financial Modeling&&Forecasting - DCF Analysis, WACC Calculation
+    # 분석 기법 각론 2-1-2: Financial Modeling&&Forecasting - WACC Calculation, Comps Analysis
 
-    # 분석 기법 각론 2-2: Quantitative Analysis - Trailing && 12F Multiples Analysis (P/E, P/B, P/S, CPS, PEG, Dividend Yield, ROE, ROA, ROIC, EV/EBIT(DA), EV/Sales, EV/FCFF), Peer Multiples (Comps) Analysis
+    # 분석 기법 각론 2-2: Quantitative Analysis - Trailing && 12F Multiples Analysis (P/E, P/B, P/S, CPS, PEG, Dividend Yield, ROE, ROA, ROIC, EV/EBIT(DA), EV/Sales, EV/FCFF), Comps Analysis
     # 분석 기법 각론 2-2-1 (SaaS (고성장 기술주)): EV/ARR (Enterprise Value / Annual Recurring Revenue): '기업가치 / 연간 반복 매출'. 구독 기반 비즈니스의 안정적인 매출을 기반으로 가치를 평가하는 핵심 지표. Rule of 40: '매출 성장률 (%) + 이익률 (%) > 40%'일 때 성장성과 수익성이 모두 양호한 기업으로 평가하는 경험적 법칙(heuristic).
     # 분석 기법 각론 2-2-2 (에너지 (석유/가스)): EV/EBITDAX (EBITDA before Exploration Expenses): '기업가치 / EBITDAX.' 탐사비용을 비용으로 처리하지 않고 가치에 반영하는 에너지 산업의 특성을 고려한 지표. EV/Proven Reserves: '기업가치 / 확인 매장량.' 기업이 보유한 핵심 자산인 매장량 대비 가치를 평가.
 
-tags: ["Quanta Services", "PWR", "Valuation", "Cyclicals", "Market Correction", "Market Exuberance", "Inflation"]
+tags: ["Stock Price Analysis", "Forecast", "Quanta Services", "PWR", "Electric Grid Infrastructure", "Valuation", "Cyclicals", "Market Correction", "Market Exuberance", "Inflation"] # forecast (예상), verification (검정), post-mortem analysis (사후 분석; 복기)
 
 ---
 
