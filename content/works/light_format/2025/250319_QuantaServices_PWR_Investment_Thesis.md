@@ -1,12 +1,12 @@
 ---
 date: "2025-03-19 08:39:00-06:00"
-categories: ["market_decision_log"]
-subcategories: ["calls", "light_format"]
+categories: ["works", "market_decision_log"]
+subcategories: ["light_format", "calls"]
 title: "Quanta Services (PWR): Overcharged Electric Grid"
 # description: "" 필요하다면 추가
 themes: ["Investment Rationale", "International Relations", "International Politics", "International Economy", "US Politics", "US Economy", "Stock Market", "Interest Rates"] # 대주제: 국제 정치, 국제 경제, 외환 시장, 채권 시장, 원자재 시장, 증권 시장, 가상화폐/암호통화 시장, 부동산 시장, 금리, 환율, 정치이론, 법이론, 정치이론, 인식론, 존재론, 조직신학, 구원론, 성화론, 유교, 불교, 도교, 주식투자, 채권투자, 원자재투자, 크립토투자, modeling, investment rationale, industry outlooks, policy impacts
 
-work_types: ["Investment Thesis"] # 작업물 성격 (출처 명기와 템플릿 준수 등 핵심 뼈대만 지키고 그 외에는 자유 형식): Snack, Policy Brief, Thematic Essay, Philosophical Essay, Investment Thesis
+work_types: ["Investment Memo"] # 작업물 성격 (출처 명기와 템플릿 준수 등 핵심 뼈대만 지키고 그 외에는 자유 형식): Snack, Policy Brief, Thematic Essay, Philosophical Essay, Investment Memo
 
 recommendations: ["UNDERWEIGHT"] # 예상 내역: BUY, OVERWEIGHT, NEUTRAL, SELL, HOLD
 
