@@ -69,13 +69,13 @@ My Tactical UNDERWEIGHT recommendation on Quanta Services rests on the conclusio
 While management is likely to maintain guidance for 14--24% annual growth, I view the current bout of overextension---fueled by both the data-science megatrend and the political tailwinds from the new, putatively pro-business administration---as unsustainable. Given that the stock market has not undergone a major correction in the past 25 months, PWR's stretched peer-relative multiples (*e.g.*, EV/EBITDA 20.58x vs. peer 12.62x) heighten the risk of sharp price compression should this sentiment unwind.
 
 ### Three Pillars of the Thesis
-#### _Pillar 1: Market-level Overextension Creates Fragility_
+#### Pillar 1: Market-level Overextension Creates Fragility
 The U.S. stock market, both the S&P 500 and Nasdaq 100, has advanced for 25 consecutive months without a drawdown greater than 15%. This rare rally has fostered investor complacency. In such an environment, assets like PWR---whose valuation leans heavily on future growth narratives despite its large-scale infrastructure and utility profile---can overreact to even minor shifts in market sentiment or macro conditions; its 3-year adjusted beta stands at 1.12 (as of Feb 22, 2025). If the last week's 2.26% drop in NDX---<span class="append">from 22,176.01p to 21,614.08p</span>---signals the beginning of the long-overdue major correction, my technical analysis projects NDX---<span class="append">with an upper bound ranging between 22,124.05p and 22,619.95p</span>---to experience a significant downturn, potentially reaching 16,573.34p. This represents an additional downside of approximately 23% from the Friday's close of 21,614.08p.
 
-#### _Pillar 2: Stock-specific Overvaluation_
+#### Pillar 2: Stock-specific Overvaluation
 At a PEG of 1.97x and a 28% P/E premium to its peers, PWR leaves little margin for execution risk. Even when applying my most bullish growth projections and granting a further 20% forward P/E premium, both trailing and forward prices remain difficult to justify, underscoring the disconnect between market price and fundamentals.
 
-#### _Pillar 3: Excessive Enterprise Value Premium_
+#### Pillar 3: Excessive Enterprise Value Premium
 While sector leaders typically command a 20--30% premium, PWR trades at a 63% EV/EBITDA premium to peers---well beyond what fundamentals support. Current pricing fails to adequately discount the inherent cyclicality of large-scale electricity grid infrastructure projects, where even minor scope changes or execution delays threaten to undermine the elevated consensus forecasts needed to sustain present valuations.
 
 -----
@@ -114,16 +114,16 @@ My DCF analysis yields a fair value of **$138.35 per share**. This is materially
 ### Scenario Analysis
 The comps-based scenarios are designed to test sensitivity across consensus exuberance and conservative downside assumptions. Each scenario translates the projected annual growth in U.S. electricity consumption into a corresponding EBITDA growth for PWR, reflecting the company's operational leverage and market share assumptions.
 
-#### 1. _Strong Bull Case ($258.47/share; FY25E diluted EPS of $7.09)_
+#### 1. Strong Bull Case ($258.47/share; FY25E diluted EPS of $7.09)
 Stress-tests my thesis against the most aggressive market expectations, using FactSet consensus FY25E EBITDA of $2,800.5Mn (YoY +34.7%). Holding every other factor constant, this is equivalent to supposing **4.43%** annual increase in U.S. electricity consumption. **This assumption exceeds my Bull Case assumptions** (YoY +3.79%; [ICF](https://www.icf.com/insights/energy/impact-rapid-demand-growth-us)) **by ~17% even though my Bull Case *already* assumes a growth rate 74% higher than the Base Case** (YoY +2.17%). Applying the peer forward EV/EBITDA multiple of 14.96x to this consensus figure yields an implied equity value of $38,170.50Mn, or **$258.47** per share. This means that the valuation still remains **4.0% lower** than the current share price of $269.36 even under these market's most optimistic inputs, reinforcing my **UNDERWEIGHT** view.
 
-#### 2. _Bull Case ($252.59/share; FY25E diluted EPS of $6.94)_
+#### 2. Bull Case ($252.59/share; FY25E diluted EPS of $6.94)
 Assumes 25.0% cumulative increase (*i.e.*, **3.79%** annual increase) in U.S. electricity consumption by 2030. Applying the same peer forward multiple to the projected FY25E EBITDA (YoY +31.9%) yields an implied equity value of $37,301.76Mn, or **$252.59** per share (**6.2% downside**).
     
-#### 3. <mark>_Base Case ($237.73/share; FY25E diluted EPS of $6.55)_</mark>
+#### 3. <mark>Base Case ($237.73/share; FY25E diluted EPS of $6.55)</mark>
 Assumes 13.8% cumulative increase (*i.e.*, **2.17%** annual increase) in U.S. electricity consumption by 2030. The Base Case aligns most closely with long-term electricity demand forecasts from EIA and Deloitte, providing a balanced view between consensus exuberance and conservative downside. Applying the same peer forward multiple to the projected FY25E EBITDA (YoY +24.8%) yields an implied equity value of $35,107.52Mn, or **$237.73** per share (**11.7% downside**).
     
-#### 4. _Bear Case ($233.06/share; FY25E diluted EPS of $6.43)_
+#### 4. Bear Case ($233.06/share; FY25E diluted EPS of $6.43)
 Assumes 10.4% cumulative increase (*i.e.*, **1.66%** annual increase) in U.S. electricity consumption by 2030. Applying the same peer forward multiple to the projected FY25E EBITDA (YoY +22.6%) yields an implied equity value of $34,417.51Mn, or **$233.06** per share (**13.5% downside**).
 
 #### Equity Value Table
@@ -162,9 +162,7 @@ The peer group for this analysis was sourced from the FactSet-provided list. For
 -----
 
 ## IV. Catalysts & Signposts
-
 ### Catalysts & Signposts Summary
-
 This section outlines the rationale for my **tactical underweight** call on PWR, focusing on a confluence of near-term catalysts: **(1) Geopolitical Risk** from tariff uncertainty (Feb-Apr), **(2) Domestic Headwinds** from stubborn inflation (Mar-May), and **(3) the Risk of a Confirmed Economic Slowdown** (Apr-May). My recommendation for *tactical* underweight is predicated on a 1-3 month horizon, arguing for portfolio rebalancing, not a structural sell thesis. The following summary details the key catalysts poised to challenge the optimism dominating the market.
 
 #### 1. Geopolitical Risk: Tariff War Uncertainty (Feb--Apr 2025)
@@ -213,7 +211,7 @@ This section outlines the rationale for my **tactical underweight** call on PWR,
 
 
 ### The Narrative: Three Headwinds to PWR Stock Price
-#### _1. Tariff Uncertainty: The Unpriced "What-If" Risk (Feb--Apr 2025)_  
+#### 1. Tariff Uncertainty: The Unpriced "What-If" Risk (Feb--Apr 2025)
 Tariffs on imported steel and electrical components---where the U.S. heavily relies on South Korea, Japan, and China---directly threaten PWR's input cost stability. This risk appears unpriced, compounded by the uncertainty over the scope and magnitude of goods targeted. This is the main rationale for my recommendation of a **tactical underweight** on PWR. Exuberance pervades both the market at large and PWR’s share price, leaving valuations stretched and fragile against even marginal sentiment reversals.
 
 Trump's tariff threat itself---not necessarily its immediate economic effect---is a significant market overhang. Given the frothy sentiment prevalent in the market, it matters little whether the action is a negotiating tactic or a precursor to actual implementation. What matters is uncertainty born of his unpredictability, for which the market always exacts the highest risk premium. The constant threat of ambush proclamations broadcast live on his personal social media is sufficient to make the market paranoid, regardless of the eventual size of the tariff.
@@ -225,7 +223,7 @@ The real problem, however, extends beyond mere unpredictability. A tariff **WILL
 Given these, conventional hedges should offer little protection. Bonds are facing a headwind from stubborn inflation pressures, and defensive stocks---<span class="append">mathematically speaking</span>---offer a scant refuge when the whole market is exposed to a greater systematic risk. For such a turmoil, however, there is a very simple strategy proven consistently valid throughout history: *Cash is King*, as always. Reducing exposure to cyclicals like PWR and waiting for the tempest to subside is not a passive move, but the most active one in this case.
 
 
-#### _2. The Squeeze from Within: Stubborn Inflation and Policy Headwinds (Mar--May 2025)_
+#### 2. The Squeeze from Within: Stubborn Inflation and Policy Headwinds (Mar--May 2025)
 After the pandemic, there have been claims of the <span class="quote">"This time is different"</span> variety, alleging that the enormous amount of US dollars printed would not cause inflation---a misconception that has never been proven true. Inflation has not been and will not be eased in the near future, a conclusion supported by my personal research on the necessities---food, housing, and apparel---inflation with a proprietary DSGE model on its disproportionate impact across income quintiles (drafted in Dec 2024). **I am unusually certain that inflation, particularly this necessities inflation *common people* perceive, will persist stronger and longer than the U.S. government's claim and the market's hope**---<span class = "append">both of which look wishes to me</span>---which will be separately discussed over other several articles.
 
 This view is grounded in my observations since returning to the U.S. after a six-year absence, where I have perceived the stark discrepancy between official indicators and on-the-ground reality. For instance, Nonfarm Payrolls suggest that the job market is holding up reasonably well, but the reality I face---<span class="append">as a college senior entering the job market</span>---is horrendous. I struggle to reconcile so-called claims---<span class="append">perhaps better described as wishes</span>---of a successful soft landing with what I actually see: dining prices up 70%+, rents up 60--80%---<span class="append">even though it is not a downtown in CA or NY but a small suburban campus town in the Midwest!</span>---and wages up only 25~30% compared to August 2018, when I stayed in the U.S. last time.
@@ -243,7 +241,7 @@ These factors, combined with a new tariff-induced inflationary shock, should for
 </div>
 
 
-#### _3. The Reality Check: Awaiting Economic Confirmation (Apr--May 2025)_
+#### 3. The Reality Check: Awaiting Economic Confirmation (Apr--May 2025)
 There have been disproportionate inflows into the US tech and its related sectors since 2018, further amplified by the outsized performance of a handful of mega-cap stocks like the Magnificent Seven. Given this imbalanced concentration and the economy grappling with stubborn price pressures, can the stock market still be considered a leading indicator of the real economy? Considering inflationary pressures tend to manifest first and foremost in financial markets, I assume that the current rally is less a reflection of economic health and more a consequence of the radical increase in monetary supply during the pandemic.
 
 Holding a view that the U.S. economy remains robust---at least more so than its peers like the UK or Germany---I question whether the market built on fragile optimism can withstand endogenous shocks, such as weakening consumer spending. For years, valuations have been inflated by hype for exogenous factors, such as ESG initiatives that cannot survive without subsidies and quantum computing that has yet to deliver on its promises.
@@ -257,7 +255,6 @@ Therefore, until the fog of these near-term uncertainties clears, a tactical und
 -----
 
 ## V. Key Risks & Mitigants
-
 ### Risks & Mitigants Summary
 This section explores the key risks to my tactical underweight thesis, primarily focusing on two possibilities: **(1) Trump's tariff threats prove to be merely a political theater**, and **(2) the market's optimism is fundamentally justified** by the long-term growth trends of a data-driven economy. Examining these mitigating factors to PWR's stock price explains why my recommendation is a tactical underweight rather than a structural sell call.
 
@@ -292,8 +289,7 @@ This section explores the key risks to my tactical underweight thesis, primarily
 
 
 ### The Narrative: Two Tailwinds for PWR's Stock Price
-
-#### _1. The U.S. Policy: Political Rhetoric *vs* Government Initiatives_
+#### 1. The U.S. Policy: Political Rhetoric *vs* Government Initiatives
 The core risk to the underweight thesis is that Trump's political actions have already been reflected in the market. While it is highly probable that the tariff will be imposed, the final figures will likely be negotiated from 25--60% down to some ranges dissatisfactory yet ultimately acceptable to trading partners, much like the outcome of his first-term trade disputes.
 
 Trump is a political businessman, not an economist or a priest; his goal is leverage, not economic orthodoxy or sincerity. The announced numbers are bound to change through forthcoming negotiations. If he had already confirmed numerics and intended to enforce them at any cost, he might have used a different term, *e.g.*, declaration or doctrine, than *negotiation*. Again, he is a businessman; he is just running the most 'monopolitic' enterprise in the world.
@@ -333,7 +329,7 @@ In the same context, uprooting environmental initiatives already in operation is
 Hence, my tactical underweight recommendation results from a thesis that while a major correction to the market---and a further drop of PWR's stock price---in the short-run is nearing, the expected tariffs or proclaimed ESG-related policies will not ruin PWR's fundamentals in the long-run.
 
 
-#### _2. Data-Science Megatrend: Transient Breeze *vs* Perpetual Storm_
+#### 2. Data-Science Megatrend: Transient Breeze *vs* Perpetual Storm
 Another substantial risk to my underweight call is that the sentiment surrounding the data science megatrend is beyond a mere optimism. Every industry follows a life cycle of Introduction, Growth, Maturity, and Decline. Along the path, a myriad of technologies and businesses emerge and vanish, which induces winnowing bubbles and crashes that separate the wheat from the chaff.
 
 Data science is currently the foremost business trend of the Fourth Industrial Revolution, often termed Industry 4.0 or IR4. Data science related industries---<span class="append">or those claiming to be</span>---have rapidly expanded since the advent of smartphones, especially during and after the pandemic with the rise of remote work and online courses. This megatrend is still in its early stages, with a long runway for growth.
