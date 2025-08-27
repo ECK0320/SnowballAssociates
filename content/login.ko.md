@@ -19,13 +19,22 @@ hidemeta: true
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
-  const btn = document.getElementById('login-btn');
-  btn?.addEventListener('click', () => {
-    netlifyIdentity?.open('login');
-  });
-
-  netlifyIdentity?.on('login', () => {
-    const next = new URLSearchParams(location.search).get('next') || '/ko/members/';
-    location.replace(next);
-  });
+  (function () {
+    function init() {
+      if (!window.netlifyIdentity) return;
+      document.getElementById('login-btn')?.addEventListener('click', function () {
+        window.netlifyIdentity.open('login');
+      });
+      window.netlifyIdentity.on('login', function () {
+        window.netlifyIdentity.close();
+        // 현재 페이지 그대로 새로고침(리다이렉트 아님)
+        window.location.reload();
+      });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
 </script>

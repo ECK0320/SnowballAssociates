@@ -13,6 +13,7 @@ hidemeta: true
 
 </div>
 
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
   // Netlify Identity 위젯이 로드되었는지 확인합니다.
   if (window.netlifyIdentity) {
