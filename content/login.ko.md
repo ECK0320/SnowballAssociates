@@ -18,28 +18,18 @@ hidemeta: true
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
 (function () {
-  function sameOrigin(u) {
-    try { return new URL(u, location.origin).origin === location.origin; }
-    catch (e) { return false; }
-  }
-
-  // 로그인 후 돌아갈 목적지 기억
+  function sameOrigin(u) { try { return new URL(u, location.origin).origin === location.origin; } catch(e){return false;} }
   function rememberReturn() {
     const qs = new URLSearchParams(location.search);
     let dest = qs.get('next') || qs.get('redirect');
-    if (dest && !sameOrigin(dest)) dest = null; // 오픈 리다이렉트 방지
-
+    if (dest && !sameOrigin(dest)) dest = null;
     if (!dest && document.referrer && sameOrigin(document.referrer)) {
       const ref = new URL(document.referrer);
       if (!/\/ko\/login\/|\/ko\/logout\//.test(ref.pathname)) dest = ref.href;
     }
-
     if (dest) sessionStorage.setItem('afterLogin', dest);
   }
-
-  function pickDest() {
-    return sessionStorage.getItem('afterLogin') || '/ko/';
-  }
+  function pickDest(){ return sessionStorage.getItem('afterLogin') || '/ko/'; }
 
   function init() {
     const id = window.netlifyIdentity;
@@ -47,22 +37,28 @@ hidemeta: true
 
     rememberReturn();
 
-    // 위젯 열기
     const btn = document.getElementById('login-btn');
-    if (btn) btn.addEventListener('click', function () { id.open('login'); });
+    if (btn) btn.addEventListener('click', function(){ id.open('login'); });
 
-    // 로그인 성공 → 토큰 갱신 → 위젯 닫기 → 목적지 이동
+    // 이미 로그인 상태면 자동 복귀 (선택사항)
+    id.on('init', function(user){
+      if (user) {
+        const dest = pickDest();
+        sessionStorage.removeItem('afterLogin');
+        location.replace(dest);
+      }
+    });
+
     id.on('login', function () {
-      (id.refresh ? id.refresh() : Promise.resolve()).finally(function () {
+      (id.refresh ? id.refresh() : Promise.resolve()).finally(function(){
         id.close();
         const dest = pickDest();
         sessionStorage.removeItem('afterLogin');
-        location.replace(dest); // history에 로그인 페이지 남기지 않음
+        location.replace(dest);
       });
     });
 
-    // 로그아웃 → 현재 페이지 상태로 새로고침
-    id.on('logout', function () { location.reload(); });
+    id.on('logout', function(){ location.reload(); });
 
     id.init();
   }
