@@ -9,9 +9,9 @@ hidemeta: true
 
 <div style="text-align: center;">
   <button id="login-btn" class="custom-button">로그인</button>
-  <br>
-  <p>회원 공개 글입니다.<br>
-  로그인 또는 무료 회원가입 후 진행해주세요.</p>
+  <br><br>
+  회원 공개 글입니다. <br>
+  로그인 또는 무료 회원가입 후 진행해주세요.
 </div>
 
 <!-- Netlify Identity widget -->
