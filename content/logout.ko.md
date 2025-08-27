@@ -14,22 +14,39 @@ hidemeta: true
 </div>
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 <script>
-  // Netlify Identity 위젯이 로드되었는지 확인합니다.
-  if (window.netlifyIdentity) {
-    // 로그아웃 이벤트 리스너: 로그아웃이 성공적으로 완료되면 자동으로 호출됩니다.
-    window.netlifyIdentity.on("logout", function() {
-      // 로그아웃 완료 시 즉시 /login/ 페이지로 리디렉션
-      window.location.href = "/ko/login/";
+  (function () {
+    const goLogin = () => window.location.replace('/ko/login/');
+
+    if (!window.netlifyIdentity) {
+      // 위젯이 없으면 그냥 로그인 페이지로
+      goLogin();
+      return;
+    }
+
+    // 위젯 초기화 후 현재 상태 확인
+    window.netlifyIdentity.on('init', function (user) {
+      if (user) {
+        // 로그인 상태면 바로 로그아웃 실행
+        window.netlifyIdentity.logout();
+      } else {
+        // 이미 비로그인 상태면 곧장 로그인 페이지로
+        goLogin();
+      }
     });
 
-    // HTML 버튼 클릭 시 Netlify Identity의 로그아웃 함수를 호출하도록 연결합니다.
-    const logoutButton = document.getElementById('logout-button');
-    if (logoutButton) {
-      logoutButton.addEventListener('click', function() {
-        // 실제 로그아웃을 실행하는 함수 호출
+    // 로그아웃 완료되면 로그인 페이지로
+    window.netlifyIdentity.on('logout', function () {
+      goLogin();
+    });
+
+    // 혹시 수동 버튼을 쓰고 싶다면 (지금은 display:none)
+    const btn = document.getElementById('logout-button');
+    if (btn) {
+      btn.addEventListener('click', function () {
         window.netlifyIdentity.logout();
       });
     }
-  }
+  })();
 </script>

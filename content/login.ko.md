@@ -8,15 +8,13 @@ hidemeta: true
 ---
 
 <div style="text-align: center;">
+  <button id="login-btn" class="custom-button">로그인</button>
 
-<button class="custom-button" onclick="netlifyIdentity.open('login')">로그인</button>
-
-회원 공개 글입니다.
-
-로그인 또는 무료 회원가입 후 진행해주세요.
-
+  <p>회원 공개 글입니다.<br>
+  로그인 또는 무료 회원가입 후 진행해주세요.</p>
 </div>
 
+<!-- Netlify Identity widget -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
 (function () {
@@ -25,20 +23,22 @@ hidemeta: true
     catch (e) { return false; }
   }
 
-  // 로그인 후 돌아갈 목적지 기억하기
+  // 로그인 후 돌아갈 목적지 기억
   function rememberReturn() {
     const qs = new URLSearchParams(location.search);
-    // 1) /ko/login/?next=/ko/some/private/page 처럼 넘겨온 경우 우선
     let dest = qs.get('next') || qs.get('redirect');
+    if (dest && !sameOrigin(dest)) dest = null; // 오픈 리다이렉트 방지
 
-    // 2) 없으면 referrer가 동일 도메인 & login/logout이 아니면 그걸 사용
-    if (!dest && sameOrigin(document.referrer)) {
+    if (!dest && document.referrer && sameOrigin(document.referrer)) {
       const ref = new URL(document.referrer);
       if (!/\/ko\/login\/|\/ko\/logout\//.test(ref.pathname)) dest = ref.href;
     }
 
-    // 3) 있으면 세션스토리지에 저장
     if (dest) sessionStorage.setItem('afterLogin', dest);
+  }
+
+  function pickDest() {
+    return sessionStorage.getItem('afterLogin') || '/ko/';
   }
 
   function init() {
@@ -47,28 +47,28 @@ hidemeta: true
 
     rememberReturn();
 
-    // 로그인 성공 → 쿠키 갱신 → 위젯 닫기 → 원래 페이지로 이동
+    // 위젯 열기
+    const btn = document.getElementById('login-btn');
+    if (btn) btn.addEventListener('click', function () { id.open('login'); });
+
+    // 로그인 성공 → 토큰 갱신 → 위젯 닫기 → 목적지 이동
     id.on('login', function () {
-      id.refresh().then(function () {
+      (id.refresh ? id.refresh() : Promise.resolve()).finally(function () {
         id.close();
-        const dest = sessionStorage.getItem('afterLogin') || '/';
+        const dest = pickDest();
         sessionStorage.removeItem('afterLogin');
-        location.replace(dest); // history에 login 안 남게 replace
+        location.replace(dest); // history에 로그인 페이지 남기지 않음
       });
     });
 
-    // 로그아웃 → 현재 페이지 권한 상태로 새로고침
-    id.on('logout', function () {
-      location.reload();
-    });
+    // 로그아웃 → 현재 페이지 상태로 새로고침
+    id.on('logout', function () { location.reload(); });
 
     id.init();
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
+  document.readyState === 'loading'
+    ? document.addEventListener('DOMContentLoaded', init)
+    : init();
 })();
 </script>
