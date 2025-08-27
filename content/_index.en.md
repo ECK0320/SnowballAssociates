@@ -16,4 +16,6 @@
 
 ***
 
-**\*** This blog is currently under construction 🚧 to build the webpage in the current new platform Hugo and to shortlist transferrable writings among 2,500+ postings. (*Built on 2025-07-20; last updated on 2025-07-30*)
+If interested, you can see my brief bio [here](https://snowballassociates.com/profile).
+
+_**\*** This blog is currently under construction 🚧 to build the webpage in the current new platform Hugo and to shortlist transferrable writings among 2,500+ postings written since 2012. (*Built on 2025-07-20; last updated on 2025-08-13*)_
