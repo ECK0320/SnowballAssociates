@@ -23,10 +23,5 @@ hidemeta: true
     // 로그인 성공하면 홈이나 원래 보려던 페이지로 이동
     window.location.href = "/ko/";
   });
-
-  window.netlifyIdentity.on("logout", function() {
-    // 로그아웃 시에만 로그아웃 페이지로 이동
-    window.location.href = "/ko/logout/";
-  });
 }
 </script>
