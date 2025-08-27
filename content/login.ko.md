@@ -17,11 +17,15 @@ hidemeta: true
 
 </div>
 
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
-  if (window.netlifyIdentity) {
-  window.netlifyIdentity.on("login", function(user) {
-    // 로그인 성공하면 홈이나 원래 보려던 페이지로 이동
-    window.location.href = "/ko/";
+  const btn = document.getElementById('login-btn');
+  btn?.addEventListener('click', () => {
+    netlifyIdentity?.open('login');
   });
-}
+
+  netlifyIdentity?.on('login', () => {
+    const next = new URLSearchParams(location.search).get('next') || '/ko/members/';
+    location.replace(next);
+  });
 </script>

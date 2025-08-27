@@ -1,7 +1,11 @@
 # 등급 제한은 높은 순서대로 내림차순 작성: 이웃 (모든 접근 허용), 최우수회원 ('일기' 접근 불가), 우수회원 ('일기', '長考' 접근 불가); 회원 ('일기', '長考', '小考' 접근 불가)
-## 단상·일상 게시판: 이웃, 최우수회원
+## 일상 게시판: 이웃
 /ko/judgment_philosophy/diary/* 200!    Role=이웃
 /ko/judgment_philosophy/diary/*    /ko/login/   302!
+
+## 단상 게시판: 이웃, 최우수회원
+/ko/judgment_philosophy/passing_thoughts/* 200!    Role=이웃
+/ko/judgment_philosophy/passing_thoughts/*    /ko/login/   302!
 
 ## 국내 비평 게시판: 회원 전체
 /ko/structural_commentary/macro_trends/* 200!    Role=*
