@@ -17,36 +17,29 @@ hidemeta: true
 
 <script>
   (function () {
-    const goLogin = () => window.location.replace('/ko/login/');
+    function init() {
+      if (!window.netlifyIdentity) return;
 
-    if (!window.netlifyIdentity) {
-      // 위젯이 없으면 그냥 로그인 페이지로
-      goLogin();
-      return;
-    }
+      window.netlifyIdentity.on("logout", function () {
+        // nf_jwt 쿠키 제거
+        document.cookie =
+          'nf_jwt=; Max-Age=0; Path=/; SameSite=Lax' +
+          (location.protocol === 'https:' ? '; Secure' : '');
+        // 로그인 페이지로
+        window.location.replace("/ko/login/");
+      });
 
-    // 위젯 초기화 후 현재 상태 확인
-    window.netlifyIdentity.on('init', function (user) {
-      if (user) {
-        // 로그인 상태면 바로 로그아웃 실행
-        window.netlifyIdentity.logout();
-      } else {
-        // 이미 비로그인 상태면 곧장 로그인 페이지로
-        goLogin();
-      }
-    });
-
-    // 로그아웃 완료되면 로그인 페이지로
-    window.netlifyIdentity.on('logout', function () {
-      goLogin();
-    });
-
-    // 혹시 수동 버튼을 쓰고 싶다면 (지금은 display:none)
-    const btn = document.getElementById('logout-button');
-    if (btn) {
-      btn.addEventListener('click', function () {
+      // 수동 로그아웃 버튼 연결 (있다면)
+      const btn = document.getElementById('logout-button');
+      if (btn) btn.addEventListener('click', function () {
         window.netlifyIdentity.logout();
       });
+
+      window.netlifyIdentity.init();
     }
+
+    document.readyState === 'loading'
+      ? document.addEventListener('DOMContentLoaded', init)
+      : init();
   })();
 </script>
