@@ -25,8 +25,8 @@ hidemeta: true
         document.cookie =
           'nf_jwt=; Max-Age=0; Path=/; SameSite=Lax' +
           (location.protocol === 'https:' ? '; Secure' : '');
-        // 로그인 페이지로
-        window.location.replace("/ko/login/");
+        // 로그아웃 시 메인 랜딩 페이지로
+        window.location.replace("/ko/");
       });
 
       // 수동 로그아웃 버튼 연결 (있다면)
