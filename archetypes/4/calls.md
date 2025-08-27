@@ -5,6 +5,7 @@ subcategories: ["calls", "light_format"]
 title: ""
 # description: "" 필요하다면 추가
 themes: [""] # 대주제: 국제 정치, 국제 경제, 외환 시장, 채권 시장, 원자재 시장, 증권 시장, 가상화폐/암호통화 시장, 부동산 시장, 금리, 환율, 정치이론, 법이론, 정치이론, 인식론, 존재론, 조직신학, 구원론, 성화론, 유교, 불교, 도교, 주식투자, 채권투자, 원자재투자, 크립토투자, modeling, investment rationale, industry outlooks, policy impacts
+work_types: ["Investment Memo"] # 작업물 성격 (출처 명기와 템플릿 준수 등 핵심 뼈대만 지키고 그 외에는 자유 형식): Snack, Policy Brief, Thematic Essay, Philosophical Essay, Investment Memo, Quick Note, Follow-Up
 recommendations: [""] # 예상 내역: BUY, SELL, HOLD
 asset_classes: [""] # 매매 자산 종류: stock, fixed income, currency, commodities, cypto, futures, options, ETF
 valuation_tools: [""] # 매매 기법: fundamental analysis, quantitative analysis, technical analysis, event driven, financials, narratives

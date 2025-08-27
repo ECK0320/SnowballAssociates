@@ -6,7 +6,7 @@ title: "[Company Name]: [Headline thesis statement]"
 # description: "" 필요하다면 추가
 themes: ["Stock Market", "Investment Rationale"] # 대주제: International Relations, International Politics, Global Economy, FX Market, Fixed Income Market, Commodities Market, Stock Market, Crypto Market, Real Estate Market, Interest Rates, Exchange Rates, Political Theory, Legal Theory, 인식론, 존재론, 조직신학, 구원론, 성화론, 유교, 불교, 도교, Stock Investment, Fixed Income Investment, Commodities Investment, Crypto Investment, Modeling, Investment Rationale, Industry Outlooks, Policy Impacts
 
-work_types: ["Investment Memo"] # 작업물 성격 (출처 명기와 템플릿 준수 등 핵심 뼈대만 지키고 그 외에는 자유 형식): Snack, Policy Brief, Thematic Essay, Philosophical Essay, Investment Memo, Quick Note
+work_types: ["Investment Memo"] # 작업물 성격 (출처 명기와 템플릿 준수 등 핵심 뼈대만 지키고 그 외에는 자유 형식): Snack, Policy Brief, Thematic Essay, Philosophical Essay, Investment Memo, Quick Note, Follow-Up
 
 recommendations: ["SELL"] # 예상 내역: BUY, OVERWEIGHT, HOLD, UNDERWEIGHT, SELL
 

@@ -38,6 +38,10 @@ tags: ["Stock Price Analysis", "Forecast", "Quanta Services", "PWR", "Electric G
 
 ---
 
+<span class = "append"> **Data Cut-off Date:** All underlying data and market observations in this thesis are as of **February 21, 2025**. Subsequent events and price actions (Feb 22 -- Mar 18, 2025) were not available at the time of drafting and lie outside the scope of the original analysis. </span>
+
+---
+
 *My investment research integrates macro, political, and structural signals into narrative-driven judgments aligned with asset-level valuation. Each thesis contains numbers but primarily comprises structural analysis of institutional logic and public policy inertia.*
 
 > Originally, my research sought to identify long-term investment opportunities for PWR, a prime beneficiary of the Fourth Industrial Revolution. Contrary to my initial idea, the research led me to conclude a tactical underweight call on PWR. Imminent macroeconomic and political risks, compounded by the exuberant and complacent sentiment dominating the market, demand caution.
@@ -70,7 +74,7 @@ While management is likely to maintain guidance for 14--24% annual growth, I vie
 
 ### Three Pillars of the Thesis
 #### Pillar 1: Market-level Overextension Creates Fragility
-The U.S. stock market, both the S&P 500 and Nasdaq 100, has advanced for 25 consecutive months without a drawdown greater than 15%. This rare rally has fostered investor complacency. In such an environment, assets like PWR---whose valuation leans heavily on future growth narratives despite its large-scale infrastructure and utility profile---can overreact to even minor shifts in market sentiment or macro conditions; its 3-year adjusted beta stands at 1.12 (as of Feb 22, 2025). If the last week's 2.26% drop in NDX---<span class="append">from 22,176.01p to 21,614.08p</span>---signals the beginning of the long-overdue major correction, my technical analysis projects NDX---<span class="append">with an upper bound ranging between 22,124.05p and 22,619.95p</span>---to experience a significant downturn, potentially reaching 16,573.34p. This represents an additional downside of approximately 23% from the Friday's close of 21,614.08p.
+The U.S. stock market, both the S&P 500 and Nasdaq 100, has advanced for 25 consecutive months without a drawdown greater than 15%. This rare rally has fostered investor complacency. In such an environment, assets like PWR---whose valuation leans heavily on future growth narratives despite its large-scale infrastructure and utility profile---can overreact to even minor shifts in market sentiment or macro conditions; its 3-year adjusted beta stands at 1.12 (as of Feb 22, 2025). If the last week's 2.26% drop in NDX signals the beginning of the long-overdue major correction, my technical analysis projects NDX to experience a significant downturn, potentially an additional downside of approximately 23% from the Friday's close of 21,614.08p. The detailed ranges are in [Appendix](#technical-analysis-elliot-wave-theory).
 
 #### Pillar 2: Stock-specific Overvaluation
 At a PEG of 1.97x and a 28% P/E premium to its peers, PWR leaves little margin for execution risk. Even when applying my most bullish growth projections and granting a further 20% forward P/E premium, both trailing and forward prices remain difficult to justify, underscoring the disconnect between market price and fundamentals.
@@ -83,7 +87,7 @@ While sector leaders typically command a 20--30% premium, PWR trades at a 63% EV
 ## III. Valuation
 
 ### Valuation Summary
-My price target for Quanta Services is **$237.73**, representing an **11.7% downside** from the current price. This target is the Base Case estimate from my comparable company analysis, derived by applying a **14.96x forward EV/EBITDA multiple** to the projected FY25E EBITDA (implying a **+24.8% YoY growth** and a Diluted EPS of $6.55).
+My target price for PWR is **$237.73**, indicating an **11.7% downside** from the current price. This target represents the Base Case estimate from my comparable company analysis, where **14.96x forward EV/EBITDA multiple** is applied to the projected FY25E EBITDA assuming a growth of **+24.8% YoY.**
 
 This EBITDA projection is the anchor of four distinct scenarios developed for this analysis. Each scenario translates a projected growth in U.S. electricity consumption into a corresponding EBITDA figure for PWR, with projection coefficients derived from proprietary [OLS regression models](#ols-models) that quantify historical correlations (2014--2025) between U.S. electricity consumption, PWR's EBITDA, and its Diluted EPS.
 
@@ -93,7 +97,7 @@ The football-field chart below visualizes the valuation ranges from my primary a
 
 > The `DCF--FCFF (IV&E)` range in the chart is derived from my proprietary IVE (Intrinsic Value & Expectation) model, which serves as a final sanity check. This framework deconstructs equity value into its fundamental *Intrinsic Value* (from DCF) and a market-driven *Expectation Premium* (from forward peer multiples).
 
-The IVE model finalizes my primary conclusion. Even its Strong Bull case---which stress-tests the market's optimism by applying a 30% premium to the peer multiple---yields a value of **$237.11**. This result, nearly identical to my comps-based target, still implies a 12% downside, reinforcing the UNDERWEIGHT recommendation.
+The IVE model finalizes my primary conclusion. Even its Strong Bull case---which stress-tests the market's optimism by applying a 30% premium to the peer multiple---yields a value of **$237.11**. This result still implies a ~12% downside, reinforcing the UNDERWEIGHT recommendation.
 
 
 ### Fundamental & Quantitative Analyses (DCF & Comps Valuations)
@@ -107,7 +111,7 @@ My DCF analysis yields a fair value of **$138.35 per share**. This is materially
 
     - **_WACC (9.99%)_:** Cost of Equity of 10.73% and After-Tax Cost of Debt of 3.46%.
 
-    - **_Perpetual Growth (3.0%)_:** U.S. electricity demand is expected to grow by 2% in 2025 and 3% in 2026 according to the U.S. Energy Information Administration, and YoY increase in utility-scale power generation observed in September 2024 was 3% (Source: [EIA](https://www.eia.gov/pressroom/releases/press564.php), [Deloitte](https://www.deloitte.com/us/en/insights/industry/power-and-utilities/power-and-utilities-industry-outlook.html)).
+    - **_Perpetual Growth (3.0%)_:** U.S. electricity demand is expected to grow by 2% in 2025 and 3% in 2026 according to the U.S. Energy Information Administration, and a growth of +3% YoY in utility-scale power generation was observed in September 2024 (Source: [EIA](https://www.eia.gov/pressroom/releases/press564.php), [Deloitte](https://www.deloitte.com/us/en/insights/industry/power-and-utilities/power-and-utilities-industry-outlook.html)).
 > _Net Debt is assumed constant across all scenarios at 2024A level of $3,734.31Mn, reflecting a stabilized capital structure following five years of elevated CAPEX (Source: FactSet); reliable forward-looking balance sheet consensus data is also unavailable. The comprehensive valuation table and assumption details are provided in [Appendix](#dcf--comps-valuations)._
 
 
@@ -163,7 +167,7 @@ The peer group for this analysis was sourced from the FactSet-provided list. For
 
 ## IV. Catalysts & Signposts
 ### Catalysts & Signposts Summary
-This section outlines the rationale for my **tactical underweight** call on PWR, focusing on a confluence of near-term catalysts: **(1) Geopolitical Risk** from tariff uncertainty (Feb-Apr), **(2) Domestic Headwinds** from stubborn inflation (Mar-May), and **(3) the Risk of a Confirmed Economic Slowdown** (Apr-May). My recommendation for *tactical* underweight is predicated on a 1-3 month horizon, arguing for portfolio rebalancing, not a structural sell thesis. The following summary details the key catalysts poised to challenge the optimism dominating the market.
+This section outlines the rationale for my **tactical underweight** call on PWR, focusing on a confluence of near-term catalysts: **(1) Geopolitical Risk** from tariff uncertainty (Feb-Apr), **(2) Domestic Headwinds** from stubborn inflation (Mar-May), and **(3) the Risk of a Confirmed Economic Slowdown** (Apr-May). My recommendation for *tactical* underweight is predicated on a 1-2 month horizon, arguing for portfolio rebalancing, not a structural sell thesis. The following summary details the key catalysts poised to challenge the optimism dominating the market.
 
 #### 1. Geopolitical Risk: Tariff War Uncertainty (Feb--Apr 2025)
 <div class = "indent">
@@ -172,7 +176,7 @@ This section outlines the rationale for my **tactical underweight** call on PWR,
 
 - This could directly impact PWR’s procurement costs for raw materials (*e.g.*, steel, electrical components) and disrupt project timelines.
 
-- The **April 2 'Liberation Day'**---<span class="append">so-called by Trump</span>---**deadline** for additional tariffs targeting Asian manufacturing countries is expected to become the **<mark>key inflection point</mark> for the U.S. stock market.**
+- The **April 2**, <span class="append">which Trump proclaims <span class = "quote">"Liberation Day"</span></span>:  eadline for additional tariffs targeting Asian manufacturing countries is expected to become the **<mark>key inflection point</mark> for the U.S. stock market.**
 
 - *Key Dates*
     - **Feb 26:** Deadline for 25\% tariff on EU products.
@@ -248,7 +252,7 @@ Holding a view that the U.S. economy remains robust---at least more so than its 
 
 Furthermore, as mentioned in the [First Pillar of this thesis](#pillar-1-market-level-overextension-creates-fragility), the U.S. stock market has doubled without a major correction of 15%+ since January 2023; have the economy's fundamentals doubled in lockstep? What I have observed firsthand since late 2023 is a wave of mass layoffs---*e.g.*, Microsoft and Wells Fargo---and a sharp rise in refusals to sponsor international students in the tech and finance sectors.
 
-This fundamental analysis is corroborated by technical analysis---the Elliot Wave Theory in particular---which suggests that the stock market has likely topped out, facing a significant overhead resistance. My research finds no evidence to support the prevalent optimism in the market, and a long-overdue correction appears imminent. An economic contraction, if confirmed, would not only lead PWR's key clients to defer capital expenditure but also directly strike the valuation of cyclical stocks like PWR. This can challenge both the double-digit revenue growth embedded in PWR's valuation and the excessive premium currently awarded to PWR's share price.
+This fundamental analysis is corroborated by [the technical analysis](#technical-analysis-elliott-wave-theory)---the Elliott Wave Theory in particular---which suggests that the stock market has likely topped out, facing a significant overhead resistance. My research finds no evidence to support the prevalent optimism in the market, and a long-overdue correction appears imminent. An economic contraction, if confirmed, would not only lead PWR's key clients to defer capital expenditure but also directly strike the valuation of cyclical stocks like PWR. This can challenge both the double-digit revenue growth embedded in PWR's valuation and the excessive premium currently awarded to PWR's share price.
 
 Therefore, until the fog of these near-term uncertainties clears, a tactical underweight position on PWR represents the most prudent course of action.
     
@@ -368,6 +372,18 @@ Hence, my tactical underweight call *in the short-run* notwithstanding, I am sim
 
 ## VII. Appendix
 
+### Technical Analysis (Elliott Wave Theory)
+
+#### NDX (Nasdaq 100) Projection 
+| _Observed_                  | Value          | _Projection_                   | Value Range             |
+|:----------------------------|---------------:|:-------------------------------|------------------------:|
+| 52-week High (Feb 19, 2025) | 22,175.60p     | Resistance (Upper Bound)       | 22,124.05p – 22,619.95p |
+| Current (Feb 25, 2025)      | **21,614.08p** | Support (Greatest Lower Bound) | 16,573.34p              |
+
+- If the 52W high marks the completion of the upper bound, the potential MDD for NDX is estimated at **~23%**.
+
+
+
 ### OLS Models
 
 #### FY25E EBITDA growth
@@ -380,6 +396,7 @@ $$$
 
 - The model is based on 2015A--2025E data for U.S. Electricity Consumption annual growth and FY15A--FY24A data for PWR's financial statements (Source: [EIA](https://www.eia.gov/electricity/annual/table.php?t=epa_01_03.html), FactSet). 
 > _The Base Case of 2.17\% for the FY25E growth is directly derived from the EIA's 2025E U.S. electricity consumption._
+
 
 #### FY25E diluted EPS for PWR
 <p>
@@ -397,10 +414,10 @@ $$$
 
 | *Implied Equity Value (FY25E, per share)*              |  Bear Case  |  <mark>Base Case</mark>  |  Bull Case  |  Strong Bull Case  |
 |:-------------------------------------------------------|------------:|-------------------------:|------------:|-------------------:|
-| *DCF: Perpetuity Growth Method*                        |    $134.24  |                  $138.35 |     $152.06 |            $155.24 |
-| *DCF: IV&E Model*                                      |    $218.45  |                  $221.88 |     $232.79 |            $237.11 |
-| <mark>*Trading Comps: Peer Avg (EV/EBITDA)*</mark>     |    $233.06  |            _**$237.73**_ |     $252.59 |            $258.47 |
-| *Upside/Downside*                                      |    -13.48%  |                  -11.74% |      -6.24% |             -4.04% |
+| DCF: Perpetuity Growth Method                          |    $134.24  |                  $138.35 |     $152.06 |            $155.24 |
+| DCF: IV&E Model                                        |    $218.45  |                  $221.88 |     $232.79 |            $237.11 |
+| <mark>Trading Comps: Peer Avg (EV/EBITDA)</mark>       |    $233.06  |             **$237.73**  |     $252.59 |            $258.47 |
+| Upside/Downside                                        |    -13.48%  |                  -11.74% |      -6.24% |             -4.04% |
 > _Upside/Downside is calculated based on the Trading Comps estimate versus the current market price._
 
 

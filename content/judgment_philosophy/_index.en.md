@@ -1,10 +1,11 @@
 ---
 title: "Judgment Philosophy"
 ---
+> If interested, you can see my brief bio [here](https://snowballassociates.com/profile)
 
 *<h3> Who I Am </h3>*
 
-This section is not a biography but the contour of my thought process (if interested, you can see my brief bio [here](https://snowballassociates.com/profile)). Instead, it reflects the lens through which I perceive the world: the operating system behind every analysis and judgment you will find on this website.
+This section is not a biography but the contour of my thought process. Instead, it reflects the lens through which I perceive the world: the operating system behind every analysis and judgment you will find on this website.
 
 I start from a simple, unshakable belief: "phenomena are modes of essence, and every possibility originates from reason," as remarked in [my book][ref1] (52). Understanding comes from capturing the underlying structure, *i.e.*, the paradigm. Like an architect who sees the load-bearing walls and foundations beneath the facade or a physician who diagnoses the root cause of a disease rather than just treating its symptoms, I search for the fundamental 'why' behind any event. Data and narratives may function as points of entry, but not final destinations.
 
@@ -15,7 +16,7 @@ The purpose of this section is to make records so that I can later track what I 
 [ref1]: https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=285116786
 
 ---
-
+#### Categories
 - **[Diary][ref2]**: An archive of personal journals in Korean, maintained for a small group of long-time subscribers. Access is restricted. <br><br>
 
 - **[Passing Thoughts][ref3]**: Brief judgment calls; written mostly in Korean to fully capture subtle implications, nuances, or connotations inherent in abstract concepts. For example:

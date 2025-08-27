@@ -1,6 +1,7 @@
 ---
 title: "Market Decision Log"
 ---
+> If interested, you can see my brief bio [here](https://snowballassociates.com/profile)
 
 *<h3> What I Thought </h3>*
 
@@ -21,6 +22,7 @@ Each transaction or market call posted in this category includes my reasoning, d
 While each trade or recommendation here contains the core logic of a decision, the exhaustive data and in-depth fundamental & quantitative analyses are archived in the [V. Works][ref2] section (light-form and full-form reports). I frequently utilize technical analysis---*e.g.*, moving average---for short-term trading, and transactions that are purely based on technical analysis are not explained in the Works section.
 
 ---
+#### Categories
 
 - **[Transactions][ref3]**: A chronological ledger of actual trades, which shows the timing (`entry/exit`), direction (`long/short/close`), outcome (`profit/loss`), and quick post-trade reflection. This is the archive of what I did in the market and how those decisions played out. <br><br>
 
