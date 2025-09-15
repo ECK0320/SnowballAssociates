@@ -1,18 +1,38 @@
 ---
 date: "2025-08-13 21:43:00+09:00"
+
 categories: ["market_decision_log", "works"]
 subcategories: ["calls", "light_format"]
+
 title: "Follow-Up on Underweight Call: PWR"
 description: "Revisiting the 2025-03-19 memo"
-themes: ["Stock Market"] # 대주제: International Relations, International Politics, Global Economy, FX Market, Fixed Income Market, Commodities Market, Stock Market, Crypto Market, Real Estate Market, Interest Rates, Exchange Rates, Political Theory, Legal Theory, 인식론, 존재론, 조직신학, 구원론, 성화론, 유교, 불교, 도교, Stock Investment, Fixed Income Investment, Commodities Investment, Crypto Investment, Modeling, Investment Rationale, Industry Outlooks, Policy Impacts
-work_types: ["Quick Note", "Follow-Up"] # 작업물 성격 (출처 명기와 템플릿 준수 등 핵심 뼈대만 지키고 그 외에는 자유 형식): Snack, Policy Brief, Thematic Essay, Philosophical Essay, Investment Memo, Quick Note, Follow-Up
-recommendations: ["UNDERWEIGHT", "HOLD"] # 예상 내역: BUY, OVERWEIGHT, HOLD, UNDERWEIGHT, SELL
-asset_classes: ["Stock"] # 매매 자산 종류: stock, fixed income, currency, commodities, cypto, futures, options, ETF
-valuation_tools: ["Fundamental Analysis", "Quantitative Analysis", "Event Driven", "Financial Analysis", "Narrative Analysis"] # 매매 기법: fundamental analysis, quantitative analysis, technical analysis, event driven, financials, narratives
-event_types: ["International Relations", "Global Economy", "Domestic Economy", "Company", "Earnings Call"] # 사건 진원지: monetary policy, fiscal policy, international relations, global economy, domestic politics, domestic economy, industry, company
+
+themes: ["US Politics", "Financial Markets", "Inflation", "Interest Rates", "Investment Rationale"]
+# 대주제: "Global Politics", "Global Economy", "US Politics", "US Economy", "EU Politics", "EU Economy", "Chinese Politics", "Chinese Economy", "Korean Politics", "Korean Economy", "Real Economy", "Financial Markets", "Inflation", "Interest Rates", "Exchange Rates", "Investment Rationale", "Industry Outlooks", "Monetary Policy Impacts", "Fiscal Policy Impacts"
+
+work_types: ["Quick Note", "Follow-Up"]
+# 작업물 성격 (출처 명기와 템플릿 준수 등 핵심 뼈대만 지키고 그 외에는 자유 형식): "Snack", "Policy Brief", "Thematic Essay", "Philosophical Essay", "Investment Memo", "Quick Note", "Follow-Up"
+
+recommendations: ["UNDERWEIGHT", "HOLD"]
+# 예상 내역: BUY, OVERWEIGHT, HOLD, UNDERWEIGHT, SELL
+
+asset_classes: ["Stock"]
+# 매매 자산 종류: stock, fixed income, currency, commodities, cypto, futures, options, ETF
+
+valuation_tools: ["Fundamental Analysis", "Quantitative Analysis", "Event Driven", "Financial Analysis", "Narrative Analysis"]
+# 매매 기법: fundamental analysis, quantitative analysis, technical analysis, event driven, financials, narratives
+
+event_types: ["International Relations", "Global Economy", "Domestic Economy", "Company", "Earnings Call"]
+# 사건 진원지: monetary policy, fiscal policy, international relations, global economy, domestic politics, domestic economy, industry, company
+
 thought_facets: ["Intuition", "Analysis"] # 직관 or 분석
-skills: [""] # 발행 전 AI 돌려서 링크드인 공식 카테고리 및 skill taxonomy 기준으로 핵심 quantitative/qualitative/technical/academic skill set 만 ["skill1", "skill2", ...] 1열 형태로 추출
-tags: ["Stock Price Analysis", "Verification", "Postmortem Analysis"] # forecast (예상), verification (검정; 예측 일치 여부 확인), postmortem analysis (복기; 사후 원인 분석 및 개선)
+
+skills: ["Financial Modeling", "Valuation", "Fundamental Analysis", "Technical Analysis", "Earnings Analysis", "Macroeconomic Analysis", "Political Analysis", "Risk Management"]
+# 발행 전 AI 돌려서 링크드인 공식 카테고리 및 skill taxonomy 기준으로 핵심 quantitative/qualitative/technical/academic skill set 만 ["skill1", "skill2", ...] 1열 형태로 추출
+
+tags: ["Quanta Services", "PWR", "Stock Price Analysis", "Valuation", "Earnings Analysis", "Market Correction", "Tariffs", "Nasdaq 100", "Elliott Wave Theory", "Verification", "Postmortem Analysis", "Tactical Call"]
+# forecast (예상), verification (검정; 예측 일치 여부 확인), postmortem analysis (복기; 사후 원인 분석 및 개선)
+# + 관련 내용 추가:
 ---
 
 <span class = "append">**Data Cut-off Date**: All underlying data and market observations in this thesis are as of August 12, 2025.</span>

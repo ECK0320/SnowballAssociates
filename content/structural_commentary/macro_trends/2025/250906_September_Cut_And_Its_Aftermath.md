@@ -1,21 +1,27 @@
 ---
 date: "2025-09-06 01:18:42+09:00"
 categories: ["structural_commentary", "works"]
-subcategories: ["macro_trends", "light-format"]
+subcategories: ["macro_trends", "light_format"]
+
 title: "The September Cut: A Cheer or a Scream?"
 description: "Why a September Cut is a Bear Trap"
 
+themes: ["Global Economy", "US Economy", "Real Economy", "Financial Markets", "Inflation", "Interest Rates", "Monetary Policy Impacts", "Thematic Essay", "Investment Rationale"]
+# 대주제: "Global Politics", "Global Economy", "US Politics", "US Economy", "EU Politics", "EU Economy", "Chinese Politics", "Chinese Economy", "Korean Politics", "Korean Economy", "Real Economy", "Financial Markets", "Inflation", "Interest Rates", "Exchange Rates", "Investment Rationale", "Industry Outlooks", "Monetary Policy Impacts", "Fiscal Policy Impacts"
+
+work_types: ["Quick Note", "Follow-Up"]
+# 작업물 성격 (출처 명기와 템플릿 준수 등 핵심 뼈대만 지키고 그 외에는 자유 형식): "Snack", "Policy Brief", "Thematic Essay", "Philosophical Essay", "Investment Memo", "Quick Note", "Follow-Up"
+
 regions: ["North America", "U.S."] # 지역 + 국가명: 동북아시아, 동남아시아, 서남아시아, 중앙아시아, 중동아시아, 유라시아, 동아시아, 북유럽, 남유럽, 서유럽, 북미, 중미, 남미, 아프리카
 
-structures: ["Economy"] # 구조 선택: politics, society, culture, and economy
-
-themes: ["Global Economy", "US Economy", "Real Economy", "Financial Markets", "Inflation", "Interest Rates", "Monetary Policy Impacts", "Thematic Essay", "Investment Rationale"]
-# 대주제: Global Politics, Global Economy, US Politics, US Economy, EU Politics, EU Economy, Chinese Politics, Chinese Economy, Korean Politics, Korean Economy, Real Economy, Financial Markets, Inflation, Interest Rates, Exchange Rates, Thematic Essay, Investment Rationale, Industry Outlooks, Monetary Policy Impacts, Fiscal Policy Impacts
+structures: ["Economy"] # 구조 선택: "Politics", "Society", "Culture", "Economy"
 
 studies: ["Social Science"] # 해당 분야 선택 (Humanities, Social Science)
 
 subfields: ["Economics", "Macroeconomics", "Monetary Policy"]
-# Theology (Protestant Sanctification Theory, Protestant Soteriology, Protestant Systematic Theology), Humanities ― Religious Studies and Philosophy (Confucianism, Buddhism, Daoism, Normative Philosophy, Ontology, Epistemology, Ethics, Political Philosophy, Legal Philosophy) / Social Science ― Political Philosophy/Theory (neo-Aristotelean, neo-Kantian, Straussian, Rawlsian), Legal Philosophy/Theory (Natural Law, Positive Law), Economics (Macroeconomics, Microeconomics)
+# "Theology" ("Protestant Sanctification Theory", "Protestant Soteriology", "Protestant Systematic Theology")  
+# "Humanities" ― "Religious Studies" and "Philosophy" ("Confucianism", "Buddhism", "Daoism", "Normative Philosophy", "Ontology", "Epistemology", "Ethics", "Political Philosophy", "Legal Philosophy")  
+# "Social Science" ― "Political Philosophy/Theory" ("Neo-Aristotelean", "Neo-Kantian", "Straussian", "Rawlsian"), "Legal Philosophy/Theory" ("Natural Law", "Positive Law"), "Economics" ("Macroeconomics", "Microeconomics")
 
 
 thought_facets: ["Intuition", "Analysis"] # 직관 or 분석
@@ -26,7 +32,7 @@ skills: ["Contrarian Analysis", "Macroeconomic Analysis", "Data Interpretation",
 # 발행 전 AI 돌려서 링크드인 공식 카테고리 및 skill taxonomy 기준으로 핵심 quantitative/qualitative/technical/academic skill set 만 ["skill1", "skill2", ...] 1열 형태로 추출
 
 tags: ["Trend", "Paradigm", "Federal Reserve", "FOMC", "September Cut", "Economic Recession", "Stagflation", "Labor Market", "Stock Market", "Contrarian Investing"]
-# 배경 ("Trend", "Paradigm" 고정): FX Market, Bond Market, Commodities Market, Stock Market, Crypto Market, Real Estate Market, "Bond Investing", "Stock Investing", "Commodity Investing", Crypto Investing, Modeling 
+# 배경 ("Trend", "Paradigm" 고정): "FX Market", "Bond Market", "Commodities Market", "Stock Market", "Crypto Market", "Real Estate Market", "Bond Investing", "Stock Investing", "Commodity Investing", "Crypto Investing", "Modeling"
 # + 글 내용 관련 태그 추가
 
 showTOC: true
