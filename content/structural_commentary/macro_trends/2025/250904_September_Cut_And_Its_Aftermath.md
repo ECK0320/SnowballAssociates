@@ -1,16 +1,34 @@
 ---
 date: "2025-09-06 01:18:42+09:00"
-categories: ["structural_commentary"]
-subcategories: ["macro_trends"]
+categories: ["structural_commentary", "works"]
+subcategories: ["macro_trends", "light-format"]
 title: "The September Cut: A Cheer or a Scream?"
-description: "Why the Fed's Next Cut is a Bear Trap"
-themes: ["Global Economy", "US Economy", "Real Economy", "Financial Markets", "Bond Market", "Stock Market", "Interest Rates", "Monetary Policy", "Policy Impacts"] # 대주제: 국제 정치, Global Economy, 외환 시장, 채권 시장, 원자재 시장, Stock Market, Crypto Market, 부동산 시장, Interest Rats, Exchange Rates, 정치이론, 법이론, 정치이론, 인식론, 존재론, 조직신학, 구원론, 성화론, 유교, 불교, 도교, Stock Investment, 채권투자, 원자재투자, 크립토투자, modeling, Investment Rationale, Industry Outlooks, Monetary Policy Impacts, Fiscal Policy Impacts
-structures: ["Economy"] # 구조 선택: politics, society, culture, and economy
+description: "Why a September Cut is a Bear Trap"
+
 regions: ["North America", "U.S."] # 지역 + 국가명: 동북아시아, 동남아시아, 서남아시아, 중앙아시아, 중동아시아, 유라시아, 동아시아, 북유럽, 남유럽, 서유럽, 북미, 중미, 남미, 아프리카
+
+structures: ["Economy"] # 구조 선택: politics, society, culture, and economy
+
+themes: ["Global Economy", "US Economy", "Real Economy", "Financial Markets", "Inflation", "Interest Rates", "Monetary Policy Impacts", "Thematic Essay", "Investment Rationale"]
+# 대주제: Global Politics, Global Economy, US Politics, US Economy, EU Politics, EU Economy, Chinese Politics, Chinese Economy, Korean Politics, Korean Economy, Real Economy, Financial Markets, Inflation, Interest Rates, Exchange Rates, Thematic Essay, Investment Rationale, Industry Outlooks, Monetary Policy Impacts, Fiscal Policy Impacts
+
+studies: ["Social Science"] # 해당 분야 선택 (Humanities, Social Science)
+
+subfields: ["Economics", "Macroeconomics", "Monetary Policy"]
+# Theology (Protestant Sanctification Theory, Protestant Soteriology, Protestant Systematic Theology), Humanities ― Religious Studies and Philosophy (Confucianism, Buddhism, Daoism, Normative Philosophy, Ontology, Epistemology, Ethics, Political Philosophy, Legal Philosophy) / Social Science ― Political Philosophy/Theory (neo-Aristotelean, neo-Kantian, Straussian, Rawlsian), Legal Philosophy/Theory (Natural Law, Positive Law), Economics (Macroeconomics, Microeconomics)
+
+
 thought_facets: ["Intuition", "Analysis"] # 직관 or 분석
+
 # programming_languages: ["Python", "R", "SQL"] # 사용된 프로그래밍 언어 & 패키지
-skills: ["Contrarian Analysis", "Macroeconomic Analysis", "Data Interpretation", "Federal Reserve Analysis", "Investment Thesis Development", "Leading Economic Indicators"] # 발행 전 AI 돌려서 링크드인 공식 카테고리 및 skill taxonomy 기준으로 핵심 quantitative/qualitative/technical/academic skill set 만 ["skill1", "skill2", ...] 1열 형태로 추출
-tags: ["Trend", "Paradigm"] # 추세: 국제 정치, 국제 경제, 외환 시장, 채권 시장, 원자재 시장, 증권 시장, 가상화폐/암호통화 시장, 부동산 시장
+
+skills: ["Contrarian Analysis", "Macroeconomic Analysis", "Data Interpretation", "Monetary Policy Analysis", "Economic Forecasting", "Historical Analysis", "Investment Thesis Development", "Leading Economic Indicators"]
+# 발행 전 AI 돌려서 링크드인 공식 카테고리 및 skill taxonomy 기준으로 핵심 quantitative/qualitative/technical/academic skill set 만 ["skill1", "skill2", ...] 1열 형태로 추출
+
+tags: ["Trend", "Paradigm", "Federal Reserve", "FOMC", "September Cut", "Economic Recession", "Stagflation", "Labor Market", "Stock Market", "Contrarian Investing"]
+# 배경 ("Trend", "Paradigm" 고정): FX Market, Bond Market, Commodities Market, Stock Market, Crypto Market, Real Estate Market, "Bond Investing", "Stock Investing", "Commodity Investing", Crypto Investing, Modeling 
+# + 글 내용 관련 태그 추가
+
 showTOC: true
 ---
 
