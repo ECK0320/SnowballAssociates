@@ -9,7 +9,7 @@ description: "Why a September Cut is a Bear Trap"
 themes: ["Global Economy", "US Economy", "Real Economy", "Financial Markets", "Inflation", "Interest Rates", "Monetary Policy Impacts", "Thematic Essay", "Investment Rationale"]
 # 대주제: "Global Politics", "Global Economy", "US Politics", "US Economy", "EU Politics", "EU Economy", "Chinese Politics", "Chinese Economy", "Korean Politics", "Korean Economy", "Real Economy", "Financial Markets", "Inflation", "Interest Rates", "Exchange Rates", "Investment Rationale", "Industry Outlooks", "Monetary Policy Impacts", "Fiscal Policy Impacts"
 
-work_types: ["Quick Note", "Follow-Up"]
+work_types: ["Thematic Essay"]
 # 작업물 성격 (출처 명기와 템플릿 준수 등 핵심 뼈대만 지키고 그 외에는 자유 형식): "Snack", "Policy Brief", "Thematic Essay", "Philosophical Essay", "Investment Memo", "Quick Note", "Follow-Up"
 
 regions: ["North America", "U.S."] # 지역 + 국가명: 동북아시아, 동남아시아, 서남아시아, 중앙아시아, 중동아시아, 유라시아, 동아시아, 북유럽, 남유럽, 서유럽, 북미, 중미, 남미, 아프리카
