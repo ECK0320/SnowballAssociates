@@ -349,6 +349,8 @@ text = "Rationalist ∫ {Romanticism ∪ Kapitalismus}: Theory in Practice"
 
   # II. Cognitive Core: COGNITIVIE FRAMEWORK based on 'humanities,' 'STEM,' and 'business.' (공부 일지)
   study = "studies"
+  field = "fields"
+  subfield = "subfields"
   qualification = "qualifications" # 공부한 자격증 또는 시험 종류
 
   # III. Structural Commentary: TREND commentary on 'politics,' 'society,' 'culture,' and 'economy.' (직관 위주의 거시적 흐름 판단; 데이터 분석까지 할 경우 V. Works 로)

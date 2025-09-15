@@ -11,7 +11,7 @@ asset_classes: ["Stock"] # 매매 자산 종류: stock, fixed income, currency, 
 valuation_tools: ["Fundamental Analysis", "Quantitative Analysis", "Event Driven", "Financial Analysis", "Narrative Analysis"] # 매매 기법: fundamental analysis, quantitative analysis, technical analysis, event driven, financials, narratives
 event_types: ["International Relations", "Global Economy", "Domestic Economy", "Company", "Earnings Call"] # 사건 진원지: monetary policy, fiscal policy, international relations, global economy, domestic politics, domestic economy, industry, company
 thought_facets: ["Intuition", "Analysis"] # 직관 or 분석
-skills: [""] # 발행 전 AI 돌려서 linkedin official term 기준으로 quantitative/qualitative/technical/academic skillset 추출하기
+skills: [""] # 발행 전 AI 돌려서 링크드인 공식 카테고리 및 skill taxonomy 기준으로 핵심 quantitative/qualitative/technical/academic skill set 만 ["skill1", "skill2", ...] 1열 형태로 추출
 tags: ["Stock Price Analysis", "Verification", "Postmortem Analysis"] # forecast (예상), verification (검정; 예측 일치 여부 확인), postmortem analysis (복기; 사후 원인 분석 및 개선)
 ---
 
@@ -104,7 +104,7 @@ I actively adopt technical analysis when the market is heavily predicated on the
 Based on the Elliott Wave Theory, (1) the new resistance zone for NDX screens at **25,279.5p--26,162.83p**, indicating **6.0--9.7% upside** from the current 23,839.2p; (2) for PWR, I am monitoring **$431** as a breakout trigger and **$351--378** as key supports.
 - *Theoretically* speaking, the greatest upper bound---*i.e.*, *sup*---of PWR's share price is $549.76.
     - PWR's 52W high as well as new record high is $421.68, marked two--three weeks ago. If PWR's stock price breaks through a projected resistance of $431.27, then it can rise as high as $549.76, _**THEORETICALLY**_ speaking.
-    - If the new ATH of $421.68 were its ceiling, then the stock could correct down to the support range of **$351.07--378.65**---<span class = "append">theoretically, its greatest lower bound is $330.58, but I am not inclined to this scenario</span>. It is worth noting that even the low-end of this support range is **still ~36% higher than my comps-based Strong Bull Case** ($258.47).
+    - If the new ATH of $421.68 were its ceiling, then the stock could correct down to the support range of **$351.07--378.65**---<span class = "append">theoretically, its greatest lower bound is $330.58, but I am not inclined to this scenario</span>. It is worth noting that even the low-end ($351.07) of this support range is **still ~36% higher than my comps-based Strong Bull Case** ($258.47).
 
 
 [^1]: **PWR's past diluted EPS:** 2Q25A $1.52 | 1Q25A $0.96 | 4Q24A $2.03 | 3Q24A $1.95 | 2Q24A $1.26 (Source: FactSet, [SEC](https://investors.quantaservices.com/sec-filings/all-sec-filings/content/0001050915-25-000103/pwr-20250630.htm))
