@@ -4,15 +4,15 @@ searchHidden: true
 showToc: false
 ---
 ## Profile
-This website combines elements of my academic CV and professional résumé. For a formal résumé or business inquiries, please <a href="mailto:snowballassociates@gmail.com">email</a> from your official organization account. Below is a broader profile that integrates my intellectual commitments and professional experiences.
+This website combines elements of my academic CV and professional resume. For a formal resume or business inquiries, please <a href="mailto:snowballassociates@gmail.com">email</a> from your official organization account. Below is a broader profile that integrates my intellectual commitments and professional experiences.
 
 ### Education
 - Early & Honors graduation (_**Cum Laude**_) from both high school and college 🇺🇸
 - Studied **political-legal theory**, **economics**, and **mathematics** at a liberal arts college, with full merit scholarships & grants and multiple Dean's Lists awarded
-- <span class = "quote"> East Coast Straussian-inflected (close reading; zero-omission) Epistocratic Republican (licensing-based; no vote-weighting); equity-centered, civic-meritocratic constitutionalism </span>
+- <span class = "quote"> **East Coast Straussian-inflected Epistocratic Republican**; equity-centered, civic-meritocratic constitutionalism </span>
     - **Political-Legal Theory Honors Thesis**: defended; _**Magna Cum Laude**_
     Examines justice by analyzing modern democracy, suffrage, natural rights, civil rights, and legal positivism.
-- <span class = "quote"> Heterogeneous-Agent New Keynesian (HANK); distributional macro / inequality incidence </span>
+- <span class = "quote"> **Heterogeneous-Agent New Keynesian (HANK)**; distributional macro / inequality incidence </span>
     - **Mathematics-Economics Senior Thesis**: ECON 699 track; **A-**
     Quantifies inflation incidence across income strata with a proprietary HA-DSGE model, simulating heterogeneous propagation channels.
         

@@ -115,7 +115,7 @@ PWR's 2Q25 [earnings call](https://investors.quantaservices.com/news-events/pres
     > The divergence between the company's steady operational growth (EBITDA) and its more volatile bottom-line outlook (EPS guidance) is revealing. The low-end (Bear Case) of the wide EPS range likely reflects ongoing margin pressures such as rising commodity price. In contrast, the high-end (Base-to-Strong Bull Cases) likely points to potential operating leverage such as a slowdown in D&A growth following its five-year elevated CAPEX.
   - *The core problem, again, is whether this growth, even if robust, can justify the current valuation.*
 
-The stock’s current valuation requires reassessment---*i.e.*, whether forward earnings momentum can justify the current **TTM P/E of 60.6**---under a new framework after incorporating the latest 1Q25A and 2Q25A results, which were not captured in the March call. Given that only does technical analysis partially justify the current price, I am initiating a **second TACTICAL UNDERWEIGHT** (or HOLD, if you have not yet established a position) until the upcoming FOMC meeting (Sep 20--21) provides more clarity on the inflation trajectory.
+The stock’s current valuation requires reassessment---*i.e.*, whether forward earnings momentum can justify the current **TTM P/E of 60.6**---under a new framework after incorporating the latest 1Q25A and 2Q25A results, which were not captured in the March call. Given that only does technical analysis partially justify the current price, I am initiating a **second TACTICAL UNDERWEIGHT** (or HOLD, if you have not yet established a position) until the upcoming FOMC meeting (Sep 16--17) provides more clarity on the inflation trajectory.
 
 
 ## III. Sidenote
