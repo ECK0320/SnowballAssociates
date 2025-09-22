@@ -47,7 +47,7 @@ tags: ["Quanta Services", "PWR", "Stock Price Analysis", "Valuation", "Earnings 
 
 ## I. Ex-Ante
 
-| Metri           | Ex-Ante (2025-03-19)    | Upside/Downside | Rationale                   |
+| Metric          | Ex-Ante (2025-03-19)    | Upside/Downside | Rationale                   |
 |-----------------|-------------------------|-----------------|-----------------------------|
 | NDX MDD         | 16,573.34p              | -23.3%          | Sentiment unwinding         |
 | PWR Target Price| $237.73                 | -11.7%          | Comps-based Base Case       |
