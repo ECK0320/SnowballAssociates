@@ -376,7 +376,7 @@ Hence, my tactical underweight call *in the short-run* notwithstanding, I am sim
 
 #### NDX (Nasdaq 100) Projection 
 | _Observed_                  | Value          | _Projection_                   | Value Range             |
-|:----------------------------|---------------:|:-------------------------------|------------------------:|
+|:---------------------------:|:--------------:|:------------------------------:|:-----------------------:|
 | 52-week High (Feb 19, 2025) | 22,175.60p     | Resistance (Upper Bound)       | 22,124.05p – 22,619.95p |
 | Current (Feb 25, 2025)      | **21,614.08p** | Support (Greatest Lower Bound) | 16,573.34p              |
 
