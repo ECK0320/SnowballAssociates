@@ -95,7 +95,7 @@ The football-field chart below visualizes the valuation ranges from my primary a
 
 ![PWR_FootballField_Chart](https://i.imgur.com/jliw1ZW.png)
 
-> The `DCF--FCFF (IV&E)` range in the chart is derived from my proprietary IVE (Intrinsic Value & Expectation) model, which serves as a final sanity check. This framework deconstructs equity value into its fundamental *Intrinsic Value* (from DCF) and a market-driven *Expectation Premium* (from forward peer multiples).
+> The `DCF–FCFF (IV&E)` range in the chart is derived from my proprietary IVE (Intrinsic Value & Expectation) model, which serves as a final sanity check. This framework deconstructs equity value into its fundamental *Intrinsic Value* (from DCF) and a market-driven *Expectation Premium* (from forward peer multiples).
 
 The IVE model finalizes my primary conclusion. Even its Strong Bull case---which stress-tests the market's optimism by applying a 30% premium to the peer multiple---yields a value of **$237.11**. This result still implies a ~12% downside, reinforcing the UNDERWEIGHT recommendation.
 
@@ -388,10 +388,10 @@ Hence, my tactical underweight call *in the short-run* notwithstanding, I am sim
 
 #### FY25E EBITDA growth
 <p>
-$$$
+$$
 EBITDA\ Annual\ Growth\ (\%) = \alpha \ + \ U.S.\ Electricity\ Annual\ Growth\ (\%)\ \times \beta \ + \ \epsilon, \\
 where\ \alpha \approx 0.1534\ and\ \beta \approx 4.3612\ (R^2 \approx 0.5642)
-$$$
+$$
 </p>
 
 - The model is based on 2015A--2025E data for U.S. Electricity Consumption annual growth and FY15A--FY24A data for PWR's financial statements (Source: [EIA](https://www.eia.gov/electricity/annual/table.php?t=epa_01_03.html), FactSet). 
@@ -400,10 +400,10 @@ $$$
 
 #### FY25E diluted EPS for PWR
 <p>
-$$$
+$$
 Diluted\ EPS\ (\$) = \alpha \ + \ EBITDA\ (\$ Mn)\ \times \beta \ + \ \epsilon, \\
 where\ \alpha \approx -0.1892\ and\ \beta \approx 0.0026\ (R^2 \approx 0.9031)
-$$$
+$$
 </p>
 
 - The model forecasts Diluted EPS as a function of projected EBITDA, based on the historical relationship observed in FY15A--FY24A data (Source: FactSet).
@@ -424,22 +424,22 @@ $$$
 ### Assumptions
 
 #### WACC
-| Component                        |   Value   |                                 Notes                                    |
-|:---------------------------------|:---------:|:-------------------------------------------------------------------------|
-| Risk-Free Rate ($$R_f$$)         |   3.93%   | 10-Year U.S. Treasury Yield                                              |
-| Expected Market Return ($$R_m$$) |  10.00%   | Expected S&P 500 Return in 2025 (Source: [Goldman Sachs](https://www.goldmansachs.com/insights/articles/the-s-and-p-500-is-forecast-to-return-10-percent-in-2025)) |
-| Market Risk Premium ($$R_p$$)    |   6.07%   | $$R_p = R_m - R_f$$                                                      |
-| Levered Beta ($$\beta_{L}$$)     |   1.12    | 3-Year Adjusted Beta (Source: FactSet)                                   |
-| **Cost of Equity ($$R_e$$)**     | **10.73%**| **CAPM: $$R_e = R_f + \beta \times R_p$$**                               |
-| Pre-Tax Cost of Debt ($$R_d$$)   |   4.53%   | 2024A Interest Expense / Total Debt                                      |
-| Effective Tax Rate               |  23.49%   | 2024A Income Taxes / Pretax Income                                       |
-| **After-Tax Cost of Debt**       | **3.46%** | **$$R_d \times (1 - \text{Tax Rate})$$**                                 |
+| Component                      |   Value   |                                 Notes                                    |
+|:-------------------------------|:---------:|:-------------------------------------------------------------------------|
+| Risk-Free Rate ($R_f$)         |   3.93%   | 10-Year U.S. Treasury Yield                                              |
+| Expected Market Return ($R_m$) |  10.00%   | Expected S&P 500 Return in 2025 (Source: [Goldman Sachs](https://www.goldmansachs.com/insights/articles/the-s-and-p-500-is-forecast-to-return-10-percent-in-2025)) |
+| Market Risk Premium ($R_p$)    |   6.07%   | \\(R_p = R_m - R_f\\)                                                      |
+| Levered Beta ($\beta_{L}$)     |   1.12    | 3-Year Adjusted Beta (Source: FactSet)                                   |
+| **Cost of Equity ($R_e$)**     | **10.73%**| **CAPM: \\(R_e = R_f + \beta \times R_p\\)**                               |
+| Pre-Tax Cost of Debt ($R_d$)   |   4.53%   | 2024A Interest Expense / Total Debt                                      |
+| Effective Tax Rate             |  23.49%   | 2024A Income Taxes / Pretax Income                                       |
+| **After-Tax Cost of Debt**     | **3.46%** | **\\(R_d \times (1 - \text{Tax Rate})\\)**                                 |
 
 | Capital Structure      |   Value   |                                        Notes                                       |
 |:-----------------------|:---------:|:-----------------------------------------------------------------------------------|
 | Weight of Equity (E/V) |  89.87%   | Based on Market Capitalization                                                     |
 | Weight of Debt (D/V)   |  10.13%   | Based on Book Value of Debt                                                        |
-| **WACC**               | **9.99%** | **$$(E/V) \times R_e \ + \ (D/V) \times \\{R_d \times (1 - \text{Tax Rate})\\}$$** |
+| **WACC**               | **9.99%** | **\\((E/V) \times R_e \ + \ (D/V) \times \\{R_d \times (1 - \text{Tax Rate})\\}\\)** |
 
 #### Growth Rate
 | Assumption                         | Value | Rationale                                                                                                                                           |
