@@ -37,14 +37,6 @@ valuation_tools: ["Event Driven", "Market Sentiment", "Elliot Wave Theory", "Fin
 tags: ["Stock Price Analysis", "Forecast", "Quanta Services", "PWR", "Electric Grid Infrastructure", "Valuation", "Cyclicals", "Market Correction", "Market Exuberance", "Inflation"] # forecast (예상), verification (검정), post-mortem analysis (사후 분석; 복기)
 
 ---
-<style>
-@page { margin: 1in; }
-* { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-h1, h2, h3 { break-after: avoid; }
-table { page-break-inside: avoid; }
-.section-break { break-before: page; } /* 필요할 때 넣어서 강제 개행 */
-</style>
-
 
 <span class = "append"> **Data Cut-off Date:** All underlying data and market observations in this thesis are as of **February 21, 2025**. Subsequent events and price actions (Feb 22 -- Mar 18, 2025) were not available at the time of drafting and lie outside the scope of the original analysis. </span>
 
@@ -145,7 +137,8 @@ Assumes 10.4% cumulative increase (*i.e.*, **1.66%** annual increase) in U.S. el
 |*Bull Case*               | 25.0%                                                  | +31.9%                    | 14.96x                        | 37,301.76           | 252.59          | 6.2%                |
 |<mark>*Base Case*</mark>  | 13.8%                                                  | +24.8%                    | 14.96x                        | 35,107.52           | 237.73          | 11.7%               |
 |*Bear Case*               | 10.4%                                                  | +22.6%                    | 14.96x                        | 34,417.51           | 233.06          | 13.5%               |
-> **FY25E diluted EPS Forecast**: Bear \$6.43 | Base \$6.55 | Bull \$6.94 | Strong Bull \$7.09
+
+> _**FY25E diluted EPS Forecast**: Bear \$6.43 | Base \$6.55 | Bull \$6.94 | Strong Bull \$7.09_
 
 
 #### Peer Group & Rationale
@@ -393,6 +386,8 @@ Hence, my tactical underweight call *in the short-run* notwithstanding, I am sim
 
 
 ### OLS Models
+
+The full formula and assumptions are provided in the [original article](https://www.snowballassociates.com/works/light_format/2025/250319_investmentmemo_underweight_pwr-us/).
 
 #### FY25E EBITDA growth
 <p>
