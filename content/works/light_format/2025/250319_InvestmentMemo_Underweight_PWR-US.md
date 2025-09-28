@@ -37,6 +37,14 @@ valuation_tools: ["Event Driven", "Market Sentiment", "Elliot Wave Theory", "Fin
 tags: ["Stock Price Analysis", "Forecast", "Quanta Services", "PWR", "Electric Grid Infrastructure", "Valuation", "Cyclicals", "Market Correction", "Market Exuberance", "Inflation"] # forecast (예상), verification (검정), post-mortem analysis (사후 분석; 복기)
 
 ---
+<style>
+@page { margin: 1in; }
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h1, h2, h3 { break-after: avoid; }
+table { page-break-inside: avoid; }
+.section-break { break-before: page; } /* 필요할 때 넣어서 강제 개행 */
+</style>
+
 
 <span class = "append"> **Data Cut-off Date:** All underlying data and market observations in this thesis are as of **February 21, 2025**. Subsequent events and price actions (Feb 22 -- Mar 18, 2025) were not available at the time of drafting and lie outside the scope of the original analysis. </span>
 
@@ -54,11 +62,11 @@ tags: ["Stock Price Analysis", "Forecast", "Quanta Services", "PWR", "Electric G
 
 | *Key Metrics*             |              | *Valuation Multiples* | **PWR**  | Peers Avg |
 |:--------------------------|:-------------|:----------------------|:--------:|:---------:|
-| **Price (2025-02-21)**    | $269.36      | **P/E (TTM)**         | 43.88x   | 34.11x    |
-| **52W High (2025-01-22)** | $358.03      | **P/E (FY25E)**       | 36.95x   | 25.25x    |
-| **Price Target**          | $237.73      | **PEG**               | 1.97x    | 0.96x     |
+| **Price (2025-02-21)**    | \$269.36      | **P/E (TTM)**         | 43.88x   | 34.11x    |
+| **52W High (2025-01-22)** | \$358.03      | **P/E (FY25E)**       | 36.95x   | 25.25x    |
+| **Price Target**          | \$237.73      | **PEG**               | 1.97x    | 0.96x     |
 | **Downside**              | 11.74%       | **EV/EBITDA (TTM)**   | 20.58x   | 12.62x    |
-| **Market Cap**            | $39.58Bn     | **EV/EBITDA (FY25E)** | 15.81x   | 14.96x    |
+| **Market Cap**            | \$39.58Bn     | **EV/EBITDA (FY25E)** | 15.81x   | 14.96x    |
 > _Source: FactSet_
 
 I recommend a **Tactical UNDERWEIGHT** on Quanta Services (PWR). Its valuation reflects unsustainable short-term exuberance, as it trades at a significant premium to its peer group, based on a too optimistic outlook. A 25-month bull market without a major correction of 15%+, combined with ongoing political uncertainty and fundamental risks from weakening consumer spending, further warrants a potential reversal.
@@ -68,7 +76,7 @@ I recommend a **Tactical UNDERWEIGHT** on Quanta Services (PWR). Its valuation r
 ## II. Investment Thesis
 
 ### Thesis Summary
-My Tactical UNDERWEIGHT recommendation on Quanta Services rests on the conclusion that the stock's overvaluation persists even under my most optimistic 'strong bull' scenario, bolstered by the three pillars of my analysis. Despite a recent 26.38% drop from its all-time high of $365.88 on January 22, 2025, the stock still trades at $269.36, which implies a further 11.74% downside to my fair value estimate of $237.73. This valuation assumes the upper end of peer EV/EBITDA multiples and fully embeds my most favorable outlook for the electric grid infrastructure industry.
+My Tactical UNDERWEIGHT recommendation on Quanta Services rests on the conclusion that the stock's overvaluation persists even under my most optimistic 'strong bull' scenario, bolstered by the three pillars of my analysis. Despite a recent 26.38% drop from its all-time high of \$365.88 on January 22, 2025, the stock still trades at \$269.36, which implies a further 11.74% downside to my fair value estimate of \$237.73. This valuation assumes the upper end of peer EV/EBITDA multiples and fully embeds my most favorable outlook for the electric grid infrastructure industry.
 
 While management is likely to maintain guidance for 14--24% annual growth, I view the current bout of overextension---fueled by both the data-science megatrend and the political tailwinds from the new, putatively pro-business administration---as unsustainable. Given that the stock market has not undergone a major correction in the past 25 months, PWR's stretched peer-relative multiples (*e.g.*, EV/EBITDA 20.58x vs. peer 12.62x) heighten the risk of sharp price compression should this sentiment unwind.
 
@@ -87,7 +95,7 @@ While sector leaders typically command a 20--30% premium, PWR trades at a 63% EV
 ## III. Valuation
 
 ### Valuation Summary
-My target price for PWR is **$237.73**, indicating an **11.7% downside** from the current price. This target represents the Base Case estimate from my comparable company analysis, where **14.96x forward EV/EBITDA multiple** is applied to the projected FY25E EBITDA assuming a growth of **+24.8% YoY.**
+My target price for PWR is **\$237.73**, indicating an **11.7% downside** from the current price. This target represents the Base Case estimate from my comparable company analysis, where **14.96x forward EV/EBITDA multiple** is applied to the projected FY25E EBITDA assuming a growth of **+24.8% YoY.**
 
 This EBITDA projection is the anchor of four distinct scenarios developed for this analysis. Each scenario translates a projected growth in U.S. electricity consumption into a corresponding EBITDA figure for PWR, with projection coefficients derived from proprietary [OLS regression models](#ols-models) that quantify historical correlations (2014--2025) between U.S. electricity consumption, PWR's EBITDA, and its Diluted EPS.
 
@@ -97,11 +105,11 @@ The football-field chart below visualizes the valuation ranges from my primary a
 
 > The `DCF–FCFF (IV&E)` range in the chart is derived from my proprietary IVE (Intrinsic Value & Expectation) model, which serves as a final sanity check. This framework deconstructs equity value into its fundamental *Intrinsic Value* (from DCF) and a market-driven *Expectation Premium* (from forward peer multiples).
 
-The IVE model finalizes my primary conclusion. Even its Strong Bull case---which stress-tests the market's optimism by applying a 30% premium to the peer multiple---yields a value of **$237.11**. This result still implies a ~12% downside, reinforcing the UNDERWEIGHT recommendation.
+The IVE model finalizes my primary conclusion. Even its Strong Bull case---which stress-tests the market's optimism by applying a 30% premium to the peer multiple---yields a value of **\$237.11**. This result still implies a ~12% downside, reinforcing the UNDERWEIGHT recommendation.
 
 
 ### Fundamental & Quantitative Analyses (DCF & Comps Valuations)
-My DCF analysis yields a fair value of **$138.35 per share**. This is materially below comps-based outcomes, highlighting that the market is detached from long-term cash flow fundamentals. As the market is heavily predicated on sentiment-driven dynamics, I anchor my valuation on the comps-based Base Case (**$237.73 per share**) for my Tactical UNDERWEIGHT call, which still demonstrates that PWR is overvalued even by the market's own optimistic standards.
+My DCF analysis yields a fair value of **\$138.35 per share**. This is materially below comps-based outcomes, highlighting that the market is detached from long-term cash flow fundamentals. As the market is heavily predicated on sentiment-driven dynamics, I anchor my valuation on the comps-based Base Case (**\$237.73 per share**) for my Tactical UNDERWEIGHT call, which still demonstrates that PWR is overvalued even by the market's own optimistic standards.
 > _This target reflects an end-of-period valuation. Discounting it to present value would imply a still lower price target, further strengthening the UNDERWEIGHT thesis._
 
 - **Key Assumptions**
@@ -112,32 +120,32 @@ My DCF analysis yields a fair value of **$138.35 per share**. This is materially
     - **_WACC (9.99%)_:** Cost of Equity of 10.73% and After-Tax Cost of Debt of 3.46%.
 
     - **_Perpetual Growth (3.0%)_:** U.S. electricity demand is expected to grow by 2% in 2025 and 3% in 2026 according to the U.S. Energy Information Administration, and a growth of +3% YoY in utility-scale power generation was observed in September 2024 (Source: [EIA](https://www.eia.gov/pressroom/releases/press564.php), [Deloitte](https://www.deloitte.com/us/en/insights/industry/power-and-utilities/power-and-utilities-industry-outlook.html)).
-> _Net Debt is assumed constant across all scenarios at 2024A level of $3,734.31Mn, reflecting a stabilized capital structure following five years of elevated CAPEX (Source: FactSet); reliable forward-looking balance sheet consensus data is also unavailable. The comprehensive valuation table and assumption details are provided in [Appendix](#dcf--comps-valuations)._
+> _Net Debt is assumed constant across all scenarios at 2024A level of \$3,734.31Mn, reflecting a stabilized capital structure following five years of elevated CAPEX (Source: FactSet); reliable forward-looking balance sheet consensus data is also unavailable. The comprehensive valuation table and assumption details are provided in [Appendix](#dcf--comps-valuations)._
 
 
 ### Scenario Analysis
 The comps-based scenarios are designed to test sensitivity across consensus exuberance and conservative downside assumptions. Each scenario translates the projected annual growth in U.S. electricity consumption into a corresponding EBITDA growth for PWR, reflecting the company's operational leverage and market share assumptions.
 
-#### 1. Strong Bull Case ($258.47/share; FY25E diluted EPS of $7.09)
-Stress-tests my thesis against the most aggressive market expectations, using FactSet consensus FY25E EBITDA of $2,800.5Mn (YoY +34.7%). Holding every other factor constant, this is equivalent to supposing **4.43%** annual increase in U.S. electricity consumption. **This assumption exceeds my Bull Case assumptions** (YoY +3.79%; [ICF](https://www.icf.com/insights/energy/impact-rapid-demand-growth-us)) **by ~17% even though my Bull Case *already* assumes a growth rate 74% higher than the Base Case** (YoY +2.17%). Applying the peer forward EV/EBITDA multiple of 14.96x to this consensus figure yields an implied equity value of $38,170.50Mn, or **$258.47** per share. This means that the valuation still remains **4.0% lower** than the current share price of $269.36 even under these market's most optimistic inputs, reinforcing my **UNDERWEIGHT** view.
+#### 1. Strong Bull Case (\$258.47/share; FY25E diluted EPS of \$7.09)
+Stress-tests my thesis against the most aggressive market expectations, using FactSet consensus FY25E EBITDA of \$2,800.5Mn (YoY +34.7%). Holding every other factor constant, this is equivalent to supposing **4.43%** annual increase in U.S. electricity consumption. **This assumption exceeds my Bull Case assumptions** (YoY +3.79%; [ICF](https://www.icf.com/insights/energy/impact-rapid-demand-growth-us)) **by ~17% even though my Bull Case *already* assumes a growth rate 74% higher than the Base Case** (YoY +2.17%). Applying the peer forward EV/EBITDA multiple of 14.96x to this consensus figure yields an implied equity value of \$38,170.50Mn, or **\$258.47** per share. This means that the valuation still remains **4.0% lower** than the current share price of \$269.36 even under these market's most optimistic inputs, reinforcing my **UNDERWEIGHT** view.
 
-#### 2. Bull Case ($252.59/share; FY25E diluted EPS of $6.94)
-Assumes 25.0% cumulative increase (*i.e.*, **3.79%** annual increase) in U.S. electricity consumption by 2030. Applying the same peer forward multiple to the projected FY25E EBITDA (YoY +31.9%) yields an implied equity value of $37,301.76Mn, or **$252.59** per share (**6.2% downside**).
+#### 2. Bull Case (\$252.59/share; FY25E diluted EPS of \$6.94)
+Assumes 25.0% cumulative increase (*i.e.*, **3.79%** annual increase) in U.S. electricity consumption by 2030. Applying the same peer forward multiple to the projected FY25E EBITDA (YoY +31.9%) yields an implied equity value of \$37,301.76Mn, or **\$252.59** per share (**6.2% downside**).
     
-#### 3. <mark>Base Case ($237.73/share; FY25E diluted EPS of $6.55)</mark>
-Assumes 13.8% cumulative increase (*i.e.*, **2.17%** annual increase) in U.S. electricity consumption by 2030. The Base Case aligns most closely with long-term electricity demand forecasts from EIA and Deloitte, providing a balanced view between consensus exuberance and conservative downside. Applying the same peer forward multiple to the projected FY25E EBITDA (YoY +24.8%) yields an implied equity value of $35,107.52Mn, or **$237.73** per share (**11.7% downside**).
+#### 3. <mark>Base Case (\$237.73/share; FY25E diluted EPS of \$6.55)</mark>
+Assumes 13.8% cumulative increase (*i.e.*, **2.17%** annual increase) in U.S. electricity consumption by 2030. The Base Case aligns most closely with long-term electricity demand forecasts from EIA and Deloitte, providing a balanced view between consensus exuberance and conservative downside. Applying the same peer forward multiple to the projected FY25E EBITDA (YoY +24.8%) yields an implied equity value of \$35,107.52Mn, or **\$237.73** per share (**11.7% downside**).
     
-#### 4. Bear Case ($233.06/share; FY25E diluted EPS of $6.43)
-Assumes 10.4% cumulative increase (*i.e.*, **1.66%** annual increase) in U.S. electricity consumption by 2030. Applying the same peer forward multiple to the projected FY25E EBITDA (YoY +22.6%) yields an implied equity value of $34,417.51Mn, or **$233.06** per share (**13.5% downside**).
+#### 4. Bear Case (\$233.06/share; FY25E diluted EPS of \$6.43)
+Assumes 10.4% cumulative increase (*i.e.*, **1.66%** annual increase) in U.S. electricity consumption by 2030. Applying the same peer forward multiple to the projected FY25E EBITDA (YoY +22.6%) yields an implied equity value of \$34,417.51Mn, or **\$233.06** per share (**13.5% downside**).
 
 #### Equity Value Table
-| *Scenario*               | Cumulative U.S. Electricity Consumption Growth (~2030E)| EBITDA Growth (YoY, FY25E)| Multiples Applied (EV/EBITDA) | Implied Equity ($Mn)| Share Price ($) | Downside vs Current |
+| *Scenario*               | Cumulative U.S. Electricity Consumption Growth (~2030E)| EBITDA Growth (YoY, FY25E)| Multiples Applied (EV/EBITDA) | Implied Equity (\$Mn)| Share Price (\$) | Downside vs Current |
 |:-------------------------|-------------------------------------------------------:|--------------------------:|------------------------------:|--------------------:|----------------:|--------------------:|
 |*Strong Bull Case*        | 29.7%                                                  | +34.7%                    | 14.96x                        | 38,170.50           | 258.47          | 4.0%                |
 |*Bull Case*               | 25.0%                                                  | +31.9%                    | 14.96x                        | 37,301.76           | 252.59          | 6.2%                |
 |<mark>*Base Case*</mark>  | 13.8%                                                  | +24.8%                    | 14.96x                        | 35,107.52           | 237.73          | 11.7%               |
 |*Bear Case*               | 10.4%                                                  | +22.6%                    | 14.96x                        | 34,417.51           | 233.06          | 13.5%               |
-> **FY25E diluted EPS Forecast**: Bear $6.43 | Base $6.55 | Bull $6.94 | Strong Bull $7.09
+> **FY25E diluted EPS Forecast**: Bear \$6.43 | Base \$6.55 | Bull \$6.94 | Strong Bull \$7.09
 
 
 #### Peer Group & Rationale
@@ -152,14 +160,14 @@ The peer group for this analysis was sourced from the FactSet-provided list. For
 #### Peer Comps Table
 | *Company*           | Mkt Cap (Bn) |   Rev Growth (TTM) | EBITDA Margin (TTM) |     P/E (TTM) |   P/E (FY25E) |  EV/EBITDA (TTM) |  EV/EBITDA (FY25E) |    P/CF (TTM) |   PEG Ratio |
 |:--------------------|-------------:|-------------------:|--------------------:|--------------:|--------------:|-----------------:|-------------------:|--------------:|------------:|
-| **Quanta Services** |    **$39.7** |          **13.4%** |            **8.8%** |    **43.88x** |    **36.95x** |       **20.58x** |         **15.81x** |    **19.42x** |   **1.97x** |
-| Jacobs Solutions    |        $15.2 |              32.7% |                9.4% |        25.25x |        24.40x |           12.38x |             16.92x |        14.62x |       1.27x |
-| AECOM               |        $12.8 |              12.0% |                6.9% |        25.30x |        22.80x |           12.48x |             14.52x |        15.73x |       1.45x |
-| EMCOR Group         |        $17.7 |              15.8% |               10.2% |        17.55x |        24.70x |           11.05x |             16.24x |        12.85x |       1.44x |
-| Primoris Services   |         $3.5 |              11.4% |                6.5% |        21.36x |        23.70x |            9.03x |             14.27x |         6.83x |       1.03x |
-| MasTec              |         $9.6 |               2.6% |                7.7% |        48.33x |        29.20x |           12.21x |             14.75x |         8.55x |       0.49x |
-| MYR Group           |         $2.0 |              -7.7% |                3.3% |        66.88x |        26.70x |           18.60x |             13.08x |        23.59x |       0.10x |
-| ***Peer Average***  |  ***$10.1*** |        ***11.1%*** |          ***7.3%*** |  ***34.11x*** |  ***25.25x*** |     ***12.63x*** |       ***14.96x*** |  ***13.70x*** | ***0.96x*** |
+| **Quanta Services** |    **\$39.7** |          **13.4%** |            **8.8%** |    **43.88x** |    **36.95x** |       **20.58x** |         **15.81x** |    **19.42x** |   **1.97x** |
+| Jacobs Solutions    |        \$15.2 |              32.7% |                9.4% |        25.25x |        24.40x |           12.38x |             16.92x |        14.62x |       1.27x |
+| AECOM               |        \$12.8 |              12.0% |                6.9% |        25.30x |        22.80x |           12.48x |             14.52x |        15.73x |       1.45x |
+| EMCOR Group         |        \$17.7 |              15.8% |               10.2% |        17.55x |        24.70x |           11.05x |             16.24x |        12.85x |       1.44x |
+| Primoris Services   |         \$3.5 |              11.4% |                6.5% |        21.36x |        23.70x |            9.03x |             14.27x |         6.83x |       1.03x |
+| MasTec              |         \$9.6 |               2.6% |                7.7% |        48.33x |        29.20x |           12.21x |             14.75x |         8.55x |       0.49x |
+| MYR Group           |         \$2.0 |              -7.7% |                3.3% |        66.88x |        26.70x |           18.60x |             13.08x |        23.59x |       0.10x |
+| ***Peer Average***  |  ***\$10.1*** |        ***11.1%*** |          ***7.3%*** |  ***34.11x*** |  ***25.25x*** |     ***12.63x*** |       ***14.96x*** |  ***13.70x*** | ***0.96x*** |
 
 > _Source: FactSet_
 
@@ -287,7 +295,7 @@ This section explores the key risks to my tactical underweight thesis, primarily
 - *Mitigants*
     - While the tax tariff is imminent and strong inflation is ongoing, the maturity of data science related industries has yet to come. In the short-run, timing matters more than direction. Benjamin Graham recorded a -50.5% in his early career because of the Great Depression, and Michael Burry and John Paulson struggled for months to manage the monthly premium payments for CDS. Their investments all culminated in stupendous profits in the long-run, but none of them knew when their predictions would be realized.
     
-    - Even if the revolution and its byproducts are authentic, it is self-evident that the market is excessively overvaluing related sectors at the moment, which was manifested last month through a 40%+ plunge of quantum computing stocks. This happened a day after Jensen Huang from Nvidia and Sundar Pichai from Google briefly commented on the commercial viability timeline of quantum computing, wiping out a total of $8Bn in market value ([Business Insider](https://markets.businessinsider.com/news/stocks/quantum-computing-stocks-jensen-huang-nvidia-ces-rigetti-2025-1)). At this juncture, the market is evidently dictated by sentiments not fundamentals, corroborating my *tactical* underweight call on PWR.
+    - Even if the revolution and its byproducts are authentic, it is self-evident that the market is excessively overvaluing related sectors at the moment, which was manifested last month through a 40%+ plunge of quantum computing stocks. This happened a day after Jensen Huang from Nvidia and Sundar Pichai from Google briefly commented on the commercial viability timeline of quantum computing, wiping out a total of \$8Bn in market value ([Business Insider](https://markets.businessinsider.com/news/stocks/quantum-computing-stocks-jensen-huang-nvidia-ces-rigetti-2025-1)). At this juncture, the market is evidently dictated by sentiments not fundamentals, corroborating my *tactical* underweight call on PWR.
 
 </div>
 
@@ -349,7 +357,7 @@ Hence, my tactical underweight call *in the short-run* notwithstanding, I am sim
 ## VI. Industry & Business Overview
 
 ### Industry
-- **TAM (Total Addressable Market):** The North American addressable market for utility infrastructure services is estimated to be **\~$270Bn annually**, encompassing electric power, renewable generation, and gas utilities. This is part of a multi-trillion dollar capital investment cycle driven by the energy transition (Source: [Quanta Services Investor Day Presentation (November 2023)](https://www.google.com/search?q=https://investors.quantaservices.com/events-and-presentations/presentations/default.aspx)).
+- **TAM (Total Addressable Market):** The North American addressable market for utility infrastructure services is estimated to be **\~\$270Bn annually**, encompassing electric power, renewable generation, and gas utilities. This is part of a multi-trillion dollar capital investment cycle driven by the energy transition (Source: [Quanta Services Investor Day Presentation (November 2023)](https://www.google.com/search?q=https://investors.quantaservices.com/events-and-presentations/presentations/default.aspx)).
 
 - **Key Players & Market Share:** The industry is highly fragmented. PWR is the clear market leader with an estimated ~15% share of the relevant E&C services market. Other key players include MasTec (MTZ), MYR Group (MYRG), and EMCOR Group (EME), though none possess PWR's scale or comprehensive scope.
 
@@ -407,16 +415,16 @@ $$
 </p>
 
 - The model forecasts Diluted EPS as a function of projected EBITDA, based on the historical relationship observed in FY15A--FY24A data (Source: FactSet).
-> _**FY25E diluted EPS**: Bear $6.43 | Base $6.55 | Bull $6.94 | Strong Bull $7.09_
+> _**FY25E diluted EPS**: Bear \$6.43 | Base \$6.55 | Bull \$6.94 | Strong Bull \$7.09_
 
 
 ### DCF & Comps Valuations
 
 | *Implied Equity Value (FY25E, per share)*              |  Bear Case  |  <mark>Base Case</mark>  |  Bull Case  |  Strong Bull Case  |
 |:-------------------------------------------------------|------------:|-------------------------:|------------:|-------------------:|
-| DCF: Perpetuity Growth Method                          |    $134.24  |                  $138.35 |     $152.06 |            $155.24 |
-| DCF: IV&E Model                                        |    $218.45  |                  $221.88 |     $232.79 |            $237.11 |
-| <mark>Trading Comps: Peer Avg (EV/EBITDA)</mark>       |    $233.06  |             **$237.73**  |     $252.59 |            $258.47 |
+| DCF: Perpetuity Growth Method                          |    \$134.24  |                  \$138.35 |     \$152.06 |            \$155.24 |
+| DCF: IV&E Model                                        |    \$218.45  |                  \$221.88 |     \$232.79 |            \$237.11 |
+| <mark>Trading Comps: Peer Avg (EV/EBITDA)</mark>       |    \$233.06  |             **\$237.73**  |     \$252.59 |            \$258.47 |
 | Upside/Downside                                        |    -13.48%  |                  -11.74% |      -6.24% |             -4.04% |
 > _Upside/Downside is calculated based on the Trading Comps estimate versus the current market price._
 
@@ -426,20 +434,20 @@ $$
 #### WACC
 | Component                      |   Value   |                                 Notes                                    |
 |:-------------------------------|:---------:|:-------------------------------------------------------------------------|
-| Risk-Free Rate ($R_f$)         |   3.93%   | 10-Year U.S. Treasury Yield                                              |
-| Expected Market Return ($R_m$) |  10.00%   | Expected S&P 500 Return in 2025 (Source: [Goldman Sachs](https://www.goldmansachs.com/insights/articles/the-s-and-p-500-is-forecast-to-return-10-percent-in-2025)) |
-| Market Risk Premium ($R_p$)    |   6.07%   | \\(R_p = R_m - R_f\\)                                                      |
-| Levered Beta ($\beta_{L}$)     |   1.12    | 3-Year Adjusted Beta (Source: FactSet)                                   |
-| **Cost of Equity ($R_e$)**     | **10.73%**| **CAPM: \\(R_e = R_f + \beta \times R_p\\)**                               |
-| Pre-Tax Cost of Debt ($R_d$)   |   4.53%   | 2024A Interest Expense / Total Debt                                      |
+| Risk-Free Rate \\( R_f \\)         |   3.93%   | 10-Year U.S. Treasury Yield                                              |
+| Expected Market Return \\( R_m \\) |  10.00%   | Expected S&P 500 Return in 2025 (Source: [Goldman Sachs](https://www.goldmansachs.com/insights/articles/the-s-and-p-500-is-forecast-to-return-10-percent-in-2025)) |
+| Market Risk Premium \\( R_p \\)    |   6.07%   | \\( R_p = R_m - R_f \\)                                                      |
+| Levered Beta \\( \beta_{L} \\)     |   1.12    | 3-Year Adjusted Beta (Source: FactSet)                                   |
+| **Cost of Equity \\( R_e \\)**     | **10.73%**| **CAPM:** \\( R_e = R_f + \beta \times R_p \\)                               |
+| Pre-Tax Cost of Debt \\( R_d \\)   |   4.53%   | 2024A Interest Expense / Total Debt                                      |
 | Effective Tax Rate             |  23.49%   | 2024A Income Taxes / Pretax Income                                       |
-| **After-Tax Cost of Debt**     | **3.46%** | **\\(R_d \times (1 - \text{Tax Rate})\\)**                                 |
+| **After-Tax Cost of Debt**     | **3.46%** | **\\( R_d \times (1 - \text{Tax Rate}) \\)**                                 |
 
 | Capital Structure      |   Value   |                                        Notes                                       |
 |:-----------------------|:---------:|:-----------------------------------------------------------------------------------|
 | Weight of Equity (E/V) |  89.87%   | Based on Market Capitalization                                                     |
 | Weight of Debt (D/V)   |  10.13%   | Based on Book Value of Debt                                                        |
-| **WACC**               | **9.99%** | **\\((E/V) \times R_e \ + \ (D/V) \times \\{R_d \times (1 - \text{Tax Rate})\\}\\)** |
+| **WACC**               | **9.99%** | \\( (E/V) \times R_e \ + \ (D/V) \times \\{R_d \times (1 - \text{Tax Rate})\\} \\) |
 
 #### Growth Rate
 | Assumption                         | Value | Rationale                                                                                                                                           |

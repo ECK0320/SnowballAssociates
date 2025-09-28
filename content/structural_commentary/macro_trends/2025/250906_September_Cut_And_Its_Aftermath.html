@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>250906_September_Cut_And_Its_Aftermath.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h2 id="i-the-contrarian-thesis">I. The Contrarian Thesis</h2>
+<span class = "quote">
+"Putting the pieces together, what are the implications for monetary policy? In the near term, risks to inflation are tilted to the upside, and risks to employment to the downside—a challenging situation. When our goals are in tension like this, our framework calls for us to balance both sides of our dual mandate."
+</span>
+<p>--- Jerome Powell, in the <a href="https://www.federalreserve.gov/newsevents/speech/powell20250822a.htm">Jackson Hole meeting</a> on August 22, 2025.</p>
+<h3 id="the-nature-of-the-cut-insurance-vs-emergency">The Nature of the Cut: Insurance <em>vs.</em> Emergency</h3>
+<p>A rate cut can serve as a bullish catalyst if the Fed’s target inflation rate—the core PCE of 2.0%—is achieved and the economy remains robust. However, if a cut is delivered after key economic indicators suggest that the economy has already entered a downturn, it must be interpreted as a bearish signal of a belated policy response. The impending September rate cut is a textbook example of this latter case. The high interest rates maintained at 4.5%+ since Dec 2022 are exerting their delayed impact on the real economy, increasingly straining its weakest links.</p>
+<p>Meanwhile, the stock market is rallying on the high likelihood of the September cut, operating on the dangerously flawed assumption that a cut this time will be another bullish signal. Should the Fed proceed, it would be neither a mere injection of liquidity to prime the pump nor an insurance cut to induce a soft landing. Rather, it would amount to a <strong>panic cut</strong>: a tacit admission of acute distress in the real economy. This view is substantiated by a range of deteriorating indicators in <a href="#1-weakening-consumption">consumption</a>, <a href="#2-contracting-job-market--unstable-employment">employment</a>, the <a href="#3-poor-quality-of-2q25-us-gdp-growth">U.S. GDP</a>, and <a href="#4-diminishing-business-sentiment">business sentiment</a>, making the impending cut a noteworthy bearish catalyst.</p>
+<p>In this article, I will not delve into the full dataset as my proprietary model is still under development. The detailed macro analysis will be provided later in a separate article---<span class="append">IFF I manage to finish writing it before the recession actually hits (or is officially confirmed)</span>. The pandemic and its immediate aftermath (Apr 2020--Apr 2021)---<em>i.e.</em>, the <em>revenge spending</em> period dominated by the unusual pent-up demand---will also be excluded from this analysis, <span class="append">unless it becomes associated with another issue piquing me enough to warrant a deeper dive until then.</span></p>
+<hr>
+<h2 id="ii-four-pillars-of-the-thesis">II. Four Pillars of the Thesis</h2>
+<h3 id="1-the-economic-foundation-for-a-cut-is-weakness-not-victory">1. The Economic Foundation for a Cut is Weakness, Not Victory</h3>
+<p>The primary justification for a rate cut is the alarming decay in the real economy, forcing a policy pivot before the Fed's goal of the Price Stability has been met. Since the tightening cycle began in March 2022, cumulative CPI growth (+13.2%) has outstripped nominal wage growth (+11.8%). More tellingly, labor productivity (<em>i.e.</em>, output per hour) has surged by 3.5% over the same period, yet workers’ real wages have fallen by 1.2%. These stark gaps demonstrate that the fruits of efficiency gains are failing to evenly translate into the real wage gains.[^1] Instead, they are being undermined by inflation that diverts capital toward financial assets over productive investment. This creates a fragile, top-heavy economy that erodes consumer spending at its foundation.[^2]</p>
+<h3 id="2-the-feds-reaction-function-has-already-shifted">2. The Fed’s Reaction Function Has Already Shifted</h3>
+<p>The Fed's official rhetoric is changing accordingly. It has notably shifted from a singular focus on controlling inflation back to the <em>dual mandate</em>---Price Stability AND <em>Maximum Employment</em>---since the Jackson Hole meeting in August. This indicates that the Fed is now more fearful of an economic slowdown than of persistent inflation, framing any near-term rate cut as a response to economic weakness, not a declaration of victory.</p>
+<h3 id="3-the-pivot-itself-is-a-signal-of-distress">3. The Pivot Itself Is a Signal of Distress</h3>
+<p>The Federal Reserve has maintained its restrictive stance with rates at 2.5%+ for 37 months, and there appears to be little prospect of them falling below this threshold in the near future. This marks the longest stretch of 2.5%+ Fed rates since the aftermath of the dot-com bubble crash in 2001. However, whereas the previous 2.5%+ period between 2004 and 2006 was underpinned by robust economic growth, the current surge---from 0.25% to 5.5% in just 15 months (Mar 2022--Aug 2023)---has been driven solely by the need to stabilize prices, even at the risk of slowing the economy. A sudden shift from this deeply entrenched policy of the high interest rate, especially before inflation is unequivocally defeated, is not a sign of proactive fine-tuning. Rather, it is a forced reaction to the widening gap between wages and productivity, as detailed above.</p>
+<h3 id="4-the-market-is-priced-for-a-perfection-that-does-not-exist">4. The Market is Priced for a Perfection That Does Not Exist</h3>
+<p>The market is positioned for disappointment, and a September cut is no longer a surprise. With a 90%+ probability---<span class = "append">according to the CME FedWatch data from August</span>---priced in, the market's current valuation is a deeply entrenched expectation---<span class = "append">continuously reinforced since the FOMC meeting in Dec 2023</span>---predicated on <em>the hope</em> that it will function as a bullish catalyst. Given the wavering consumption spending and the gloomy job market, this structure---<span class = "append">a market priced for good news that is actually bad news</span>---is inherently fragile. An actual cut would merely confirm what is already known, offering no fresh catalyst to clear overhangs and extend the rally. The cut is therefore poised to trigger a classic 'sell the news' event in a market where the downside risk far outweighs the limited upside.</p>
+<hr>
+<h2 id="iii-narratives--data-check">III. Narratives &amp; Data Check</h2>
+<p>There have been three recessions since Jan 2000. Contrary to the two-month pandemic-driven recession in early 2020, the other two recessions in 2001 and 2008 were both triggered by financial bubbles---the dot-com bubble and the subprime mortgage crisis, respectively---when the financial market was increasingly decoupled from the real economy. As mentioned in <a href="https://www.snowballassociates.com/market_decision_log/calls/2025/250813_followup_pwr-underweight/">the August posting</a>, I see the current market as driven more by sentiment than fundamentals, which seems similarly positioned to those cases.</p>
+<p>What differs this time---arguably for the worse---is that the U.S. macroeconomic fundamentals are faltering under the weight of the high interest rates that marked the longest stretch in the past two decades, whereas the U.S. economy was relatively robust in the past two cases. Therefore, if today's financial valuations were still anchored in fundamentals, an upcoming recession built upon the eroded fundamentals is likely to inflict a harsher impact than the other recessions sparked by the financial market crashes.</p>
+<h3 id="1-weakening-consumption">1. Weakening Consumption</h3>
+<div class="embed-container" style="margin-bottom:-2rem;"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1Mik7&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe></div><script src="https://fred.stlouisfed.org/assets/research/fred-graph-react/build/embed.min.js" type="text/javascript"></script>
+<p>Labor productivity has been growing faster than the real purchasing power of individuals (real DPI per capita) since 2Q23, as illustrated in the graph.</p>
+<div class="embed-container" style="margin-bottom:-2rem; margin-top: 2rem;"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1MimI&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe></div><script src="https://fred.stlouisfed.org/assets/research/fred-graph-react/build/embed.min.js" type="text/javascript"></script>
+<p>This indicates growth without distribution of gains. Although economic efficiency has improved, the benefits likely have not sufficiently flowed to wages. Instead, given the well-known wage stickiness under persistent inflationary pressures[^3], the total gains likely have disproportionately accrued to firms, as detailed in the <a href="#1-the-economic-foundation-for-a-cut-is-weakness-not-victory">First Pillar</a> and briefly sketched in the graph above.</p>
+<div class="embed-container" style="margin-bottom:-2rem; margin-top: 2rem;"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1Miou&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe></div><script src="https://fred.stlouisfed.org/assets/research/fred-graph-react/build/embed.min.js" type="text/javascript"></script>
+<p>Consequentially, compounded by the worsening inequality and the strong inflationary pressures since the pandemic, the real purchasing power of individuals has worsened over the past years, as illustrated in the graph.</p>
+<div class="embed-container" style="margin-bottom:-2rem; margin-top: 2rem;"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1Mebz&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe></div><script src="https://fred.stlouisfed.org/assets/research/fred-graph-react/build/embed.min.js" type="text/javascript"></script>
+<p>This is further confirmed by the gradual, consistent decline in the real personal consumption expenditures starting in December 2023 (+3.57% YoY), when the market started to hope for a rate cut. More recently, they have declined for three consecutive months, from April (+2.90% YoY) through July (+2.06% YoY).</p>
+<div class="embed-container" style="margin-bottom:-2rem; margin-top:2rem;"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1MebX&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe></div><script src="https://fred.stlouisfed.org/assets/research/fred-graph-react/build/embed.min.js" type="text/javascript"></script>
+<p>Consumer sentiment has been weakening broadly since Mar 2024. Its deterioration was further fueled by the tariff escalation that followed the presidential election in Nov 2024, culminating in four consecutive months of sharp declines since Dec 2024, with that month showing only a moderate uptick despite the Christmas and New Year effect.</p>
+<div class="embed-container" style="margin-bottom:-2rem; margin-top:2rem;"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1MduA&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe></div><script src="https://fred.stlouisfed.org/assets/research/fred-graph-react/build/embed.min.js" type="text/javascript"></script>
+<p>When consumer sentiment is compared on a YoY basis, Apr 2025 (−32.4%) was as bad as the trough of the global financial crisis (−33.9% in Jun 2008), while the most recent release in Jul 2025 (−7.1%) is only slightly better than during the pandemic (−9.5% in Mar 2020).</p>
+<div class="embed-container" style="margin-bottom:-2rem; margin-top:2rem;"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1MdZk&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe></div><script src="https://fred.stlouisfed.org/assets/research/fred-graph-react/build/embed.min.js" type="text/javascript"></script>
+<p>The delinquency rate on credit card loans rose above 3.0% in 4Q23---<strong>the first time since 1Q12</strong>---and has printed above that level for seven straight quarters through 2Q25. This warrants caution, as average quarterly residential real estate loans---<span class = "append">which have consistently decreased from 2Q09 to 1Q22, with only a single marginal uptick (+0.05%) over 1Q--2Q10</span>---have also increased for seven consecutive quarters over the same period (3Q23--2Q25).</p>
+<h3 id="2-contracting-job-market--unstable-employment">2. Contracting Job Market &amp; Unstable Employment</h3>
+<div class="embed-container" style="margin-bottom:-2rem;"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1MbmM&width=820&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe></div><script src="https://fred.stlouisfed.org/assets/research/fred-graph-react/build/embed.min.js" type="text/javascript"></script>
+<p>The current job market appears strong only on the surface but is fundamentally weak. Unemployment rate started to rebound after hitting a 10-year low in Apr 2023 (3.1%), and the number of nonfarm job openings has continuously decreased after hitting a 10-year high in Mar 2022 (12.1M). According to the <a href="https://www.bls.gov/news.release/empsit.nr0.htm">latest BLS report</a>, 22,000 jobs were added in August, sharply below the expectations of 75,000---reinforcing the Fed's path toward a September cut.</p>
+<div class="embed-container" style="margin-bottom:-2rem; margin-top:2rem;"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1MdqJ&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe></div><script src="https://fred.stlouisfed.org/assets/research/fred-graph-react/build/embed.min.js" type="text/javascript"></script>
+<p>What demands more caution is the unemployment rate of individuals aged 30--34. Unlike younger workers, most individuals in this age group have completed education and/or job training and are settled in full-time jobs. Thus, an increase in their unemployment rate suggests that economic weakness is hitting the core workforce, with broader implications for negative impacts on household spending and overall economic resilience.</p>
+<p>The beginning months of each recession shown in the graph above recorded 3.9% (Mar 2001), 4.1% (Dec 2007), and 3.8% (Feb 2020) in the monthly unemployment rate for this age group. After the pandemic recession, the monthly rate fell to a low of 2.8% in Sep 2022, rose above 4.0% and has reached or exceeded the 4.0% threshold for seven times. The most recent data shows 4.4% in August, 0.2%p up from 4.2% in July.</p>
+<p>The effectiveness of the Trump administration’s push for domestic and foreign companies to expand U.S. employment remains to be seen, as stabilizing the labor force appears to be the only viable means of offsetting the expected additional inflationary pressures---<span class="append">it takes 18--22 months on average for policy impacts to fully translate into inflation</span>---from the recent tariffs.</p>
+<h3 id="3-poor-quality-of-2q25-us-gdp-growth">3. Poor Quality of 2Q25 US GDP Growth</h3>
+<div class="embed-container" style="margin-bottom:-2rem;"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1Mien&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe></div><script src="https://fred.stlouisfed.org/assets/research/fred-graph-react/build/embed.min.js" type="text/javascript"></script>
+<p>The August release of 2Q25 US RGDP reported +2.06% YoY, showing a marginal improvement from 1Q25 (+1.99% YoY). However, it is only a statistical mirage built upon a radical decrease in imports (-8.47% QoQ), skewing the contribution of net exports to GDP growth.</p>
+<div class="embed-container" style="margin-bottom:-2rem; margin-top:2rem;"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1Mifl&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe></div><script src="https://fred.stlouisfed.org/assets/research/fred-graph-react/build/embed.min.js" type="text/javascript"></script>
+<div class="embed-container" style="margin-bottom:-2rem;"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1Mifp&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe></div><script src="https://fred.stlouisfed.org/assets/research/fred-graph-react/build/embed.min.js" type="text/javascript"></script>
+<p>This distortion is clearly manifested in a slowing growth in personal consumption (+2.74% YoY in 1Q25 to +2.43% YoY in 2Q25) and an extremely sharp decline in private investment (+6.29% YoY in 1Q25 to +0.38% YoY in 2Q25). Specifically, the quarterly growth of private investment hit -3.65% QoQ, <strong>the lowest quarter-on-quarter growth since the pandemic</strong>.</p>
+<div class="embed-container" style="margin-bottom:-2rem; margin-top:2rem;"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1MigJ&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe></div><script src="https://fred.stlouisfed.org/assets/research/fred-graph-react/build/embed.min.js" type="text/javascript"></script>
+<p>The pullback in investment is further corroborated by quarterly construction spending---negative YoY since 4Q24---and by weakening quarter-on-quarter heavy-duty truck sales, which have fallen for three consecutive quarters.</p>
+<div class="embed-container" style="margin-bottom:-2rem; margin-top:2rem;"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=1Miib&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe></div><script src="https://fred.stlouisfed.org/assets/research/fred-graph-react/build/embed.min.js" type="text/javascript"></script>
+<p>Given that quarter-on-quarter growth in private investment tends to signal year-on-year growth in GDP by one to two quarters ahead, the outlook for 3Q25 and 4Q25 GDP does not look favorable.</p>
+<h3 id="4-diminishing-business-sentiment-ism-pmis-in-aug-2025">4. Diminishing Business Sentiment: ISM PMIs in Aug 2025</h3>
+<p>The August PMI release alone does not add much other than a status check. While showing a surprise-level rebound in New Orders for both Manufacturing and Services, it reveals a potential for deeper stagflationary currents upon closer inspection. The data does not signal a sustainable inflection point; rather, it highlights the structural constraints that will blunt the impact of any upcoming monetary easing.</p>
+<p>Therefore, to identify whether any inflection point has occurred in business sentiment, it will be more telling to revisit the PMIs throughout the end of this year once upcoming cuts are confirmed. For now, I will briefly review the August report below and then the broad PMI trends in <a href="#vi-appendix">Appendix</a>.</p>
+<h4 id="manufacturing-pmi-still-in-contraction">Manufacturing PMI: <em>Still in Contraction</em></h4>
+<p>Manufacturing sector exhibits stagflationary characteristics, still remaining in contraction alongside persistent price pressures. Despite a strong restocking potential stemming from &quot;too low&quot; Customers’ Inventories, further exacerbated by short-term logistics factors and Prices remaining elevated, manufacturing firms appear to maintain a defensive operating stance. A brief domestic bounce in New Orders came alongside a further thinning of the Backlog, a sharp drop in Production, and marginal improvement in still-contracting recession-level Employment, which together indicate only a brief demand improvement, not fundamental resilience. Normalization in real-economy metrics (<em>i.e.</em>, Production and Employment) is expected to remain limited unless New Orders consistently register 50+ and Backlog reverses to 50+ after a September cut.</p>
+<h4 id="key-takeaways">Key Takeaways</h4>
+<ul>
+<li>
+<p><em>Manufacturing PMI↑ (48.7; still contracting)</em></p>
+<ul>
+<li>Pace of contraction slowed, yet there has been no rebound signal.</li>
+</ul>
+</li>
+<li>
+<p><em>Prices↓ (63.7; still increasing)</em></p>
+<ul>
+<li>The pace of manufacturing input-cost increases has moderated slightly. However, price pressures remain elevated, reinforcing a defensive stance.</li>
+</ul>
+</li>
+<li>
+<p><em>Customers' Inventories↓↓ (44.6), New Orders↑↑↑ (51.4), New Export Orders↑ (47.6; still contracting), Backlog↓↓ (44.7)</em></p>
+<ul>
+<li>With a surge in domestic demand and slight increase in foreign demand, the already-lean order pipeline has thinned further.</li>
+</ul>
+</li>
+<li>
+<p><em>Production (47.8)↓↓↓, Employment↑ (43.8; still contracting)</em></p>
+<ul>
+<li>Against that backdrop, manufacturing activity is stuck in contraction. The sharper drop in Production and only marginal improvement in recession-level Employment still in contraction---despite a typical restocking cue of the &quot;too low&quot; Customers' Inventories that further worsened from July---point to a short-cycle restocking pulse rather than a fundamental demand turn.</li>
+</ul>
+</li>
+<li>
+<p><em>Supplier Deliveries↑ (51.3)</em></p>
+<ul>
+<li>With Employment still in contraction (<em>i.e.</em>, capacity retrenchment), <a href="https://www.nationalfisherman.com/national-international/hurricane-erin-intensifies-threatens-u-s-east-coast-disrupts-ports">weather-related constraints</a> tied to Hurricane Erin and <a href="https://www.spglobal.com/market-intelligence/en/news-insights/research/red-sea-revival-regional-carriers?utm_source=chatgpt.com">global rerouting</a> around the Red Sea---which <span class = "quote">&quot;extended transit times by two weeks&quot;</span>---slowed vessel turnaround times, likely contributing to slower deliveries.</li>
+</ul>
+</li>
+<li>
+<p><em>Inventories↑ (49.4; still contracting); Imports↓↓ (46.0)</em></p>
+<ul>
+<li>Inventories increased even though the demand surged, Supplier Deliveries slowed, and Imports sharply declined.</li>
+</ul>
+</li>
+</ul>
+<h4 id="services-pmi-tentative-rebound-signal">Services PMI: <em>Tentative Rebound Signal</em></h4>
+<p>Services sector shows a strong expansion, but this is not sufficient to claim a recovery in real economy fundamentals. The mix of strong domestic New Orders and Business Activity, alongside elevated Prices, weak New Export Orders, deeper Backlog contraction, and still-contracting recession-level Employment, points to an expansion phase with fundamentals structurally constrained by weakening capacity and pipeline. With &quot;too high&quot; Inventories that can become another trigger to an economic slowdown, sustained improvement in real-economy metrics (<em>i.e.</em>, Business Activity and Employment) requires New Orders to consistently register 50+ after a September cut and Backlog to reverse to 50+ in the near future.</p>
+<h4 id="key-takeaways">Key Takeaways</h4>
+<ul>
+<li>
+<p><em>Services PMI↑↑ (52.0; growing faster)</em></p>
+<ul>
+<li>A strong rebound signal in domestic demand is observed, yet its sustainability remains in question.</li>
+</ul>
+</li>
+<li>
+<p><em>Prices↓ (69.2; still increasing)</em></p>
+<ul>
+<li>The pace of services input-cost increases has moderated slightly; price pressures remain elevated.</li>
+</ul>
+</li>
+<li>
+<p><em>New Orders↑↑↑ (56.0), New Export Orders↓↓ (47.3; contracting faster), Backlog↓↓↓ (40.4)</em></p>
+<ul>
+<li>A strong domestic order pulse contrasted with a slight further contraction in foreign demand, and the already-lean order pipeline thinned further as backlogs fell sharply.</li>
+</ul>
+</li>
+<li>
+<p><em>Business Activity↑↑ (55.0), Employment↑ (46.5; still contracting)</em></p>
+<ul>
+<li>While Business Activity expanded in accordance with that backdrop, Employment remained in a recession-level contraction with only a marginal improvement from July. The configuration suggests that firms are not much confident whether the expansion is sustainable. The surge in Business Activity may not translate to a rise in Employment unless New Orders continue a robust growth after a September cut, especially given the persistent price pressures.</li>
+</ul>
+</li>
+<li>
+<p><em>Supplier Deliveries↓ (50.3; still slowing)</em></p>
+<ul>
+<li>Delivery performance edged closer to neutral but still indicates mild slowing; given contracting employment, the downtick likely reflects an incremental normalization rather than a demand-driven congestion.</li>
+</ul>
+</li>
+<li>
+<p><em>Inventories↑↑ (53.2; growing faster), Inventory Sentiment↑↑ (55.5; too high), Imports↑↑↑ (54.6; reversed from contracting)</em></p>
+<ul>
+<li>Imports sharply rebounded, but firms are recognizing rapidly increased Inventories as “too high.” This mix flags a potential inventory overhang unless demand continues a robust growth.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="iv-conclusion">IV. Conclusion</h2>
+<h3 id="what-looks-bad-is-bad">What Looks Bad IS BAD</h3>
+<p>Expectations for rate cuts have been in place since <a href="#1-weakening-consumption">Dec 2023</a>, when the real personal consumption expenditures started to consistently decline. The market has now priced in a September rate cut with over 90% certainty, implying that the cut itself is no longer a bullish surprise. Instead, once the expectation is confirmed, market attention will inevitably shift from <em>if</em> the Fed will cut to <em>why</em> it is cutting, and the answer---the deteriorating real economy---offers no bullish rationale.</p>
+<h4 id="1-the-markets-misrepresentation-misconstruing-a-symptom-for-a-cure">1. The Market's Misrepresentation: Misconstruing a Symptom for a Cure</h4>
+<p>While the market is often driven by sentiment in the short run, and sometimes longer than commonly expected in so-called bullish markets, the finale of any liquidity-fueled party is always determined by fundamentals. As shown through examining the four macro facets---Consumption, Employment, GDP, and Business Sentiment---the top-down fundamentals of the U.S. economy are unambiguously weak and trending downward since 2Q21, with no reversal signal in sight. Indeed, the U.S. economy is in a <span class = "quote">&quot;challenging situation,&quot;</span> as officially validated by <a href="#i-the-contrarian-thesis">the Fed</a>.</p>
+<h4 id="2-the-feds-dilemma-a-constrained-response">2. The Fed's Dilemma: A Constrained Response</h4>
+<p>The market's hope for a dovish pivot to save the day is misplaced, as the Fed itself is constrained. An ideal soft-landing scenario, where rate cuts alone reignite broad-based growth, is now a monetary fantasy. It would require a sequence of improbable events from massive rate cuts and easing of lending standards to a synchronized rebound in investment and housing, a collapse in the USD, a contraction of HY/IG spreads, and a revival of multiple supercycles---which is simply not feasible. The infeasibility is underscored by the Fed's own stance. The Fed follows a balanced approach when its dual mandates are in tension. With persistent inflation, worsened by recent <span class = "quote">&quot;higher tariffs&quot;,[^4] price stability remains the binding constraint. As Powell recently reiterated, the Fed clarified that its goal for employment is not growth at any cost, even with the existing <span class = "quote">&quot;downside risks to employment&quot;</span>[^5]. This reassures that price stability remains the Fed's first principle and maximum employment is targeted only to a durable level that does not violate this principle.[^6] The Fed will not risk unleashing another wave of inflation to save the labor market; this framework makes a large-scale, market-rescuing intervention highly unlikely.</p>
+<h4 id="3-the-illusion-of-liquidity-a-negative-long-term-catalyst">3. The Illusion of Liquidity: A Negative Long-Term Catalyst</h4>
+<p>Therefore, a rate cut alone is far from a panacea, and a September cut can never be a meaningful bullish catalyst. It is a response to economic weakness, delivered with too little firepower to reverse the trend in the real economy. The argument that it provides &quot;liquidity&quot; is also a dangerous oversimplification. The recent primary problem in the U.S. economy has been the inflationary consequence of excessive liquidity from the pandemic, which has fueled a disconnect between the real economy and financial markets. Injecting more liquidity under these conditions is a positive catalyst only from a near-term sentiment perspective. On the other hand, from a long-term fundamental view, it is a negative catalyst widening the dangerous gap between the faltering real economy and the exuberant financial market.</p>
+<h4 id="4-until-the-band-packs-up-yet-before-the-bookkeepers-come-up">4. Until the Band Packs Up: Yet Before the Bookkeepers Come Up</h4>
+<p>This collision between bullish sentiment and bearish fundamentals is unsustainable, likely leading to an inevitable, rational downward revision to the market's optimism. Hence, while enjoying this last phase of the liquidity party, it seems canny to plan a coat-check dash before the fundamentals cue the swan song. For reference, the next U.S. quadruple witching day falls on September 19th---just two days after the FOMC decision.</p>
+<hr>
+<h2 id="v-appendix">V. Appendix</h2>
+<h3 id="ism-pmis-manufacturing--services-aug-2025">ISM PMIs: <a href="https://www.ismworld.org/globalassets/pub/research-and-surveys/rob/pmi/haay202508pmi.pdf">Manufacturing</a> &amp; <a href="https://www.ismworld.org/globalassets/pub/research-and-surveys/rob/nmi/freeparob202508svcs.pdf">Services</a> (Aug 2025)</h3>
+<table>
+<thead>
+<tr>
+<th>INDEX</th>
+<th style="text-align:right">Aug Index</th>
+<th style="text-align:right">Point Change</th>
+<th style="text-align:center">Direction</th>
+<th style="text-align:center">Rate of Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prices</td>
+<td style="text-align:right">63.7</td>
+<td style="text-align:right">−1.1</td>
+<td style="text-align:center">Increasing</td>
+<td style="text-align:center">Slower</td>
+</tr>
+<tr>
+<td>Customers’ Inventories</td>
+<td style="text-align:right">44.6</td>
+<td style="text-align:right">−1.1</td>
+<td style="text-align:center">Too Low</td>
+<td style="text-align:center">Faster</td>
+</tr>
+<tr>
+<td>New Orders</td>
+<td style="text-align:right">51.4</td>
+<td style="text-align:right">+4.3</td>
+<td style="text-align:center">Growing</td>
+<td style="text-align:center">From Contracting</td>
+</tr>
+<tr>
+<td>New Export Orders</td>
+<td style="text-align:right">47.6</td>
+<td style="text-align:right">+1.5</td>
+<td style="text-align:center">Contracting</td>
+<td style="text-align:center">Slower</td>
+</tr>
+<tr>
+<td>Backlog of Orders</td>
+<td style="text-align:right">44.7</td>
+<td style="text-align:right">−2.1</td>
+<td style="text-align:center">Contracting</td>
+<td style="text-align:center">Faster</td>
+</tr>
+<tr>
+<td>Production</td>
+<td style="text-align:right">47.8</td>
+<td style="text-align:right">−3.6</td>
+<td style="text-align:center">Contracting</td>
+<td style="text-align:center">From Growing</td>
+</tr>
+<tr>
+<td>Employment</td>
+<td style="text-align:right">43.8</td>
+<td style="text-align:right">+0.4</td>
+<td style="text-align:center">Contracting</td>
+<td style="text-align:center">Slower</td>
+</tr>
+<tr>
+<td>Supplier Deliveries</td>
+<td style="text-align:right">51.3</td>
+<td style="text-align:right">+2.0</td>
+<td style="text-align:center">Slowing</td>
+<td style="text-align:center">From Faster</td>
+</tr>
+<tr>
+<td>Inventories</td>
+<td style="text-align:right">49.4</td>
+<td style="text-align:right">+0.5</td>
+<td style="text-align:center">Contracting</td>
+<td style="text-align:center">Slower</td>
+</tr>
+<tr>
+<td>Imports</td>
+<td style="text-align:right">46.0</td>
+<td style="text-align:right">−1.6</td>
+<td style="text-align:center">Contracting</td>
+<td style="text-align:center">Faster</td>
+</tr>
+<tr>
+<td><strong>Manufacturing PMI</strong></td>
+<td style="text-align:right"><strong>48.7</strong></td>
+<td style="text-align:right"><strong>+0.7</strong></td>
+<td style="text-align:center"><strong>Contracting</strong></td>
+<td style="text-align:center"><strong>Slower</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>INDEX</th>
+<th style="text-align:right">Aug Index</th>
+<th style="text-align:right">Point Change</th>
+<th style="text-align:center">Direction</th>
+<th style="text-align:center">Rate of Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prices</td>
+<td style="text-align:right">69.2</td>
+<td style="text-align:right">−0.7</td>
+<td style="text-align:center">Increasing</td>
+<td style="text-align:center">Slower</td>
+</tr>
+<tr>
+<td>New Orders</td>
+<td style="text-align:right">56.0</td>
+<td style="text-align:right">+5.7</td>
+<td style="text-align:center">Growing</td>
+<td style="text-align:center">Faster</td>
+</tr>
+<tr>
+<td>New Export Orders</td>
+<td style="text-align:right">47.3</td>
+<td style="text-align:right">−0.6</td>
+<td style="text-align:center">Contracting</td>
+<td style="text-align:center">Faster</td>
+</tr>
+<tr>
+<td>Backlog of Orders</td>
+<td style="text-align:right">40.4</td>
+<td style="text-align:right">−3.9</td>
+<td style="text-align:center">Contracting</td>
+<td style="text-align:center">Faster</td>
+</tr>
+<tr>
+<td>Business Activity</td>
+<td style="text-align:right">55.0</td>
+<td style="text-align:right">+2.4</td>
+<td style="text-align:center">Growing</td>
+<td style="text-align:center">Faster</td>
+</tr>
+<tr>
+<td>Employment</td>
+<td style="text-align:right">46.5</td>
+<td style="text-align:right">+0.1</td>
+<td style="text-align:center">Contracting</td>
+<td style="text-align:center">Slower</td>
+</tr>
+<tr>
+<td>Supplier Deliveries</td>
+<td style="text-align:right">50.3</td>
+<td style="text-align:right">−0.7</td>
+<td style="text-align:center">Slowing</td>
+<td style="text-align:center">Slower</td>
+</tr>
+<tr>
+<td>Inventories</td>
+<td style="text-align:right">53.2</td>
+<td style="text-align:right">+1.4</td>
+<td style="text-align:center">Growing</td>
+<td style="text-align:center">Faster</td>
+</tr>
+<tr>
+<td>Inventory Sentiment</td>
+<td style="text-align:right">55.5</td>
+<td style="text-align:right">+2.3</td>
+<td style="text-align:center">Too High</td>
+<td style="text-align:center">Faster</td>
+</tr>
+<tr>
+<td>Imports</td>
+<td style="text-align:right">54.6</td>
+<td style="text-align:right">+8.7</td>
+<td style="text-align:center">Growing</td>
+<td style="text-align:center">From Contracting</td>
+</tr>
+<tr>
+<td><strong>Services PMI</strong></td>
+<td style="text-align:right"><strong>52.0</strong></td>
+<td style="text-align:right"><strong>+1.9</strong></td>
+<td style="text-align:center"><strong>Growing</strong></td>
+<td style="text-align:center"><strong>Faster</strong></td>
+</tr>
+</tbody>
+</table>
+<br>
+<h4 id="pmi-overall-manufacturing%E2%86%91contracting-slower--services%E2%86%91%E2%86%91growing-faster">PMI Overall: Manufacturing↑(contracting slower) &amp; Services↑↑(growing faster)</h4>
+<p><img src="https://imgur.com/JKxGNnT.png" alt="ISM PMI"></p>
+<blockquote>
+<p>Gray: ISM Manufacturing PMI, Navy: ISM Services PMI
+<em>Source: Trading Economics</em></p>
+</blockquote>
+<p>Both the manufacturing and services PMIs have been trending downward since Nov 2021. The manufacturing PMI has been stuck in contraction territory, remaining below 50p for six consecutive months since Mar 2025. Meanwhile, the services PMI has intermittently slipped below the 50-point threshold in Apr 2024, Jun 2024, and again in May 2025. It remains to be seen whether the growth in Services PMI continues after a September cut.</p>
+<ul>
+<li>Manufacturing PMI: 48.7p (+0.7p MoM)</li>
+<li>Services PMI: 52.0p (+1.9p MoM)</li>
+</ul>
+<br>
+<h4 id="pmi-prices-manufacturing%E2%86%93increasing-slower--services%E2%86%93increasing-slower">PMI Prices: Manufacturing↓(increasing slower) &amp; Services↓(increasing slower)</h4>
+<p><img src="https://imgur.com/IzG9tns.png" alt="ISM Prices"></p>
+<blockquote>
+<p>Gray: ISM Manufacturing Prices (left), Navy: ISM Services Prices (left), Red: US Fed Funds Rate % (right)
+<em>Source: Trading Economics</em></p>
+</blockquote>
+<p>Considering that a monetary policy implementation typically takes 18--22 months to feed through into inflation, prices should have started a downward trend as early as between Jan--May 2024 (from the Fed rate of 2.5% in Jul 2022) or as late as between Jan--May 2025 (from the 5.5% peak in Jul 2023). However, both the manufacturing and services prices have been trending upward, with manufacturing consistently rising since Dec 2022 and services since Jun 2023.</p>
+<p>The sharp declines in prices within manufacturing (Apr--Jun 2023, Apr--Sep 2024) and services (Jan--Mar 2024) did not reflect inflationary pressures unwinding under the high Fed rates but rather stemmed from <a href="https://www.ismworld.org/supply-management-news-and-reports/news-publications/inside-supply-management-magazine/blog/2024/2024-07/rob-roundup-june-2024-manufacturing-pmi/?utm_source=chatgpt.com">global economic slowdowns</a>, <a href="https://www.prnewswire.com/news-releases/manufacturing-pmi-at-46-june-2023-manufacturing-ism-report-on-business-301868365.html?utm_source=chatgpt.com">falling commodities prices</a> and <a href="https://www.prnewswire.com/news-releases/manufacturing-pmi-at-46-9-may-2023-manufacturing-ism-report-on-business-301839274.html?utm_source=chatgpt.com">continuing declines in near-term demand</a>.</p>
+<p>In the same manner, an August decline in PMI prices could indicate either: (1) Disinflation, where inflationary pressures unwind alongside an economic slowdown; (2) Stagflation, where the economy weakens while inflation persists; or (3) Soft landing, where inflation falls without growth faltering. The third option already appears to be off the table, and the stagflation case seems most plausible---<span class="append">to me, at least</span>---for now. It will become clearer after 3Q25.</p>
+<ul>
+<li>Manufacturing Prices: 63.7p (-1.1p MoM)</li>
+<li>Services Prices: 69.2p (-0.7p MoM)</li>
+</ul>
+<br>
+<h4 id="pmi-new-orders-manufacturing%E2%86%91%E2%86%91contracting-%E2%86%92-growing--services%E2%86%91%E2%86%91growing-faster">PMI New Orders: Manufacturing↑↑(contracting → growing) &amp; Services↑↑(growing faster)</h4>
+<p><img src="https://imgur.com/A2WYIfn.png" alt="ISM New Orders"></p>
+<blockquote>
+<p>Gray: ISM Manufacturing New Orders, Navy: ISM Services New Orders
+<em>Source: Trading Economics</em></p>
+</blockquote>
+<p>After the pandemic, ISM Services New Orders has been registering lower highs, while ISM Manufacturing New Orders hit its lowest in Jan 2023 and has been registering higher lows since then. The both New Orders showed a surge in August, but it is not sufficient to conclude that demand has reversed its trend to upward, as they both remained near the 50-point threshold in Mar--Jul 2025. It remains to be seen how much demand will rebound in response to upcoming cuts.</p>
+<ul>
+<li>Manufacturing New Orders: 51.4p (+4.3p MoM)</li>
+<li>Services New Orders: 56.0p (+5.7p MoM)</li>
+</ul>
+<br>
+<h4 id="pmi-employment-manufacturing%E2%86%91contracting-slower--services%E2%86%91contracting-slower">PMI Employment: Manufacturing↑(contracting slower) &amp; Services↑(contracting slower)</h4>
+<p><img src="https://imgur.com/YIL7A8a.png" alt="ISM Employment"></p>
+<blockquote>
+<p>Gray: ISM Manufacturing Employment, Navy: ISM Services Employment
+<em>Source: Trading Economics</em></p>
+</blockquote>
+<p><img src="https://imgur.com/ETBc0aj.png" alt="US unemployment rate &amp; US initial job claims"></p>
+<blockquote>
+<p>Gray: US Unemployment Rate % (right), Navy: US Initial Jobless Claims in thousands (left)
+<em>Source: Trading Economics</em></p>
+</blockquote>
+<p>As the job market has already been sufficiently explained <a href="#2-contracting-job-market--unstable-employment">above</a>, no further explanation will be appended. The additional graphs here show that the job market does not <em>seem</em> bad; it <strong>IS</strong> bad.</p>
+<ul>
+<li>Manufacturing Employment: 43.8p (+0.4p MoM)</li>
+<li>Services Prices: 46.5p (+0.1p MoM)</li>
+</ul>
+<hr>
+<p>[^1]: See Fleck et al., &quot;The Compensation--Productivity Gap: A Visual Essay,&quot; in <em>Monthly Labor Review</em> (The Bureau of Labor Statistics, 2011), 57--69.</p>
+<p>[^2]: This indicates a disproportionate allocation of the economic gains; an increase in the capital share, equivalently a decrease in the labor share, exacerbated in line with development of technology. See Abdih and Danninger, &quot;What Explains the Decline of the U.S. Labor Share of Income? An Analysis of State and Industry Level Data,&quot; in <em>IMF Working Paper</em> (The International Monetary Fund, 2017), 4, 21--22.</p>
+<p>[^3]: See Taylor, &quot;Aggregate Dynamics and Staggered Contracts,&quot; in <em>Journal of Political Economy</em> (University of Chicago Press, 1980), 1--23.</p>
+<p>[^4]: Powell's speech in the August Jackson Hole meeting: <span class = "quote">&quot;Turning to inflation, higher tariffs have begun to push up prices in some categories of goods. ... The effects of tariffs on consumer prices are now clearly visible. We expect those effects to accumulate over coming months, with high uncertainty about timing and amounts. The question that matters for monetary policy is whether these price increases are likely to materially raise the risk of an ongoing inflation problem. A reasonable base case is that the effects will be relatively short lived—a one-time shift in the price level. ... It is also possible, however, that the upward pressure on prices from tariffs could spur a more lasting inflation dynamic, and that is a risk to be assessed and managed. ... Another possibility is that inflation expectations could move up, dragging actual inflation with them. Inflation has been above our target for more than four years and remains a prominent concern for households and businesses.&quot;</span></p>
+<p>[^5]: <em>Ibid.</em> <span class = "quote">&quot;Upside risks to inflation had diminished. But the unemployment rate had increased by almost a full percentage point, a development that historically has not occurred outside of recessions. Over the subsequent three Federal Open Market Committee (FOMC) meetings, we recalibrated our policy stance, setting the stage for the labor market to remain in balance near maximum employment over the past year. ... Changes in trade and immigration policies are affecting both demand and supply. In this environment, distinguishing cyclical developments from trend, or structural, developments is difficult. This distinction is critical because monetary policy can work to stabilize cyclical fluctuations but can do little to alter structural changes. The labor market is a case in point. ... Indeed, labor force growth has slowed considerably this year with the sharp falloff in immigration, and the labor force participation rate has edged down in recent months. Overall, while the labor market appears to be in balance, it is a curious kind of balance that results from a marked slowing in both the supply of and demand for workers. This unusual situation suggests that downside risks to employment are rising. And if those risks materialize, they can do so quickly in the form of sharply higher layoffs and rising unemployment.&quot;</span></p>
+<p>[^6]: <em>Ibid.</em> <span class = "quote">&quot;Well-anchored inflation expectations were critical to our success in bringing down inflation without a sharp increase in unemployment. Anchored expectations promote the return of inflation to target when adverse shocks drive inflation higher, and limit the risk of deflation when the economy weakens. Further, they allow monetary policy to support maximum employment in economic downturns without compromising price stability. Our revised statement emphasizes our commitment to act forcefully to ensure that longer-term inflation expectations remain well anchored, to the benefit of both sides of our dual mandate. It also notes that &quot;price stability is essential for a sound and stable economy and supports the well-being of all Americans.&quot; This theme came through loud and clear at our Fed Listens events. The past five years have been a painful reminder of the hardship that high inflation imposes, especially on those least able to meet the higher costs of necessities. Third, our 2020 statement said that we would mitigate &quot;shortfalls,&quot; rather than &quot;deviations,&quot; from maximum employment. The use of &quot;shortfalls&quot; reflected the insight that our real-time assessments of the natural rate of unemployment—and hence of &quot;maximum employment&quot;—are highly uncertain. The later years of the post-GFC recovery featured employment running for an extended period above mainstream estimates of its sustainable level, along with inflation running persistently below our 2 percent target. In the absence of inflationary pressures, it might not be necessary to tighten policy based solely on uncertain real-time estimates of the natural rate of unemployment. We still have that view, but our use of the term &quot;shortfalls&quot; was not always interpreted as intended, raising communications challenges. In particular, the use of &quot;shortfalls&quot; was not intended as a commitment to permanently forswear preemption or to ignore labor market tightness. Accordingly, we removed &quot;shortfalls&quot; from our statement. Instead, the revised document now states more precisely that &quot;the Committee recognizes that employment may at times run above real-time assessments of maximum employment without necessarily creating risks to price stability.&quot; Of course, preemptive action would likely be warranted if tightness in the labor market or other factors pose risks to price stability. The revised statement also notes that maximum employment is &quot;the highest level of employment that can be achieved on a sustained basis in a context of price stability.&quot; This focus on promoting a strong labor market underscores the principle that &quot;durably achieving maximum employment fosters broad-based economic opportunities and benefits for all Americans.&quot; The feedback we received at Fed Listens events reinforced the value of a strong labor market for American households, employers, and communities. Fourth, consistent with the removal of &quot;shortfalls,&quot; we made changes to clarify our approach in periods when our employment and inflation objectives are not complementary. In those circumstances, we will follow a balanced approach in promoting them. The revised statement now more closely aligns with the original 2012 language. We take into account the extent of departures from our goals and the potentially different time horizons over which each is projected to return to a level consistent with our dual mandate. These principles guide our policy decisions today, as they did over the 2022–24 period, when the departure from our 2 percent inflation target was the overriding concern. In addition to these changes, there is a great deal of continuity with past statements. The document continues to explain how we interpret the mandate Congress has given us and describes the policy framework that we believe will best promote maximum employment and price stability. We continue to believe that monetary policy must be forward looking and consider the lags in its effects on the economy. For this reason, our policy actions depend on the economic outlook and the balance of risks to that outlook. We continue to believe that setting a numerical goal for employment is unwise, because the maximum level of employment is not directly measurable and changes over time for reasons unrelated to monetary policy. We also continue to view a longer-run inflation rate of 2 percent as most consistent with our dual-mandate goals. We believe that our commitment to this target is a key factor helping keep longer-term inflation expectations well anchored. Experience has shown that 2 percent inflation is low enough to ensure that inflation is not a concern in household and business decisionmaking while also providing a central bank with some policy flexibility to provide accommodation during economic downturns. Finally, the revised consensus statement retained our commitment to conduct a public review roughly every five years. There is nothing magic about a five-year pace. That frequency allows policymakers to reassess structural features of the economy and to engage with the public, practitioners, and academics on the performance of our framework. It is also consistent with several global peers.&quot;</span></p>
+
+</body>
+</html>
