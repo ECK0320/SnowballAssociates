@@ -45,7 +45,7 @@ tags: ["Quanta Services", "PWR", "Stock Price Analysis", "Valuation", "Earnings 
 
 | Metric             | Ex-Ante (2025-08-01)                   | Upside/Downside | Rationale                                     |
 | :----------------- | :------------------------------------- | :-------------- | --------------------------------------------- |
-| NDX Target         | **25,279.5–26,162.83**                 |  **+9.3–13.1%** | Strong sentiment; technical analysis          |
+| NDX Target         | **25,279.50–26,162.83**                 |  **+9.3–13.1%** | Strong sentiment; technical analysis          |
 | PWR Key Supports   | **$365.88** (band **$351.07–$378.65**) |       **~−10%** | September cut uncertainty; technical analysis |
 | PWR Trigger Points | **$424.94** and **$456.07**            |  **+4.6–12.3%** | Technical analysis                            |
 
@@ -61,7 +61,7 @@ After the 7/25 ATH of **$424.94**, the stock failed to break through it and turn
 
 
 ### 3. Estimates
-I projected: (1) **NDX** potential resistance at **25,279.5–26,162.83** (**+9–13%**); (2) **PWR** short-term support at **$365.88** (band **$351.07–$378.65**, ~**10%** drawdown risk); (3) a rebound attempt first at **$424.94**, then **$456.07** if the resistance of $424.94 is broken.
+I projected: (1) **NDX** potential resistance at **25,279.50–26,162.83** (**+9–13%**); (2) **PWR** short-term support at **$365.88** (band **$351.07–$378.65**, ~**10%** drawdown risk); (3) a rebound attempt first at **$424.94**, then **$456.07** if the resistance of $424.94 is broken.
 
 -----
 
@@ -72,7 +72,7 @@ I projected: (1) **NDX** potential resistance at **25,279.5–26,162.83** (**+9�
 | *Item*                             | Prediction (as of **2025-07-31**)                                                          | Outcome (through **2025-10-08**)                                                                                            |      Verdict     |
 | :--------------------------------- | :----------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- | :--------------: |
 | **Stance into Sep FOMC (9/16–18)** | If already in → **Underweight**; if not in → **Hold**                                      | **9/5** intraday **$363.10** & close **$372.50**; **9/17** intraday **$373.40** & close **$376.01**; rebound began **9/18** |   **Validated**  |
-| **NDX Projection**                 | Long-term uptrend; greatest upper bound **25,279.5–26,162.83** (**+9.3–13.1%**)            | Printed **24,978.56 (10/6)** (**+8.0%** from the 7/31 level); now **24,840.23**                                             | **Right So Far** |
+| **NDX Projection**                 | Long-term uptrend; greatest upper bound **25,279.50–26,162.83** (**+9.3–13.1%**)            | Printed **24,978.56** on 10/6 (**+8.0%** from the 7/31 level); now **24,840.23**                                             | **Right So Far** |
 | **PWR Projection**                 | <span class="quote">"May correct to **$365.88**"</span>; support **$351.07–$378.65**       | **9/5** intraday **$363.10** (**−0.76%** below $365.88), close **$372.50** (within the support band)                        | **Proven Right** |
 | **Post-correction Path**           | Rebound attempt to **$424.94**, then **$456.07** if cleared                                | **10.6%** correction into **9/5** → **ATH $434.39 (10/7 intraday)** → **$421.51 (10/7 close)**                              | **Right So Far** |
 | **Tariff Truce Extension**         | <span class="quote">"**The truce will be extended in August for another 90 days**"</span>  | The extension for another 90 days was announced 8.5 hours before the termination of the 4/9 truce                           | **Proven Right** |
@@ -81,17 +81,17 @@ I projected: (1) **NDX** potential resistance at **25,279.5–26,162.83** (**+9�
 
 - **Target _vs._ Trough**: Forecast **$365.88** _vs._ Actual **$363.10** (intraday; **−0.76%** deviation) before the rebound.
 - **Sequence**: Initial touch within **$351.07–$378.65** on **8/13** (**$369.06**) → **8/20** (**$367.90**) → **9/2** (**$366.35**) → **9/5** (**$363.10**) → **9/17** (**$373.40**) → rebound from **9/18** (**+3.89%** close).
-- **Current state (10/8 close)**: **$421.51**, after **ATH $434.39 (10/7 intraday)**; oscillating below the **7/25 prior high $424.94**.
+- **Current state (10/7 close)**: **$421.51**, after **ATH $434.39 (10/7 intraday)**; oscillating below the **7/25 prior peak $424.94**.
 
 
 ### 2. Modified View
-The thesis has been **directionally validated**: downside to **$363.10 (9/5)**, rebound post-FOMC (**9/18**), subsequent **ATH $434.39 (10/7 intraday)**, and consolidation around **$422**. I therefore **close the prior tactical underweight call**. My **fundamental outlook is unchanged** given the tight tracking between ex-ante estimates and realized prints.
+The thesis has been **directionally validated**: downside to **$363.10 (9/5)**, rebound post-FOMC (**9/18**), subsequent **ATH $434.39 (10/7 intraday)**, and consolidation around **$422**. Therefore, the **prior tactical underweight is now closed**. My **fundamental outlook is unchanged** given the tight tracking between ex-ante estimates and realized prints.
 
 
 ### 3. Additional View
-Since the September cut, the market has begun to pay marginally more attention to the real economy fundamentals. However, **no singular bearish catalyst** sufficient to trigger a major equity drawdown has emerged ***yet***.
+Since the September cut, the market has begun to pay marginally more attention to real-economy fundamentals. However, **no singular bearish catalyst** sufficient to trigger a major equity drawdown has emerged ***yet***.
 
-Base case: the market **continues to grind higher** toward **NDX 25,279.5–26,162.83p**, with PWR’s second target at **$456.07** still in play.
+Base case: the market **continues to grind higher** toward **NDX 25,279.50–26,162.83p**, with PWR’s second target at **$456.07** still in play.
 
 Given the confluence of the deteriorating real economy and the limited justification for the current price by both fundamentals and technical analyses, I am initiating a **third TACTICAL SELL/UNDERWEIGHT call** when PWR's stock price enters the target range of **$434.39--456.07**.
 
@@ -115,4 +115,4 @@ Contrary to the previous underweight calls, I do not recommend increasing equity
 -----
 -----
 
-_* NOTICE: This content for informational and educational purposes only and should not be construed as investment advice. The author is not a registered investment advisor, and this report is not a solicitation to buy or sell any securities. All investments involve risk and may result in loss of capital. Past performance is not indicative of future results. The author may hold positions in assets mentioned. Readers should consult with a qualified financial professional before making any investment decisions._
+_* NOTICE: This content is for informational and educational purposes only and should not be construed as investment advice. The author is not a registered investment advisor, and this report is not a solicitation to buy or sell any securities. All investments involve risk and may result in loss of capital. Past performance is not indicative of future results. The author may hold positions in assets mentioned. Readers should consult with a qualified financial professional before making any investment decisions._

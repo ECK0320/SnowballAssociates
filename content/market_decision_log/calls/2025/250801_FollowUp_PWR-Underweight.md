@@ -132,4 +132,4 @@ Based on the Elliott Wave Theory, (1) the resistance zone for NDX screens at **2
 -----
 -----
 
-_* NOTICE: This content for informational and educational purposes only and should not be construed as investment advice. The author is not a registered investment advisor, and this report is not a solicitation to buy or sell any securities. All investments involve risk and may result in loss of capital. Past performance is not indicative of future results. The author may hold positions in assets mentioned. Readers should consult with a qualified financial professional before making any investment decisions._
+_* NOTICE: This content is for informational and educational purposes only and should not be construed as investment advice. The author is not a registered investment advisor, and this report is not a solicitation to buy or sell any securities. All investments involve risk and may result in loss of capital. Past performance is not indicative of future results. The author may hold positions in assets mentioned. Readers should consult with a qualified financial professional before making any investment decisions._
