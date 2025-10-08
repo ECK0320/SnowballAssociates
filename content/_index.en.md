@@ -28,4 +28,4 @@ If interested, you can see my brief bio [here](https://snowballassociates.com/pr
 
 _**\*** This blog is currently under construction 🚧 to build the webpage in the current new platform Hugo and to shortlist transferrable writings among 2,500+ postings written since 2012. (*Webpage built on 2025-07-20; last updated on 2025-10-08*)_
 
-_**\*\*** It's been taking too long to transfer old writings, so I have first posted three articles above for sample._
+_**\*\*** It's been taking too long to transfer old writings, so I have first posted four articles above for sample._
