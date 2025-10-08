@@ -1,5 +1,5 @@
 ---
-date: "2025-08-13 21:43:00+09:00"
+date: "2025-08-01 21:43:00+09:00"
 
 categories: ["market_decision_log", "works"]
 subcategories: ["calls", "light_format"]
@@ -35,7 +35,7 @@ tags: ["Quanta Services", "PWR", "Stock Price Analysis", "Valuation", "Earnings 
 # + 관련 내용 추가:
 ---
 
-<span class = "append">**Data Cut-off Date**: All underlying data and market observations in this thesis are as of August 12, 2025.</span>
+<span class = "append">**Data Cut-off Date**: All underlying data and market observations in this thesis are as of July 31, 2025.</span>
 
 -----
 
@@ -59,7 +59,7 @@ This section summarizes the original thesis as of 2025-03-19.
 Based on fundamental and technical analyses, I viewed the PWR's closing price of $269.36 (as of Feb 21, 2025) as exuberance, which led me to recommend raising cash for the short-term strategy: **Tactical Underweight** (1--2 month horizon).
 
 ### 2. Outlook
-I was <span class = "quote">"unusually certain"</span> that the market correction of 15%+ was imminent, which could result in a sharp decline in stock price for cyclicals such as PWR. While maintaining a constructive view on the U.S. electricity grid infrastructure industry and on its primary beneficiary PWR in the long run, I recommended reducing PWR's exposure to hedge the political uncertainty and economic risks. The market---particularly tech-related sectors---was evidently dictated by the sentiment, so it looked most rational to raise cash and wait until the political uncertainty (*i.e.*, tariff threats) subsides.
+I was <span class = "quote">"unusually certain"</span> that the market correction of 15%+ was imminent, which could result in a sharp decline in stock price for cyclicals such as PWR. While maintaining a constructive view on the U.S. electricity grid infrastructure industry and on its primary beneficiary PWR in the long run, I recommended reducing PWR's exposure to hedge the political uncertainty and economic risks. The market---particularly tech-related sectors---was evidently dictated by the sentiment, so it looked most rational to raise cash and wait until the political uncertainty (*i.e.*, tariff threats) subsided.
 
 I assumed that **an inflection point for the stock market would be Apr 2**, <span class = "append">so-called _"Liberation Day"_</span>, the deadline for additional reciprocal tariffs on Asian manufacturing countries. My perspective was that Trump's political actions were a political theater rather than true diplomatic initiatives; while the tariff would be imposed, as was during his first term, its figures would likely be *negotiated* down to some range unsatisfactory yet acceptable to trading partners. Trump is not a politician but a political businessman running the most 'monopolitic' enterprise in the world, and given the majority of his political advocates, I assumed that he would not enforce directives that might damage his political capital.
 
@@ -77,7 +77,7 @@ If the sentiment unwinds and the exuberance dissipates, I predicted that (1) the
 |:-------------------------------|:---------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|:----------------:|
 |   NDX Projection               | Major correction risk in case the sentiment unwinds; **greatest lower bound: 16,573.3p (-23.5%)**  | 52W intraday Low of **16,542.2p (-23.3%)** (2025-04-08); **-15.5%** after the so-called "Liberation Day"        | **Proven Right** |
 |   PWR Projection               | **Target Price: $237.7 (-11.7%)**; comps-based Base Case                                           | 52W closing Low of **$236.7 (-12.1%)**; intraday trough at **$227.1 (-15.7%)**                                  | **Proven Right** |
-|   Post-Correction Exposure     | Tactically **underweight**, and then **re-build exposure after risks subside**                     | **52W Low $227.1 (2025-04-07) → ATH $429.9 (2025-07-25) → Now $391.6**                                          | **Proven Right** |
+|   Post-Correction Exposure     | Tactically **underweight**, and then **re-build exposure after risks subside**                     | **52W Low $227.1 (2025-04-07) → ATH $424.9 (2025-07-25) → Now $406.1**                                          | **Proven Right** |
 |   Tariff Threats               | **Key overhangs** in Feb--Apr; tariff imposition with figures negotiated down                      | **Uncertainty materialized**, drawdown followed (Feb 20--Apr 7); Policy overhangs cleared, rebound followed     | **Proven Right** |
 |   FY25E EBITDA Growth          | **YoY +22.6--34.7%**; EPS: **$6.43--7.09**.                                                        | Company guidance: **EBITDA YoY +20.2--26.4%**, EPS: **$6.47--$7.07**; TTM EPS: (2Q25A) **$6.46**.               |   **Validated**  |
 > *EPS refers to diluted EPS.*
@@ -87,9 +87,9 @@ If the sentiment unwinds and the exuberance dissipates, I predicted that (1) the
   - **NDX dropped roughly 15.5% after Apr 2** (Apr 2 closing 19,581.78p → Apr 7 low 16,542.20p)
 
 - Difference between my projection and outcome
-  - Technical analysis-based MDD for NDX (-23.5%) *vs.* NDX 52W intraday Low (-23.3%): **-0.19%**
-  - Comps-based TP for PWR ($237.73; Base Case) *vs.* PWR 52W closing Low ($236.71): **0.43%**
-  - IVE model estimate for PWR ($221.88; Base Case) *vs.* PWR 52W intraday Low ($227.08): **2.34%**
+  - Technical analysis-based MDD for NDX (-23.5%) *vs.* NDX 52W intraday Low (-23.3%): **0.19p%** difference
+  - Comps-based TP for PWR ($237.73; Base Case) *vs.* PWR 52W closing Low ($236.71): **0.43%p** difference
+  - IVE model estimate for PWR ($221.88; Base Case) *vs.* PWR 52W intraday Low ($227.08): **2.34%p** difference
 
 - *New* Tariff Impositions
   - A 20% Fentanyl Tariff on Chinese imports was enacted from February to March 2025.
@@ -100,12 +100,12 @@ If the sentiment unwinds and the exuberance dissipates, I predicted that (1) the
 
 - Tariff *Negotiations*
   - **A 90-day tariff pause** was enacted from April 9 to July 8.
-  - The US-China tariff truce was signed on Apr 9, 2025; **the previously announced 125% reciprocal tariff was adjusted downward to 10%**, reducing the cumulative tariff on Chinese imports from 145% to 55%. **The truce was just extended (2025-08-11) for another 90 days**.
+  - The US-China tariff truce was signed on Apr 9, 2025; **the previously announced 125% reciprocal tariff was adjusted downward to 10%**, reducing the cumulative tariff on Chinese imports from 145% to 55%. I am very certain that **the truce would be extended in August for another 90 days**.
 > <span class = "append">It seems necessary to conduct an economic research to examine how the newly imposed tariffs would affect the current inflation.</span>
 
 
 ### 2. Modified View
-My original thesis overall has proven directionally validated: the stock fulfilled the $237 downside (2025-03-10), then subsequently rallied to a new ATH at $430 (2025-07-25), and is consolidating near $392 (P/E ≈60.6 on TTM diluted EPS). Therefore, **the previous tactical underweight call is now closed**, and **my fundamental outlook is unchanged** as ex-ante estimates closely track actuals.
+My original thesis overall has proven directionally validated: the stock fulfilled the downside of $237 (2025-03-10), then subsequently rallied to a new ATH at $425 (2025-07-25), and is now near $406 (P/E≈62.8 on TTM diluted EPS). Therefore, **the previous tactical underweight call is now closed**, and **my fundamental outlook is unchanged** as the ex-ante estimates closely track actuals.
 
 
 ### 3. Additional View
@@ -115,16 +115,16 @@ PWR's 2Q25 [earnings call](https://investors.quantaservices.com/news-events/pres
     > The divergence between the company's steady operational growth (EBITDA) and its more volatile bottom-line outlook (EPS guidance) is revealing. The low-end (Bear Case) of the wide EPS range likely reflects ongoing margin pressures such as rising commodity price. In contrast, the high-end (Base-to-Strong Bull Cases) likely points to potential operating leverage such as a slowdown in D&A growth following its five-year elevated CAPEX.
   - *The core problem, again, is whether this growth, even if robust, can justify the current valuation.*
 
-The stock’s current valuation requires reassessment---*i.e.*, whether forward earnings momentum can justify the current **TTM P/E of 60.6**---under a new framework after incorporating the latest 1Q25A and 2Q25A results, which were not captured in the March call. Given that only does technical analysis partially justify the current price, I am initiating a **second TACTICAL UNDERWEIGHT** (or HOLD, if you have not yet established a position) until the upcoming FOMC meeting (Sep 16--17) provides more clarity on the inflation trajectory.
+The stock’s current valuation requires reassessment---*i.e.*, whether forward earnings momentum can justify the current **TTM P/E of 62.8**---under a new framework after incorporating the latest 1Q25A and 2Q25A results, which were not captured in the March call. Given that only does technical analysis partially justify the current price, I am initiating a **second TACTICAL UNDERWEIGHT** (or HOLD, if you have not yet established a position) until the upcoming FOMC meeting (Sep 16--17) provides more clarity on the inflation trajectory.
 
 
 ## III. Sidenote
 I actively adopt technical analysis when the market is heavily predicated on the sentiment, by which fundamentals become futile to validate the market value. I see no fundamentals-related rationale to justify a P/E of 61 for an infrastructure stock as of now.
 
-Based on the Elliott Wave Theory, (1) the new resistance zone for NDX screens at **25,279.5p--26,162.83p**, indicating **6.0--9.7% upside** from the current 23,839.2p; (2) for PWR, I am monitoring **$456** as a breakout trigger and **$366 ($351--378)** as key supports.
+Based on the Elliott Wave Theory, (1) the new resistance zone for NDX screens at **25,279.5p--26,162.83p**, indicating **9.3--13.1% upside** from the current 23,128.12p; (2) for PWR, I am monitoring **$456** as a breakout trigger and **$366 ($351--378)** as key supports.
 - *Theoretically* speaking, the greatest upper bound of PWR's share price is $688.73.
-    - PWR's 52W high as well as new record high is $421.68, marked two--three weeks ago. If PWR's stock price breaks through a projected resistance of $456.07, then it can rise as high as $549.76; the _**THEORETICAL**_ upper limit is $688.73.
-    - If the new ATH of $421.68 were its ceiling, then the stock may correct down to **$365.88 (the support range of $351.07--378.65)**---<span class = "append">theoretically, its greatest lower bound is $330.58, but I am not inclined to this scenario</span>. It is worth noting that even the low-end ($351.07) of this support range is **still ~36% higher than my comps-based Strong Bull Case** ($258.47).
+    - PWR's 52W high as well as new record high is $421.68, marked a week ago. If PWR's stock price breaks through a projected resistance of $456.07, then it can rise as high as $549.76; the _**THEORETICAL**_ upper limit is $688.73, which could be reached in the long run, but not in the short horizon.
+    - If the new ATH of $424.94 were its ceiling, then the current stock price ($406.13) may correct down to **$365.88 (downside of 9.9%) with the support range of $351.07--378.65**---<span class = "append">theoretically, its greatest lower bound is $330.58, but I am not inclined to this scenario. The current optimistic sentiment does not seem to unwind at least not until October, the earliest time to check the effect of the (expected) September cut</span>. It is worth noting that even the low-end ($351.07) of this support range is **still ~36% higher than my comps-based Strong Bull Case** ($258.47).
 
 
 [^1]: **PWR's past diluted EPS:** 2Q25A $1.52 | 1Q25A $0.96 | 4Q24A $2.03 | 3Q24A $1.95 | 2Q24A $1.26 (Source: FactSet, [SEC](https://investors.quantaservices.com/sec-filings/all-sec-filings/content/0001050915-25-000103/pwr-20250630.htm))
