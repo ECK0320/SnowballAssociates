@@ -100,7 +100,7 @@ Should the sentiment unwind and the exuberance dissipate, I predicted that (1) t
 
 - Tariff *Negotiations*
   - **A 90-day tariff pause** was enacted from April 9 to July 8.
-  - The US-China tariff truce was signed on Apr 9, 2025; **the previously announced 125% reciprocal tariff was adjusted downward to 10%**, reducing the cumulative tariff on Chinese imports from 145% to 55%. I am very certain that **the truce would be extended in August for another 90 days**.
+  - The US-China tariff truce was signed on Apr 9, 2025; **the previously announced 125% reciprocal tariff was adjusted downward to 10%**, reducing the cumulative tariff on Chinese imports from 145% to 55%. I am very certain that **the truce will be extended in August for another 90 days**.
 > <span class = "append">It seems necessary to conduct an economic research to examine how the newly imposed tariffs would affect the current inflation.</span>
 
 

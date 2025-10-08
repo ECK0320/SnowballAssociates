@@ -418,7 +418,7 @@ $$
 | *Implied Equity Value (FY25E, per share)*              |  Bear Case  |  <mark>Base Case</mark>  |  Bull Case  |  Strong Bull Case  |
 |:-------------------------------------------------------|------------:|-------------------------:|------------:|-------------------:|
 | DCF: Perpetuity Growth Method                          |    \$134.24  |                  \$138.35 |     \$152.06 |            \$155.24 |
-| DCF: IV&E Model                                        |    \$218.45  |                  \$221.88 |     \$232.79 |            \$237.11 |
+| <mark>DCF: IV&E Model</mark>                           |    \$218.45  |              **\$221.88** |     \$232.79 |            \$237.11 |
 | <mark>Trading Comps: Peer Avg (EV/EBITDA)</mark>       |    \$233.06  |             **\$237.73**  |     \$252.59 |            \$258.47 |
 | Upside/Downside                                        |    -13.48%  |                  -11.74% |      -6.24% |             -4.04% |
 > _Upside/Downside is calculated based on the Trading Comps estimate versus the current market price._
