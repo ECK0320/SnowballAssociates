@@ -93,6 +93,10 @@ Since the September cut, the market has begun to pay marginally more attention t
 
 Base case: the market **continues to grind higher** toward **NDX 25,279.5–26,162.83p**, with PWR’s second target at **$456.07** still in play.
 
+Given the confluence of the deteriorating real economy and the limited justification for the current price by both fundamentals and technical analyses, I am initiating a **third TACTICAL SELL/UNDERWEIGHT call** when PWR's stock price enters the target range of **$434.39--456.07**.
+
+-----
+
 ## III. Sidenote
 A first material risk catalyst could originate in crypto markets. Bitcoin’s upper resistance is estimated to be between **$109,607 and $125,924**; major coins either stopped rising or started declining after Bitcoin’s ATH of $124,713.60 marked on 2025-10-06.
 
