@@ -73,7 +73,7 @@ Should the sentiment unwind and the exuberance dissipate, I predicted that (1) t
 ## II. Ex-Post
 
 ### 1. Results
-| _Item_                         | Prediction (data as of 2025-02-21)                                                                 | Outcome (through 2025-08-12)                                                                                    |     Verdict      |
+| _Item_                         | Prediction (data as of 2025-02-21)                                                                 | Outcome (through 2025-08-01)                                                                                    |     Verdict      |
 |:-------------------------------|:---------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|:----------------:|
 |   NDX Projection               | Major correction risk in case the sentiment unwinds; **greatest lower bound: 16,573.3p (-23.5%)**  | 52W intraday Low of **16,542.2p (-23.3%)** (2025-04-08); **-15.5%** after the so-called "Liberation Day"        | **Proven Right** |
 |   PWR Projection               | **Target Price: $237.7 (-11.7%)**; comps-based Base Case                                           | 52W closing Low of **$236.7 (-12.1%)**; intraday trough at **$227.1 (-15.7%)**                                  | **Proven Right** |
@@ -96,7 +96,7 @@ Should the sentiment unwind and the exuberance dissipate, I predicted that (1) t
   - A 25% tariff was imposed on imported steel and aluminum, effective March 12, 2025.
   - A 25% tariff was imposed on all imported cars, effective Apr 3, 2025
   - A **10% Reciprocal Tariff was imposed** on all imported goods, **with no exemptions for allies**, effective April 5, 2025.
-  - A 54% tariff was imposed on Chinese de minimis shipments, effective May 14, 2025.  
+  - A 54% tariff was imposed on Chinese de minimis shipments, effective May 14, 2025.
 
 - Tariff *Negotiations*
   - **A 90-day tariff pause** was enacted from April 9 to July 8.

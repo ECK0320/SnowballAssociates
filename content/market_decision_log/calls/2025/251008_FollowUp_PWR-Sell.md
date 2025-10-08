@@ -79,7 +79,7 @@ I projected: (1) **NDX** potential resistance at **25,279.5–26,162.83** (**+9�
 
 #### Note / Gap
 
-- **Target _vs._ Trough**: Forecast **$365.88** vs. actual **$363.10** (intraday; **−0.76%** deviation) before the rebound.
+- **Target _vs._ Trough**: Forecast **$365.88** _vs._ Actual **$363.10** (intraday; **−0.76%** deviation) before the rebound.
 - **Sequence**: Initial touch within **$351.07–$378.65** on **8/13** (**$369.06**) → **8/20** (**$367.90**) → **9/2** (**$366.35**) → **9/5** (**$363.10**) → **9/17** (**$373.40**) → rebound from **9/18** (**+3.89%** close).
 - **Current state (10/8 close)**: **$421.51**, after **ATH $434.39 (10/7 intraday)**; oscillating below the **7/25 prior high $424.94**.
 
@@ -93,18 +93,21 @@ Since the September cut, the market has begun to pay marginally more attention t
 
 Base case: the market **continues to grind higher** toward **NDX 25,279.5–26,162.83**, with PWR’s second target at **$456.07** still in play.
 
+Given the confluence of a deteriorating real economy and the limited justification for the current valuation by either fundamentals or technical analysis, I am initiating a **third TACTICAL SELL/UNDERWEIGHT call** when PWR’s stock price enters the target range of **$434.39–$456.07.**
+
 -----
 
 ## III. Sidenote
-A first material risk catalyst could originate in crypto markets. Bitcoin’s upper resistance is estimated to be between **$109,607 and $125,924**; major coins significantly rolled over following Bitcoin’s ATH of $124,713.60 on 2025-10-06.
+A first material risk catalyst could originate in crypto markets. Bitcoin’s upper resistance is estimated to be between **$109,607 and $125,924**; major coins either stopped rising or started declining after Bitcoin’s ATH of $124,713.60 on 2025-10-06.
 
-The real economy is clearly staggering—which will be analyzed in detail in a separate article continuing the discussion from [the outlook on a September cut](https://www.snowballassociates.com/structural_commentary/macro_trends/2025/250906_september_cut_and_its_aftermath/)—as briefly indicated by the recent October ISM PMIs. If the crypto catalyst does not materialize, there are three major potential triggers on the real economy side:
+The real economy is clearly staggering—which will be analyzed in detail in a separate article continuing the discussion from [the outlook on a September cut](https://www.snowballassociates.com/structural_commentary/macro_trends/2025/250906_september_cut_and_its_aftermath/)—as briefly indicated by the recent October ISM PMIs (Manufacturing 49.1, Services 50.0). If the crypto catalyst does not materialize, there are three major potential triggers on the real economy side:
 1. Non-Farm Payrolls report, whose release has been postponed due to the recent administration shutdown (originally scheduled for 2025-10-03).
 2. 3Q25 U.S. GDP Advance Estimate (scheduled for 2025-10-30).
-3. The actual termination or a credible threat by President Trump to terminate the extended U.S.-China tariff truce (due to expire on 2025-11-10 at 00:01 EST).
+3. The actual termination or another Trump's threat to terminate the extended U.S.-China tariff truce (due to expire on 2025-11-10 at 00:01 EST).
 
 -----
 
 ## IV. Conclusion
+With the stock market, crypto market, and PWR's stock price all pressing against their theoretical upper bounds, compounded by deteriorating macroeconomic conditions increasingly evidenced by key indicators, I recommend a **SELL/UNDERWEIGHT on PWR into the $434.39–$456.07 zone**.
 
-With **equities/crypto/PWR** all pressing toward their theoretical upper bounds, compounded by worsening real economy that start to be manifested in various indicators, I recommend **SELL/UNDERWEIGHT** on **PWR** **into the **$434.39–$456.07** zone**.
+Contrary to the previous underweight calls, I do not recommend increasing equity exposure afterwards unless either an unusually strong growth in the near future is newly expected for PWR or a clear, sustained rebound in macroeconomic indicators emerges.
