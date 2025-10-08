@@ -110,4 +110,4 @@ The real economy is clearly staggering—which will be analyzed in detail in a s
 ## IV. Conclusion
 With the stock market, crypto market, and PWR's stock price all pressing against their theoretical upper bounds, compounded by deteriorating macroeconomic conditions increasingly evidenced by key indicators, I recommend a **SELL/UNDERWEIGHT on PWR into the $434.39–$456.07 zone**.
 
-Contrary to the previous underweight calls, I do not recommend increasing equity exposure afterwards unless either an unusually strong growth in the near future is newly expected for PWR or a clear, sustained rebound in macroeconomic indicators emerges.
+Contrary to the previous underweight calls, I do not recommend increasing equity exposure afterwards unless either an unusually strong growth in the near future is newly expected for PWR or a clear, sustained rebound in the real economy emerges.
