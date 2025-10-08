@@ -121,10 +121,10 @@ The stock’s current valuation requires reassessment---*i.e.*, whether forward 
 ## III. Sidenote
 I actively adopt technical analysis when the market is heavily predicated on the sentiment, by which fundamentals become futile to validate the market value. I see no fundamentals-related rationale to justify a P/E of 61 for an infrastructure stock as of now.
 
-Based on the Elliott Wave Theory, (1) the new resistance zone for NDX screens at **25,279.5p--26,162.83p**, indicating **6.0--9.7% upside** from the current 23,839.2p; (2) for PWR, I am monitoring **$456** as a breakout trigger and **$351--378** as key supports.
+Based on the Elliott Wave Theory, (1) the new resistance zone for NDX screens at **25,279.5p--26,162.83p**, indicating **6.0--9.7% upside** from the current 23,839.2p; (2) for PWR, I am monitoring **$456** as a breakout trigger and **$366 ($351--378)** as key supports.
 - *Theoretically* speaking, the greatest upper bound of PWR's share price is $688.73.
     - PWR's 52W high as well as new record high is $421.68, marked two--three weeks ago. If PWR's stock price breaks through a projected resistance of $456.07, then it can rise as high as $549.76; the _**THEORETICAL**_ upper limit is $688.73.
-    - If the new ATH of $421.68 were its ceiling, then the stock may correct down to the support range of **$351.07--378.65**---<span class = "append">theoretically, its greatest lower bound is $330.58, but I am not inclined to this scenario</span>. It is worth noting that even the low-end ($351.07) of this support range is **still ~36% higher than my comps-based Strong Bull Case** ($258.47).
+    - If the new ATH of $421.68 were its ceiling, then the stock may correct down to **$365.88 (the support range of $351.07--378.65)**---<span class = "append">theoretically, its greatest lower bound is $330.58, but I am not inclined to this scenario</span>. It is worth noting that even the low-end ($351.07) of this support range is **still ~36% higher than my comps-based Strong Bull Case** ($258.47).
 
 
 [^1]: **PWR's past diluted EPS:** 2Q25A $1.52 | 1Q25A $0.96 | 4Q24A $2.03 | 3Q24A $1.95 | 2Q24A $1.26 (Source: FactSet, [SEC](https://investors.quantaservices.com/sec-filings/all-sec-filings/content/0001050915-25-000103/pwr-20250630.htm))
