@@ -44,7 +44,7 @@ tags: ["Quanta Services", "PWR", "Stock Price Analysis", "Valuation", "Earnings 
 ## I. Ex-Ante
 
 | Metric             | Ex-Ante (2025-08-01)                   | Upside/Downside | Rationale                                     |
-| ------------------ | -------------------------------------- | --------------: | --------------------------------------------- |
+| :----------------- | :------------------------------------- | :-------------- | --------------------------------------------- |
 | NDX Target         | **25,279.5–26,162.83**                 |  **+9.3–13.1%** | Strong sentiment; technical analysis          |
 | PWR Key Supports   | **$365.88** (band **$351.07–$378.65**) |       **~−10%** | September cut uncertainty; technical analysis |
 | PWR Trigger Points | **$424.94** and **$456.07**            |  **+4.6–12.3%** | Technical analysis                            |
