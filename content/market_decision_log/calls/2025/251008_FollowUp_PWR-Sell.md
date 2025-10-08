@@ -57,7 +57,7 @@ Based on fundamentals and technicals, I treated PWR’s **$424.94** ATH (7/25) a
 ### 2. Outlook
 I assumed the **90-day U.S.–China tariff truce (signed 2025-04-09)** would be extended in August. The anticipated September rate cut still required confirmation.
 
-After the 7/25 ATH **$424.94**, the stock failed to break through and turned lower by **2025-07-31 (H $423.50 / C $406.13 / L $399.07)**. Despite the price being ~57% above my comps-based strong bull case at that time, there was no imminent technical signal of a collapse, and the broader market trend remained up. Net: **underweight/hold** into the September FOMC.
+After the 7/25 ATH of **$424.94**, the stock failed to break through it and turned lower by **2025-07-31 (H $423.50 / C $406.13 / L $399.07)**. Despite the price being 57%+ above my comps-based Strong Bull case at that time, there was no imminent technical signal of a collapse, and the broader market trend remained up. Net: **UNDERWEIGHT/HOLD** into the September FOMC.
 
 
 ### 3. Estimates
@@ -73,8 +73,8 @@ I projected: (1) **NDX** potential resistance at **25,279.5–26,162.83** (**+9�
 | :--------------------------------- | :----------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- | :--------------: |
 | **Stance into Sep FOMC (9/16–18)** | If already in → **Underweight**; if not in → **Hold**                                      | **9/5** intraday **$363.10** & close **$372.50**; **9/17** intraday **$373.40** & close **$376.01**; rebound began **9/18** |   **Validated**  |
 | **NDX Projection**                 | Long-term uptrend; greatest upper bound **25,279.5–26,162.83** (**+9.3–13.1%**)            | Printed **24,978.56 (10/6)** (**+8.0%** from the 7/31 level); now **24,840.23**                                             | **Right So Far** |
-| **PWR Projection**                 | <span class="quote">"May correct to **$365.88**"</span>; support **$351.07–$378.65**       | **9/5** intraday **$363.10** (within band; **−0.76%** below $365.88), close **$372.50**                                     | **Proven Right** |
-| **Post-correction Path**           | Rebound attempt to **$424.94**, then **$456.07** if cleared                                | **10.6%** correction into **9/5** → **ATH $434.39 (10/7 intraday)** → **$421.51 (10/8 close)**                              | **Proven Right** |
+| **PWR Projection**                 | <span class="quote">"May correct to **$365.88**"</span>; support **$351.07–$378.65**       | **9/5** intraday **$363.10** (**−0.76%** below $365.88), close **$372.50** (within the support band)                        | **Proven Right** |
+| **Post-correction Path**           | Rebound attempt to **$424.94**, then **$456.07** if cleared                                | **10.6%** correction into **9/5** → **ATH $434.39 (10/7 intraday)** → **$421.51 (10/7 close)**                              | **Right So Far** |
 | **Tariff Truce Extension**         | <span class="quote">"**The truce will be extended in August for another 90 days**"</span>  | The extension for another 90 days was announced 8.5 hours before the termination of the 4/9 truce                           | **Proven Right** |
 
 #### Note / Gap
@@ -89,16 +89,16 @@ The thesis has been **directionally validated**: downside to **$363.10 (9/5)**, 
 
 
 ### 3. Additional View
-Since the September cut, the market has begun to pay marginally more attention to real-economy fundamentals. However, **no singular bearish catalyst** sufficient to trigger a major equity drawdown has emerged **yet**.
+Since the September cut, the market has begun to pay marginally more attention to the real economy fundamentals. However, **no singular bearish catalyst** sufficient to trigger a major equity drawdown has emerged ***yet***.
 
 Base case: the market **continues to grind higher** toward **NDX 25,279.5–26,162.83**, with PWR’s second target at **$456.07** still in play.
 
-Given the confluence of a deteriorating real economy and the limited justification for the current valuation by either fundamentals or technical analysis, I am initiating a **third TACTICAL SELL/UNDERWEIGHT call** when PWR’s stock price enters the target range of **$434.39–$456.07.**
+Given the confluence of the deteriorating real economy and the limited justification for the current valuation by either fundamentals or technical analysis, I am initiating a **third TACTICAL SELL/UNDERWEIGHT call** when PWR’s stock price enters the target range of **$434.39–$456.07.**
 
 -----
 
 ## III. Sidenote
-A first material risk catalyst could originate in crypto markets. Bitcoin’s upper resistance is estimated to be between **$109,607 and $125,924**; major coins either stopped rising or started declining after Bitcoin’s ATH of $124,713.60 on 2025-10-06.
+A first material risk catalyst could originate in crypto markets. Bitcoin’s upper resistance is estimated to be between **$109,607 and $125,924**; major coins either stopped rising or started declining after Bitcoin’s ATH of $124,713.60 marked on 2025-10-06.
 
 The real economy is clearly staggering—which will be analyzed in detail in a separate article continuing the discussion from [the outlook on a September cut](https://www.snowballassociates.com/structural_commentary/macro_trends/2025/250906_september_cut_and_its_aftermath/)—as briefly indicated by the recent October ISM PMIs (Manufacturing 49.1, Services 50.0). If the crypto catalyst does not materialize, there are three major potential triggers on the real economy side:
 1. Non-Farm Payrolls report, whose release has been postponed due to the recent administration shutdown (originally scheduled for 2025-10-03).
@@ -111,3 +111,8 @@ The real economy is clearly staggering—which will be analyzed in detail in a s
 With the stock market, crypto market, and PWR's stock price all pressing against their theoretical upper bounds, compounded by deteriorating macroeconomic conditions increasingly evidenced by key indicators, I recommend a **SELL/UNDERWEIGHT on PWR into the $434.39–$456.07 zone**.
 
 Contrary to the previous underweight calls, I do not recommend increasing equity exposure afterwards unless either an unusually strong growth in the near future is newly expected for PWR or a clear, sustained rebound in the real economy emerges.
+
+-----
+-----
+
+_* NOTICE: This content for informational and educational purposes only and should not be construed as investment advice. The author is not a registered investment advisor, and this report is not a solicitation to buy or sell any securities. All investments involve risk and may result in loss of capital. Past performance is not indicative of future results. The author may hold positions in assets mentioned. Readers should consult with a qualified financial professional before making any investment decisions._
