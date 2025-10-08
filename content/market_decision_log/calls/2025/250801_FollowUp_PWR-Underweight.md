@@ -4,7 +4,7 @@ date: "2025-08-01 21:43:00+09:00"
 categories: ["market_decision_log", "works"]
 subcategories: ["calls", "light_format"]
 
-title: "Follow-Up on Underweight Call: PWR"
+title: "PWR ― Follow-Up on Underweight Call"
 description: "Revisiting the 2025-03-19 memo"
 
 themes: ["US Politics", "Financial Markets", "Inflation", "Interest Rates", "Investment Rationale"]

@@ -2,7 +2,7 @@
 date: "2025-03-19 08:39:00-06:00"
 categories: ["works", "market_decision_log"]
 subcategories: ["light_format", "calls"]
-title: "Quanta Services (PWR): Overcharged Electric Grid"
+title: "Quanta Services (PWR) ― Overcharged Electric Grid"
 # description: "" 필요하다면 추가
 themes: ["Investment Rationale", "International Relations", "International Politics", "Global Economy", "US Politics", "US Economy", "Stock Market", "Interest Rates", "Stock Investment", "Industry Outlooks", "Policy Impacts"] # 대주제: International Relations, International Politics, Global Economy, FX Market, Fixed Income Market, Commodities Market, Stock Market, Crypto Market, Real Estate Market, Interest Rates, Exchange Rates, Political Theory, Legal Theory, 인식론, 존재론, 조직신학, 구원론, 성화론, 유교, 불교, 도교, Stock Investment, Fixed Income Investment, Commodities Investment, Crypto Investment, Modeling, Investment Rationale, Industry Outlooks, Policy Impacts
 
