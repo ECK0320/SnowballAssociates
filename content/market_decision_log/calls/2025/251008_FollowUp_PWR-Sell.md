@@ -33,8 +33,6 @@ skills: ["Financial Modeling", "Valuation", "Fundamental Analysis", "Technical A
 tags: ["Quanta Services", "PWR", "Stock Price Analysis", "Valuation", "Earnings Analysis", "Market Correction", "Tariffs", "Nasdaq 100", "Elliott Wave Theory", "Verification", "Postmortem Analysis", "Structural Call"]
 # forecast (예상), verification (검정; 예측 일치 여부 확인), postmortem analysis (복기; 사후 원인 분석 및 개선)
 # + 관련 내용 추가:
-
-draft: true
 ---
 
 *My investment research integrates macro, political, and structural signals into narrative-driven judgments aligned with asset-level valuation. I do not build models to explain prices; I build frameworks to diagnose noise and assess mispricings.*
