@@ -45,7 +45,7 @@ tags: ["Quanta Services", "PWR", "Stock Price Analysis", "Valuation", "Earnings 
 
 | Metric             | Ex-Ante (2025-08-01)                   | Upside/Downside | Rationale                                     |
 | :----------------- | :------------------------------------- | :-------------- | --------------------------------------------- |
-| NDX Target         | **25,279.50–26,162.83**                 |  **+9.3–13.1%** | Strong sentiment; technical analysis          |
+| NDX Target         | **25,279.50–26,162.83**                |  **+9.3–13.1%** | Strong sentiment; technical analysis          |
 | PWR Key Supports   | **$365.88** (band **$351.07–$378.65**) |       **~−10%** | September cut uncertainty; technical analysis |
 | PWR Trigger Points | **$424.94** and **$456.07**            |  **+4.6–12.3%** | Technical analysis                            |
 
@@ -91,7 +91,7 @@ The thesis has been **directionally validated**: downside to **$363.10 (9/5)**, 
 ### 3. Additional View
 Since the September cut, the market has begun to pay marginally more attention to real-economy fundamentals. However, **no significant bearish catalyst** sufficient to trigger a major equity drawdown has emerged ***yet***.
 
-Base case: the market **continues to grind higher** toward **NDX 25,279.50–26,162.83p**, with PWR’s second target at **$456.07** still in play.
+Base case: the market **continues to grind higher** toward **NDX 25,279.50–26,162.83**, with PWR’s second target at **$456.07** still in play.
 
 Given the confluence of the deteriorating real economy and the limited justification for the current price by both fundamentals and technical analyses, I am initiating a **third TACTICAL SELL/UNDERWEIGHT call** when PWR's stock price enters the target range of **$434.39--456.07**.
 
@@ -108,7 +108,7 @@ The real economy is clearly staggering—which will be analyzed in detail in a s
 -----
 
 ## IV. Conclusion
-With the stock market, crypto market, and PWR's stock price all pressing against their theoretical upper bounds, compounded by deteriorating macroeconomic conditions increasingly evidenced by key indicators, I recommend a **SELL/UNDERWEIGHT on PWR into the \$434.39–456.07 zone**.
+With the stock market, crypto market, and PWR's stock price all pressing against their theoretical upper bounds, compounded by deteriorating macroeconomic conditions increasingly evidenced by key indicators, I recommend a **SELL/UNDERWEIGHT on PWR into the $434.39–456.07 zone**.
 
 Contrary to the previous underweight calls, I do not recommend increasing equity exposure afterwards unless either an unusually strong growth in the near future is newly expected for PWR or a clear, sustained rebound in the real economy emerges.
 

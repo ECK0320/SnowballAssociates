@@ -83,8 +83,8 @@ Should the sentiment unwind and the exuberance dissipate, I predicted that (1) t
 > *EPS refers to diluted EPS.*
 
 #### Note/Gap
-- A significant correction occurred over seven weeks until Apr 7, when NDX touched its intraday low at 16,542.20p.
-  - **NDX dropped roughly 15.5% after Apr 2** (Apr 2 closing 19,581.78p → Apr 7 low 16,542.20p)
+- A significant correction occurred over seven weeks until Apr 7, when NDX touched its intraday low at 16,542.20.
+  - **NDX dropped roughly 15.5% after Apr 2** (Apr 2 closing 19,581.78 → Apr 7 low 16,542.20)
 
 - Difference between my projection and outcome
   - Technical analysis-based MDD for NDX (-23.5%) *vs.* NDX 52W intraday Low (-23.3%): **0.19p%** difference
@@ -121,7 +121,7 @@ The stock’s current valuation requires reassessment---*i.e.*, whether forward 
 ## III. Sidenote
 I actively adopt technical analysis when the market is heavily predicated on the sentiment, by which fundamentals become futile to validate the market value. I see no fundamentals-related rationale to justify a P/E of 61 for an infrastructure stock as of now.
 
-Based on the Elliott Wave Theory, (1) the resistance zone for NDX screens at **25,279.5p--26,162.83p**, indicating **9.3--13.1% upside** from the current 23,128.12p; (2) for PWR, I am monitoring **$456** as a breakout trigger and **$366 ($351--378)** as key supports.
+Based on the Elliott Wave Theory, (1) the resistance zone for NDX screens at **25,279.50--26,162.83**, indicating **9.3--13.1% upside** from the current 23,128.12p; (2) for PWR, I am monitoring **$456** as a breakout trigger and **$366 ($351--378)** as key supports.
 - *Theoretically* speaking, the greatest upper bound of PWR's share price is $688.73.
     - Assuming that the new ATH of $424.94 were its short-term ceiling, I predict that the current stock price ($406.13) may correct down to **$365.88 (downside of 9.9%) with the support range of $351.07--378.65**---<span class = "append">theoretically, its greatest lower bound is $330.58, but I am not inclined to this scenario. The current optimistic sentiment does not seem to unwind at least until October, the earliest time to check the effect of the (expected) September cut</span>. It is worth noting that even the low-end ($351.07) of this support range is **still ~57% higher than my comps-based Strong Bull Case** ($258.47).
     - PWR's 52W high as well as new record high is $424.94, marked a week ago. As the optimistic sentiment over the whole stock market is persistent, I expect at least one more rebound following the expected ~10% correction. If PWR's stock price breaks through---after the correction---the ATH of $424.94 and then a projected resistance of $456.07, then it can rise as high as $549.76; the _**THEORETICAL**_ upper limit is $688.73, which I expect to be reached in the long run, but not in the short horizon.
