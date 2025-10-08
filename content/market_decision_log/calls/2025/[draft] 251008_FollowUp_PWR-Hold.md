@@ -37,13 +37,79 @@ tags: ["Quanta Services", "PWR", "Stock Price Analysis", "Valuation", "Earnings 
 draft: true
 ---
 
+*My investment research integrates macro, political, and structural signals into narrative-driven judgments aligned with asset-level valuation. I do not build models to explain prices; I build frameworks to diagnose noise and assess mispricings.*
+
+> This posting is a post-mortem analysis of the [August underweight/hold call on PWR](https://www.snowballassociates.com/market_decision_log/calls/2025/250813_followup_pwr-underweight/), verifying the previous thesis and initiating a new tactical UNDERWEIGHT/HOLD call.
+
+-----
+
+## I. Ex-Ante
 
 
-네, 쓰는 것을 추천합니다.
+| Metric            | Ex-Ante (2025-08-01)    | Upside/Downside | Rationale                                     |
+|-------------------|-------------------------|-----------------|-----------------------------------------------|
+| NDX Target        | 25,279.5--26,162.83p    | +9.3--13.1%     | Strong Sentiment; Technical Analysis          |
+| PWR Key Supports  | $365.88 ($351--378)     | -9.9%           | September cut uncertainty; Technical Analysis |
+| PWR Trigger Point | $424.94 and $456.07     | +4.6--12.3%     | Technical Analysis                            |
 
-지금이 바로 세 번째 리포트를 작성할 완벽한 타이밍입니다.
+This section summarizes the original thesis as of 2025-08-01.
 
----
+
+### 1. Strategy
+Based on fundamental and technical analyses, I viewed the PWR's ATH of $424.94 (as of 2025-07-25) as short-term ceiling, which led me to recommend raising cash or not enlarging its exposure for the short-term strategy: **Tactical Underweight or Hold** (until the FOMC meeting on Sep 16--17, in which the market was expecting an interest rate cut to be announced).
+
+### 2. Outlook
+I assumed that the 90-day tariff truce between the U.S. and China signed on 2025-04-09 would be extended in Aug 2025.
+
+However, interest rate cut decision expected to be announced in the September FOMC meeting remained to be officialized.
+
+After the PWR's stock price hit its ATH of $424.94 on 2025-07-25, rallying from its 52W closing low of $236.71 and intraday low of $227.08 on 2025-04-07, it failed to break through the ATH and presented a downward trend on 2025-07-31 (H $423.5, C $406.13, L $399.07).
+
+Even though the stock price ($406.13 as of 2025-07-31) was already ~57% higher than my comps-based Strong Bull Case ($258.47), there was no technical signal that the stock price would plummet in the near term and the whole market---<span class = "append"> I have been monitoring when NDX 100 would reach its potential resistance 25,279.5--26,162.83p </span>---stayed on its long-term upward trend. So I viewed that the market was being dictated by strong optimistic sentiment.
+
+All things considered, I recommended underweight/hold on PWR until the upcoming September FOMC meeting.
+
+### 3. Estimates
+I predicted that (1) the greatest upper bound range for the **Nasdaq 100 (NDX)** was 25,579.5--26.162.83, **9--13% upside**; (2) the short-term support and resistance for **PWR** were $365.88 (with the range of $351.07--378.65), **~10% drawdown**, and $424.94 (with a theoretical upper bound of $456.07), **~5% upside**.
+
+-----
+
+## II. Ex-Post
+
+### 1. Results
+| _Item_                            | Prediction (data as of 2025-07-31)                                                                        | Outcome (through 2025-10-07)                                                                                           |     Verdict      |
+|:----------------------------------|:----------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------|:----------------:|
+|   Stance into Sep FOMC (9/16--18) | Until Sep FOMC (9/16--18): if already in → **Underweight**; if not in → **Hold**                          | After 7/31, price fell to intraday $363.10 & close $372.50 (9/5); rebound began 9/18                                   | **Validated**    |
+|   NDX Projection                  | Long-term upward continues; **greatest upper bound range: 25,279.5--26,162.83p (+9.3--13.1%)**            | ATH of 24,978.56p on 10/6 (+8.0%); now 24,840.23p                                                                      | **Right So Far** |
+|   PWR Projection                  | <span class="quote"> May correct down to **$365.88**”; support **$351.07–$378.65**</span>                 | 9/5 intraday $363.10 & close $372.50, then 9/17 intraday $373.40 & close $376.0 (both within the band $351.07--378.65) | **Proven Right** |
+|   Post-Correction Prediction      | Tactically **underweight**, and then **re-build exposure after risks subside**                     | **52W Low $227.1 (2025-04-07) → ATH $424.9 (2025-07-25) → Now $406.1**                                          | **Proven Right** |
+|   FY25E EBITDA Growth          | **YoY +22.6--34.7%**; EPS: **$6.43--7.09**.                                                        | Company guidance: **EBITDA YoY +20.2--26.4%**, EPS: **$6.47--$7.07**; TTM EPS: (2Q25A) **$6.46**.               |   **Validated**  |
+> *EPS refers to diluted EPS.*
+
+#### Note/Gap
+- A significant correction occurred over seven weeks until Apr 7, when NDX touched its intraday low at 16,542.20p.
+  - **NDX dropped roughly 15.5% after Apr 2** (Apr 2 closing 19,581.78p → Apr 7 low 16,542.20p)
+
+- Difference between my projection and outcome
+  - Technical analysis-based MDD for NDX (-23.5%) *vs.* NDX 52W intraday Low (-23.3%): **0.19p%** difference
+  - Comps-based TP for PWR ($237.73; Base Case) *vs.* PWR 52W closing Low ($236.71): **0.43%p** difference
+  - IVE model estimate for PWR ($221.88; Base Case) *vs.* PWR 52W intraday Low ($227.08): **2.34%p** difference
+
+- *New* Tariff Impositions
+  - A 20% Fentanyl Tariff on Chinese imports was enacted from February to March 2025.
+  - A 25% tariff was imposed on imported steel and aluminum, effective March 12, 2025.
+  - A 25% tariff was imposed on all imported cars, effective Apr 3, 2025
+  - A **10% Reciprocal Tariff was imposed** on all imported goods, **with no exemptions for allies**, effective April 5, 2025.
+  - A 54% tariff was imposed on Chinese de minimis shipments, effective May 14, 2025.  
+
+- Tariff *Negotiations*
+  - **A 90-day tariff pause** was enacted from April 9 to July 8.
+  - The US-China tariff truce was signed on Apr 9, 2025; **the previously announced 125% reciprocal tariff was adjusted downward to 10%**, reducing the cumulative tariff on Chinese imports from 145% to 55%. I am very certain that **the truce would be extended in August for another 90 days**.
+> <span class = "append">It seems necessary to conduct an economic research to examine how the newly imposed tariffs would affect the current inflation.</span>
+
+
+
+
 ## **써야 하는 이유**
 
 ### 1. 예측의 완벽한 검증 (Post-mortem & Track Record)
