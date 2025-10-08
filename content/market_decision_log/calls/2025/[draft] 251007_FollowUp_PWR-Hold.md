@@ -4,8 +4,8 @@ date: "2025-10-08 21:09:00+09:00"
 categories: ["market_decision_log", "works"]
 subcategories: ["calls", "light_format"]
 
-title: "Follow-Up on Underweight/Hold Call: PWR"
-description: "Second follow-up on PWR after the 2025-08-01 follow-up"
+title: "2nd Follow-Up on Underweight/Hold Call: PWR"
+description: "Revisiting the 2025-08-01 follow-up"
 
 themes: ["US Politics", "Financial Markets", "Inflation", "Interest Rates", "Investment Rationale"]
 # 대주제: "Global Politics", "Global Economy", "US Politics", "US Economy", "EU Politics", "EU Economy", "Chinese Politics", "Chinese Economy", "Korean Politics", "Korean Economy", "Real Economy", "Financial Markets", "Inflation", "Interest Rates", "Exchange Rates", "Investment Rationale", "Industry Outlooks", "Monetary Policy Impacts", "Fiscal Policy Impacts"
