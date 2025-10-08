@@ -37,7 +37,7 @@ tags: ["Quanta Services", "PWR", "Stock Price Analysis", "Valuation", "Earnings 
 
 *My investment research integrates macro, political, and structural signals into narrative-driven judgments aligned with asset-level valuation. I do not build models to explain prices; I build frameworks to diagnose noise and assess mispricings.*
 
-> This posting is a post-mortem analysis of the [August underweight/hold call on PWR](https://www.snowballassociates.com/market_decision_log/calls/2025/250813_followup_pwr-underweight/), verifying the previous thesis and initiating a new tactical **SELL/UNDERWEIGHT** call.
+> This posting is a post-mortem analysis of the [August underweight/hold call on PWR](https://www.snowballassociates.com/market_decision_log/calls/2025/250801_followup_pwr-underweight/), verifying the previous thesis and initiating a new tactical **SELL/UNDERWEIGHT** call.
 
 -----
 
