@@ -151,8 +151,8 @@ The peer group for this analysis was sourced from the FactSet-provided list. For
 </div>
 
 #### Peer Comps Table
-| *Company*           | Mkt Cap (Bn) |   Rev Growth (TTM) | EBITDA Margin (TTM) |     P/E (TTM) |   P/E (FY25E) |  EV/EBITDA (TTM) |  EV/EBITDA (FY25E) |    P/CF (TTM) |   PEG Ratio |
-|:--------------------|-------------:|-------------------:|--------------------:|--------------:|--------------:|-----------------:|-------------------:|--------------:|------------:|
+| *Company*           | Mkt Cap (Bn)  |   Rev Growth (TTM) | EBITDA Margin (TTM) |     P/E (TTM) |   P/E (FY25E) |  EV/EBITDA (TTM) |  EV/EBITDA (FY25E) |    P/CF (TTM) |   PEG Ratio |
+|:--------------------|--------------:|-------------------:|--------------------:|--------------:|--------------:|-----------------:|-------------------:|--------------:|------------:|
 | **Quanta Services** |    **\$39.7** |          **13.4%** |            **8.8%** |    **43.88x** |    **36.95x** |       **20.58x** |         **15.81x** |    **19.42x** |   **1.97x** |
 | Jacobs Solutions    |        \$15.2 |              32.7% |                9.4% |        25.25x |        24.40x |           12.38x |             16.92x |        14.62x |       1.27x |
 | AECOM               |        \$12.8 |              12.0% |                6.9% |        25.30x |        22.80x |           12.48x |             14.52x |        15.73x |       1.45x |
