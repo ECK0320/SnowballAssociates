@@ -63,7 +63,7 @@ After the 7/25 ATH **$424.94**, the stock failed to break through and turned low
 ### 3. Estimates
 I projected: (1) **NDX** potential resistance at **25,279.5–26,162.83** (**+9–13%**); (2) **PWR** short-term support at **$365.88** (band **$351.07–$378.65**, ~**10%** drawdown risk); (3) a rebound attempt first at **$424.94**, then **$456.07** if the resistance of $424.94 is broken.
 
----
+-----
 
 ## II. Ex-Post
 
@@ -75,7 +75,7 @@ I projected: (1) **NDX** potential resistance at **25,279.5–26,162.83** (**+9�
 | **NDX Projection**                 | Long-term uptrend; greatest upper bound **25,279.5–26,162.83** (**+9.3–13.1%**)            | Printed **24,978.56 (10/6)** (**+8.0%** from the 7/31 level); now **24,840.23**                                             | **Right So Far** |
 | **PWR Projection**                 | <span class="quote">"May correct to **$365.88**"</span>; support **$351.07–$378.65**       | **9/5** intraday **$363.10** (within band; **−0.76%** below $365.88), close **$372.50**                                     | **Proven Right** |
 | **Post-correction Path**           | Rebound attempt to **$424.94**, then **$456.07** if cleared                                | **10.6%** correction into **9/5** → **ATH $434.39 (10/7 intraday)** → **$421.51 (10/8 close)**                              | **Proven Right** |
-| **Tariff Truce Extension**         | <span class="quote">"**The truce will be extended in August for another 90 days**"</span>  | The extension for another 90 days was announced 8.5 hours before the termination of the truce (first signed on 4/9)         | **Proven Right** |
+| **Tariff Truce Extension**         | <span class="quote">"**The truce will be extended in August for another 90 days**"</span>  | The extension for another 90 days was announced 8.5 hours before the termination of the 4/9 truce                           | **Proven Right** |
 
 #### Note / Gap
 
@@ -93,6 +93,7 @@ Since the September cut, the market has begun to pay marginally more attention t
 
 Base case: the market **continues to grind higher** toward **NDX 25,279.5–26,162.83**, with PWR’s second target at **$456.07** still in play.
 
+-----
 
 ## III. Sidenote
 A first material risk catalyst could originate in crypto markets. Bitcoin’s upper resistance is estimated to be between **$109,607 and $125,924**; major coins significantly rolled over following Bitcoin’s ATH of $124,713.60 on 2025-10-06.
@@ -102,7 +103,7 @@ The real economy is clearly staggering—which will be analyzed in detail in a s
 2. 3Q25 U.S. GDP Advance Estimate (scheduled for 2025-10-30).
 3. The actual termination or a credible threat by President Trump to terminate the extended U.S.-China tariff truce (due to expire on 2025-11-10 at 00:01 EST).
 
-
+-----
 
 ## IV. Conclusion
 
