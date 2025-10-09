@@ -1,6 +1,5 @@
 ---
 author: "ECK" # 필요하다면 추가
-date: {{ .Date }}
 categories: ["market_decision_log"]
 subcategories: ["transactions"]
 title: ""
