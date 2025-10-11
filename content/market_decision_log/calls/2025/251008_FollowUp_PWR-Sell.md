@@ -1,5 +1,5 @@
 ---
-date: "2025-10-08 21:09:00+09:00"
+date: "2025-10-08 18:09:00+09:00"
 
 categories: ["market_decision_log", "works"]
 subcategories: ["calls", "light_format"]
@@ -69,7 +69,7 @@ I projected: (1) **NDX** potential resistance at **25,279.50–26,162.83** (**+9
 
 ### 1. Results
 
-| *Item*                             | Prediction (as of **2025-07-31**)                                                          | Outcome (through **2025-10-07**)                                                                                            |      Verdict     |
+| *Item*                             | Prediction (as of **2025-08-01**)                                                          | Outcome (through **2025-10-07**)                                                                                            |      Verdict     |
 | :--------------------------------- | :----------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- | :--------------: |
 | **Stance into Sep FOMC (9/16–18)** | If already in → **Underweight**; if not in → **Hold**                                      | **9/5** intraday **$363.10** & close **$372.50**; **9/17** intraday **$373.40** & close **$376.01**; rebound began **9/18** |   **Validated**  |
 | **NDX Projection**                 | Long-term uptrend; greatest upper bound **25,279.50–26,162.83** (**+9.3–13.1%**)            | Printed **24,978.56** on 10/6 (**+8.0%** from the 7/31 level); now **24,840.23**                                             | **Right So Far** |
